@@ -1,3 +1,0 @@
-set folder = "imaps://kcurde@imap.gmail.com:993"
-
-set spoolfile = "+INBOX"

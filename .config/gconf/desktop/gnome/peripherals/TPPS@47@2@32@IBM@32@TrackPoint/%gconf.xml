@@ -1,6 +1,0 @@
-<?xml version="1.0"?>
-<gconf>
-	<entry name="device_type" mtime="1566923329" type="string">
-		<stringvalue>mouse</stringvalue>
-	</entry>
-</gconf>

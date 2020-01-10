@@ -1,6 +1,0 @@
-2020/01/08-15:22:22.346 2ca1 Reusing MANIFEST /home/klaus/.config/google-chrome/Default/IndexedDB/https_mail.google.com_0.indexeddb.leveldb/MANIFEST-000001
-2020/01/08-15:22:22.347 2ca1 Recovering log #16
-2020/01/08-15:22:22.385 2ca1 Reusing old log /home/klaus/.config/google-chrome/Default/IndexedDB/https_mail.google.com_0.indexeddb.leveldb/000016.log 
-2020/01/08-15:22:37.875 2d22 Level-0 table #23: started
-2020/01/08-15:22:37.896 2d22 Level-0 table #23: 1398110 bytes OK
-2020/01/08-15:22:37.900 2d22 Delete type=0 #16
