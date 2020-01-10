@@ -1,0 +1,19 @@
+strings:
+  INSTALL_TIMESTAMP: 637124920016084520
+  SaveFilenameKey/: /home/klaus/.config/unity3d/Klei/Oxygen Not Included/save_files/Shack.sav
+ints:
+  SESSION_ID: 2
+  LowResTextures: 1
+  ResolutionWidth: 1920
+  ResolutionHeight: 1080
+  RefreshRate: 60
+  FullScreen: 1
+  PatchNotesVersion: 9
+  GAME_ID: 0
+  NextUniqueID: 27005
+floats:
+  Volume_SFX: 1
+  Volume_Music: 1
+  Volume_Ambience: 1
+  Volume_Master: 1
+  Volume_UI: 1

@@ -1,0 +1,64 @@
+{
+   "author": "WangJie \u003Cdoudou19758@gmail.com>",
+   "background": {
+      "scripts": [ "background.js" ]
+   },
+   "browser_action": {
+      "default_icon": {
+         "16": "assets/icons/icon_16.png",
+         "24": "assets/icons/icon_48.png",
+         "32": "assets/icons/icon_128.png"
+      }
+   },
+   "commands": {
+      "open-lists": {
+         "description": "__MSG_cmd_open_lists__",
+         "global": true
+      },
+      "restore-lastest-list": {
+         "description": "__MSG_cmd_restore_lastest_list__",
+         "global": true
+      },
+      "store-all-in-all-windows": {
+         "description": "__MSG_cmd_store_all_in_all_windows__",
+         "global": true
+      },
+      "store-all-tabs": {
+         "description": "__MSG_cmd_store_all_tabs__",
+         "global": true
+      },
+      "store-selected-tabs": {
+         "description": "__MSG_cmd_store_selected_tabs__",
+         "global": true
+      }
+   },
+   "content_scripts": [ {
+      "js": [ "content.js" ],
+      "matches": [ "https://boss.cnwangjie.com/*" ]
+   } ],
+   "content_security_policy": "script-src 'self' 'unsafe-eval' https://www.google-analytics.com https://apis.google.com ; object-src 'self'",
+   "default_locale": "en",
+   "description": "__MSG_ext_desc__",
+   "homepage_url": "https://github.com/cnwangjie/better-onetab",
+   "icons": {
+      "128": "assets/icons/icon_128.png",
+      "16": "assets/icons/icon_16.png",
+      "48": "assets/icons/icon_48.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAn+aAgLpYkCtm9Vv0Rf2StUj7wy2QKPXiC+LMJ0pAzTqaHEVkBji37fNjBz+lgmfpGDZNfWHQYTPFZvacGbrKnBoy69vtJrchJ9DPKILlFXfl+JrS2j6k+wIPKzHlVmwlkNhKpdniterFyWiQn3MGB2S9RygN0D2J1kKD1hdrj6+t7tJlxdxFkPdVkJ6LoVwPxjskXn09FOvzIwTdR7gY1Wlt3UBJBCHxornx4tMHKiKrpLpOZgYx/caASDYjAz89wG6WjHuVhN7t/H5R4k4BCVW/KxN6zgPIt2w9jEwcaswhdvqYS8Qm9vrZLJ97F1aEioyjbW7fUKFapm+XfhjWIQIDAQAB",
+   "manifest_version": 2,
+   "name": "__MSG_ext_name__",
+   "oauth2": {
+      "client_id": "530831729511-dclgvblhv7var13mvpjochb5f295a6vc.apps.googleusercontent.com",
+      "scopes": [ "https://www.googleapis.com/auth/drive" ]
+   },
+   "offline_enabled": true,
+   "options_page": "index.html#/app/options",
+   "options_ui": {
+      "open_in_tab": true,
+      "page": "index.html#/app/options"
+   },
+   "permissions": [ "contextMenus", "storage", "tabs", "history", "identity", "notifications" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.4.7"
+}

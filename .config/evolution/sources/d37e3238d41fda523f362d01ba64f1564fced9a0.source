@@ -1,0 +1,30 @@
+[Data Source]
+DisplayName=kcurde@gmail.com
+Enabled=false
+Parent=97acfd70ba2ef3a7cdb613256eb48a7eec28b5bd
+
+[Mail Composition]
+Bcc=
+Cc=
+DraftsFolder=folder://local/Drafts
+ReplyStyle=default
+SignImip=true
+TemplatesFolder=folder://local/Templates
+StartBottom=inconsistent
+TopSignature=inconsistent
+
+Language=
+
+[Mail Identity]
+Address=kcurde@gmail.com
+Aliases=
+Name=Klaus Curde
+Organization=
+ReplyTo=
+SignatureUid=none
+
+[Mail Submission]
+SentFolder=folder://local/Sent
+TransportUid=6b85d21cf5cf1bc90f3112509fbd4865e30496d2
+RepliesToOriginFolder=false
+UseSentFolder=true

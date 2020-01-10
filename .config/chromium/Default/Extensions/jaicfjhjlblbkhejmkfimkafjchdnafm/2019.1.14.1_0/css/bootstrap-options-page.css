@@ -1,0 +1,139 @@
+body {
+	min-width: 300px;
+	background: #161616;
+	color: #dadada;
+}
+
+.brand-image {
+	width: 48px;
+	height: 48px;
+	margin-right: 10px;
+	margin-top: -14px;
+}
+
+#clearoptions {
+	margin-left: 15px;
+}
+
+label.pull-left {
+	line-height: 34px;
+	vertical-align: middle;
+	margin: 0;
+}
+
+.bootstrap-switch, select.form-control {
+	margin-bottom: 5px;
+}
+
+.external {
+	color: #337ab7;
+}
+
+.new {
+	display: none;
+	color: #f0ad4e;
+}
+
+.deco-none, .deco-none:focus, .deco-none:hover, .deco-none:link, .deco-none:visited {
+	color: inherit;
+	text-decoration: inherit;
+}
+
+.panel-default {
+	border-color: #2F2F2F;
+}
+
+.panel-heading {
+	background: rgb(84, 134, 2) !important;
+	border-color: #2F2F2F !important;
+	color: #fff !important;
+	font-weight: bold;
+}
+
+.panel-body {
+	background: url(../images/assets/tpl_box_shading2.png) left top repeat-x #111;
+}
+
+.list-group .list-group-item, .panel-footer, .table {
+	background: #111;
+	border-color: #2F2F2F!important;
+	color: #fff!important;
+}
+
+.table td {
+	border-color: #2F2F2F!important
+}
+
+.modal-body, .modal-footer, .modal-header {
+	border-color: #2F2F2F
+}
+
+.modal-header {
+	background: rgb(84, 134, 2) !important;
+	color: #fff!important;
+	font-weight: bold;
+}
+
+.modal-body {
+  background: url(../images/assets/tpl_box_shading2.png) left top repeat-x #111;
+}
+
+.modal-footer {
+	background-color: #111;
+}
+
+.text-danger {
+	color: red;
+}
+
+.form-control[disabled], .form-control[readonly], fieldset[disabled] .form-control {
+	opacity: .5;
+	background-color: #fff;
+}
+
+/* My Changes */
+
+.text-warning {
+	color: orange;
+}
+
+.glyph-pos-fix {
+	top: 9px;
+	left: 5px;
+}
+
+.glyph-pos-fix:hover {
+	color: yellow !important;
+}
+
+a:hover {
+	text-decoration: none !important;
+}
+#about-collapse ul {
+	padding-left: 25px;
+}
+
+#lastupdated {
+	top: 2px;
+	right: 2px;
+	position: absolute;
+	color: d5f406;
+	font-weight: bold;
+	padding-right: 5px;
+}
+
+.tooltip-inner {
+	max-width: 240px;
+	font-size: 13px;
+}
+
+.tooltip.in {
+	opacity: 1;
+}
+
+textarea {
+	color: black;
+}
+.select {
+	color: yellow;
+}

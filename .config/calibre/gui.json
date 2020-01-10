@@ -1,0 +1,128 @@
+{
+  "book_details_splitter_horizontal_state": [
+    true, 
+    200
+  ], 
+  "book_list_pin_splitter_state": {
+    "__class__": "bytearray", 
+    "__value__": "AAAA/wAAAAEAAAACAAABAAAAAEYA/////wEAAAABAA=="
+  }, 
+  "convert_single_dialog_geom": {
+    "__class__": "bytearray", 
+    "__value__": "AdnQywADAAAAAAAZAAAACAAAB1YAAAPdAAAAGwAAAAgAAAdUAAAD2wAAAAAAAAAAB4AAAAAbAAAACAAAB1QAAAPb"
+  }, 
+  "cover_browser_splitter_vertical_state": [
+    false, 
+    300
+  ], 
+  "custom_colors_for_color_dialog": [
+    [
+      255, 
+      255, 
+      255, 
+      255
+    ], 
+    [
+      255, 
+      255, 
+      255, 
+      255
+    ], 
+    [
+      255, 
+      255, 
+      255, 
+      255
+    ], 
+    [
+      255, 
+      255, 
+      255, 
+      255
+    ], 
+    [
+      255, 
+      255, 
+      255, 
+      255
+    ], 
+    [
+      255, 
+      255, 
+      255, 
+      255
+    ], 
+    [
+      255, 
+      255, 
+      255, 
+      255
+    ], 
+    [
+      255, 
+      255, 
+      255, 
+      255
+    ], 
+    [
+      255, 
+      255, 
+      255, 
+      255
+    ], 
+    [
+      255, 
+      255, 
+      255, 
+      255
+    ], 
+    [
+      255, 
+      255, 
+      255, 
+      255
+    ], 
+    [
+      255, 
+      255, 
+      255, 
+      255
+    ], 
+    [
+      255, 
+      255, 
+      255, 
+      255
+    ], 
+    [
+      255, 
+      255, 
+      255, 
+      255
+    ], 
+    [
+      255, 
+      255, 
+      255, 
+      255
+    ], 
+    [
+      255, 
+      255, 
+      255, 
+      255
+    ]
+  ], 
+  "grid view visible": false, 
+  "library_usage_stats": {
+    "/home/klaus/Calibre Library": 2
+  }, 
+  "quick_start_guide_added": true, 
+  "quickview visible": false, 
+  "search bar visible": true, 
+  "tag browser search box visible": false, 
+  "tag_browser_splitter_horizontal_state": [
+    true, 
+    200
+  ]
+}

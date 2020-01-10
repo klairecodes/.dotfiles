@@ -1,0 +1,1373 @@
+{
+   "about": {
+      "message": "Hakkında"
+   },
+   "activelayertoday": {
+      "message": "Bugünkü tıklama sayısı"
+   },
+   "addbutton": {
+      "message": "Ekle"
+   },
+   "advancedoptions": {
+      "message": "Gelişmiş Seçenekler"
+   },
+   "analyticsoption": {
+      "message": "Analizler"
+   },
+   "areyouhappy": {
+      "message": "Turn Off the Lights sizi mutlu etti mi?"
+   },
+   "autostopbannerred": {
+      "message": "Kırmızı bir banner göster"
+   },
+   "autostopbannertrans": {
+      "message": "Şeffaf bir banner göster"
+   },
+   "autostopblocked": {
+      "message": "Turn Off the Lights™ tarafından engellendi - www.turnoffthelights.com"
+   },
+   "autostopclickme": {
+      "message": "Bu HTML5 videoyu oynatmak için bana tıkla"
+   },
+   "autostopdetails": {
+      "message": "DETAYLAR"
+   },
+   "autostopenabled": {
+      "message": "OtomatikDurdurma etkinleştirildi!"
+   },
+   "basicsettings": {
+      "message": "Temeller"
+   },
+   "bottom": {
+      "message": "Alt"
+   },
+   "btnsharestats": {
+      "message": "İstatistikleri paylaş"
+   },
+   "camstep1description": {
+      "message": "Kamera Hareket özelliğini etkinleştirin.\n"
+   },
+   "camstep2description": {
+      "message": "Elinizi (veya bir nesneyi) yukarıdan aşağı doğru hareket ettirin."
+   },
+   "camstep3description": {
+      "message": "Siyah katman otomatik olarak aşağı iner."
+   },
+   "cardavgprevweektime": {
+      "message": "Toplam hafta önceki süre (dakika)"
+   },
+   "cardtexsubscribe": {
+      "message": "Şimdi abone olun!\n"
+   },
+   "cardtextfavdayweek": {
+      "message": "Haftanın ilk günü"
+   },
+   "cardtextyestime": {
+      "message": "Dün toplam zamanı (dakika)"
+   },
+   "changelog": {
+      "message": "Değişiklikler"
+   },
+   "charttitle30dayssaved": {
+      "message": "Son 30 günde tasarruf edilen enerji"
+   },
+   "charttitleavgday": {
+      "message": "Ortalama günlük program (ışıkların sık sık söneceği vakit)"
+   },
+   "charttitlelayeractive": {
+      "message": "Karanlık katman aktif (#)"
+   },
+   "charttitlelblenergysaved": {
+      "message": "Toplam tasarruf edilen enerji"
+   },
+   "charttitlelblenergytotal": {
+      "message": "Toplam kullanılan enerji"
+   },
+   "charttitlelblwebsiteused": {
+      "message": "Son 30 günde bunu kullanmış siteler"
+   },
+   "charttitletotaltime": {
+      "message": "Karanlık katmanının aktif olduğu toplam zaman (dakika)"
+   },
+   "deletebutton": {
+      "message": "Sil"
+   },
+   "des1checkmotion": {
+      "message": "Odanızın karanlık olmadığından ve yeterli ışık olduğundan emin olun."
+   },
+   "des2checkmotion": {
+      "message": "Kamera ışığınız doğrudan ışık almıyor."
+   },
+   "des3checkmotion": {
+      "message": "Ön kamerayı kullanıyorsunuz."
+   },
+   "desaddvideobutton": {
+      "message": "Ekle butonunu göster."
+   },
+   "desalllightsoff": {
+      "message": "Lamba düğmesine basmak, açık olan tüm sekmelerdeki ışıkları açacak/kapatacak"
+   },
+   "desambilight": {
+      "message": "Geçerli videonun ortam ışıklandırma efektini göster."
+   },
+   "desambilight4color": {
+      "message": "Resim etrafına seçilmiş 4 renk:"
+   },
+   "desambilightfixcolor": {
+      "message": "Sadece bir renk"
+   },
+   "desambilightrangeblurradius": {
+      "message": "Daha düşük değerler gölgeyi daha keskin yapacaktır, daha yüksek değerler de daha bulanık yapar."
+   },
+   "desambilightrangespreadradius": {
+      "message": "Pozitif değerler gölge boyutunu artırırken, negatif değerler azaltır."
+   },
+   "desambilightvarcolor": {
+      "message": "Rengi videodan al"
+   },
+   "desapause": {
+      "message": "duraklat"
+   },
+   "desapitext": {
+      "message": "Web site Geliştiricileri için Wiki API"
+   },
+   "desaplay": {
+      "message": "oynat"
+   },
+   "desastop": {
+      "message": "durdur"
+   },
+   "desatmosontotlmode": {
+      "message": "Atmosfer aydınlatma efektini sadece TOtL modu etkinken göster"
+   },
+   "desatmosphereonly": {
+      "message": "Ortam aydınlatması özelliğini şu video sitesinde kullan:"
+   },
+   "desatmossolidcolor": {
+      "message": "Parlama efektinin rengini seçin"
+   },
+   "desatmosvivid": {
+      "message": "Canlı atmosfer efektleri"
+   },
+   "desauroraplayer": {
+      "message": "Oynatıcı çevre aydınlatması da bilgisayarınız için kullanılabilir."
+   },
+   "desautoplay": {
+      "message": "Oynat butonuna basıldığında ekranı otomatik karartır."
+   },
+   "desautoplaydelay": {
+      "message": "Video sona erdikten sonra arka planı tekrar aydınlat"
+   },
+   "desautoplaydelayend": {
+      "message": "saniye sonra aydınlat"
+   },
+   "desautoplayonly": {
+      "message": "Sadece şu siteleri karart:"
+   },
+   "desautostop": {
+      "message": "Web sayfasını açtığımda otomatik olarak videoyu durdur."
+   },
+   "desautostopfeatureblack": {
+      "message": "Sadece aşağıdaki siteler için otomatik oynatmaya izin verir."
+   },
+   "desautostopfeaturewhite": {
+      "message": "Aşağıdaki siteler dışındaki siteler için otomatik oynatmaya izin verir."
+   },
+   "desautostoponly": {
+      "message": "Şu sitelerde; otomatik video durdurmayı etkinleştir."
+   },
+   "desbadgeanalytics": {
+      "message": "Sayfayı kaç defa kararttığınızı gösteren bir işaret gösterir"
+   },
+   "desbrowserextension": {
+      "message": "tarayıcı eklentisi"
+   },
+   "desbrowsersupport": {
+      "message": "Bu tarayıcı bu özelliği henüz desteklemiyor. Bilgisayarınızdaki tarayıcının son sürüm olduğundan emin olun."
+   },
+   "desbrowsertheme": {
+      "message": "tarayıcı teması"
+   },
+   "descammotiononly": {
+      "message": "Kamera Hareketi sadece şu site(ler)de geçerlidir:"
+   },
+   "descolorfixcolor": {
+      "message": "Karanlık katman rengini seç"
+   },
+   "desconfirmpassword": {
+      "message": "Parolayı onaylayın"
+   },
+   "desconfirmtime": {
+      "message": "Süreyi doğrula"
+   },
+   "desconfirmtimesaver": {
+      "message": "Ekran Koruyucu Zamanını Doğrula"
+   },
+   "descontextmenus": {
+      "message": "Bir öğeye odaklanmak için bağlam menüsünü göster."
+   },
+   "description": {
+      "message": "Sayfanın tamamını karartarak, sizlere sanki sinemadaymış gibi bir görüntü sağlar. YouTube™ ve diğer video siteleri için kullanılabilir."
+   },
+   "desdarkbrowsertheme": {
+      "message": "Karanlık tarayıcı temasına geçiş yap"
+   },
+   "desdynamicblocks": {
+      "message": "Bloklar"
+   },
+   "desdynamiccloud": {
+      "message": "Animasyonlu Bulutlar"
+   },
+   "desdynamicdotscolor": {
+      "message": "Renk noktaları"
+   },
+   "desdynamicfishtank": {
+      "message": "Balık Tankı"
+   },
+   "desdynamicraindrops": {
+      "message": "Yağmur Damlaları"
+   },
+   "desdynamicsmoke": {
+      "message": "Duman"
+   },
+   "desdynamicspace": {
+      "message": "Boşluk Alanı"
+   },
+   "desdynamicstars": {
+      "message": "Yıldızlar"
+   },
+   "desdynamicstorm": {
+      "message": "Fırtına"
+   },
+   "desdynamictriangulation": {
+      "message": "Üç taraflı kur çevrimi"
+   },
+   "deseastereggs": {
+      "message": "T tuşuna basmak karanlık kısma bir tiyatro perdesi ekler"
+   },
+   "desenterpassword": {
+      "message": "Aşağıdaki kutucuğa parolanızı girin:"
+   },
+   "deseyea": {
+      "message": "Yeni bir sayfa açıldığı zaman, arka planı otomatik olarak karart"
+   },
+   "deseyealist": {
+      "message": "Aşağıdaki site(ler)de arka planı otomatik olarak karart:"
+   },
+   "deseyen": {
+      "message": "Normal kullanım (lamba simgesine tıkladığınızda ışıklar kapanır)"
+   },
+   "deseyetimesaver": {
+      "message": "Aşağıda belirtilen süre içinde bir sayfa etkinlik olmadığı (fare veya klavye ile işlem yapılmadığı) zaman, otomatik olarak kararır."
+   },
+   "desfadein": {
+      "message": "Kararma efektini göster."
+   },
+   "desfadeout": {
+      "message": "Aydınlanma efektini göster."
+   },
+   "desflash": {
+      "message": "Tüm Flash nesneleri göster."
+   },
+   "deshardflash": {
+      "message": "URL filtresini atlayarak bütün Flash nesneleri göster. Bu, bazı videoların görüntülenme sorununu düzeltecektir ama aynı zamanda reklamları da gösterecektir."
+   },
+   "deshead": {
+      "message": "YouTube Kanal çubuğunu göster."
+   },
+   "deshovervideo": {
+      "message": "Farenizi belirli bir süre boyunca video öğesinin üzerinde gezdirin, ardından web sayfası otomatik olarak soluklaşır"
+   },
+   "desinfobar": {
+      "message": "Video hakkındaki bilgileri göster."
+   },
+   "desintroduce": {
+      "message": "Kullandığınız bütün özellikler yepyeni bir görünüş ve duygu ile size göre kişiselleştirildi."
+   },
+   "deslampandnightmode": {
+      "message": "\"Gri Lamba\" düğmesini tıklayarak, \"Gece Modu\" seçeneği aktive edin."
+   },
+   "deslikebar": {
+      "message": "YouTube videolarının altında beğen/beğenme çubuğunu göster."
+   },
+   "deslikebutton": {
+      "message": "Bu video için Youtube'da beğen & beğenme butonlarını göster."
+   },
+   "desmobileapp": {
+      "message": "Turn Off the Lights (Işıkları kapat) uygulaması mobil aygıtınız için çoktan hazır."
+   },
+   "desmotion": {
+      "message": "Kamera Hareti'ni etkinleştir"
+   },
+   "desmotionChecklist": {
+      "message": "Denetleme listesi:"
+   },
+   "desmousespotlighta": {
+      "message": "Işık kapalıysa fare imlecinin etrafını aydınlat."
+   },
+   "desmousespotlightc": {
+      "message": "Eğer ışıklar kapalıysa, seçtiğiniz alandaki nesneye odaklanabilirsiniz."
+   },
+   "desmousespotlighto": {
+      "message": "Normal kullanım (aşağıdaki fare ayarları devre dışı kalır)"
+   },
+   "desmousespotlights": {
+      "message": "Ekran gölgelendirmeyi, bağlantıları tıklama olanağı ile etkinleştirin"
+   },
+   "desmousespotlightt": {
+      "message": "Ekran karardığında köprülere tıklamayı aktifleştir"
+   },
+   "desmultiopacitynormal": {
+      "message": "Bütün web siteleri aynı şeffaflık değerinde"
+   },
+   "desmultiopacitynot": {
+      "message": "Eğer bir websitesi listede değilse, varsayılan şeffaflık değeri uygulanır."
+   },
+   "desmultiopacitysel": {
+      "message": "Aşağıda listelenen websiteleri seçilen şeffaflıkta"
+   },
+   "desnightactivetime": {
+      "message": "Şu zamanlar arasında anahtar görünür olacak:"
+   },
+   "desnightenabletheme": {
+      "message": "Yeni bir sayfa açtığınızda otomatik olarak Gece Modu'na geçilir."
+   },
+   "desnighthover": {
+      "message": "Web sayfasında saydam düğmeyi göster."
+   },
+   "desnightonly": {
+      "message": "Gece Modu'nu sadece aşağıdaki site(ler)de göster:"
+   },
+   "desnightowl": {
+      "message": "Tek tıklama, sayfayı tıklanabilir bir bağlantı ile doğrudan bir gece temasına dönüştürür. Normal görünüme dönmek için tekrar tıklayın. Bu özelliği devre dışı bırakmak için lamba düğmesine tekrar tıklayın."
+   },
+   "desnighttheme": {
+      "message": "Sayfayı karartmak veya aydınlatmak için web penceresinin altında gece modu değiştirme düğmesini göster."
+   },
+   "desnoflash": {
+      "message": "Bu özelliği kullanma."
+   },
+   "despassword": {
+      "message": "Işıkları geri açmadan önce parola girilmesini iste."
+   },
+   "desplaylist": {
+      "message": "YouTube oynatma listesini göster."
+   },
+   "desplayrate": {
+      "message": "Varsayılan oynatma hızı"
+   },
+   "desproject": {
+      "message": "proje"
+   },
+   "desreadera": {
+      "message": "Ekran karardığında daima kararma seviyesi çubuğunu göster."
+   },
+   "desreadern": {
+      "message": "Kararma seviyesi çubuğunu asla gösterme."
+   },
+   "desreflection": {
+      "message": "Yansıma etkisi tüm videoları gösterin"
+   },
+   "desregularuser": {
+      "message": "Bu, varsayılan ve yeni kullanıcılar için normal ayardır. Gri lamba düğmesini tıklattığınızda, bu stil geçerli web sayfasına uygulanır."
+   },
+   "desrememberpage": {
+      "message": "Hatırlatıcı sayfasını gösterme"
+   },
+   "desremfacebook": {
+      "message": "Bunu Facebook'da öner"
+   },
+   "desremrate": {
+      "message": "Eğer Turn Off the Lights™'ı beğendiysen 5 yıldız ile değerlendirmek için tereddüt etme. Bu bize bu ürünü sizin için geliştirme ve bakım cesareti veriyor. Yorum yazmanız önerilir, ama zorunlu değil. Eğer yorum yazacak zamanın yoksa, anonim olarak değerlendirebilirsin. ★★★★★ vermeniz önemli. Teşekkürler!"
+   },
+   "desremyoutube": {
+      "message": "YouTube'da takip edin"
+   },
+   "dessaver": {
+      "message": "Ekran Koruyucu:"
+   },
+   "desscreenprotection": {
+      "message": "Tüm açık sekmelerde göz yorgunluğunu azaltmak için tek bir tıklama sayfayı sakinleştirici turuncu renklerle gölgelendirir. Bu özelliği devre dışı bırakmak için lamba düğmesine tekrar tıklayın."
+   },
+   "dessharebutton": {
+      "message": "Bu video için YouTube paylaşım butonlarını göster."
+   },
+   "desshortcutlight": {
+      "message": "Klavye kısayollarını aşağıdan aktif edebilirsin."
+   },
+   "desspeech": {
+      "message": "Konuşma tanımayı etkinleştir"
+   },
+   "desspeech1command": {
+      "message": "ışıkları kapat"
+   },
+   "desspeech2command": {
+      "message": "ışıkları aç"
+   },
+   "desspeech3command": {
+      "message": "videoyu oynat"
+   },
+   "desspeech4command": {
+      "message": "videoyu duraklat"
+   },
+   "desspeech5command": {
+      "message": "Tarayıcı Lambası"
+   },
+   "desspeechdialect": {
+      "message": "Konuşma diyalektinizi seçin:"
+   },
+   "desspeechonly": {
+      "message": "Konulma Tanıma sadece şu site(ler)de geçerlidir:"
+   },
+   "desspeedtoolbar": {
+      "message": "Oynatma araç çubuğunu mevcut video oynatıcısında göster"
+   },
+   "desspotlightradius": {
+      "message": "Spot lamba çapı:"
+   },
+   "dessuggestions": {
+      "message": "YouTube sitesindeki önerileri göster."
+   },
+   "destime": {
+      "message": "Şu zaman aralığında ışıkları kapat:"
+   },
+   "destrymotion": {
+      "message": "Harika, hepsi her yerde çalışıyor. Hatta Youtube, haber siteleri vs. üzerinde bile."
+   },
+   "desuntil": {
+      "message": "kadar"
+   },
+   "desvideoheadline": {
+      "message": "Video ismini göster ve rengini tersine çevir."
+   },
+   "desvideotool": {
+      "message": "Ekranınızın geçerli video oynatıcı özelleştirmek için araç çubuğunu göster"
+   },
+   "desvideotoolcolor": {
+      "message": "Araç çubuğunun rengi"
+   },
+   "desvideotoolonly": {
+      "message": "Video Araç çubuğunu sadece belirli site(ler) de etkinleştir:"
+   },
+   "desvideovolumalt": {
+      "message": "Sadece alt tuşuna basıldığı zaman"
+   },
+   "desvideovolume": {
+      "message": "Mevcut video oynatıcının sesini fare kaydırması ile denetleyin"
+   },
+   "desvideovolumecolor": {
+      "message": "Kaydırıcı rengi"
+   },
+   "desvideovolumhold": {
+      "message": "Sesi ayarlamak için farenin sol veya sağ tıklama butonunu basılı tut ve hareket ettir"
+   },
+   "desvideozoom": {
+      "message": "Yakınlaştırma düğmesine kullanarak video içeriğine yakınlaştırın veya video içeriğinden uzaklaştırın"
+   },
+   "desviewcount": {
+      "message": "Bu video için görüntülenme sayısını göster."
+   },
+   "desvisopacity": {
+      "message": "Ses görsellleştirme arka planının şeffaflık değeri"
+   },
+   "desvolumelabel": {
+      "message": "Ses etiketini göster"
+   },
+   "desvolumeposa": {
+      "message": "Ses göstergesini şu anki video oynatıcısının ortasında göster"
+   },
+   "desvolumeposb": {
+      "message": "Ses değerini şu anki video oynatıcısının sol üstünde göster"
+   },
+   "desvolumeposc": {
+      "message": "Ses değerini şu anki video oynatıcısının sağ üstünde göster"
+   },
+   "desvolumesteps": {
+      "message": "Farenin kaydırma tekerleğini her çevirişinizde artacak olan ses seviyesi miktarı (% cinsinden)"
+   },
+   "donatepromotext": {
+      "message": "Yapabileceğiniz her türlü miktar bağışı, memnuniyetle karşılarım!"
+   },
+   "downloadtheapp": {
+      "message": "Hemen uygulamayı indir"
+   },
+   "eastereggsquestion": {
+      "message": "Gerçek bir sinema salonu deneyimi ister misiniz?"
+   },
+   "ecoblowdrying": {
+      "message": "Yaklaşık olarak 10 dakikalık saç kurutma makinesi kullanımı"
+   },
+   "ecobrewsomecoffee": {
+      "message": "Bir fincan kahve hazırlama"
+   },
+   "ecochargeiphone": {
+      "message": "iPhone'unu şarj et"
+   },
+   "ecochargelaptop": {
+      "message": "Laptopunu şarj et"
+   },
+   "ecochargeteslacar": {
+      "message": "Tesla arabanı 20 millik şarj et"
+   },
+   "ecochargeteslacarhundred": {
+      "message": "Tesla arabanı %100 şarj et"
+   },
+   "ecochargeteslathreetimes": {
+      "message": "Tesla'nızı 3 defa %100 şarj eder"
+   },
+   "ecoeiffeltoweryear": {
+      "message": "Eiffel Kulesini bir yıllık aydınlatmak için"
+   },
+   "ecoheatingtenshower": {
+      "message": "10 dakikalık duş için kullanılacak suyu ısıtmaya yeter"
+   },
+   "ecokeepfridgeday": {
+      "message": "Buzdolabını bir gün boyunca çalıştıracak"
+   },
+   "ecokeeplightonforsix": {
+      "message": "Işıkları 6 saat boyunca açık tutacak"
+   },
+   "ecolayear": {
+      "message": "Los Angeles'in bir yıllık enerjisi için"
+   },
+   "ecoloadlaundry": {
+      "message": "Çamaşır kurutma makinesini tek seferlik kullanımı"
+   },
+   "econothingthisyear": {
+      "message": "Bu yıl bir şey yok. Enerji tasarruf etmek için ışıkları kapalı tut"
+   },
+   "ecoplanetearth": {
+      "message": "Gezegeni kurtarmaya hazır"
+   },
+   "ecoplayingxbox": {
+      "message": "Bir saat boyunca Xbox 360 oynuyor"
+   },
+   "ecopowerbaseballgame": {
+      "message": "Bir beyzbol maçındaki puan levhasına yetecek enerji"
+   },
+   "ecopowercamonth": {
+      "message": "California'ya 1 ay yetecek elektrik enerjisi"
+   },
+   "ecopowereiffeltower": {
+      "message": "Eiffel Kulesini bir gün aydınlatmak için"
+   },
+   "ecopowereurostar": {
+      "message": "For a Eurostar trip from Brussels to London"
+   },
+   "ecopowereurostarparis": {
+      "message": "For a Eurostar trip from Paris to London"
+   },
+   "ecopowerhawaiimonth": {
+      "message": "Hawaii'ye 1 ay yetecek elektrik enerjisi"
+   },
+   "ecopowernwymonth": {
+      "message": "New York'a 1 ay yetecek elektrik enerjisi"
+   },
+   "ecorunningdishwasher": {
+      "message": "Bulaşık makineni enerji-tasarrufu modunda kullanacak kadar"
+   },
+   "ecosfoyear": {
+      "message": "San Francisco'nun bir yıllık enerjisi için"
+   },
+   "ecothirtyminutes": {
+      "message": "30 dakikalık ışık tasarruf edildi"
+   },
+   "ecotoastermaking": {
+      "message": "Ekmek kızartma makinesi tost için iki somun ekmeği kullanır"
+   },
+   "ecotwentyfourghome": {
+      "message": "Google Home'u 24 saat çalıştırmaya yeter"
+   },
+   "ecovacuumingfor": {
+      "message": "15 dakikalık elektrik süpürgesine ile süpürme"
+   },
+   "ecowashingclothes": {
+      "message": "Çamarşırlarınıza soğuk bir durulama yapmanın takribi maliyeti"
+   },
+   "ecowatchtvfortwo": {
+      "message": "2 saat TV izle"
+   },
+   "ecowififoraday": {
+      "message": "Bir günlük Wi-Fi"
+   },
+   "enjoyshare": {
+      "message": "Bu eklenti hoşunuza gittiyse, kullanmaktan zevk alacak başkalarıyla da paylaşın."
+   },
+   "eyedivoff": {
+      "message": "KAPALI"
+   },
+   "eyedivon": {
+      "message": "AÇIK"
+   },
+   "flashembedobject": {
+      "message": "Desteklenenler: \u003Cobject>,\u003Cembed>,\u003Capplet>,\u003Ciframe>."
+   },
+   "friday": {
+      "message": "Cuma"
+   },
+   "friendlyremember": {
+      "message": "Dostane Hatırlatma..."
+   },
+   "functionactive": {
+      "message": "Bu fonksiyon siz taba tıkladığınızda veya sayfayı yenilediğiniz de aktifleşti. Herneyse, bu fonksiyon 15 saniye sonra otomatik olarak duracak."
+   },
+   "guide": {
+      "message": "TOtL'a Hoşgeldin Rehberi"
+   },
+   "help": {
+      "message": "Yardım"
+   },
+   "helpautoplay": {
+      "message": "'Göz Koruması' aktif. Aşağıdaki özelliği kullanmak için 'Göz Koruması' seçeneğini kapatın."
+   },
+   "helpeyeprotection": {
+      "message": "\"Göz Koruması\" etkinse \"Otomatik Oynat\" özelliği kendiliğinden devre dışı bırakılır."
+   },
+   "hoveroptionapply": {
+      "message": "uygula"
+   },
+   "hoveroptiondyn5": {
+      "message": "uçarak"
+   },
+   "howworkmotion": {
+      "message": "Nasıl çalışır?"
+   },
+   "html5andyoutube": {
+      "message": "HTML5 & YouTube™ video"
+   },
+   "installadblocker": {
+      "message": "Reklamları görmek istemiyorsanız, bir reklam engelleme uzantısı kullanın."
+   },
+   "lastchecked": {
+      "message": "En son sürüm kontrolü"
+   },
+   "left": {
+      "message": "Sol"
+   },
+   "lockentername": {
+      "message": "Lütfen parolanızı girin"
+   },
+   "lockwrongpassword": {
+      "message": "Hatalı parola, lütfen tekrar deneyin."
+   },
+   "longdonatetext": {
+      "message": "Gelecek yeni kullanıcılar için bu eklentiyi hayatta tutmam için bağış yaparsanız çok memnun kalırım. 1$$ ya da 100$$ olması fark etmez, her türlü makbule geçer!"
+   },
+   "monday": {
+      "message": "Pazartesi"
+   },
+   "motionoptions": {
+      "message": "Kamera Hareketi"
+   },
+   "name": {
+      "message": "Turn Off the Lights"
+   },
+   "nightoptions": {
+      "message": "Gece Modu"
+   },
+   "nightstep1description": {
+      "message": "Gece modunu etkinleştir"
+   },
+   "nightstep2description": {
+      "message": "Herhangi bir sayfayı açın, gece düğmesini göreceksiniz"
+   },
+   "nightstep3description": {
+      "message": "Sayfayı karanlık temada görüntülemek için düğmeye basın"
+   },
+   "nmbottomleft": {
+      "message": "Sol Alt"
+   },
+   "nmbottomright": {
+      "message": "Sağ Alt"
+   },
+   "nmcustom": {
+      "message": "Özel (Ekranda anahtarı istediğiniz yere hareket ettirmek için tıklayın, basılı tutun ve hareket ettirin.)"
+   },
+   "nmtopleft": {
+      "message": "Sol Üst"
+   },
+   "nmtopright": {
+      "message": "Sağ Üst"
+   },
+   "nothanks": {
+      "message": "Hayır, teşekkürler"
+   },
+   "optionecosaversaved": {
+      "message": "Saniye başarıyla kaydedildi!"
+   },
+   "optionpagetitle": {
+      "message": "Turn Off the Lights - Ayarlar"
+   },
+   "optionpasswordsaved": {
+      "message": "Parola başarıyla kaydedildi!"
+   },
+   "optionprofilesaved": {
+      "message": "Yeni lamba eylemi başarıyla kaydedildi!"
+   },
+   "optiontimesaved": {
+      "message": "Süre başarıyla kaydedild!"
+   },
+   "optionwrongimg": {
+      "message": "Geçersiz resim dosyası!"
+   },
+   "pageatitle": {
+      "message": "Işıkları kapatın"
+   },
+   "pagehelp": {
+      "message": "yardım"
+   },
+   "pagestillloading": {
+      "message": "Sayfa hâlâ yükleniyor mu?"
+   },
+   "pagetitle": {
+      "message": "Sayfayı karart"
+   },
+   "productshare": {
+      "message": "Paylaş"
+   },
+   "promotitle": {
+      "message": "Günün İpucu"
+   },
+   "ratedes": {
+      "message": "Lütfen eklentiyi mağazada yorumlayın ve oylayın. Desteğiniz için çok teşekkür ederiz."
+   },
+   "rateitema": {
+      "message": "5 Yıldız Verin"
+   },
+   "ratetitle": {
+      "message": "Turn Off the Lights kullandığınız için teşekkürler"
+   },
+   "recflash": {
+      "message": "Tavsiye edilen"
+   },
+   "rememberrate": {
+      "message": "Derecelendir"
+   },
+   "reportbug": {
+      "message": "Sorun Bildir"
+   },
+   "reportlist": {
+      "message": "(listeyi gör)"
+   },
+   "resetbrowserextension": {
+      "message": "Turn Off the Lights ayarlarını sıfırla"
+   },
+   "resetlampanalytic": {
+      "message": "Işıklar Analytics Verilerini Kapatın"
+   },
+   "right": {
+      "message": "Sağ"
+   },
+   "saturday": {
+      "message": "Cumartesi"
+   },
+   "settings": {
+      "message": "Ayarlar"
+   },
+   "shareanalyticenergy": {
+      "message": "Turn Off the Lights sayesinde $product$ kWh tasarruf ettim",
+      "placeholders": {
+         "product": {
+            "content": "$1",
+            "example": "123"
+         }
+      }
+   },
+   "shareanalyticlove": {
+      "message": "En sevdiğim $product$ web sitesi Turn Off the Lights ile beraber",
+      "placeholders": {
+         "product": {
+            "content": "$1",
+            "example": "123"
+         }
+      }
+   },
+   "sharemenudonatetitle": {
+      "message": "Geliştirici Desteği"
+   },
+   "sharemenupostonfacebook": {
+      "message": "Facebook'ta Paylaş"
+   },
+   "sharemenupostongoogleplus": {
+      "message": "Google+'ta Paylaş"
+   },
+   "sharemenuratetitle": {
+      "message": "Eklentiyi Derecelendir"
+   },
+   "sharemenusendatweet": {
+      "message": "Bir Tweet Gönder"
+   },
+   "sharemenusharetitle": {
+      "message": "Bunu paylaş"
+   },
+   "sharemenutellafriend": {
+      "message": "Bir Arkadaşına Bahset"
+   },
+   "sharemenuwelcomeguidetitle": {
+      "message": "Hoşgeldiniz Kılavuzu"
+   },
+   "sharetexta": {
+      "message": "Bu Harika Turn Off the Lights Tarayıcı Eklentisine Sahip Olun"
+   },
+   "sharetextb": {
+      "message": "Bu inanılmaz. Turn Off the Lights tarayıcı uzantısını daha bugün denedim "
+   },
+   "sharetextc": {
+      "message": "Turn Off the Lights tarayıcı uzantısı sınıfının en iyisi ve inanılmaz"
+   },
+   "sharetextd": {
+      "message": "Turn Off the Lights uzantısı YouTube için en iyi araç. İndirin ve kendinizi deneyin!"
+   },
+   "shortcutalllights": {
+      "message": "ışığı bütün sekmeler için aç/kapa"
+   },
+   "shortcutbright": {
+      "message": "ekranı aydınlatmak için (şeffaflığı artırır) "
+   },
+   "shortcutdark": {
+      "message": "ekranı karartmak için (şeffaflığı artırır) "
+   },
+   "shortcuteyeprotection": {
+      "message": "göz koruma özelliğini etkinleştirmek/devre dışı bırakmak için"
+   },
+   "shortcutopacity": {
+      "message": "karanlık (saydamlık) ayarlarını geri yüklemek için"
+   },
+   "shortcutsavingopacity": {
+      "message": "Bulanıklık değerini kaydetmek için"
+   },
+   "shortcuttotl": {
+      "message": "ışıkları açmak/kapatmak için"
+   },
+   "showremember": {
+      "message": "Seçenekler kısmını açtığım zaman hatırlatma sayfasını tekrar gösterme"
+   },
+   "skipremember": {
+      "message": "Bunu geç ve seçenekler sayfasını aç"
+   },
+   "speechheybrowser": {
+      "message": "Hey Tarayıcı"
+   },
+   "speechokbrowser": {
+      "message": "tamam Tarayıcı"
+   },
+   "speechoption": {
+      "message": "Konuşma Tanıma"
+   },
+   "speechstep1description": {
+      "message": "Konuşma tanıma özelliğini etkinleştir"
+   },
+   "speechstep2description": {
+      "message": "Bu seçeneği etkinleştirdiğinizde, tarayıcı lambasıyla iletişim kurabilirsiniz. Ve aşağıdaki komutları verebilirsiniz:"
+   },
+   "sunday": {
+      "message": "Pazar"
+   },
+   "tellothers": {
+      "message": "Size ayar yapma imkanı tanır"
+   },
+   "textfoot": {
+      "message": "Bu yazılım, CC-GNU GPL tarafından lisanslanmıştır. Lisansın kopyasını görmek için şu sayfayı ziyaret edin"
+   },
+   "thursday": {
+      "message": "Perşembe"
+   },
+   "titel360youtube": {
+      "message": "Tek karede 360 derecelik YouTube videosu gösterir."
+   },
+   "titeladdvideobutton": {
+      "message": "Ekle Butonu"
+   },
+   "titelalllightsoff": {
+      "message": "Bütün açık sekmeler"
+   },
+   "titelambilight": {
+      "message": "Ortam Işıklandırması"
+   },
+   "titelapideveloper": {
+      "message": "API Geliştiricisi"
+   },
+   "titelautoplay": {
+      "message": "Otomatik Oynat"
+   },
+   "titelautoplayblacklist": {
+      "message": "Kara liste"
+   },
+   "titelautoplaywhitelist": {
+      "message": "Beyaz liste"
+   },
+   "titelautostop": {
+      "message": "Oto-Dur"
+   },
+   "titelautostopblacklist": {
+      "message": "Kara liste"
+   },
+   "titelautostopwhitelist": {
+      "message": "Beyaz liste"
+   },
+   "titelautowidthyoutube": {
+      "message": "YouTube oynatıcısını otomatik olarak geniş boyuta ayarla."
+   },
+   "titelblock60fps": {
+      "message": "60fps engelle"
+   },
+   "titelblur": {
+      "message": "Arkayı bulanıklaştır"
+   },
+   "titelblurradius": {
+      "message": "Bulanıklık yarıçapı:"
+   },
+   "titelcamera": {
+      "message": "Kamera"
+   },
+   "titelcinemaontop": {
+      "message": "Sinema salonu modu: Pencerenin üstünde sadece 'Işıkları Kapat' katmanını gösterir"
+   },
+   "titelcolor": {
+      "message": "Renk"
+   },
+   "titelcolora": {
+      "message": "Renk A:"
+   },
+   "titelcolorb": {
+      "message": "Renk B:"
+   },
+   "titelcontextmenus": {
+      "message": "Bağlam Menüsü"
+   },
+   "titeldeveloper": {
+      "message": "Geliştirici"
+   },
+   "titeldoesntwork": {
+      "message": "Turn Off the Lights bu web sayfası üzerinde çalışmaz. Başka bir sayfa üzerinde deneyin."
+   },
+   "titeldownloadbutton": {
+      "message": "Bu güncellemeyi indir!"
+   },
+   "titeldownloadthemeupgrade": {
+      "message": "Tarayıcınızı giydirmek için karanlık bir tema ekleyin. Tema, tarayıcının kenarlarında görünecektir."
+   },
+   "titeldownloadupgrade": {
+      "message": "Bu güncelleme, seçilen resimlere odaklanma desteğini içerir. Aynı zamanda sitedeki resimlerden oluşan bir galeri gösterir."
+   },
+   "titeldownloadupgradefinancetoolbar": {
+      "message": "Bu sana gerçek zamanlı borsa bilgileri gösterir."
+   },
+   "titeldownloadupgradepropermenubar": {
+      "message": "Google internet sitesinde siyah menü çubuğunu geri ekler."
+   },
+   "titeldownloadupgradezoom": {
+      "message": "Daha konforlu bir okuma için, yakınlaştırma butonunu ileri veya geri kullanarak yakınlaştırabilirsiniz."
+   },
+   "titeldynamic": {
+      "message": "Hareketli Arkaplan"
+   },
+   "titeleastereggs": {
+      "message": "Paskalya Yumurtası"
+   },
+   "titeleye": {
+      "message": "Göz Koruması"
+   },
+   "titeleyeblacklist": {
+      "message": "Kara liste"
+   },
+   "titeleyewhitelist": {
+      "message": "Beyaz liste"
+   },
+   "titelfadein": {
+      "message": "Aydınlat"
+   },
+   "titelfadeout": {
+      "message": "Aydınlat"
+   },
+   "titelflash": {
+      "message": "Flash Algılama"
+   },
+   "titelhead": {
+      "message": "Kanal"
+   },
+   "titelhovervideo": {
+      "message": "Video Üzeri"
+   },
+   "titelimage": {
+      "message": "Arkaplan Resmi"
+   },
+   "titelinfobar": {
+      "message": "Bilgi Çubuğu"
+   },
+   "titelintroduce": {
+      "message": "Yeni Turn Off the Lights! 'ı tanıtıyoruz"
+   },
+   "titellamp": {
+      "message": "Ampul"
+   },
+   "titellampchoose": {
+      "message": "En sevdiğiniz lamba tarzını seçin"
+   },
+   "titellampregular": {
+      "message": "Lamba simgesini araç çubuğunda her zaman göster"
+   },
+   "titellampvideo": {
+      "message": "Lamba simgesini sadece video bulunduğunda araç çubuğunda göster"
+   },
+   "titellessmore": {
+      "message": "Daha az göster"
+   },
+   "titellikebar": {
+      "message": "Beğenme Çubuğu"
+   },
+   "titellikebutton": {
+      "message": "Beğen & Beğenme Butonları"
+   },
+   "titellinear": {
+      "message": "Doğrusal"
+   },
+   "titelmaxqualityyoutube": {
+      "message": "Otomatik olarak şu çözünürlüğe ayarla:"
+   },
+   "titelmouse": {
+      "message": "Fare"
+   },
+   "titelnightmodebck": {
+      "message": "Arkaplan rengi"
+   },
+   "titelnightmodeblacklist": {
+      "message": "Kara liste"
+   },
+   "titelnightmodedomain": {
+      "message": "Alan adı"
+   },
+   "titelnightmodehyperlink": {
+      "message": "Köprü"
+   },
+   "titelnightmodepage": {
+      "message": "Web sayfası"
+   },
+   "titelnightmodeposition": {
+      "message": "Anahtar konumu"
+   },
+   "titelnightmodetxt": {
+      "message": "Metin rengi"
+   },
+   "titelnightmodewhitelist": {
+      "message": "Beyaz liste"
+   },
+   "titelnighttheme": {
+      "message": "Gece Modu"
+   },
+   "titeloff": {
+      "message": "Kapalı"
+   },
+   "titelon": {
+      "message": "Açık"
+   },
+   "titelopacity": {
+      "message": "Saydamlık"
+   },
+   "titelpageaction": {
+      "message": "Lamba simgesini gizle"
+   },
+   "titelpassword": {
+      "message": "Parola Koruması"
+   },
+   "titelplaylist": {
+      "message": "Oynatma Listesi"
+   },
+   "titelpopupoptions": {
+      "message": "Seçenekler"
+   },
+   "titelpopupratestars": {
+      "message": "5 Yıldız Verin"
+   },
+   "titelpopupsupport": {
+      "message": "Destek"
+   },
+   "titelpopupvideo": {
+      "message": "YouTube"
+   },
+   "titelpopupwelcomeguide": {
+      "message": "Hoşgeldiniz Kılavuzu"
+   },
+   "titelqualityyoutube": {
+      "message": "YouTube videolarının kalitelerini ototmatik olarak ayarla."
+   },
+   "titelreader": {
+      "message": "Kararma Seviyesi Çubuğu"
+   },
+   "titelreflection": {
+      "message": "Yansıma"
+   },
+   "titelrememberpage": {
+      "message": "Hatırlatıcı sayfası"
+   },
+   "titelreset": {
+      "message": "Ayarları sıfırla"
+   },
+   "titelrightsreserved": {
+      "message": "Bazı hakları saklıdır."
+   },
+   "titelscreen": {
+      "message": "Ekran"
+   },
+   "titelseeonline": {
+      "message": "Daha fazla örneği çevrimiçi görün"
+   },
+   "titelsharebutton": {
+      "message": "Paylaş Düğmesi"
+   },
+   "titelsharethis": {
+      "message": "Bunu paylaş:"
+   },
+   "titelshortcutlight": {
+      "message": "Kısayol Tuşu"
+   },
+   "titelshowmore": {
+      "message": "Daha fazla göster"
+   },
+   "titelspeech": {
+      "message": "Konuşma"
+   },
+   "titelspreadradius": {
+      "message": "Yayma yarıçapı:"
+   },
+   "titelsuggestions": {
+      "message": "Öneriler"
+   },
+   "titelsupportatmos": {
+      "message": "Sadece HTML5 \u003Cvideo> ve YouTube HTML5 oynatıcı desteklenmektedir. Ayrıca grafik kartınızdan işlemci kullanır."
+   },
+   "titelsync": {
+      "message": "Eşitle"
+   },
+   "titelsyncbrowser": {
+      "message": "Eklenti seçeneklerini diğer bir tarayıcın ile senkronize et."
+   },
+   "titelupgrade": {
+      "message": "Güncelleştirme"
+   },
+   "titelvideoheadline": {
+      "message": "Video Başlığı"
+   },
+   "titelvideosample": {
+      "message": "Video Örneği"
+   },
+   "titelvideotool": {
+      "message": "Video araç çubuğu"
+   },
+   "titelvideotoolblacklist": {
+      "message": "Kara liste"
+   },
+   "titelvideotoolbrightness": {
+      "message": "parlaklık %50"
+   },
+   "titelvideotoolcontrast": {
+      "message": "kontrast"
+   },
+   "titelvideotoolfilter": {
+      "message": "Filtre"
+   },
+   "titelvideotoolfullwindow": {
+      "message": "Tam pencere"
+   },
+   "titelvideotoolgrayscale": {
+      "message": "gri tonlama"
+   },
+   "titelvideotoolhueroration": {
+      "message": "renk tonunu 90° çevir"
+   },
+   "titelvideotoolinvert": {
+      "message": "ters çevir"
+   },
+   "titelvideotoollike": {
+      "message": "Beğen"
+   },
+   "titelvideotoolnormal": {
+      "message": "normal"
+   },
+   "titelvideotoolrepeat": {
+      "message": "Tekrarla"
+   },
+   "titelvideotoolsaturate": {
+      "message": "doygunluk"
+   },
+   "titelvideotoolscreenshot": {
+      "message": "Bir ekran görüntüsü al"
+   },
+   "titelvideotoolsepia": {
+      "message": "sepya"
+   },
+   "titelvideotoolsubscribe": {
+      "message": "Abone olun"
+   },
+   "titelvideotoolwhitelist": {
+      "message": "Beyaz liste"
+   },
+   "titelviewcount": {
+      "message": "İzlenme Sayısı"
+   },
+   "titelvisblocks": {
+      "message": "Bloklar"
+   },
+   "titelvischoose": {
+      "message": "Ses Görselleştirmenizi seçin"
+   },
+   "titelvisenable": {
+      "message": "Ses Görselleştirmesini etkinleştir/devre dışı bırak"
+   },
+   "titelvisfrequency": {
+      "message": "Sıklık"
+   },
+   "titelvistunnel": {
+      "message": "Müzik Tüneli"
+   },
+   "titelvisualization": {
+      "message": "Ses Görselleştirme"
+   },
+   "titelvolume": {
+      "message": "Video Ses Seviyesi Kaydırıcısı"
+   },
+   "titelwebsite": {
+      "message": "Web sitesi"
+   },
+   "titelwikiatmos": {
+      "message": "Atmosfer Aydınlatma özelliği hakkında bilgi"
+   },
+   "titleanalytics": {
+      "message": "Analizler"
+   },
+   "titleavgdayschedule": {
+      "message": "\nOrtalama günlük program"
+   },
+   "titlecancel": {
+      "message": "İptal"
+   },
+   "titledarkmodeoff": {
+      "message": "Karanlık Mod KAPALI"
+   },
+   "titledarkmodeon": {
+      "message": "Karanlık Mod AÇIK"
+   },
+   "titledonatebutton": {
+      "message": "Bağış yapın"
+   },
+   "titlelanalyticprivacy": {
+      "message": "Turn Off the Lights eklentisi sizin gizliliğinizi çok ciddiye alıyor. Bu sayfada gördüğünüz Turn Off the Lights Analizleri sadece sizin bilgisayarınızda saklanıyor. Kişisel site bilgileriniz satılmayacak ve alakasız üçüncü parti firmalara aktarılmıyacaktır."
+   },
+   "titlelearnmore": {
+      "message": "Daha fazla bilgi edinin"
+   },
+   "titlelprivacy": {
+      "message": "Gizlilik Politikası"
+   },
+   "titlelratenow": {
+      "message": "Şimdi Oyla!"
+   },
+   "titlemultiopacity": {
+      "message": "Her website kendi şeffaflığında"
+   },
+   "titlenightowl": {
+      "message": "Gecelerin Adamı"
+   },
+   "titleok": {
+      "message": "TAMAM"
+   },
+   "titleorigin": {
+      "message": "Başlangıç Noktası"
+   },
+   "titleprofile": {
+      "message": "Profil"
+   },
+   "titleprofilealwaysscreentab": {
+      "message": "Açık bütün sekmeler için daima etkin"
+   },
+   "titleprofilenovideofocus": {
+      "message": "Video odağı devre dışı brakıldı"
+   },
+   "titleprofilescreenclick": {
+      "message": "Ekran karardığında köprülere tıklamayı aktifleştir"
+   },
+   "titleprofilesubmit": {
+      "message": "Bu ayarları seçin"
+   },
+   "titleprofilevideofocus": {
+      "message": "Video odağı etkinleştirildi"
+   },
+   "titleratelater": {
+      "message": "Daha sonra"
+   },
+   "titleregularuser": {
+      "message": "Videosever"
+   },
+   "titlescreenprotection": {
+      "message": "Göz Koruması"
+   },
+   "titlesharestats": {
+      "message": "İstatistiklerinizi paylaşın"
+   },
+   "titlesiteengagement": {
+      "message": "Site Katılımı\n"
+   },
+   "titletime": {
+      "message": "Süre (dakika)"
+   },
+   "titleuserprofile": {
+      "message": "Aşağıda, gri lamba düğmesine tıklayıp kullanmak istediğiniz ayarları seçin. Her profilin kendi özellikleri vardır."
+   },
+   "titlevideoplayrate": {
+      "message": "Video Hızı"
+   },
+   "top": {
+      "message": "Üst"
+   },
+   "totalenergysaved": {
+      "message": "Tasarruf edilen toplam elektrik enerjisi"
+   },
+   "translateme": {
+      "message": "Çeviri Yardımı"
+   },
+   "trymotion": {
+      "message": "Kendiniz deneyin!"
+   },
+   "tuesday": {
+      "message": "Salı"
+   },
+   "version": {
+      "message": "Sürüm"
+   },
+   "videotitle": {
+      "message": "Videoya odaklan"
+   },
+   "visualeffects": {
+      "message": "Görsel Efektler"
+   },
+   "vtoolalign": {
+      "message": "Video oynatıcıyı tarayıcı pencerenizde ortalamak için kullanılan bir düğme"
+   },
+   "vtoolfilter": {
+      "message": "Video oynatıcıya filtre eklemrk için buton"
+   },
+   "vtoolfullscreen": {
+      "message": "Tam ekrana geçmek için butona basın"
+   },
+   "vtoolreplay": {
+      "message": "Videoyu yeniden oynatma butonu"
+   },
+   "vtoolscreenshot": {
+      "message": "Geçerli video oynatıcısının ekran görüntüsünü almak için bir düğme"
+   },
+   "vtoolvisualization": {
+      "message": "Mevcut video için ses görselleştirmesini gösteren bir düğme"
+   },
+   "warning": {
+      "message": "Uyarı!"
+   },
+   "warningtextambilight": {
+      "message": "Sitenin güvenliğinden dolayı video verisini almak devre dışı olduğu zaman, seçilen koyu renk kullanılacak."
+   },
+   "wednesday": {
+      "message": "Çarşamba"
+   },
+   "writeareview": {
+      "message": "Bir Yorum Yaz"
+   }
+}

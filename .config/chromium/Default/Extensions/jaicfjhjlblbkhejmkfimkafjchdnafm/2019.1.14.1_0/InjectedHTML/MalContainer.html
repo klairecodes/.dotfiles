@@ -1,0 +1,40 @@
+<span id="addRemoveMALContainer" class="KEPad">
+	<img id="addRemoveMALImg" class="KEImg" src="/Content/images/plus.png">
+	<a id="addRemoveMAL" href="javascript:void(0)"></a>
+</span>
+<span id="statusMALContainer" class="KEPad KEHide">
+	<span>Your Status: </span>
+	<select id="statusDropdown" class="KEDropdown">
+		<option value="1">Watching</option>
+		<option value="2">Completed</option>
+		<option value="3">On Hold</option>
+		<option value="4">Dropped</option>
+		<option value="6" selected>Plan To Watch</option>
+	</select>
+</span>
+<span id="scoreMALContainer" class="KEPad KEHide">
+	<span>Your Score: </span>
+	<select id="scoreDropdown" class="KEDropdown">
+		<option value="0" selected>-</option>
+		<option value="1">1</option>
+		<option value="2">2</option>
+		<option value="3">3</option>
+		<option value="4">4</option>
+		<option value="5">5</option>
+		<option value="6">6</option>
+		<option value="7">7</option>
+		<option value="8">8</option>
+		<option value="9">9</option>
+		<option value="10">10</option>
+	</select>
+</span>
+<span id="episodeMALContainer" class="KEPad KEHide">
+	<span>Eps Seen:</span>
+	<input type="number" id="episodesUserCurrentText" class="KETextInput" style="border: 1px solid grey;" value="0" min="0">
+	<span>/</span>
+	<input type="text" id="episodesTotalText" class="KETextInput" disabled>
+</span>
+<span id="totalScoreMALContainer" class="KEPad">
+	<span class="info">MAL Score: </span>
+	<span id="malScore"></span>
+</span>

@@ -1,0 +1,1373 @@
+{
+   "about": {
+      "message": "O programu"
+   },
+   "activelayertoday": {
+      "message": "Number of clicks today"
+   },
+   "addbutton": {
+      "message": "Dodaj"
+   },
+   "advancedoptions": {
+      "message": "Napredne možnosti"
+   },
+   "analyticsoption": {
+      "message": "Analytics"
+   },
+   "areyouhappy": {
+      "message": "Vam je Turn Off the Lights všeč?"
+   },
+   "autostopbannerred": {
+      "message": "Show a red banner"
+   },
+   "autostopbannertrans": {
+      "message": "Show a transparent banner"
+   },
+   "autostopblocked": {
+      "message": "Blocked by Turn Off the Lights™ - www.turnoffthelights.com"
+   },
+   "autostopclickme": {
+      "message": "Click on me to play this HTML5 video"
+   },
+   "autostopdetails": {
+      "message": "DETAILS"
+   },
+   "autostopenabled": {
+      "message": "AutoStop is enabled!"
+   },
+   "basicsettings": {
+      "message": "Osnove"
+   },
+   "bottom": {
+      "message": "Bottom"
+   },
+   "btnsharestats": {
+      "message": "Share Stats"
+   },
+   "camstep1description": {
+      "message": "Omogoči funkcijo Gibanja kamere"
+   },
+   "camstep2description": {
+      "message": "Premaknite roko (ali pest) od zgoraj navzdol."
+   },
+   "camstep3description": {
+      "message": "Črna plast se bo samodejno pomaknila navzdol."
+   },
+   "cardavgprevweektime": {
+      "message": "Previous total week time (in minutes)"
+   },
+   "cardtexsubscribe": {
+      "message": "Subscribe Now!"
+   },
+   "cardtextfavdayweek": {
+      "message": "Favorite day of the week"
+   },
+   "cardtextyestime": {
+      "message": "Yesterday total time (in minutes)"
+   },
+   "changelog": {
+      "message": "Dnevnik sprememb"
+   },
+   "charttitle30dayssaved": {
+      "message": "Energy saved this last 30 days"
+   },
+   "charttitleavgday": {
+      "message": "Average daily schedule (when the lights turn off frequently)"
+   },
+   "charttitlelayeractive": {
+      "message": "Dark layer active (#)"
+   },
+   "charttitlelblenergysaved": {
+      "message": "Total saved Energy"
+   },
+   "charttitlelblenergytotal": {
+      "message": "Total used Energy"
+   },
+   "charttitlelblwebsiteused": {
+      "message": "Websites used this last 30 days"
+   },
+   "charttitletotaltime": {
+      "message": "Total time the dark layer is active (minutes)"
+   },
+   "deletebutton": {
+      "message": "Izbriši"
+   },
+   "des1checkmotion": {
+      "message": "Prepričajte se, da vaša soba ni temna in ima dovolj svetlobe."
+   },
+   "des2checkmotion": {
+      "message": "Kamera ne sme prejeti neposredne sončne svetlobe."
+   },
+   "des3checkmotion": {
+      "message": "Uporabljate sprednjo kamero."
+   },
+   "desaddvideobutton": {
+      "message": "Prikaži gumb Dodaj videa YouTube"
+   },
+   "desalllightsoff": {
+      "message": "Klik na gumb svetilke bo vklopil/izklopil luči na vseh odprtih zavihkih"
+   },
+   "desambilight": {
+      "message": "Prikaže učinek Atmosferske osvetlitve trenutno predvajanega videa"
+   },
+   "desambilight4color": {
+      "message": "Four chosen colors around the video"
+   },
+   "desambilightfixcolor": {
+      "message": "Only one color"
+   },
+   "desambilightrangeblurradius": {
+      "message": "Nižje vrednosti bodo izostrile sence, višje jih bodo zameglile."
+   },
+   "desambilightrangespreadradius": {
+      "message": "Pozitivne vrednosti povečajo velikost senčenja, negativne jo zmanjšajo."
+   },
+   "desambilightvarcolor": {
+      "message": "Extract the color from the video"
+   },
+   "desapause": {
+      "message": "pavza"
+   },
+   "desapitext": {
+      "message": "API Wiki za razvijalce spletnih strani"
+   },
+   "desaplay": {
+      "message": "predvajaj"
+   },
+   "desastop": {
+      "message": "stop"
+   },
+   "desatmosontotlmode": {
+      "message": "Pokaži atmosferski efekt samo kadar je TOtL način vklopljen"
+   },
+   "desatmosphereonly": {
+      "message": "Use the atmosphere lighting feature only on the following video website:"
+   },
+   "desatmossolidcolor": {
+      "message": "Choose your one solid glow effect color"
+   },
+   "desatmosvivid": {
+      "message": "Vivid atmosphere effects"
+   },
+   "desauroraplayer": {
+      "message": "Za vaš računalnik je na voljo tudi predvajalnik obdajajoče svetlobe."
+   },
+   "desautoplay": {
+      "message": "Samodejno zatemni ozadje, ko kliknem na gumb za predvajanje in obratno"
+   },
+   "desautoplaydelay": {
+      "message": "Povrni svetlost ozadja, ko po koncu videa preteče"
+   },
+   "desautoplaydelayend": {
+      "message": "sekund"
+   },
+   "desautoplayonly": {
+      "message": "Zatemni samo naslednje spletne strani:"
+   },
+   "desautostop": {
+      "message": "Samodejno ustavi predvajanje videa, ko odprem spletno stran"
+   },
+   "desautostopfeatureblack": {
+      "message": "ALLOWS below websites, but BLOCKS automatic playing on any other website."
+   },
+   "desautostopfeaturewhite": {
+      "message": "BLOCKS below websites, but ALLOWS automatic playing on any other website."
+   },
+   "desautostoponly": {
+      "message": "Omogoči Ustavi samodejno predvajanje videa samo na naslednjih straneh:"
+   },
+   "desbadgeanalytics": {
+      "message": "Show the badge with the number of clicks you have dimmed the webpage"
+   },
+   "desbrowserextension": {
+      "message": "razširitev za brskalnik"
+   },
+   "desbrowsersupport": {
+      "message": "Vaš brskalnik še ne podpira te funkcije. Prepričajte se, da imate na računalniku nameščeno najnovejšo različico brskalnika."
+   },
+   "desbrowsertheme": {
+      "message": "tema za brskalnik"
+   },
+   "descammotiononly": {
+      "message": "Omogoči Gibanje kamere samo na naslednjih straneh:"
+   },
+   "descolorfixcolor": {
+      "message": "Choose your dark layer color"
+   },
+   "desconfirmpassword": {
+      "message": "Potrdite geslo"
+   },
+   "desconfirmtime": {
+      "message": "Potrdite čas"
+   },
+   "desconfirmtimesaver": {
+      "message": "Potrdite čas ohranjevalnika zaslona"
+   },
+   "descontextmenus": {
+      "message": "Prikaži vsebinski meni za osredotočanje na predmet"
+   },
+   "description": {
+      "message": "The entire page will be fading to dark, so you can watch the videos as if you were in the cinema. Works for YouTube™ and beyond."
+   },
+   "desdarkbrowsertheme": {
+      "message": "Switch to a dark browser theme"
+   },
+   "desdynamicblocks": {
+      "message": "Bloki"
+   },
+   "desdynamiccloud": {
+      "message": "Animirani oblaki"
+   },
+   "desdynamicdotscolor": {
+      "message": "Barvne pike"
+   },
+   "desdynamicfishtank": {
+      "message": "Ribji akvarij"
+   },
+   "desdynamicraindrops": {
+      "message": "Dežne kaplje"
+   },
+   "desdynamicsmoke": {
+      "message": "Dim"
+   },
+   "desdynamicspace": {
+      "message": "Vesolje"
+   },
+   "desdynamicstars": {
+      "message": "Zvezde"
+   },
+   "desdynamicstorm": {
+      "message": "Nevihta"
+   },
+   "desdynamictriangulation": {
+      "message": "Triangulacija"
+   },
+   "deseastereggs": {
+      "message": "Pritisk na tipko T temni plasti doda gledališki zastor"
+   },
+   "desenterpassword": {
+      "message": "Vnesite svoje geslo v spodnje polje:"
+   },
+   "deseyea": {
+      "message": "Samodejno zatemni ozadje ob odpiranju spletne strani"
+   },
+   "deseyealist": {
+      "message": "Samodejno zatemni ozadje na naslednjih spletnih straneh:"
+   },
+   "deseyen": {
+      "message": "Običajna uporaba (luči se bodo ugasnile, ko kliknem na ikono svetilke)"
+   },
+   "deseyetimesaver": {
+      "message": "Ko je stran nedejavna (ni vnosa z miško ali tipkovnico) za spodaj določen čas, se bo samodejno zatemnila."
+   },
+   "desfadein": {
+      "message": "Prikaži učinek prikazovanja"
+   },
+   "desfadeout": {
+      "message": "Prikaži učinek pojemanja"
+   },
+   "desflash": {
+      "message": "Prikaži vse objekte Flash"
+   },
+   "deshardflash": {
+      "message": "Prikaži vse objekte Flash in preskoči filter URL-jev. To bo popravilo težave, ko so nekateri videi skriti, vendar bo prikazalo oglase."
+   },
+   "deshead": {
+      "message": "Prikaži vrstico kanala YouTube ali ime"
+   },
+   "deshovervideo": {
+      "message": "Pridržite vaš kurzor na video predvajalniku za nekaj sekund, kmalu za tem se bo spletna stran avtomatsko zatemnila"
+   },
+   "desinfobar": {
+      "message": "Prikaži opis videa"
+   },
+   "desintroduce": {
+      "message": "All the features you're used to, with a brand new look and feel, and personalized to you."
+   },
+   "deslampandnightmode": {
+      "message": "Omogoči možnost Nočni način, ko kliknem na gumb sive svetilke"
+   },
+   "deslikebar": {
+      "message": "Prikaži vrstico z 'Všeč mi je'/'Ni mi všeč' pod videi YouTube"
+   },
+   "deslikebutton": {
+      "message": "Prikaži gumba 'Všeč mi je' in 'Ni mi všeč' za videe YouTube"
+   },
+   "desmobileapp": {
+      "message": "Turn Off the Lights je na voljo tudi za vašo prenosno napravo."
+   },
+   "desmotion": {
+      "message": "Omogoči Gibanje kamere"
+   },
+   "desmotionChecklist": {
+      "message": "Nadzorni seznam:"
+   },
+   "desmousespotlighta": {
+      "message": "Ko so luči ugasnjene, okoli kazalca miške prikaže žaromet."
+   },
+   "desmousespotlightc": {
+      "message": "Omogoči izbiro področja za osredotočenje na predmet, ko so uči ugasnjene"
+   },
+   "desmousespotlighto": {
+      "message": "Običajna uporaba (onemogoči spodnje nastavitve miške)"
+   },
+   "desmousespotlights": {
+      "message": "Omogoči zatemnitev zaslona, z možnostjo, da kliknete na hiperpovezave"
+   },
+   "desmousespotlightt": {
+      "message": "Omogoči klike na hiperpovezave, ko je zaslon zatemnjen"
+   },
+   "desmultiopacitynormal": {
+      "message": "All websites have the same opacity value"
+   },
+   "desmultiopacitynot": {
+      "message": "If a website it not in the list, the default opacity value will apply."
+   },
+   "desmultiopacitysel": {
+      "message": "The websites in the list here below have that chosen opacities"
+   },
+   "desnightactivetime": {
+      "message": "Stikalo bo vidno v naslednjem času:"
+   },
+   "desnightenabletheme": {
+      "message": "Samodejno preklopi na Nočni način, ko odprem novo stran"
+   },
+   "desnighthover": {
+      "message": "Prikaže prosojno stikalo na spletni strani"
+   },
+   "desnightonly": {
+      "message": "Omogoči Nočni način samo na naslednjih straneh:"
+   },
+   "desnightowl": {
+      "message": "En klik lahko pretvori stran v nočni način z preprosto hiperpovezavo. Kliknite znova, da se vrnete v navadni pogled. Kliknite gumb svetilke, če želite onemogočiti to funkcijo."
+   },
+   "desnighttheme": {
+      "message": "Prikaži gumb za preklop na Nočni način pod spletno stranjo za osvetlitev ali zatemnitev strani"
+   },
+   "desnoflash": {
+      "message": "Ne uporabljajte te funkcije."
+   },
+   "despassword": {
+      "message": "Zahtevaj geslo pred ponovnim vklopom luči."
+   },
+   "desplaylist": {
+      "message": "Prikaži seznam predvajanja YouTube"
+   },
+   "desplayrate": {
+      "message": "Privzeta hitrost predvajanja"
+   },
+   "desproject": {
+      "message": "projekt"
+   },
+   "desreadera": {
+      "message": "Vedno prikaži vrstico ravni zatemnitve, ko so luči ugasnjene."
+   },
+   "desreadern": {
+      "message": "Nikoli ne prikaži vrstice ravni zatemnitve."
+   },
+   "desreflection": {
+      "message": "Prikaži učinek odseva na vseh videih"
+   },
+   "desregularuser": {
+      "message": "To je privzeta in običajna nastavitev za nove uporabnike. Ko kliknete gumb s sivo svetilko, bo ta stil veljal za trenutno spletno stran."
+   },
+   "desrememberpage": {
+      "message": "Ne prikaži strani z opomniki"
+   },
+   "desremfacebook": {
+      "message": "Priporoči to na Facebook-u"
+   },
+   "desremrate": {
+      "message": "If you like Turn Off the Lights™, please do not hesitate to rate this extension to five stars now. This gives us courage to continue to maintain and improve this product for you. Writing a review is recommended, but not mandatory. If you do not have the time to write a review, you can rate it anonymously. It is important to give it ★★★★★. Thank you!"
+   },
+   "desremyoutube": {
+      "message": "Naročite se na YouTubu"
+   },
+   "dessaver": {
+      "message": "Ohranjevalnik zaslona:"
+   },
+   "desscreenprotection": {
+      "message": "En klik zatemni stran v prijetno oranžno barvo, in s tem zmanjša obremenitev vaših oči, na vseh zavihkih. Kliknite gumb svetilke, da onemogočite to funkcijo."
+   },
+   "dessharebutton": {
+      "message": "Prikaži gumb Deli za videe YouTube"
+   },
+   "desshortcutlight": {
+      "message": "Omogoči spodnje tipkovne bližnjice"
+   },
+   "desspeech": {
+      "message": "Enable the Speech Recognition"
+   },
+   "desspeech1command": {
+      "message": "turn off the lights"
+   },
+   "desspeech2command": {
+      "message": "Izklopi luči"
+   },
+   "desspeech3command": {
+      "message": "Prevajaj video"
+   },
+   "desspeech4command": {
+      "message": "Premor videa"
+   },
+   "desspeech5command": {
+      "message": "svetlika brskalnika"
+   },
+   "desspeechdialect": {
+      "message": "Izberite govorni naglas:"
+   },
+   "desspeechonly": {
+      "message": "Omogoči Prepoznavanje govora samo na naslednjih straneh:"
+   },
+   "desspeedtoolbar": {
+      "message": "Pokaži orodno vrstico za predvajanje v trenutnem video predvajalniku"
+   },
+   "desspotlightradius": {
+      "message": "Polmer žarometa:"
+   },
+   "dessuggestions": {
+      "message": "Prikaži predloge spletne strani YouTube"
+   },
+   "destime": {
+      "message": "Ugasni luči v naslednjem času:"
+   },
+   "destrymotion": {
+      "message": "To je res odlično in najbolje je, da deluje povsod. Celo na YouTubu, spletni stran za novice itd."
+   },
+   "desuntil": {
+      "message": "do"
+   },
+   "desvideoheadline": {
+      "message": "Prikaži in obrni barvo naziva videa"
+   },
+   "desvideotool": {
+      "message": "Prikaži orodno vrstico pod zaslonom za prilagajanje trenutnega videopredvajalnika"
+   },
+   "desvideotoolcolor": {
+      "message": "Barva orodne vrstice"
+   },
+   "desvideotoolonly": {
+      "message": "Omogoči orodno vrstico videov samo na naslednjih straneh:"
+   },
+   "desvideovolumalt": {
+      "message": "Only if the alt key is pressed"
+   },
+   "desvideovolume": {
+      "message": "Nadziraj glasnost trenutnega videopredvajalnika z koleščkom miške"
+   },
+   "desvideovolumecolor": {
+      "message": "Barva drsnika"
+   },
+   "desvideovolumhold": {
+      "message": "Hold down the left or right mouse button, and move your mouse to change the volume"
+   },
+   "desvideozoom": {
+      "message": "Povečate ali pomanjšate video vsebine z uporabo tega gumba"
+   },
+   "desviewcount": {
+      "message": "Prikaži število ogledov videa"
+   },
+   "desvisopacity": {
+      "message": "Vrednot motnosti ozadja zvočnega predočenja"
+   },
+   "desvolumelabel": {
+      "message": "Prikaži oznako glasnosti"
+   },
+   "desvolumeposa": {
+      "message": "Show the volume meter in center of the current video player"
+   },
+   "desvolumeposb": {
+      "message": "Show the volume value on top left of the current video player"
+   },
+   "desvolumeposc": {
+      "message": "Show the volume value on top right of the current video player"
+   },
+   "desvolumesteps": {
+      "message": "Number of volume steps (in %) for each scroll wheel notch"
+   },
+   "donatepromotext": {
+      "message": "Če lahko karkoli darujete, bomo tega zelo veseli!"
+   },
+   "downloadtheapp": {
+      "message": "Prenesite program zdaj"
+   },
+   "eastereggsquestion": {
+      "message": "Vam je resnični kino všeč?"
+   },
+   "ecoblowdrying": {
+      "message": "Blow-drying your hair for 10 minutes uses approximately"
+   },
+   "ecobrewsomecoffee": {
+      "message": "Brew some Coffee, brewing one pot of coffee"
+   },
+   "ecochargeiphone": {
+      "message": "Charge your iPhone"
+   },
+   "ecochargelaptop": {
+      "message": "Charge your laptop"
+   },
+   "ecochargeteslacar": {
+      "message": "Charge your Tesla car for 20 miles"
+   },
+   "ecochargeteslacarhundred": {
+      "message": "Charge your Tesla electric vehicle to 100%"
+   },
+   "ecochargeteslathreetimes": {
+      "message": "Charge 3 times your Tesla electric vehicle to 100%"
+   },
+   "ecoeiffeltoweryear": {
+      "message": "To illuminate the Eiffel Tower for 1 year"
+   },
+   "ecoheatingtenshower": {
+      "message": "Heating enough water for a 10-minute shower"
+   },
+   "ecokeepfridgeday": {
+      "message": "Keep the Fridge Running for a day"
+   },
+   "ecokeeplightonforsix": {
+      "message": "Keep the Lights on for 6 hours"
+   },
+   "ecolayear": {
+      "message": "To power Los Angeles for 1 year"
+   },
+   "ecoloadlaundry": {
+      "message": "One load of laundry in the dryer"
+   },
+   "econothingthisyear": {
+      "message": "Nothing this year. Keeps the lights off to save energy"
+   },
+   "ecoplanetearth": {
+      "message": "Ready to save the planet Earth"
+   },
+   "ecoplayingxbox": {
+      "message": "Playing Xbox 360 for one hour"
+   },
+   "ecopowerbaseballgame": {
+      "message": "To power 1 jumbotron for a baseball game"
+   },
+   "ecopowercamonth": {
+      "message": "Enough electric energy for 1 month in California"
+   },
+   "ecopowereiffeltower": {
+      "message": "To illuminate the Eiffel Tower for 1 day"
+   },
+   "ecopowereurostar": {
+      "message": "For a Eurostar trip from Brussels to London"
+   },
+   "ecopowereurostarparis": {
+      "message": "For a Eurostar trip from Paris to London"
+   },
+   "ecopowerhawaiimonth": {
+      "message": "Enough electric energy for 1 month in Hawaii"
+   },
+   "ecopowernwymonth": {
+      "message": "Enough electric energy for 1 month in New York"
+   },
+   "ecorunningdishwasher": {
+      "message": "Running your dishwasher in energy-saver mode will use"
+   },
+   "ecosfoyear": {
+      "message": "To power San Francisco for 1 year"
+   },
+   "ecothirtyminutes": {
+      "message": "30 minutes of light saved"
+   },
+   "ecotoastermaking": {
+      "message": "Toaster making two loaves of toast"
+   },
+   "ecotwentyfourghome": {
+      "message": "Enough to run Google Home for 24h"
+   },
+   "ecovacuumingfor": {
+      "message": "Vacuuming for 15 minutes"
+   },
+   "ecowashingclothes": {
+      "message": "Washing your clothes in a cold-rinse cycle uses approximately"
+   },
+   "ecowatchtvfortwo": {
+      "message": "Watch TV for 2 hours"
+   },
+   "ecowififoraday": {
+      "message": "Wi-Fi for a day"
+   },
+   "enjoyshare": {
+      "message": "Uživajte v tej razširitvi in jo delite z drugimi, za katere mislite, da jim bo všeč."
+   },
+   "eyedivoff": {
+      "message": "IZKLOPI"
+   },
+   "eyedivon": {
+      "message": "VKLOPI"
+   },
+   "flashembedobject": {
+      "message": "Podpira \u003Cobject>, \u003Cembed>, \u003Capplet> in \u003Ciframe>."
+   },
+   "friday": {
+      "message": "Friday"
+   },
+   "friendlyremember": {
+      "message": "Prijazni opomnik …"
+   },
+   "functionactive": {
+      "message": "This function is activated when you click on a tab, or when you refresh the web page. However, this function stops automatically after 15 seconds."
+   },
+   "guide": {
+      "message": "Vodnik za dobrodošlico TOtL"
+   },
+   "help": {
+      "message": "Pomoč"
+   },
+   "helpautoplay": {
+      "message": "Zaščita oči je omogočena. Za uporabo spodnje funkcije onemogočite Zaščito oči."
+   },
+   "helpeyeprotection": {
+      "message": "Omogočanje Zaščite oči bo samodejno onemogočilo funkcijo Samodejnega predvajanja."
+   },
+   "hoveroptionapply": {
+      "message": "uporabi"
+   },
+   "hoveroptiondyn5": {
+      "message": "z letenjem"
+   },
+   "howworkmotion": {
+      "message": "Kako deluje?"
+   },
+   "html5andyoutube": {
+      "message": "Video HTML5 in YouTube™"
+   },
+   "installadblocker": {
+      "message": "Če ne želite videti oglasov, uporabite razširitev za njihovo blokiranje."
+   },
+   "lastchecked": {
+      "message": "Zadnje preverjanje različice: "
+   },
+   "left": {
+      "message": "Left"
+   },
+   "lockentername": {
+      "message": "Vnesite svoje geslo"
+   },
+   "lockwrongpassword": {
+      "message": "Napačno geslo, poizkusite znova."
+   },
+   "longdonatetext": {
+      "message": "Res bi vam bil hvaležen, če bi darovali, da bi to razširitev ohranili pri življenju za nove uporabnike. Naj bo 1 $ ali 100 $, vsak prispevek je zelo dobrodošel!"
+   },
+   "monday": {
+      "message": "Monday"
+   },
+   "motionoptions": {
+      "message": "Gibanje kamere"
+   },
+   "name": {
+      "message": "Turn Off the Lights"
+   },
+   "nightoptions": {
+      "message": "Nočni način"
+   },
+   "nightstep1description": {
+      "message": "Enable the Night Mode feature"
+   },
+   "nightstep2description": {
+      "message": "Open any web page, and you see this night switch"
+   },
+   "nightstep3description": {
+      "message": "Click on the switch to see the web page in a dark theme"
+   },
+   "nmbottomleft": {
+      "message": "Spodaj levo"
+   },
+   "nmbottomright": {
+      "message": "Spodaj desno"
+   },
+   "nmcustom": {
+      "message": "Po meri (kliknite, pridržite in premaknite stikalo na želeni položaj na zaslonu)"
+   },
+   "nmtopleft": {
+      "message": "Zgoraj levo"
+   },
+   "nmtopright": {
+      "message": "Zgoraj desno"
+   },
+   "nothanks": {
+      "message": "Ne, hvala"
+   },
+   "optionecosaversaved": {
+      "message": "Sekunde so bile uspešno shranjene!"
+   },
+   "optionpagetitle": {
+      "message": "Turn Off the Lights - možnosti"
+   },
+   "optionpasswordsaved": {
+      "message": "Geslo je bilo uspešno shranjeno!"
+   },
+   "optionprofilesaved": {
+      "message": "Novo dejanje svetilke je shranjeno uspešno!"
+   },
+   "optiontimesaved": {
+      "message": "Čas je bil uspešno shranjen!"
+   },
+   "optionwrongimg": {
+      "message": "Neveljavna slikovna datoteka!"
+   },
+   "pageatitle": {
+      "message": "Turn Off the Lights"
+   },
+   "pagehelp": {
+      "message": "pomoč"
+   },
+   "pagestillloading": {
+      "message": "Se stran še vedno nalaga?"
+   },
+   "pagetitle": {
+      "message": "Zatemni to stran"
+   },
+   "productshare": {
+      "message": "Pripomočki"
+   },
+   "promotitle": {
+      "message": "Nasvet dneva"
+   },
+   "ratedes": {
+      "message": "Please rate and review the extension on the Store. Your support is really appreciated."
+   },
+   "rateitema": {
+      "message": "Oceni s 5-imi zvezdicami"
+   },
+   "ratetitle": {
+      "message": "Thank you for using Turn Off the Lights"
+   },
+   "recflash": {
+      "message": "Priporočeno"
+   },
+   "rememberrate": {
+      "message": "Oceni"
+   },
+   "reportbug": {
+      "message": "Prijavi težavo"
+   },
+   "reportlist": {
+      "message": "Zadnja znana težava"
+   },
+   "resetbrowserextension": {
+      "message": "Ponastavi nastavitve Turn Off the Lights"
+   },
+   "resetlampanalytic": {
+      "message": "Reset your Turn Off the Lights Analytics Data"
+   },
+   "right": {
+      "message": "Right"
+   },
+   "saturday": {
+      "message": "Saturday"
+   },
+   "settings": {
+      "message": "Nastavitve"
+   },
+   "shareanalyticenergy": {
+      "message": "I saved $product$ kWh thanks to Turn Off the Lights",
+      "placeholders": {
+         "product": {
+            "content": "$1",
+            "example": "123"
+         }
+      }
+   },
+   "shareanalyticlove": {
+      "message": "The website I most love is $product$ with Turn Off the Lights",
+      "placeholders": {
+         "product": {
+            "content": "$1",
+            "example": "123"
+         }
+      }
+   },
+   "sharemenudonatetitle": {
+      "message": "Podprite razvoj"
+   },
+   "sharemenupostonfacebook": {
+      "message": "Objavi na Facebooku"
+   },
+   "sharemenupostongoogleplus": {
+      "message": "Objavi na Googlu+"
+   },
+   "sharemenuratetitle": {
+      "message": "Ocenite to razširitev"
+   },
+   "sharemenusendatweet": {
+      "message": "Pošlji tvit"
+   },
+   "sharemenusharetitle": {
+      "message": "Deli"
+   },
+   "sharemenutellafriend": {
+      "message": "Povej prijatelju"
+   },
+   "sharemenuwelcomeguidetitle": {
+      "message": "Priročnik za dobrodošlico"
+   },
+   "sharetexta": {
+      "message": "Prejmite super razširitev za brskalnik Turn Off the Lights"
+   },
+   "sharetextb": {
+      "message": "Živjo, to je neverjetno. Danes sem poizkusil razširitev za brskalnik Turn Off the Lights "
+   },
+   "sharetextc": {
+      "message": "Najboljša in super razširitev za brskalnik Turn Off the Lights"
+   },
+   "sharetextd": {
+      "message": "Razširitev Turn Off the Lights je najboljše orodje za YouTube. Prejmite in poizkusite ga!"
+   },
+   "shortcutalllights": {
+      "message": "za vklop/izklop luči vseh odprtih zavihkov"
+   },
+   "shortcutbright": {
+      "message": "za osvetlitev zaslona (zmanjšana motnost)"
+   },
+   "shortcutdark": {
+      "message": "za zatemnitev zaslona (povečana motnost)"
+   },
+   "shortcuteyeprotection": {
+      "message": "za omogočanje/onemogočanje Zaščite oči"
+   },
+   "shortcutopacity": {
+      "message": "za obnovitev na nastavljeno svetlost (motnost)"
+   },
+   "shortcutsavingopacity": {
+      "message": "za shranjevanje vrednosti motnosti"
+   },
+   "shortcuttotl": {
+      "message": "za vklop/izklop luči"
+   },
+   "showremember": {
+      "message": "Ne prikazuj več te strani z opomniki, ko odprem možnosti"
+   },
+   "skipremember": {
+      "message": "Preskoči to in odpri okno z možnostmi zdaj"
+   },
+   "speechheybrowser": {
+      "message": "Hey Browser"
+   },
+   "speechokbrowser": {
+      "message": "ok Browser"
+   },
+   "speechoption": {
+      "message": "Prepoznavanje govora"
+   },
+   "speechstep1description": {
+      "message": "Enable the Speech Recognition feature"
+   },
+   "speechstep2description": {
+      "message": "When you enable this option, you can talk to the browser lamp using the following commands:"
+   },
+   "sunday": {
+      "message": "Sunday"
+   },
+   "tellothers": {
+      "message": "Prepričajte se, da vaše mnenje šteje"
+   },
+   "textfoot": {
+      "message": "Ta programska oprema deluje z dovoljenji CC-GNU GPL. Za ogled kopije tega dovoljenja obiščite"
+   },
+   "thursday": {
+      "message": "Thursday"
+   },
+   "titel360youtube": {
+      "message": "Prikaže celoten 360-stopinjski video YouTube v enem okvirju"
+   },
+   "titeladdvideobutton": {
+      "message": "Dodaj gumb"
+   },
+   "titelalllightsoff": {
+      "message": "Vsi odprti zavihki"
+   },
+   "titelambilight": {
+      "message": "Atmosferska osvetlitev"
+   },
+   "titelapideveloper": {
+      "message": "Razvijalec API-ja"
+   },
+   "titelautoplay": {
+      "message": "Sam. predvajaj"
+   },
+   "titelautoplayblacklist": {
+      "message": "Črni seznam"
+   },
+   "titelautoplaywhitelist": {
+      "message": "Beli seznam"
+   },
+   "titelautostop": {
+      "message": "Samodejno ustavi"
+   },
+   "titelautostopblacklist": {
+      "message": "Črni seznam"
+   },
+   "titelautostopwhitelist": {
+      "message": "Beli seznam"
+   },
+   "titelautowidthyoutube": {
+      "message": "Samodejno nastavi predvajalnik YouTube na večjo velikost"
+   },
+   "titelblock60fps": {
+      "message": "Blokiraj 60 sl./s"
+   },
+   "titelblur": {
+      "message": "Zamegli ostalo"
+   },
+   "titelblurradius": {
+      "message": "Polmer megljenja:"
+   },
+   "titelcamera": {
+      "message": "Kamera"
+   },
+   "titelcinemaontop": {
+      "message": "Kinematograski način: prikazuje plast 'ugasnjenih luči' samo na vrhu okna"
+   },
+   "titelcolor": {
+      "message": "Barva"
+   },
+   "titelcolora": {
+      "message": "Barva A:"
+   },
+   "titelcolorb": {
+      "message": "Barva B:"
+   },
+   "titelcontextmenus": {
+      "message": "Vsebinski meni"
+   },
+   "titeldeveloper": {
+      "message": "Razvijalec"
+   },
+   "titeldoesntwork": {
+      "message": "Turn Off the Lights ne deluje na tej strani. Poizkusite z drugo."
+   },
+   "titeldownloadbutton": {
+      "message": "Prenesi to nadgradnjo!"
+   },
+   "titeldownloadthemeupgrade": {
+      "message": "Dodajte temno temo v svoj brskalnik, da ga preoblečete. Tema se pojavi okoli robov brskalnika."
+   },
+   "titeldownloadupgrade": {
+      "message": "Nadgradnja dodaja podporo za osredotočanje na izbrane slike in prikaže galerijo slik na strani."
+   },
+   "titeldownloadupgradefinancetoolbar": {
+      "message": "To vam prikazuje podatke o delnicah v resničnem času."
+   },
+   "titeldownloadupgradepropermenubar": {
+      "message": "Ponovno doda črno menijsko vrstico na spletni stran Google."
+   },
+   "titeldownloadupgradezoom": {
+      "message": "Poveča/Pomanjša vsebino spletne strani z uporabo gumba povečave za bolj udobno branje."
+   },
+   "titeldynamic": {
+      "message": "Dinamično ozadje"
+   },
+   "titeleastereggs": {
+      "message": "Pirhi"
+   },
+   "titeleye": {
+      "message": "Zaščita oči"
+   },
+   "titeleyeblacklist": {
+      "message": "Črni seznam"
+   },
+   "titeleyewhitelist": {
+      "message": "Beli seznam"
+   },
+   "titelfadein": {
+      "message": "Prikazuj"
+   },
+   "titelfadeout": {
+      "message": "Pojemaj"
+   },
+   "titelflash": {
+      "message": "Zaznavanje Flasha"
+   },
+   "titelhead": {
+      "message": "Kanal"
+   },
+   "titelhovervideo": {
+      "message": "Video Hover"
+   },
+   "titelimage": {
+      "message": "Slika ozadja"
+   },
+   "titelinfobar": {
+      "message": "Vrstica s podatki"
+   },
+   "titelintroduce": {
+      "message": "Introducing the new Turn Off the Lights!"
+   },
+   "titellamp": {
+      "message": "Žarnica"
+   },
+   "titellampchoose": {
+      "message": "Izberite priljubljen slog svetilke"
+   },
+   "titellampregular": {
+      "message": "Vedno prikaži ikono svetilke v naslovni vrstici"
+   },
+   "titellampvideo": {
+      "message": "Prikaži ikono svetilke samo, če je bil zaznan videopredvajalnik"
+   },
+   "titellessmore": {
+      "message": "Prikaži manj"
+   },
+   "titellikebar": {
+      "message": "Vrstica z 'Všeč mi je'"
+   },
+   "titellikebutton": {
+      "message": "Guma 'Všeč mi je' in 'Ni mi všeč'"
+   },
+   "titellinear": {
+      "message": "Premočrtni"
+   },
+   "titelmaxqualityyoutube": {
+      "message": "Samodejno nastavi na to ločljivost:"
+   },
+   "titelmouse": {
+      "message": "Miška"
+   },
+   "titelnightmodebck": {
+      "message": "Barva ozadja"
+   },
+   "titelnightmodeblacklist": {
+      "message": "Črni seznam"
+   },
+   "titelnightmodedomain": {
+      "message": "Domain"
+   },
+   "titelnightmodehyperlink": {
+      "message": "Hiperpovezava"
+   },
+   "titelnightmodepage": {
+      "message": "Web page"
+   },
+   "titelnightmodeposition": {
+      "message": "Položaj stikala"
+   },
+   "titelnightmodetxt": {
+      "message": "Barva besedila"
+   },
+   "titelnightmodewhitelist": {
+      "message": "Beli seznam"
+   },
+   "titelnighttheme": {
+      "message": "Nočni način"
+   },
+   "titeloff": {
+      "message": "Izklopi"
+   },
+   "titelon": {
+      "message": "Vklopi"
+   },
+   "titelopacity": {
+      "message": "Motnost"
+   },
+   "titelpageaction": {
+      "message": "Skrij ikono svetilke v naslovni vrstici"
+   },
+   "titelpassword": {
+      "message": "Zaščita z geslom"
+   },
+   "titelplaylist": {
+      "message": "Seznam predvajanja"
+   },
+   "titelpopupoptions": {
+      "message": "Možnosti"
+   },
+   "titelpopupratestars": {
+      "message": "Oceni s 5-imi zvezdicami"
+   },
+   "titelpopupsupport": {
+      "message": "Podpora"
+   },
+   "titelpopupvideo": {
+      "message": "YouTube"
+   },
+   "titelpopupwelcomeguide": {
+      "message": "Priročnik za dobrodošlico"
+   },
+   "titelqualityyoutube": {
+      "message": "Samodejno nastavi kakovost videov YouTube"
+   },
+   "titelreader": {
+      "message": "Vrstica ravni zatemnitve"
+   },
+   "titelreflection": {
+      "message": "Odsev"
+   },
+   "titelrememberpage": {
+      "message": "Stran z opomniki"
+   },
+   "titelreset": {
+      "message": "Ponastavi nastavitve"
+   },
+   "titelrightsreserved": {
+      "message": "Nekaj pravic pridržanih."
+   },
+   "titelscreen": {
+      "message": "Zaslon"
+   },
+   "titelseeonline": {
+      "message": "Glejte splet za več primerov"
+   },
+   "titelsharebutton": {
+      "message": "Gumb Deli"
+   },
+   "titelsharethis": {
+      "message": "Deli:"
+   },
+   "titelshortcutlight": {
+      "message": "Tipkovna bližnjica"
+   },
+   "titelshowmore": {
+      "message": "Prikaži več"
+   },
+   "titelspeech": {
+      "message": "Govor"
+   },
+   "titelspreadradius": {
+      "message": "Polmer širjenja:"
+   },
+   "titelsuggestions": {
+      "message": "Predlogi"
+   },
+   "titelsupportatmos": {
+      "message": "Supports only the HTML5 \u003Cvideo> player. It also uses the GPU from your device."
+   },
+   "titelsync": {
+      "message": "Sinhronizacija"
+   },
+   "titelsyncbrowser": {
+      "message": "Sinhronizirajte nastavitve razširitve z drugim brskalnikom"
+   },
+   "titelupgrade": {
+      "message": "Nadgradi"
+   },
+   "titelvideoheadline": {
+      "message": "Naziv videa"
+   },
+   "titelvideosample": {
+      "message": "Primer videa"
+   },
+   "titelvideotool": {
+      "message": "Orodna vrstica videov"
+   },
+   "titelvideotoolblacklist": {
+      "message": "Črni seznam"
+   },
+   "titelvideotoolbrightness": {
+      "message": "svetlost"
+   },
+   "titelvideotoolcontrast": {
+      "message": "kontrast"
+   },
+   "titelvideotoolfilter": {
+      "message": "Filter"
+   },
+   "titelvideotoolfullwindow": {
+      "message": "Celo okno"
+   },
+   "titelvideotoolgrayscale": {
+      "message": "sivina"
+   },
+   "titelvideotoolhueroration": {
+      "message": "vrtenje odtenka"
+   },
+   "titelvideotoolinvert": {
+      "message": "obrni"
+   },
+   "titelvideotoollike": {
+      "message": "Všeč mi je"
+   },
+   "titelvideotoolnormal": {
+      "message": "običajno"
+   },
+   "titelvideotoolrepeat": {
+      "message": "Ponovi"
+   },
+   "titelvideotoolsaturate": {
+      "message": "nasičenost"
+   },
+   "titelvideotoolscreenshot": {
+      "message": "Zajemi posnetek zaslona"
+   },
+   "titelvideotoolsepia": {
+      "message": "sepija"
+   },
+   "titelvideotoolsubscribe": {
+      "message": "Naroči se"
+   },
+   "titelvideotoolwhitelist": {
+      "message": "Beli seznam"
+   },
+   "titelviewcount": {
+      "message": "Število ogledov"
+   },
+   "titelvisblocks": {
+      "message": "Bloki"
+   },
+   "titelvischoose": {
+      "message": "Izberite zvočno predočenje"
+   },
+   "titelvisenable": {
+      "message": "Omogoči/Onemogoči zvočno predočenje"
+   },
+   "titelvisfrequency": {
+      "message": "Frekvenca"
+   },
+   "titelvistunnel": {
+      "message": "Glasbeni predor"
+   },
+   "titelvisualization": {
+      "message": "Zvočno predočenje"
+   },
+   "titelvolume": {
+      "message": "Drsnik za glasnost videov"
+   },
+   "titelwebsite": {
+      "message": "Spletna stran"
+   },
+   "titelwikiatmos": {
+      "message": "Wiki o Atmosferski osvetlitvi"
+   },
+   "titleanalytics": {
+      "message": "Analytics"
+   },
+   "titleavgdayschedule": {
+      "message": "Average daily schedule"
+   },
+   "titlecancel": {
+      "message": "Prekliči"
+   },
+   "titledarkmodeoff": {
+      "message": "Dark Mode OFF"
+   },
+   "titledarkmodeon": {
+      "message": "Dark Mode ON"
+   },
+   "titledonatebutton": {
+      "message": "Darujte"
+   },
+   "titlelanalyticprivacy": {
+      "message": "Turn Off the Lights browser extension takes your privacy very seriously. The Turn Off the Lights Analytics you are seeing on this page is only stored locally on your computer. Your personal site engagement information will not be sold and not transferred to unaffiliated third parties."
+   },
+   "titlelearnmore": {
+      "message": "Več o tem"
+   },
+   "titlelprivacy": {
+      "message": "Pravilnik o zasebnosti"
+   },
+   "titlelratenow": {
+      "message": "Rate Now!"
+   },
+   "titlemultiopacity": {
+      "message": "Each website, its own opacity"
+   },
+   "titlenightowl": {
+      "message": "Nočna sova"
+   },
+   "titleok": {
+      "message": "V redu"
+   },
+   "titleorigin": {
+      "message": "Origin"
+   },
+   "titleprofile": {
+      "message": "Profile"
+   },
+   "titleprofilealwaysscreentab": {
+      "message": "Venomer omogočeno za vse odprte zavihke"
+   },
+   "titleprofilenovideofocus": {
+      "message": "Video fokus je onemogočen"
+   },
+   "titleprofilescreenclick": {
+      "message": "Omogoči klike na hiperpovezave, ko je zaslon zatemnjen"
+   },
+   "titleprofilesubmit": {
+      "message": "Izberite te nastavitve"
+   },
+   "titleprofilevideofocus": {
+      "message": "Video fokus je omogočen"
+   },
+   "titleratelater": {
+      "message": "Kasneje"
+   },
+   "titleregularuser": {
+      "message": "Ljubitelji videa"
+   },
+   "titlescreenprotection": {
+      "message": "Zaščita oči"
+   },
+   "titlesharestats": {
+      "message": "Share Your Stats"
+   },
+   "titlesiteengagement": {
+      "message": "Site Engagement"
+   },
+   "titletime": {
+      "message": "Time (minutes)"
+   },
+   "titleuserprofile": {
+      "message": "Spodaj, izberite nastavitve, ki ga želite uporabiti, ko kliknete gumb svetilka. Vsak profil ima svoje značilnosti."
+   },
+   "titlevideoplayrate": {
+      "message": "Hitrosti predvajanja videoposnetka"
+   },
+   "top": {
+      "message": "Top"
+   },
+   "totalenergysaved": {
+      "message": "Total electrical energy saved"
+   },
+   "translateme": {
+      "message": "Pomagajte prevesti"
+   },
+   "trymotion": {
+      "message": "Poizkusite ga sami!"
+   },
+   "tuesday": {
+      "message": "Tuesday"
+   },
+   "version": {
+      "message": "Različica"
+   },
+   "videotitle": {
+      "message": "Osredotoči se na ta video"
+   },
+   "visualeffects": {
+      "message": "Vidni učinki"
+   },
+   "vtoolalign": {
+      "message": "Gumb za centriranje video predvajalnika v brskalniku"
+   },
+   "vtoolfilter": {
+      "message": "Gumb za dodajanje filtra v trenutnem videopredvajalniku"
+   },
+   "vtoolfullscreen": {
+      "message": "Gumb za nastavitev videopredvajalnika na celotno velikost okna"
+   },
+   "vtoolreplay": {
+      "message": "Gumb za ponovno predvajanje trenutnega videopredvajalnika"
+   },
+   "vtoolscreenshot": {
+      "message": "Gumb za ustvarjanje posnetka zaslona renutnega videopredvajalnika"
+   },
+   "vtoolvisualization": {
+      "message": "Gumb za prikaz zvočnega predočenja trenutnega videopredvajalnika"
+   },
+   "warning": {
+      "message": "Opozorilo!"
+   },
+   "warningtextambilight": {
+      "message": "Kadar prejem videopodatkov zaradi varnostnih pravil spletne strani ni mogoč, bo uporabljena izbrana barva."
+   },
+   "wednesday": {
+      "message": "Wednesday"
+   },
+   "writeareview": {
+      "message": "Napiši mnenje"
+   }
+}

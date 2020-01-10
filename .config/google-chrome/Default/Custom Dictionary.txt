@@ -1,0 +1,2 @@
+Magicite
+checksum_v1 = 11afc95f01ae2a2299b17bcadce71825

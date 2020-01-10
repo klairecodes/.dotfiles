@@ -1,0 +1,1398 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Options - Essentials for KissAnime</title>
+		<script src="js/jquery/jquery.js"></script>
+		<script src="js/jquery/jquery-ui.js"></script>
+		<script src="js/js/mousetrap.min.js"></script> <!-- For Keyboard Shortcuts -->
+		<script src="js/js/spectrum.js"></script>
+		
+		<!--  -->
+		<script src="js/misc.js"></script>
+		<script src="js/js/vue.min.js"></script>
+		<script src="js/js/toastr.min.js"></script>
+
+		<!--  -->
+		<script src="js/bootstrap/js/bootstrap.min.js"></script>
+		<script src="js/bootstrap/js/bootstrap-switch.min.js"></script>
+		<script src="js/bootstrap/js/bootstrap-main.js"></script>
+
+		<link rel="stylesheet" type="text/css" href="js/bootstrap/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="js/bootstrap/css/bootstrap-switch.min.css">
+		<link rel="stylesheet" type="text/css" href="css/toastr.min.css">
+		<link rel="stylesheet" type="text/css" href="css/bootstrap-options-page.css">
+		<link rel="stylesheet" type="text/css" href="css/spectrum.css">
+		<link href='https://fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet' type='text/css'>
+		<style>
+			.userlogo-text, #userlogo {
+				width: 300px;
+				background: transparent;
+				border: 1px solid rgba(128, 128, 128, 0.33);
+				text-align: center;
+			}
+			.userlogo {
+				width: 50px;
+				background: transparent;
+				border: 1px solid rgba(128, 128, 128, 0.33);
+				text-align: center;
+			}
+			#userlogo-preview {
+				width: 350px;
+				margin: 0 auto;
+			}
+			#userlogo-preview h1 {
+				margin: 10px 30px 0px 0px;
+				padding: 0px;
+				text-indent: -9999px;
+				float: left;
+				display: block;
+				width: 350px;
+				height: 120px;
+				border: 1px solid;
+				background-image: url(/images/logos/logo-user-template.png);
+				background-position-x: 0%, 100%;
+				background-position-y: 50%, 0%;
+				background-color: transparent;
+				background-repeat: no-repeat;
+				background-size: auto 100%, auto 100%;
+			}
+			#customscheme-modal td {
+				padding-right: 10px
+			}
+			#customscheme-modal .modal-body h4 {
+				color: skyblue
+			}
+			#customscheme-modal .page-header {
+				padding: 0;
+				margin: 0
+			}
+			.sp-replacer {
+				height:23px
+			}
+			.cs-clear, .cs-background-clear, .cs-background-position-clear {
+				cursor:pointer
+			}
+			.cs-clear:hover, .cs-background-clear:hover, .cs-background-position-clear:hover {
+				color:yellow
+			}
+			#cs_background_image_picker {
+				width: 300px;
+				background: none;
+				border: 1px solid rgba(128, 128, 128, 0.33);
+				text-align: center;
+			}
+			#cs_background_image select {
+				background: none;
+				border: 1px solid rgba(128, 128, 128, 0.33);
+				vertical-align: middle;
+				color: white;
+			}
+			#cs_background_image option {
+				background: #161616;
+			}
+			.hideOption {
+				display: none;
+			}
+		</style>
+	</head>
+	<body>
+		<nav class="navbar navbar-inverse">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<span class="navbar-brand"><a href="https://kissanime.ru/"><img src="icon128.png" class="brand-image pull-left"></a></span>
+				</div>
+				<div id="navbar" class="collapse navbar-collapse">
+					<ul class="nav navbar-nav">
+						<li class="active"><a href="/options.html">Options</a></li>
+						<li><a id="version" href="https://ke.pilar.moe/changelog" target="_blank">Changelog</a></li>
+						<li><a id="info" href="/info.html">Info</a></li>
+					</ul>
+					<ul class="nav navbar-nav navbar-right">
+						<li><a id="apiCheck1">Api Status 1: Checking...</a></li>
+						<li><a id="apiCheck2">Api Status 2: Checking...</a></li>
+						<!-- <li><button id="clearoptions" class="btn btn-danger navbar-btn" data-toggle="modal" data-target="#clear-confirm-modal" style="display:none;">Reset to Default</button></li> -->
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<div class="container">
+			<div id="alert" class="alert alert-danger" role="alert" style="display:none"><strong>Notice!</strong> Due to major changes in the extension, all options have been reset. If you have Anime in your Pinned List, do not worry. Your list should remain intact. Please take your time looking over the new options layout. Hover over the option titles for a description on what each option does. Clicking on <span class="external glyphicon glyphicon-new-window" style="cursor:pointer" aria-hidden="true"></span> will show a Dialog box with additional information or images relating to the option they are next to.</div>
+			<!-- Start First Install Modal -->
+			<div id="first-install-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="First Install Modal">
+				<div class="modal-dialog modal-md">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h4 class="modal-title">Welcome!</h4>
+						</div>
+						<div class="modal-body">
+							<p>Thank you for installing this extension.</p>
+							<p>Please take your time looking over each option. Hover over the option titles for a description on what each option does.</p>
+							<p>Clicking on <span class="external glyphicon glyphicon-new-window" aria-hidden="true"></span> will show a Dialog box with additional information or images relating to the option they are next to.</p>
+							<p>Options with <span class="glyphicon glyphicon-cog"></span> have additional options that will appear in a Dialog box when clicked on.</p>
+							<p>Options with <span class="glyphicon glyphicon-gift" style="color: #f0ad4e" aria-hidden="true"></span> next to them are new options that have recently been implemented or updated.</p>
+						</div>
+						<div class="modal-footer">
+							<button type="button" id="first-install-modal-close" class="btn btn-primary" data-dismiss="modal">Close</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- End First Install Modal -->
+			<!-- Start Updated Modal -->
+			<div id="updated-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="Updated Modal">
+				<div class="modal-dialog modal-md">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h4 class="modal-title">What's New</h4>
+						</div>
+						<div class="modal-body">
+							<ul class="list-group">
+								<li class="list-group-item" v-if="changelog.added"  v-for="added in changelog.added"><strong>Added:</strong> <span v-html="added"></span></li>
+								<li class="list-group-item" v-if="changelog.changed"  v-for="changed in changelog.changed"><strong>Changed:</strong> <span v-html="changed"></span></li>
+								<li class="list-group-item" v-if="changelog.fixed"  v-for="fixed in changelog.fixed"><strong>Fixed:</strong> <span v-html="fixed"></span></li>
+								<li class="list-group-item" v-if="changelog.removed"  v-for="removed in changelog.removed"><strong>Removed:</strong> <span v-html="removed"></span></li>
+							</ul>
+						</div>
+						<div class="modal-footer">
+							<button type="button" id="updated-modal-close" class="btn btn-primary" data-dismiss="modal">Close</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- End Updated Modal -->
+			<!-- Start Reset Modal -->
+			<div id="reset-confirm-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="Confirmation Modal">
+				<div class="modal-dialog modal-md">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h4 class="modal-title">Reset to Default?</h4>
+						</div>
+						<div class="modal-body">
+							<p>This will reset all options to their defaults. If you continue, you can configure Essentials for KissAnime as if it were installed for the first time.</p>
+							<p>This <span class="text-warning">WILL</span> clear all of your <span class="select">Color Scheme</span> options. This will <span class="text-warning">NOT</span> affect your <span class="select">Pinned List</span>.</p>
+							<p>If you do not wish to do proceed, please choose "Cancel".</p>
+						</div>
+						<div class="modal-footer">
+							<button type="button" id="reset-cancel-disable" class="btn btn-default" data-dismiss="modal">Cancel</button>
+							<button type="button" id="reset-confirm-disable" class="btn btn-danger">Reset to Default</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- End Reset Modal -->
+
+			<div class="panel panel-default"> <!-- Global Settings -->
+				<div class="panel-heading">
+					<a class="deco-none" href="#global-settings-collapse" data-toggle="collapse"><span class="glyphicon glyphicon-globe" aria-hidden="true"></span> Global Settings</a>
+				</div>
+				<div id="global-settings-collapse" class="panel-collapse collapse in">
+					<div class="panel-body">
+						<div class="row">
+							<!-- <div class="clearfix col-xs-12 col-sm-6 col-md-6 col-lg-4">
+								<label for="enableAds" class="pull-left" data-toggle="tooltip" data-placement="bottom" data-html="true" title="Disabling this option will disable Ads throughout the entire site and remove any leftover space from the Ads.<br><span class='text-warning'>If this option is disabled there is no need to disable the other two Ads options.</span><br>Default: <span class='text-info'>Enabled</span>">Global Ads</label>
+								<label for="enableAds" class="pull-left">Popup Ads (WIP)</label>
+								<div class="pull-right">
+									<input type="checkbox" id="enableAds" name="enableAds" disabled>
+								</div>
+							</div> -->
+							<div class="clearfix col-xs-12 col-sm-6 col-md-6 col-lg-4">
+								<label for="enableSocialButtons" class="pull-left" data-toggle="tooltip" data-placement="bottom" data-html="true" title="Disabling this option will disable all Social Media Buttons throughout the site.<br>Default: <span class='text-info'>Enabled</span>">Social Media Buttons</label>
+								<div class="pull-right">
+									<input type="checkbox" id="enableSocialButtons" name="enableSocialButtons">
+								</div>
+							</div>
+							<div class="clearfix col-xs-12 col-sm-6 col-md-6 col-lg-4">
+								<label for="enableCommentSections" class="pull-left" data-toggle="tooltip" data-placement="bottom" data-html="true" title="Disabling this option will disable all Comment Sections throughout the site.<br>Default: <span class='text-info'>Enabled</span>">Comment Sections</label>
+								<div class="pull-right">
+									<input type="checkbox" id="enableCommentSections" name="enableCommentSections">
+								</div>
+							</div>
+							<div class="clearfix col-xs-12 col-sm-6 col-md-6 col-lg-4" style="display:none">
+								<label for="enableNotifyUpdates" class="pull-left" data-toggle="tooltip" data-placement="bottom" data-html="true" title="Enables a Notification that notifies you when new Anime episodes are available. You can choose how long before each check in the dropdown menu below.<br><span class='text-danger'>This feature is  somewhat incomplete therefore you might/will experience a few bugs.</span><br>Default: <span class='text-info'>Disabled</span>">Notification Updates</label>
+								<div class="pull-right">
+									<input type="checkbox" id="enableNotifyUpdates" data-on-text="<span style='font-size:12px' class='glyphicon glyphicon-triangle-bottom' aria-hidden='true'></span>" name="enableNotifyUpdates">
+								</div>
+								<select id="NotifyTimes" class="form-control" disabled="disabled">
+									<option value="1">1 Minute</option>
+									<option value="5">5 Minutes</option>
+									<option value="10">10 Minutes</option>
+									<option value="15">15 Minutes</option>
+									<option value="30">30 Minutes</option>
+									<option value="60">1 Hour</option>
+								</select>
+							</div>
+							<div class="clearfix col-xs-12 col-sm-6 col-md-6 col-lg-4">
+								<label for="enableCustomScheme" class="pull-left" data-toggle="tooltip" data-placement="bottom" data-html="true" title="Allows the user to change various colors on the site.<br>Default: <span class='text-info'>Disabled</span>">Custom Scheme</label>
+								<span id="customscheme-modal-open" class="glyphicon glyphicon-cog glyph-pos-fix" style="cursor:pointer"></span>
+								<div class="pull-right">
+									<input type="checkbox" id="enableCustomScheme" name="enableCustomScheme">
+								</div>
+							</div>
+							<div class="clearfix col-xs-12 col-sm-6 col-md-6 col-lg-4">
+								<label for="enableCustomLogo" class="pull-left" data-toggle="tooltip" data-placement="bottom" data-html="true" title="Allows you to change the current Header image. Logos 10+ are logos that I made and not used by KissAnime but based off of their logo.<br>Default: <span class='text-info'>Disabled</span>">Custom Header Logo</label>
+									<span id="customheaderlogo-modal-open" class="glyphicon glyphicon-cog glyph-pos-fix"></span>
+								<div class="pull-right">
+									<input type="checkbox" id="enableCustomLogo" data-on-text="<span class='glyphicon glyphicon-triangle-bottom' aria-hidden='true'></span>" name="enableCustomLogo">
+								</div>
+								<select id="HeaderLogos" class="form-control" disabled="disabled">
+									<option value="logo1">Logo 1 (Character Unknown)</option>
+									<option value="logo2">Logo 2 (Kaneki - Tokyo Ghoul)</option>
+									<option value="logo3">Logo 3 (Akeno - High School DxD)</option>
+									<option value="logo4">Logo 4 (Goku - Dragon Ball)</option>
+									<option value="logo5">Logo 5 (Genos - One Punch Man)</option>
+									<option value="logo6">Logo 6 (Kayo & Satoru - ERASED)</option>
+									<option value="logo7">Logo 7 (Boku no Hero Academia - Deku & Uravity)</option>
+									<option value="logo8">Logo 8 (Souma - Shokugeki no Souma)</option>
+									<option value="logo9">Logo 9 (Kageyama - Haikyuu!!)</option>
+									<option value="logo10">Logo 10 (Rin & Shiemi  - Ao no Exorcist)</option>
+									<option value="logo11">Logo 11 (Attack on Titan - Eren & Levi)</option>
+									<option value="logo12">Logo 12 (Black Clover - Asta & Yuno)</option>
+									<option value="logo13">Logo 13 (Overlord 2 - Lupusregina Beta)</option>
+									<option value="logo14">Logo 14 (Seven Deadly Sins - Meliodas)</option>
+									<option value="logo15">Logo 15 (Boku no Hero Academia - Deku)</option>
+									<option value="logo-special-1">Logo Special 1 (Mea - To Love-Ru)</option>
+									<option value="logo-special-2">Logo Speical 2 (Hatsune Miku - Vocaloid)</option>
+									<option value="custom">User Defined Logo</option>
+								</select>
+							</div>
+							<div class="clearfix col-xs-12 col-sm-6 col-md-6 col-lg-4">
+								<label for="enableSlimHeader" class="pull-left" data-toggle="tooltip" data-placement="bottom" data-html="true" title="Replaces the Header with a slimmer one. <span class='text-warning'>Note that most if not all Custom Header logos will be cut off at the bottom.</span><br>Default: <span class='text-info'>Disabled</span>">Slim Header</label>
+								<div class="pull-right">
+									<input type="checkbox" id="enableSlimHeader" name="enableSlimHeader">
+								</div>
+							</div>
+							<div class="clearfix col-xs-12 col-sm-6 col-md-6 col-lg-4">
+								<label for="enableFooter" class="pull-left" data-toggle="tooltip" data-placement="bottom" data-html="true" title="Disabling this option will disable the Footer.<br>Default: <span class='text-info'>Enabled</span>">Footer</label>
+								<div class="pull-right">
+									<input type="checkbox" id="enableFooter" name="enableFooter">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="panel panel-default"> <!-- Home Page Settings -->
+				<div class="panel-heading">
+					<a class="deco-none" href="#home-settings-collapse" data-toggle="collapse"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> Home Page Settings</a>
+				</div>
+				<div id="home-settings-collapse" class="panel-collapse collapse in">
+					<div class="panel-body">
+						<div class="row">
+							<div class="clearfix col-xs-12 col-sm-6 col-md-6 col-lg-4">
+								<label for="enableWelcomeBox" class="pull-left" data-toggle="tooltip" data-html="true" title="Disabling this option will disable the &quot;Welcome Box&quot; which displays information such as a Currently Airing List and Useful Links.<br>Default: <span class='text-info'>Enabled</span>">Welcome Box</label>
+								<div class="pull-right">
+									<input type="checkbox" id="enableWelcomeBox" name="enableWelcomeBox">
+								</div>
+							</div>
+							<div class="clearfix col-xs-12 col-sm-6 col-md-6 col-lg-4">
+								<label for="enablePinnedBox" class="pull-left" data-toggle="tooltip" data-html="true" title="Disabling this option will disable the &quot;Pinned Box&quot; that displays your Pinned Anime.<br>Default: <span class='text-info'>Enabled</span>">Pinned Box</label>
+									<span id="pinnedlist-modal-open" class="glyphicon glyphicon-cog glyph-pos-fix" style="cursor:pointer"></span>
+								<div class="pull-right">
+									<input type="checkbox" id="enablePinnedBox" name="enablePinnedBox">
+								</div>
+							</div>
+							<div class="clearfix col-xs-12 col-sm-6 col-md-6 col-lg-4">
+								<label for="enableAltPinnedBox" class="pull-left" data-toggle="tooltip" data-html="true" title="Replaces the &quot;Pinned List&quot; with an alternate one. This will display the Pinned Anime in a 1x5 of Images. <br>Default: <span class='text-info'>Disabled</span>">Alternate Pinned Box</label>
+								<div class="pull-right">
+									<input type="checkbox" id="enableAltPinnedBox" name="enableAltPinnedBox">
+								</div>
+							</div>
+							<div class="clearfix col-xs-12 col-sm-6 col-md-6 col-lg-4">
+								<label for="enableBanner" class="pull-left" data-toggle="tooltip" data-html="true" title="Disabling this option will disable to Homepage banner that displays a random Anime.<br>Default: <span class='text-info'>Enabled</span>">Homepage Banner</label>
+									<span id="open-enableBanner-help" class="external glyphicon glyphicon-new-window glyph-pos-fix help" style="cursor:pointer" aria-hidden="true"></span>
+								<div class="pull-right">
+									<input type="checkbox" id="enableBanner" name="enableBanner">
+								</div>
+							</div>
+							<div class="clearfix col-xs-12 col-sm-6 col-md-6 col-lg-4">
+								<label for="enableAltRecentList" class="pull-left" data-toggle="tooltip" data-html="true" title="Replaces the Latest Update box with an alternate one. This will display the Anime in a list rather than in a 1x5 of Images. Hovering over an Anime in the list will display a tooltip displaying the Cover Art, Anime Title, and a short Description for the Anime.<br>Default: <span class='text-info'>Disabled</span>">Alternate Latest Update List</label>
+									<span id="open-enableAltRecentList-help" class="external glyphicon glyphicon-new-window glyph-pos-fix help" style="cursor:pointer" aria-hidden="true"></span>
+								<div class="pull-right">
+									<input type="checkbox" id="enableAltRecentList" name="enableAltRecentList">
+								</div>
+							</div>
+							<div class="clearfix col-xs-12 col-sm-6 col-md-6 col-lg-4">
+								<label for="enableShowOnlyAiring" class="pull-left" data-toggle="tooltip" data-html="true" title="If enabled, only displays Anime that is in the Currently Airing List in the &quot;Latest Update&quot; Box.<br><span class='text-warning'>This option is only available if the both the &quot;Welcome Box&quot; option and the &quot;Alternate Latest Update List&quot; are enabled.</span><br>Default: <span class='text-info'>Disabled</span>">Show only Currently Airing</label>
+								<div class="pull-right">
+									<input type="checkbox" id="enableShowOnlyAiring" name="enableShowOnlyAiring">
+								</div>
+							</div>
+							<div class="clearfix col-xs-12 col-sm-6 col-md-6 col-lg-4">
+								<label for="enableLastVideo" class="pull-left" data-toggle="tooltip" data-html="true" title="DIsabling this option will hide the Last Watched Link from the Navbar on the Homepage<br>Default: <span class='text-info'>Disabled</span>">Last Watched Link</label>
+								<div class="pull-right">
+									<input type="checkbox" id="enableLastVideo" name="enableLastVideo">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="panel panel-default"> <!-- Anime Information Page Settings -->
+				<div class="panel-heading">
+					<a class="deco-none" href="#info-settings-collapse" data-toggle="collapse"><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span> Episodes List Page Settings</a>
+				</div>
+				<div id="info-settings-collapse" class="panel-collapse collapse in">
+					<div class="panel-body">
+						<div class="row">
+							<div class="clearfix col-xs-12 col-sm-6 col-md-6 col-lg-4">
+								<label for="enableFindinMAL" class="pull-left" data-toggle="tooltip" data-html="true" title="The &quot;Find in MAL&quot; feature will search the current Anime on MyAnimeList. Disabling this option will disable this feature. Will always appear if MAL Integration is enabled. <br>Default: <span class='text-info'>Enabled</span>">Find in MyAnimeList</label>
+								<div class="pull-right">
+									<input type="checkbox" id="enableFindinMAL" name="enableFindinMAL">
+								</div>
+							</div>
+							<div class="clearfix col-xs-12 col-sm-6 col-md-6 col-lg-4">
+								<label for="enableFindinKitsu" class="pull-left" data-toggle="tooltip" data-html="true" title="The &quot;Find in Kitsu&quot; feature will search the current Anime on Kitsu. Disabling this option will disable this feature.<br>Default: <span class='text-info'>Enabled</span>">Find in Kitsu</label>
+								<div class="pull-right">
+									<input type="checkbox" id="enableFindinKitsu" name="enableFindinKitsu">
+								</div>
+							</div>
+							<div class="clearfix col-xs-12 col-sm-6 col-md-6 col-lg-4">
+								<label for="enableFindRedditDiscussions" class="pull-left" data-toggle="tooltip" data-html="true" title="The &quot;Reddit Discussions&quot; feature will search Reddit for any discussions post about the current Anime. Disabling this option will disable this feature.<br>Default: <span class='text-info'>Enabled</span>">Reddit Discussions</label>
+								<div class="pull-right">
+									<input type="checkbox" id="enableFindRedditDiscussions" name="enableFindRedditDiscussions">
+								</div>
+							</div>
+							<div class="clearfix col-xs-12 col-sm-6 col-md-6 col-lg-4 hideOption">
+								<label for="enableDownloadAllLinks" class="pull-left" data-toggle="tooltip" data-html="true" title="Allows the user to find and download all/selected episodes for Anime.<br><span class='text-warning'>You must be logged into KissAnime for this to work!</span><br>Default: <span class='text-info'>Enabled</span>">Download All Links</label>
+								<div class="pull-right">
+									<input type="checkbox" id="enableDownloadAllLinks" name="enableDownloadAllLinks">
+								</div>
+							</div>
+							<div class="clearfix col-xs-12 col-sm-6 col-md-6 col-lg-4">
+								<label for="enableMALIntegration" class="pull-left" data-toggle="tooltip" data-html="true" title="Integrates MyAnimeList into KissAnime">MAL Integration</label>
+								<div class="pull-right">
+									<button type="button" class="btn btn-default" id="malOptions" name="malOptions">Options</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="panel panel-default"> <!-- Bookmark Page Settings -->
+				<div class="panel-heading">
+					<a class="deco-none" href="#bookmarks-settings-collapse" data-toggle="collapse"><span class="glyphicon glyphicon-bookmark" aria-hidden="true"></span> Bookmarks Page Settings</a>
+				</div>
+				<div id="bookmarks-settings-collapse" class="panel-collapse collapse in">
+					<div class="panel-body">
+						<div class="row">
+							<div class="clearfix col-xs-12 col-sm-6 col-md-6 col-lg-4">
+								<label for="relocateAiringBookmarks" class="pull-left" data-toggle="tooltip" data-html="true" title="If enabled, all currently airing shows in your bookmark list will be moved to the top of the list for easy access.<br>Default: <span class='text-info'>Disabled</span>">Sort Anime by Airing</label>
+								<div class="pull-right">
+									<input type="checkbox" id="relocateAiringBookmarks" name="relocateAiringBookmarks">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="panel panel-default"> <!-- Video Page Settings -->
+				<div class="panel-heading">
+					<a class="deco-none" href="#video-settings-collapse" data-toggle="collapse"><span class="glyphicon glyphicon-play" aria-hidden="true"></span> Video Page Settings</a>
+				</div>
+				<div id="video-settings-collapse" class="panel-collapse collapse in">
+					<div class="panel-body">
+						<div class="row">
+							<!-- <div class="clearfix col-xs-12 col-sm-6 col-md-6 col-lg-4">
+								<label for="enableVideoPageAds" class="pull-left" data-toggle="tooltip" data-html="true" title="Disabling this option will disable Ads just on the Video Page and remove any leftover space from the Ads.<br>Default: <span class='text-info'>Enabled</span>">Video Page Ads</label>
+								<div class="pull-right">
+									<input type="checkbox" id="enableVideoPageAds" name="enableVideoPageAds">
+								</div>
+							</div> -->
+							<div class="clearfix col-xs-12 col-sm-6 col-md-6 col-lg-4">
+								<label for="enableCustomPlayer" class="pull-left" data-toggle="tooltip" data-html="true" title="Disabling this option will disable the custom KissEssentials player.<br>Default: <span class='text-info'>Enabled</span>">Custom Player</label>
+								<div class="pull-right">
+									<input type="checkbox" id="enableCustomPlayer" name="enableCustomPlayer">
+								</div>
+							</div>
+							<div class="clearfix col-xs-12 col-sm-6 col-md-6 col-lg-4"> <!-- Player Switchers -->
+								<label for="enablePlayerSwitchers" class="pull-left" data-toggle="tooltip" data-html="true" title="Disabling this option will remove the Player and Video Quality Switcher that appear either above the video (if Ads are enabled) or below the video (if Ads are disabled).<br>Default: <span class='text-info'>Enabled</span>">Player &amp; Quality Switches</label>
+									<span id="open-enablePlayerSwitchers-help" class="external glyphicon glyphicon-new-window glyph-pos-fix help" style="cursor:pointer" aria-hidden="true"></span>
+								<div class="pull-right">
+									<input type="checkbox" id="enablePlayerSwitchers" name="enablePlayerSwitchers">
+								</div>
+							</div>
+							<div class="clearfix col-xs-12 col-sm-6 col-md-6 col-lg-4"> <!-- Lights Off -->
+								<label for="enableLightsOff" class="pull-left" data-toggle="tooltip" data-html="true" title="Disabling this option will remove the Lights Off switch. The lights can still be toggled if the Keyboard Shortcuts are enabled by pressing L on the keyboard.<br>Default: <span class='text-info'>Enabled</span>">Lights Off Switch</label>
+									<span id="open-enableLightsOff-help" class="external glyphicon glyphicon-new-window glyph-pos-fix help" style="cursor:pointer" aria-hidden="true"></span>
+								<div class="pull-right">
+									<input type="checkbox" id="enableLightsOff" name="enableLightsOff">
+								</div>
+							</div>
+							<div class="clearfix col-xs-12 col-sm-6 col-md-6 col-lg-4"> <!-- Download Links -->
+								<label for="enableDownloadLinks" class="pull-left" data-toggle="tooltip" data-html="true" title="Disabling this option will remove the Download Links that appear below the video.<br>Default: <span class='text-info'>Enabled</span>">Download Links</label>
+									<span id="open-enableDownloadLinks-help" class="external glyphicon glyphicon-new-window glyph-pos-fix help" style="cursor:pointer" aria-hidden="true"></span>
+								<div class="pull-right">
+									<input type="checkbox" id="enableDownloadLinks" name="enableDownloadLinks">
+								</div>
+							</div>
+							<div class="clearfix col-xs-12 col-sm-6 col-md-6 col-lg-4 hideOption"> <!-- File Names -->
+								<label for="enableFileName" class="pull-left" data-toggle="tooltip" data-html="true" title="Disabling this option will remove the File Names that appear below the video.<br>Default: <span class='text-info'>Enabled</span>">Display File Name</label>
+									<span id="open-enableFileName-help" class="external glyphicon glyphicon-new-window glyph-pos-fix help" style="cursor:pointer" aria-hidden="true"></span>
+								<div class="pull-right">
+									<input type="checkbox" id="enableFileName" name="enableFileName">
+								</div>
+							</div>
+							<div class="clearfix col-xs-12 col-sm-6 col-md-6 col-lg-4"> <!-- Bookmark Links -->
+								<label for="enableBookmarkLink" class="pull-left" data-toggle="tooltip" data-html="true" title="Disabling this option will remove the &quot;Click to manage bookmarks&quot; button/Link that appears below the video.<br>Default: <span class='text-info'>Enabled</span>">Bookmark Links</label>
+									<span id="open-enableBookmarkLink-help" class="external glyphicon glyphicon-new-window glyph-pos-fix help" style="cursor:pointer" aria-hidden="true"></span>
+								<div class="pull-right">
+									<input type="checkbox" id="enableBookmarkLink" name="enableBookmarkLink">
+								</div>
+							</div>
+							<div class="clearfix col-xs-12 col-sm-6 col-md-6 col-lg-4"> <!-- Auto PLay -->
+								<label for="enableAutoAdvEp" class="pull-left" data-toggle="tooltip" data-html="true" title="Automatically advance to the next episode when the current episode ends (If available).<br>Default: <span class='text-info'>Disabled</span>">Auto Advance</label>
+								<div class="pull-right">
+									<input type="checkbox" id="enableAutoAdvEp" name="enableAutoAdvEp">
+								</div>
+							</div>
+							<div class="clearfix col-xs-12 col-sm-6 col-md-6 col-lg-4"> <!-- Keyboard Shortcuts -->
+								<label for="enableKeyboardShortcuts" class="pull-left" data-toggle="tooltip" data-html="true" title="Adds extra Keyboard shortcuts to KissAnime's somewhat lacking shortcuts. HTML5 Player Recommended.<br>Default: <span class='text-info'>Disabled</span>">Keyboard Shortcuts</label>
+								<div class="pull-right">
+									<input type="checkbox" id="enableKeyboardShortcuts" name="enableKeyboardShortcuts">
+								</div>
+							</div>
+							<div class="clearfix col-xs-12 col-sm-6 col-md-6 col-lg-4"> <!-- Playback Rate Slider -->
+								<label for="enablePlaybackRate" class="pull-left" data-toggle="tooltip" data-html="true" title="Adds a Slider that allows the user to adjust the Playback Rate (video speed). It appears in the player controls bar.<br><span class='text-warning'>HTML5 PLAYER ONLY.</span><br>Default: <span class='text-info'>Disabled</span>">Playback Rate Slider</label>
+								<div class="pull-right">
+									<input type="checkbox" id="enablePlaybackRate" name="enablePlaybackRate">
+								</div>
+							</div>
+							<div class="clearfix col-xs-12 col-sm-6 col-md-6 col-lg-4"> <!-- Auto HD -->
+								<label for="enableAutoHD" class="pull-left" data-toggle="tooltip" data-html="true" title="Automatically sets the video to the highest available quality.<br>Default: <span class='text-info'>Disabled</span>">Force Highest Quality</label>
+								<div class="pull-right">
+									<input type="checkbox" id="enableAutoHD" name="enableAutoHD">
+								</div>
+							</div>
+							<div class="clearfix col-xs-12 col-sm-6 col-md-6 col-lg-4"> <!-- Auto LQ -->
+								<label for="enableAutoLQ" class="pull-left" data-toggle="tooltip" data-html="true" title="Automatically sets the video to the lowest available quality.<br>Default: <span class='text-info'>Disabled</span>">Force Lowest Quality</label>
+								<div class="pull-right">
+									<input type="checkbox" id="enableAutoLQ" name="enableAutoLQ">
+								</div>
+							</div>
+							<div class="clearfix col-xs-12 col-sm-6 col-md-6 col-lg-4"> <!-- Pause on Switch -->
+								<label for="enablePauseOnSwitch" class="pull-left" data-toggle="tooltip" data-html="true" title="Automatically pause the video when the user switches to another Tab. As long as the Tab is active the video will not automatically pause even if the window is not in focus.<br>Default: <span class='text-info'>Disabled</span>">Pause Video on Tab Switch</label>
+								<div class="pull-right">
+									<input type="checkbox" id="enablePauseOnSwitch" name="enablePauseOnSwitch">
+								</div>
+							</div>
+							<div class="clearfix col-xs-12 col-sm-6 col-md-6 col-lg-4"> <!-- Auto Fullscreen -->
+								<label for="enableAutoFullscreen" class="pull-left" data-toggle="tooltip" data-html="true" title="Automatically sets the video in &quot;Fullscreen&quot; when the page loads. Make sure to press F11 for the best experience.<br>Default: <span class='text-info'>Disabled</span>">Auto "Fullscreen"</label>
+								<div class="pull-right">
+									<input type="checkbox" id="enableAutoFullscreen" name="enableAutoFullscreen">
+								</div>
+							</div>
+							<div class="clearfix col-xs-12 col-sm-6 col-md-6 col-lg-4"> <!-- Alt Video Page -->
+								<label for="enableAltVideoPage" class="pull-left" data-toggle="tooltip" data-html="true" title="Rearranges the Video Page to where everything is visible without scrolling. <span class='text-warning'>This option will have no effect if the <span class='select'>Auto Fullscreen</span> option is enabled.</span><br>Default: <span class='text-info'>Disabled</span>">Alternate Video Page</label>
+								<div class="pull-right">
+									<input type="checkbox" id="enableAltVideoPage" name="enableAltVideoPage">
+								</div>
+							</div>
+							<div class="clearfix col-xs-12 col-sm-6 col-md-6 col-lg-4"> <!-- Theater Mode -->
+								<label for="enableTheaterMode" class="pull-left" data-toggle="tooltip" data-html="true" title="Enables theater mode.<br>Default: <span class='text-info'>Disabled</span>">Theater Mode</label>
+								<div class="pull-right">
+									<input type="checkbox" id="enableTheaterMode" name="enableTheaterMode">
+								</div>
+							</div>
+							<div class="clearfix col-xs-12 col-sm-6 col-md-6 col-lg-4"> <!-- Theater Mode Blacklight -->
+								<label for="enableTheaterBacklight" class="pull-left" data-toggle="tooltip" data-html="true" title="Adds an dynamic ambient-like back lighting to theater mode. Requires that <span class='text-warning'>Theater Mode</span> is enabled.">Blacklight for Theater Mode</label>
+								<div class="pull-right">
+									<input type="checkbox" id="enableTheaterBacklight" name="enableTheaterBacklight">
+								</div>
+							</div>
+							<div class="clearfix col-xs-12 col-sm-6 col-md-6 col-lg-4"> <!-- Stretch Video -->
+								<label for="enableStretchFullscreenVid" class="pull-left" data-toggle="tooltip" data-html="true" title="Stretches the video to fill the screen when in fullscreen. Most notable when watching videos that have a 4:3 aspect ratio.<br>Default: <span class='text-info'>Disabled</span>">Stretch Fullscreen Video</label>
+								<div class="pull-right">
+									<input type="checkbox" id="enableStretchFullscreenVid" name="enableStretchFullscreenVid">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="panel panel-default"> <!-- About Section -->
+				<div class="panel-heading">
+					<a class="deco-none" href="#about-collapse" data-toggle="collapse"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> About</a>
+				</div>
+				<div id="about-collapse" class="panel-collapse collapse in">
+					<div class="panel-body">
+						<div class="row">
+							<div class="clearfix col-xs-12 col-sm-12 col-md-12 col-lg-4">
+								<h3>About this Extension</h3>
+								<p>Essentials for KissAnime is an extension that allows the user to toggle off/on various elements of <a href="https://kissanime.ru">KissAnime</a> as well as adding new options/features.</p>
+								<p>The extension was created on August 9th, 2014 (with no prior knowledge of html/css/javascript) with the only feature being removing the video page Ads with no option to disable it. Eventually with the help of a few friends and the internet, the ability to remove Ads and social media buttons throughout the entire site and ability to remove various video page elements was added. Two months later, the ability to toggle on/off these features was added as well as the Welcome and Pinned Box.</p>
+								<p>Fast-forward a few months and on May 18th, 2015 version 2.1 was made public after being private for almost 9 months. Most of the current features were added after the extension went public.</p>
+							</div>
+							<div class="clearfix col-xs-12 col-sm-12 col-md-12 col-lg-4">
+								<h3>External Links</h3>
+								<ul>
+									<li><a href="https://ke.pilar.moe" target="_blank">Essentials for KissAnime Site</a></li>
+									<li><a href="https://www.reddit.com/r/KissAnimeEssentials" target="_blank">Essentials for KissAnime Subreddit</a></li>
+									<li><a href="https://www.reddit.com/r/KissAnime" target="_blank">KissAnime Subreddit</a></li>
+									<li><a href="https://myanimelist.net/profile/pilar6195" target="_blank">Author's MyAnimeList</a></li>
+									<li><a href="https://kitsu.io/users/pilar6195" target="_blank">Author's Kitsu</a></li>
+								</ul>
+								<h3>Help/Contact</h3>
+								<ul>
+									<li><a href="https://discord.gg/G6pRS4b">Discord</a> (Recommended)</li>
+									<li><a href="https://chrome.google.com/webstore/detail/essentials-for-kissanime/jaicfjhjlblbkhejmkfimkafjchdnafm/support">Google Chrome Store</a></li>
+								</ul>
+								<h3>Contribute</h3>
+								<a href="https://ke.pilar.moe/support/patreon" target="_blank">
+									<img src="images/brand/patreon.png" height="30">
+								</a>
+								&nbsp;&nbsp;
+								<a href='https://ke.pilar.moe/support/ko-fi' target='_blank'>
+									<img height='36' style='border:0px;height:36px;' src='https://az743702.vo.msecnd.net/cdn/kofi1.png?v=0' border='0' alt='Buy Me a Coffee at ko-fi.com'>
+								</a>
+								<!-- <div>
+									<a href="https://ke.pilar.moe/patreon" target="_blank">
+										<img src="images/brand/patreon.png" height="30">
+									</a>
+								</div>
+								<br>
+								<div>
+									<a href='https://ko-fi.com/Q5Q5EDCM' target='_blank'>
+										<img height='36' style='border:0px;height:36px;' src='https://az743702.vo.msecnd.net/cdn/kofi1.png?v=0' border='0' alt='Buy Me a Coffee at ko-fi.com' />
+									</a>
+								</div> -->
+								<h3>Social</h3>
+								<a href="https://discord.gg/G6pRS4b" target="_blank">
+									<img src="images/brand/discord.png" height="50">
+								</a>
+							</div>
+							<div class="clearfix col-xs-12 col-sm-12 col-md-12 col-lg-4">
+								<h3>Credits</h3>
+								<h4>Developer</h4>
+								<ul>
+									<li><a href="https://www.reddit.com/user/pilar6195">/u/pilar6195</a></li>
+								</ul>
+								<h4>Contributors</h4>
+								<ul id="contributors">
+									<a href="https://ke.pilar.moe/supporters">All Supporters</a>
+								</ul>
+								<h4>Contributions</h4>
+								<ul>
+									<li><a href="https://www.reddit.com/user/Nadermane">/u/Nadermane</a> - Options and Changelog Page Designs as well as some javascript work for both of them.</li>
+								</ul>
+								<h4>Initial Testers</h4>
+								<ul>
+									<li>RedRein001</li>
+									<li>Jousalk</li>
+									<li>cuzTexas</li>
+									<li>Arkiniam</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Start Help Modal -->
+			<div id="help-images-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="Help Images Modal">
+				<div class="modal-dialog modal-lg">
+					<div class="modal-content">
+						<div class="modal-header" style="display:none">
+							<h4 class="modal-title"></h4>
+						</div>
+						<div class="modal-body">
+							<img id="help-img" style="display:block;margin:auto;width:100%">
+						</div>
+						<div class="modal-footer" style="text-align:center">
+							<button type="button" id="close-help-image-modal" class="btn btn-primary" style="margin-left:0px">Close</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Start Custom Header Logo Modal -->
+			<div id="customheaderlogo-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="Custom Header Image Modal">
+				<div class="modal-dialog modal-md">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h4 class="modal-title">Custom Header Image</h4>
+						</div>
+						<div class="modal-body" style="text-align:center">
+							<div style='text-align:left'>
+								<ul style="padding: 0 20px 0 20px">
+									<li>Image <span class="text-danger">MUST</span> be in <span class="select">.png</span>, <span class="select">.gif</span>, <span class="select">.tiff</span>, or <span class="select">.bmp</span> format.</li>
+									<li>Image <span class="text-danger">MUST</span> contain a <span class="select">Transparent Background</span>.</li>
+									<li>Image <span class="text-danger">WILL</span> be cut off if the <span class="select">Slimmer Header</span> option is enabled.</li>
+									<li>To prevent long loading times, it is suggested to <span class="text-danger">NOT</span> use a large image.</li>
+								</ul>
+							</div>
+							<input type='text' id="userlogo" placeholder="Image URL">
+							<span id="clear-userlogo" class="cs-background-clear">Clear</span>
+							<div style="margin-top:10px">
+								<span>Position from Left: </span>
+								<input type="number" id="userlogo-pos-left" class="userlogo" value="100" min="0">
+								&nbsp;
+								<span>Position from Top: </span>
+								<input type="number" id="userlogo-pos-top" class="userlogo" value="0" min="0">
+								&nbsp;
+								<span>Image Size: </span>
+								<input type="number" id="userlogo-size" class="userlogo" value="100" min="0" max="100">
+							</div>
+							<div style="margin-top:10px" id="userlogo-preview" class="clearfix"><h1></h1></div>
+							<div style="margin-top:10px">Make sure to select <span class="select">User Defined Logo</span> in the Dropdown Box.</div>
+						</div>
+						<div class="modal-footer" style="text-align:center">
+							<button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Start Pinned List Options Modal -->
+			<div id="pinnedlist-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="Pinned List Options Modal">
+				<div class="modal-dialog modal-md">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h4 class="modal-title">Pinned List Options</h4>
+						</div>
+						<div class="modal-body">
+							<div id="modalBackupPinnedList">
+								<h4>Backup Pinned List to File</h4>
+								<button type="button" id="pinnedlist-backup-button" class="btn btn-primary">Backup Pinned List</button>
+							</div>
+							<div id="modalRestorePinnedList">
+								<h4>Restore Pinned List from File</h4>
+								<style>
+									.restoreButton {
+										position: relative;
+										overflow: hidden;
+									}
+									.innerRestoreButton {
+										position: absolute;
+										top: 0;
+										right: 0;
+										margin: 0;
+										padding: 0;
+										font-size: 20px;
+										cursor: pointer;
+										opacity: 0;
+										filter: alpha(opacity=0);
+									}
+								</style>
+								<div class="btn btn-primary restoreButton">
+									<span>Choose File</span>
+									<input type="file" class="innerRestoreButton" id="pinnedlist-restore-button" style="width:375px" accept=".txt,.json">
+								</div>
+								<span id="restoreFileNamePinned">No File Selected</span>
+							</div>
+							<h5 class="text-warning">Warning: For those who use the Alternate Pinned Box, Backing up the Pinned List will NOT backup the Last Watched Links and Restoring WILL clear all Last Watched Links.</h5>
+							<div id="modalSortPinnedList">
+								<h4>Edit Pinned List</h4>
+								<div style="color:skyblue;margin-bottom:10px">To sort your Pinned List simply drag the Anime Titles. To remove an Anime from your Pinned List, click on <img style="width:12px" src="/images/delete.png"> next to Anime Title.</div>
+								<div id="PinnedList"></div>
+								<div style="color:skyblue;margin-top:10px">Note: If you have the <a href="https://kissanime.to/">KissAnime Homepage</a> open either in another Tab or Window, please make sure to refresh the page after sorting/removing for your Pinned List to properly display.</div>
+							</div>
+						</div>
+						<div class="modal-footer" style="text-align:center">
+							<button type="button" id="pinnedlist-modal-close" class="btn btn-primary" data-dismiss="modal">Close</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Start Custom Scheme Option Modal -->
+			<div id="customscheme-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="Custom Scheme Modal">
+				<div class="modal-dialog modal-lg">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h4 class="modal-title">Custom Scheme Options</h4>
+						</div>
+						<div class="modal-body">
+							<div id="cs_backup" style="text-align: center">
+								<div id="modalBackupCustomScheme" style="display: inline-block">
+									<button type="button" id="customscheme-backup-button" class="btn btn-primary">Backup Custom Scheme</button>
+								</div>
+								<div id="modalRestoreCustomScheme" style="display: inline-block">
+									<div class="btn btn-primary restoreButton">
+										<span>Restore Custom Scheme</span>
+										<input type="file" class="innerRestoreButton" id="customscheme-restore-button" style="width:375px" accept=".txt,.json">
+									</div>
+									<span id="restoreFileNameCS">No File Selected</span>
+								</div>
+							</div>
+							<div id="global-scheme">
+								<div class="page-header">
+									<h3>Global</h3>
+								</div>
+								<div class="row">
+									<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+										<div id="cs_background">
+											<h4>Background</h4>
+											<input type='radio' id='radio_cs_background_color' name='cs_background' value='cs_background_color' style='vertical-align:sub'> <label for='radio_cs_background_color'>Solid Color</label>
+											&nbsp;
+											<input type='radio' id='radio_cs_background_image' name='cs_background' value='cs_background_image' style='vertical-align:sub'> <label for='radio_cs_background_image'>Custom Image</label>
+											<!-- <span class="glyphicon glyphicon-question-sign" id="custom-image-help" style="top:2px" data-toggle="popover" title="Custom Image Info" data-content=" "></span> -->
+
+											<div id="cs_background_color" style="display:none">
+												<span>Background Color: </span>
+												<input type='text' id="cs_background_color_picker" data-storage-name="cs_background_color" class="cs_picker">
+												<span id="cs_background_color_clear" class="cs-background-clear">Clear</span>
+											</div>
+
+											<div id="cs_background_image" style="display:none">
+												<span>Background Image: </span>
+												<input type='text' id="cs_background_image_picker" data-storage-name="cs_background_image" placeholder="Image URL">
+												<span id="cs_background_image_clear" class="cs-background-clear">Clear</span>
+												<div style="height:10px;"></div>
+												<span>Background Position: </span>
+												<select id="cs_background_image_position_x_picker" data-storage-name="cs_background_image_position_x" class="cs_background_image_position">
+													<option value="left">Left</option>
+													<option value="center" selected>Center</option>
+													<option value="right">Right</option>
+												</select>
+												&nbsp;
+												<select id="cs_background_image_position_y_picker" data-storage-name="cs_background_image_position_y" class="cs_background_image_position">
+													<option value="top" selected>Top</option>
+													<option value="center">Center</option>
+													<option value="bottom">Bottom</option>
+												</select>
+												<span id="cs_background_position_clear" class="cs-background-clear">Reset</span>
+												<div style="height:10px;"></div>
+												<span>Background Color (for transparent images): </span>
+												<input type='text' id="cs_background_image_color_picker" data-storage-name="cs_background_image_color" class="cs_picker">
+												<span id="cs_background_image_color_clear" class="cs-background-clear">Clear</span>
+											</div>
+										</div>
+										<div id="cs_navbar">
+											<h4>Navigation Bar</h4>
+											<table>
+												<tbody>
+													<tr>
+														<td>Background Color:</td>
+														<td><input type='text' id="cs_navbar_background_color_picker" data-storage-name="cs_navbar_background_color" class="cs_picker"></td>
+														<td><span class='cs-clear'>Clear</span></td>
+													</tr>
+													<tr><td style="height:23px"></td></tr>
+													<tr>
+														<td>Current Tab Background Color:</td>
+														<td><input type='text' id="cs_navbar_tab_current_background_color_picker" data-storage-name="cs_navbar_tab_current_background_color" class="cs_picker"></td>
+														<td><span class='cs-clear'>Clear</span></td>
+													</tr>
+													<tr>
+														<td>Current Tab Text Color:</td>
+														<td><input type='text' id="cs_navbar_tab_current_text_color_picker" data-storage-name="cs_navbar_tab_current_text_color" class="cs_picker"></td>
+														<td><span class='cs-clear'>Clear</span></td>
+													</tr>
+													<tr>
+														<td>Other Tabs Background Color:</td>
+														<td><input type='text' id="cs_navbar_tab_other_background_color_picker" data-storage-name="cs_navbar_tab_other_background_color" class="cs_picker"></td>
+														<td><span class='cs-clear'>Clear</span></td>
+													</tr>
+													<tr>
+														<td>Other Tabs Text Color:</td>
+														<td><input type='text' id="cs_navbar_tab_other_text_color_picker" data-storage-name="cs_navbar_tab_other_text_color" class="cs_picker"></td>
+														<td><span class='cs-clear'>Clear</span></td>
+													</tr>
+													<tr>
+														<td>Tabs Hover Color:</td>
+														<td><input type='text' id="cs_navbar_tab_hover_background_color_picker" data-storage-name="cs_navbar_tab_hover_background_color" class="cs_picker"></td>
+														<td><span class='cs-clear'>Clear</span></td>
+													</tr>
+													<tr><td style="height:23px"></td></tr>
+													<tr>
+														<td>Sub Background Color:</td>
+														<td><input type='text' id="cs_navbar_sub_background_color_picker" data-storage-name="cs_navbar_sub_background_color" class="cs_picker"></td>
+														<td><span class='cs-clear'>Clear</span></td>
+													</tr>
+													<tr>
+														<td>Sub Link Color:</td>
+														<td><input type='text' id="cs_navbar_sub_link_color_picker" data-storage-name="cs_navbar_sub_link_color" class="cs_picker"></td>
+														<td><span class='cs-clear'>Clear</span></td>
+													</tr>
+													<tr>
+														<td>Sub Link Hover Color:</td>
+														<td><input type='text' id="cs_navbar_sub_link_hover_color_picker" data-storage-name="cs_navbar_sub_link_hover_color" class="cs_picker"></td>
+														<td><span class='cs-clear'>Clear</span></td>
+													</tr>
+
+												</tbody>
+											</table>
+										</div>
+										<div id="cs_transintion">
+											<h4>Transitions</h4>
+											<div>Changes Content Box color on hover.</div>
+											<table>
+												<tbody>
+													<tr>
+														<td>Content Boxes Color:</td>
+														<td><input type='text' id="cs_transition_background_color_picker" data-storage-name="cs_transition_background_color" class="cs_picker"></td>
+														<td><span class='cs-clear'>Clear</span></td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+									<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+										<div id="cs_contentboxes">
+											<h4>Content Boxes</h4>
+											<table>
+												<tbody>
+													<tr>
+														<td>Titlebar Background Color:</td>
+														<td><input type='text' id="cs_contentboxes_titlebar_background_color_picker" data-storage-name="cs_contentboxes_titlebar_background_color" class="cs_picker"></td>
+														<td><span class='cs-clear'>Clear</span></td>
+													</tr>
+													<tr>
+														<td>Titlebar Text Color:</td>
+														<td><input type='text' id="cs_contentboxes_titlebar_text_color_picker" data-storage-name="cs_contentboxes_titlebar_text_color" class="cs_picker"></td>
+														<td><span class='cs-clear'>Clear</span></td>
+													</tr>
+													<tr>
+														<td>Background Color:</td>
+														<td><input type='text' id="cs_contentboxes_background_color_picker" data-storage-name="cs_contentboxes_background_color" class="cs_picker"></td>
+														<td><span class='cs-clear'>Clear</span></td>
+													</tr>
+													<tr>
+														<td>Row Background Hover Color: </td>
+														<td><input type='text' id="cs_contentboxes_background_hover_color_picker" data-storage-name="cs_contentboxes_background_hover_color" class="cs_picker"></td>
+														<td><span class='cs-clear'>Clear</span></td>
+													</tr>
+													<tr>
+														<td>Text Color:</td>
+														<td><input type='text' id="cs_contentboxes_text_color_picker" data-storage-name="cs_contentboxes_text_color" class="cs_picker"></td>
+														<td><span class='cs-clear'>Clear</span></td>
+													</tr>
+													<tr>
+														<td>Link Color:</td>
+														<td><input type='text' id="cs_contentboxes_link_color_picker" data-storage-name="cs_contentboxes_link_color" class="cs_picker"></td>
+														<td><span class='cs-clear'>Clear</span></td>
+													</tr>
+													<tr>
+														<td>Link Hover Color:</td>
+														<td><input type='text' id="cs_contentboxes_link_hover_color_picker" data-storage-name="cs_contentboxes_link_hover_color" class="cs_picker"></td>
+														<td><span class='cs-clear'>Clear</span></td>
+													</tr>
+													<tr>
+														<td>Link Visited Color:</td>
+														<td><input type='text' id="cs_contentboxes_link_visited_color_picker" data-storage-name="cs_contentboxes_link_visited_color" class="cs_picker"></td>
+														<td><span class='cs-clear'>Clear</span></td>
+													</tr>
+												</tbody>
+											</table>
+											<div class="text-warning">These options will affect every container throughout the site that is not covered in the options below.</div>
+										</div>
+										<div id="cs_topholderbox">
+											<h4>Username Box</h4>
+											<table>
+												<tbody>
+													<tr>
+														<td>Background Color:</td>
+														<td><input type='text' id="cs_topholderbox_background_color_picker" data-storage-name="cs_topholderbox_background_color" class="cs_picker"></td>
+														<td><span class='cs-clear'>Clear</span></td>
+													</tr>
+													<tr>
+														<td>Text Color:</td>
+														<td><input type='text' id="cs_topholderbox_text_color_picker" data-storage-name="cs_topholderbox_text_color" class="cs_picker"></td>
+														<td><span class='cs-clear'>Clear</span></td>
+													</tr>
+													<tr>
+														<td>Link Color:</td>
+														<td><input type='text' id="cs_topholderbox_link_color_picker" data-storage-name="cs_topholderbox_link_color" class="cs_picker"></td>
+														<td><span class='cs-clear'>Clear</span></td>
+													</tr>
+													<tr>
+														<td>Link Hover Color:</td>
+														<td><input type='text' id="cs_topholderbox_link_hover_color_picker" data-storage-name="cs_topholderbox_link_hover_color" class="cs_picker"></td>
+														<td><span class='cs-clear'>Clear</span></td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+										<div id="cs_footer">
+											<h4>Footer</h4>
+											<table>
+												<tbody>
+													<tr>
+														<td>Background Color:</td>
+														<td><input type='text' id="cs_footer_background_color_picker" data-storage-name="cs_footer_background_color" class="cs_picker"></td>
+														<td><span class='cs-clear'>Clear</span></td>
+													</tr>
+													<tr>
+														<td>Text Color:</td>
+														<td><input type='text' id="cs_footer_text_color_picker" data-storage-name="cs_footer_text_color" class="cs_picker"></td>
+														<td><span class='cs-clear'>Clear</span></td>
+													</tr>
+													<tr>
+														<td>Link Color:</td>
+														<td><input type='text' id="cs_footer_link_color_picker" data-storage-name="cs_footer_link_color" class="cs_picker"></td>
+														<td><span class='cs-clear'>Clear</span></td>
+													</tr>
+													<tr>
+														<td>Link Hover Color:</td>
+														<td><input type='text' id="cs_footer_link_hover_color_picker" data-storage-name="cs_footer_link_hover_color" class="cs_picker"></td>
+														<td><span class='cs-clear'>Clear</span></td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div id="homepage-scheme">
+								<div class="page-header">
+									<h3>Homepage</h3>
+								</div>
+								<div class="row">
+									<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+										<div id="cs_banner">
+											<h4>Random Anime Banner</h4>
+											<table>
+												<tbody>
+													<tr>
+														<td>Background Color:</td>
+														<td><input type='text' id="cs_banner_background_color_picker" data-storage-name="cs_banner_background_color" class="cs_picker"></td>
+														<td><span class='cs-clear'>Clear</span></td>
+													</tr>
+													<tr>
+														<td>Text Color:</td>
+														<td><input type='text' id="cs_banner_text_color_picker" data-storage-name="cs_banner_text_color" class="cs_picker"></td>
+														<td><span class='cs-clear'>Clear</span></td>
+													</tr>
+													<tr>
+														<td>Link Color:</td>
+														<td><input type='text' id="cs_banner_link_color_picker" data-storage-name="cs_banner_link_color" class="cs_picker"></td>
+														<td><span class='cs-clear'>Clear</span></td>
+													</tr>
+													<tr>
+														<td>Link Hover Color:</td>
+														<td><input type='text' id="cs_banner_link_hover_color_picker" data-storage-name="cs_banner_link_hover_color" class="cs_picker"></td>
+														<td><span class='cs-clear'>Clear</span></td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+									<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+										<div id="cs_latestupdate">
+											<h4>Latest Update Box</h4>
+											<table>
+												<tbody>
+													<tr>
+														<td>Titlebar Background Color:</td>
+														<td><input type='text' id="cs_latestupdate_titlebar_background_color_picker" data-storage-name="cs_latestupdate_titlebar_background_color" class="cs_picker"></td>
+														<td><span class='cs-clear'>Clear</span></td>
+													</tr>
+													<tr>
+														<td>Titlebar Text Color:</td>
+														<td><input type='text' id="cs_latestupdate_titlebar_text_color_picker" data-storage-name="cs_latestupdate_titlebar_text_color" class="cs_picker"></td>
+														<td><span class='cs-clear'>Clear</span></td>
+													</tr>
+													<tr>
+														<td>Background Color:</td>
+														<td><input type='text' id="cs_latestupdate_background_color_picker" data-storage-name="cs_latestupdate_background_color" class="cs_picker"></td>
+														<td><span class='cs-clear'>Clear</span></td>
+													</tr>
+													<tr>
+														<td>Text Color:</td>
+														<td><input type='text' id="cs_latestupdate_text_color_picker" data-storage-name="cs_latestupdate_text_color" class="cs_picker"></td>
+														<td><span class='cs-clear'>Clear</span></td>
+													</tr>
+													<tr>
+														<td>Link Color:</td>
+														<td><input type='text' id="cs_latestupdate_link_color_picker" data-storage-name="cs_latestupdate_link_color" class="cs_picker"></td>
+														<td><span class='cs-clear'>Clear</span></td>
+													</tr>
+													<tr>
+														<td>Link Hover Color:</td>
+														<td><input type='text' id="cs_latestupdate_link_hover_color_picker" data-storage-name="cs_latestupdate_link_hover_color" class="cs_picker"></td>
+														<td><span class='cs-clear'>Clear</span></td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+										<div id="cs_welcomebox">
+											<h4>Welcome/Currently Airing Box</h4>
+											<table>
+												<tbody>
+													<tr>
+														<td>Titlebar Background Color:</td>
+														<td><input type='text' id="cs_welcomebox_titlebar_background_color_picker" data-storage-name="cs_welcomebox_titlebar_background_color" class="cs_picker"></td>
+														<td><span class='cs-clear'>Clear</span></td>
+													</tr>
+													<tr>
+														<td>Titlebar Text Color:</td>
+														<td><input type='text' id="cs_welcomebox_titlebar_text_color_picker" data-storage-name="cs_welcomebox_titlebar_text_color" class="cs_picker"></td>
+														<td><span class='cs-clear'>Clear</span></td>
+													</tr>
+													<tr>
+														<td>Background Color:</td>
+														<td><input type='text' id="cs_welcomebox_background_color_picker" data-storage-name="cs_welcomebox_background_color" class="cs_picker"></td>
+														<td><span class='cs-clear'>Clear</span></td>
+													</tr>
+													<tr>
+														<td>Text Color:</td>
+														<td><input type='text' id="cs_welcomebox_text_color_picker" data-storage-name="cs_welcomebox_text_color" class="cs_picker"></td>
+														<td><span class='cs-clear'>Clear</span></td>
+													</tr>
+													<tr>
+														<td>Link Color:</td>
+														<td><input type='text' id="cs_welcomebox_link_color_picker" data-storage-name="cs_welcomebox_link_color" class="cs_picker"></td>
+														<td><span class='cs-clear'>Clear</span></td>
+													</tr>
+													<tr>
+														<td>Link Hover Color:</td>
+														<td><input type='text' id="cs_welcomebox_link_hover_color_picker" data-storage-name="cs_welcomebox_link_hover_color" class="cs_picker"></td>
+														<td><span class='cs-clear'>Clear</span></td>
+													</tr>
+												</tbody>
+											</table>
+											<div class="text-warning">This will not affect the colors of the actual Anime Links.</div>
+										</div>
+									</div>
+									<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+										<div id="cs_pinnedbox">
+											<h4>Pinned Box</h4>
+											<table>
+												<tbody>
+													<tr>
+														<td>Titlebar Background Color:</td>
+														<td><input type='text' id="cs_pinnedbox_titlebar_background_color_picker" data-storage-name="cs_pinnedbox_titlebar_background_color" class="cs_picker"></td>
+														<td><span class='cs-clear'>Clear</span></td>
+													</tr>
+													<tr>
+														<td>Titlebar Text Color:</td>
+														<td><input type='text' id="cs_pinnedbox_titlebar_text_color_picker" data-storage-name="cs_pinnedbox_titlebar_text_color" class="cs_picker"></td>
+														<td><span class='cs-clear'>Clear</span></td>
+													</tr>
+													<tr>
+														<td>Background Color:</td>
+														<td><input type='text' id="cs_pinnedbox_background_color_picker" data-storage-name="cs_pinnedbox_background_color" class="cs_picker"></td>
+														<td><span class='cs-clear'>Clear</span></td>
+													</tr>
+													<tr>
+														<td>Link Color:</td>
+														<td><input type='text' id="cs_pinnedbox_link_color_picker" data-storage-name="cs_pinnedbox_link_color" class="cs_picker"></td>
+														<td><span class='cs-clear'>Clear</span></td>
+													</tr>
+													<tr>
+														<td>Link Hover Color:</td>
+														<td><input type='text' id="cs_pinnedbox_link_hover_color_picker" data-storage-name="cs_pinnedbox_link_hover_color" class="cs_picker"></td>
+														<td><span class='cs-clear'>Clear</span></td>
+													</tr>
+												</tbody>
+											</table>
+											<div class="text-warning">This will not affect the colors of the Latest Episode Links.</div>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+										<div id="cs_subcontent">
+											<h4>Sub Content</h4>
+											<table>
+												<tbody>
+													<tr>
+														<td>Current Tab Background Color:</td>
+														<td><input type='text' id="cs_subcontent_tab_current_background_color_picker" data-storage-name="cs_subcontent_tab_current_background_color" class="cs_picker"></td>
+														<td><span class='cs-clear'>Clear</span></td>
+													</tr>
+													<tr>
+														<td>Current Tab Text Color:</td>
+														<td><input type='text' id="cs_subcontent_tab_current_text_color_picker" data-storage-name="cs_subcontent_tab_current_text_color" class="cs_picker"></td>
+														<td><span class='cs-clear'>Clear</span></td>
+													</tr>
+													<tr>
+														<td>Other Tabs Background Color:</td>
+														<td><input type='text' id="cs_subcontent_tab_other_background_color_picker" data-storage-name="cs_subcontent_tab_other_background_color" class="cs_picker"></td>
+														<td><span class='cs-clear'>Clear</span></td>
+													</tr>
+													<tr>
+														<td>Other Tabs Text Color:</td>
+														<td><input type='text' id="cs_subcontent_tab_other_text_color_picker" data-storage-name="cs_subcontent_tab_other_text_color" class="cs_picker"></td>
+														<td><span class='cs-clear'>Clear</span></td>
+													</tr>
+													<tr>
+														<td>Tabs Hover Color:</td>
+														<td><input type='text' id="cs_subcontent_tab_hover_background_color_picker" data-storage-name="cs_subcontent_tab_hover_background_color" class="cs_picker"></td>
+														<td><span class='cs-clear'>Clear</span></td>
+													</tr>
+													<tr><td style="height:23px"></td></tr>
+													<tr>
+														<td>Content Background Color:</td>
+														<td><input type='text' id="cs_subcontent_content_background_color_picker" data-storage-name="cs_subcontent_content_background_color" class="cs_picker"></td>
+														<td><span class='cs-clear'>Clear</span></td>
+													</tr>
+													<tr>
+														<td>Content Background Color Alt:</td>
+														<td><input type='text' id="cs_subcontent_content_background_color2_picker" data-storage-name="cs_subcontent_content_background_color2" class="cs_picker"></td>
+														<td><span class='cs-clear'>Clear</span></td>
+													</tr>
+													<tr>
+														<td>Content Text Color:</td>
+														<td><input type='text' id="cs_subcontent_content_text_color_picker" data-storage-name="cs_subcontent_content_text_color" class="cs_picker"></td>
+														<td><span class='cs-clear'>Clear</span></td>
+													</tr>
+													<tr>
+														<td>Content Link Color:</td>
+														<td><input type='text' id="cs_subcontent_content_link_color_picker" data-storage-name="cs_subcontent_content_link_color" class="cs_picker"></td>
+														<td><span class='cs-clear'>Clear</span></td>
+													</tr>
+													<tr>
+														<td>Content Link Hover Color:</td>
+														<td><input type='text' id="cs_subcontent_content_link_hover_color_picker" data-storage-name="cs_subcontent_content_link_hover_color" class="cs_picker"></td>
+														<td><span class='cs-clear'>Clear</span></td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+									<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+										<div id="cs_rightboxes">
+											<h4>Right Boxes</h4>
+											<table>
+												<tbody>
+													<tr>
+														<td>Titlebar Background Color:</td>
+														<td><input type='text' id="cs_rightboxes_titlebar_background_color_picker" data-storage-name="cs_rightboxes_titlebar_background_color" class="cs_picker"></td>
+														<td><span class='cs-clear'>Clear</span></td>
+													</tr>
+													<tr>
+														<td>Titlebar Text Color:</td>
+														<td><input type='text' id="cs_rightboxes_titlebar_text_color_picker" data-storage-name="cs_rightboxes_titlebar_text_color" class="cs_picker"></td>
+														<td><span class='cs-clear'>Clear</span></td>
+													</tr>
+													<tr>
+														<td>Background Color:</td>
+														<td><input type='text' id="cs_rightboxes_background_color_picker" data-storage-name="cs_rightboxes_background_color" class="cs_picker"></td>
+														<td><span class='cs-clear'>Clear</span></td>
+													</tr>
+													<tr>
+														<td>Link Color:</td>
+														<td><input type='text' id="cs_rightboxes_link_color_picker" data-storage-name="cs_rightboxes_link_color" class="cs_picker"></td>
+														<td><span class='cs-clear'>Clear</span></td>
+													</tr>
+													<tr>
+														<td>Link Hover Color:</td>
+														<td><input type='text' id="cs_rightboxes_link_hover_color_picker" data-storage-name="cs_rightboxes_link_hover_color" class="cs_picker"></td>
+														<td><span class='cs-clear'>Clear</span></td>
+													</tr>
+												</tbody>
+											</table>
+											<div class="text-warning">These options affects the "Ongoing series" and "Latest update" boxes that are on the right side of the page.</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div id="vidopage-scheme">
+								<div class="page-header">
+									<h3>Video Page</h3>
+								</div>
+								<div class="row">
+									<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+										<div id="cs_videopage">
+											<h4>Video Container</h4>
+											<table>
+												<tbody>
+													<tr>
+														<td>Container Background Color:</td>
+														<td><input type='text' id="cs_videopage_container_background_color_picker" data-storage-name="cs_videopage_container_background_color" class="cs_picker"></td>
+														<td><span class='cs-clear'>Clear</span></td>
+													</tr>
+													<tr>
+														<td>Container Text Color:</td>
+														<td><input type='text' id="cs_videopage_container_text_color_picker" data-storage-name="cs_videopage_container_text_color" class="cs_picker"></td>
+														<td><span class='cs-clear'>Clear</span></td>
+													</tr>
+													<tr>
+														<td>Container Link Color:</td>
+														<td><input type='text' id="cs_videopage_container_link_color_picker" data-storage-name="cs_videopage_container_link_color" class="cs_picker"></td>
+														<td><span class='cs-clear'>Clear</span></td>
+													</tr>
+													<tr>
+														<td>Container Link Hover Color:</td>
+														<td><input type='text' id="cs_videopage_container_link_hover_color_picker" data-storage-name="cs_videopage_container_link_hover_color" class="cs_picker"></td>
+														<td><span class='cs-clear'>Clear</span></td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+									<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+										<div id="cs_videopage_2">
+											<h4>Video Player</h4>
+											<table>
+												<tbody>
+													<tr>
+														<td>Seekbar Color:</td>
+														<td><input type='text' id="cs_videopage_sliderbar_color_picker" data-storage-name="cs_videopage_sliderbar_color" class="cs_picker"></td>
+														<td><span class='cs-clear'>Clear</span></td>
+													</tr>
+													<tr>
+														<td>Progress Color:</td>
+														<td><input type='text' id="cs_videopage_sliderbar_seeked_color_picker" data-storage-name="cs_videopage_sliderbar_seeked_color" class="cs_picker"></td>
+														<td><span class='cs-clear'>Clear</span></td>
+													</tr>
+													<tr>
+														<td>Buffered Color:</td>
+														<td><input type='text' id="cs_videopage_sliderbar_buffered_color_picker" data-storage-name="cs_videopage_sliderbar_buffered_color" class="cs_picker"></td>
+														<td><span class='cs-clear'>Clear</span></td>
+													</tr>
+													<tr>
+														<td>Slider Color:</td>
+														<td><input type='text' id="cs_videopage_sliderbar_handle_color_picker" data-storage-name="cs_videopage_sliderbar_handle_color_picker" class="cs_picker"></td>
+														<td><span class='cs-clear'>Clear</span></td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="modal-footer" style="text-align:center">
+							<button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Start MAL Modal -->
+			<div id="mal-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="MAL Login Modal">
+				<div class="modal-dialog modal-md">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h4 class="modal-title">MyAnimeList</h4>
+						</div>
+						<div class="modal-body">
+							<div style="text-align:center">
+								<h3>READ BEFORE USE</h3>
+								<div>
+									<p>
+										Please note that the password will be stored in the local chrome storage on this computer. This area is NOT encrypted so use at your own risk!
+									</p>
+								</div>
+								<div style="padding-top:5px">
+									<label for="enableMALAPI" style="padding-right:10px">MyAnimeList Integration</label>
+									<input type="checkbox" id="enableMALAPI" name="enableMALAPI">
+								</div>
+								<div>
+									<h4>Login</h4>
+									<p style="color:orangered">This feature is temporarily disabled since the MyAnimeList API is currently not available.</p>
+									<div>Login Status: <span id="MALLoginStatus"></span></div>
+									<label for="textMALUser">Username</label>
+									<input id="textMALUser" class="loginField" type="text" autocomplete="false" disabled>
+									&nbsp;
+									<label for="textMALPass">Password</label>
+									<input id="textMALPass" class="loginField" type="password" autocomplete="false"disabled>
+									&nbsp;
+									<button type="button" id="MALSubmit" class="btn btn-primary" data-isloggedin="false"disabled></button>
+									<div id="MALSubmitStatus"></div>
+									<style>
+										.loginField {
+											background: #151515;
+											/*background: transparent;*/
+											border: 0px solid slateblue;
+											color: white;
+											text-align: center;
+											font-family: 'Inconsolata';
+											border: 1px solid grey;
+										}
+										.MALLoginHidden {
+											display:none;
+										}
+									</style>
+								</div>
+							</div>
+
+						</div>
+						<div class="modal-footer" style="text-align:center">
+							<button type="button" id="mal-modal-close" class="btn btn-primary" data-dismiss="modal">Close</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Start Console Modal -->
+			<div id="console-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="Console Modal">
+				<div class="modal-dialog modal-sm">
+
+					<div id="console-form" class="modal-content">
+						<div class="modal-body">
+							<form>
+								<input id="console_text" type="text" autocomplete="off">
+								<input id="console_submit" type="submit" value="Enter">
+							</form>
+							<!-- Used to auto copy text to users clipboard -->
+							<textarea style="position:fixed;top:0;left:0;width:2em;height:2em;padding:0;border:none;outline:none;background:transparent;display:none"></textarea>
+						</div>
+					</div>
+
+					<div id="console-alert" class="modal-content" style="display:none;text-align:center;">
+						<div class="modal-body">
+							<span></span>
+						</div>
+						<div class="modal-footer" style="text-align:center">
+							<button type="button" id="console-alert-button" class="btn btn-primary">Close</button>
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+			<style>
+				#console-modal {
+					padding-right: 0px !important;
+				}
+				#console-modal .modal-dialog {
+					width: 310px;
+				}
+				#console-modal .modal-content {
+					border: solid 2px;
+				}
+				#console_text {
+					width: 210px;
+					background: #151515;
+					border: 0px solid slateblue;
+					color: white;
+					text-align: center;
+					font-family: 'Inconsolata';
+					border: 1px solid grey;
+				}
+				#console_text:focus {
+					outline: none !important;
+				}
+				#console_submit {
+					margin-left: 10px;
+					background: #131313;
+					border: 1px solid grey;
+					color: white;
+				}
+				#console-modal .ui-menu {
+					background: #141414;
+					list-style-type: none;
+					padding-left: 5px;
+					width: 210px !Important;
+					display: block;
+					border-left: 1px solid grey;
+					border-right: 1px solid grey;
+					border-bottom: 1px solid grey;
+				}
+				#console-modal .ui-menu-item:hover {
+					background-color: #353535;
+					cursor: pointer;
+				}
+				.temp {
+					text-align: center;
+					padding-bottom: 5px;
+				}
+			</style>
+
+		</div>
+
+		<div style="position:fixed;bottom:0px;right:5px;opacity:0.5;">Designed by <a href="https://www.reddit.com/user/Nadermane">/u/Nadermane</a></div>
+
+		<script src="js/options_page.js"></script>
+
+	</body>
+</html>
+
+<!-- <span class="new glyphicon glyphicon-gift glyph-pos-fix" aria-hidden="true"></span> -->

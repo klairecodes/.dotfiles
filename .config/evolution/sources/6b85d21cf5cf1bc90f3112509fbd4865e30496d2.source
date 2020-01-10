@@ -1,0 +1,19 @@
+[Data Source]
+DisplayName=kcurde@gmail.com
+Enabled=false
+Parent=97acfd70ba2ef3a7cdb613256eb48a7eec28b5bd
+
+[Mail Transport]
+BackendName=smtp
+
+[Authentication]
+Host=smtp.gmail.com
+Method=none
+Port=465
+ProxyUid=system-proxy
+RememberPassword=true
+User=kcurde
+CredentialName=
+
+[Security]
+Method=ssl-on-alternate-port

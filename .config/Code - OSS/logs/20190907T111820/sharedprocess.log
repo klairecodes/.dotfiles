@@ -1,0 +1,26 @@
+[2019-09-07 11:18:24.392] [sharedprocess] [info] main {"machineId":"0e004626490872af37642dfc9dd54cedced4d683daf1be1775a2cfbc3d5273e8"}
+[2019-09-07 11:18:42.914] [sharedprocess] [info] Installing extension: ms-python.python
+[2019-09-07 11:18:43.776] [sharedprocess] [info] Downloaded extension: ms-python.python /tmp/e7fee3e6-e82b-4fd6-b1b4-42ee29a29399
+[2019-09-07 11:18:51.490] [sharedprocess] [info] Extracted extension to /home/klaus/.vscode-oss/extensions/.ms-python.python-2019.9.34911: ms-python.python
+[2019-09-07 11:18:51.492] [sharedprocess] [info] Renamed to /home/klaus/.vscode-oss/extensions/ms-python.python-2019.9.34911
+[2019-09-07 11:18:51.524] [sharedprocess] [info] Installation completed. ms-python.python
+[2019-09-07 11:18:51.613] [sharedprocess] [info] Extensions installed successfully: ms-python.python
+[2019-09-07 11:18:58.419] [sharedprocess] [info] Installing extension: ms-vscode.cpptools
+[2019-09-07 11:18:58.632] [sharedprocess] [info] Downloaded extension: ms-vscode.cpptools /tmp/0474ba51-7b72-486c-abdd-0ca18b92d582
+[2019-09-07 11:19:02.265] [sharedprocess] [info] Extracted extension to /home/klaus/.vscode-oss/extensions/.ms-vscode.cpptools-0.25.1: ms-vscode.cpptools
+[2019-09-07 11:19:02.265] [sharedprocess] [info] Renamed to /home/klaus/.vscode-oss/extensions/ms-vscode.cpptools-0.25.1
+[2019-09-07 11:19:02.281] [sharedprocess] [info] Installation completed. ms-vscode.cpptools
+[2019-09-07 11:19:02.357] [sharedprocess] [info] Extensions installed successfully: ms-vscode.cpptools
+[2019-09-07 11:19:04.388] [sharedprocess] [info] Starting to clean up unused language packs.
+[2019-09-07 11:19:08.177] [sharedprocess] [info] Installing extension: redhat.java
+[2019-09-07 11:19:09.441] [sharedprocess] [info] Downloaded extension: redhat.java /tmp/76daddb6-a11a-44d3-a577-3c35149173aa
+[2019-09-07 11:19:12.409] [sharedprocess] [info] Extracted extension to /home/klaus/.vscode-oss/extensions/.redhat.java-0.48.0: redhat.java
+[2019-09-07 11:19:12.409] [sharedprocess] [info] Renamed to /home/klaus/.vscode-oss/extensions/redhat.java-0.48.0
+[2019-09-07 11:19:12.412] [sharedprocess] [info] Installation completed. redhat.java
+[2019-09-07 11:19:12.493] [sharedprocess] [info] Extensions installed successfully: redhat.java
+[2019-09-07 11:19:14.574] [sharedprocess] [info] Installing extension: ms-vscode.csharp
+[2019-09-07 11:19:14.691] [sharedprocess] [info] Downloaded extension: ms-vscode.csharp /tmp/b7665153-c0a7-4cd5-b606-ebdcf702699e
+[2019-09-07 11:19:14.831] [sharedprocess] [info] Extracted extension to /home/klaus/.vscode-oss/extensions/.ms-vscode.csharp-1.21.1: ms-vscode.csharp
+[2019-09-07 11:19:14.831] [sharedprocess] [info] Renamed to /home/klaus/.vscode-oss/extensions/ms-vscode.csharp-1.21.1
+[2019-09-07 11:19:14.844] [sharedprocess] [info] Installation completed. ms-vscode.csharp
+[2019-09-07 11:19:14.871] [sharedprocess] [info] Extensions installed successfully: ms-vscode.csharp

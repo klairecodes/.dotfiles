@@ -1,0 +1,9 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =7
+let g:netrw_dirhist_7='/home/klaus/PycharmProjects/CSCI-141/Recitations/recitation14'
+let g:netrw_dirhist_6='/home/klaus/Documents/ResumeDrafts'
+let g:netrw_dirhist_5='/home/klaus/PycharmProjects/CSCI-141/activities/activity9'
+let g:netrw_dirhist_4='/sys/devices/pci0000:00/0000:00:02.0/drm/card0/card0-eDP-1/intel_backlight'
+let g:netrw_dirhist_3='/sys/class/backlight/intel_backlight'
+let g:netrw_dirhist_2='/etc/xinetd.d'
+let g:netrw_dirhist_1='/home/klaus/Downloads/from_class.py'

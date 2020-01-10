@@ -1,0 +1,71 @@
+<div style="text-align:center;"><a id="show_hide_seasons" href="javascript:void(0)">(Show Seasons List)</a></div>
+
+<div class="seasonList">
+	
+	<div class="efka-clear"></div>
+	
+	<div style="text-align:center">
+		<div style="font-size:13px;font-weight:bold;padding-bottom:5px;user-select:none;cursor:default">Season:</div>
+		<select id="seasonSelect"></select>
+	</div>
+	
+	<div class="efka-clear"></div>
+	
+	<div id="status_colors" style="text-align:center;user-select:none;cursor:default;">
+		<div class="color_box" id="nya_color_box"></div>
+		<span>Not Yet Aired</span>
+		<br>
+		<div class="color_box" id="airing_color_box"></div>
+		<span id="airing_text">Airing</span>
+		&nbsp;
+		<div class="color_box" id="completed_color_box"></div>
+		<span id="completed_text">Completed</span>
+	</div>
+	
+	<div class='season-notice' style="color:orangered;text-align:center" v-if="season.notice">
+		<div class="efka-clear"></div>
+		{{season.notice}}
+	</div>
+	
+	<div class="efka-clear"></div>
+
+	<div class="currently-airing-list season-list" v-if="season.current">
+		<div class="list-container" v-for="(value, key) in season.anime">
+			<div id="day_of_week">『 {{key}} 』</div>
+			<div v-if="value.length > 0" v-for="anime in value">
+				<img v-bind:src="[anime.recommended ? star : bullet]">
+				<a :class="anime.status" :href="anime.url" :title="'<img class=&quot;tooltip-img&quot; src='+anime.img+'><div class=&quot;tooltip-info&quot;><a class=&quot;bigChar&quot; href='+anime.url+'>'+anime.title+'</a><p>'+anime.desc+'</p></div>'" :href="anime.url">{{anime.title}}</a>
+			</div>
+			<div v-if="value.length == 0" style="text-align:center">Nothing</div>
+		</div>
+	</div>
+
+	<div class="previous-seasons season-list" v-if="!season.current">
+		<div class="list-container">
+			<div v-for="anime in season.anime">
+				<img v-bind:src="[anime.recommended ? star : bullet]">
+				<a :class="anime.status" :href="anime.url" :title="'<img class=&quot;tooltip-img&quot; src='+anime.img+'><div class=&quot;tooltip-info&quot;><a class=&quot;bigChar&quot; href='+anime.url+'>'+anime.title+'</a><p>'+anime.desc+'</p></div>'" :href="anime.url">{{anime.title}}</a>
+			</div>
+		</div>
+	</div>
+
+	<div style="text-align:center;margin-top:10px;">Anime marked with a <img v-bind:src="star"> are my recommendations.</div>
+
+	<div style="font-size:12px;text-align:center;margin-top:10px">
+		<div>Last Updated:</div>
+		<div>{{new Date(season.updatedAt).toLocaleString()}}</div>
+	</div>
+
+</div>
+
+<br>
+
+<div>
+	<div style="font-size: 14px;font-weight: bold;color: aqua">Useful Links:</div>
+	<a href="https://www.myanimelist.net/" target="_blank">MyAnimeList</a><br>
+	<a href="https://www.anichart.net/" target="_blank">AniChart (Season List)</a><br>
+	<a href="https://www.reddit.com/r/anime" target="_blank">Anime Subreddit</a><br>
+	<a href="https://www.reddit.com/r/KissAnime" target="_blank">KissAnime Subreddit</a><br>
+	<a href="https://reddit.com/r/KissAnimeEssentials" target="_blank">Essentials for KissAnime Subreddit</a><br>
+	<a href="https://ke.pilar.moe" target="_blank">Essentials for KissAnime Website</a>
+</div>

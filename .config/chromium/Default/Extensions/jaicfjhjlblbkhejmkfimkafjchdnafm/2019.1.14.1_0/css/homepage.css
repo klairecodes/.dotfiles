@@ -1,0 +1,423 @@
+/* == Version Box == */
+.version-box {
+	width: 970px;
+	margin: 0px auto;
+	padding: 0px;
+	text-align: center;
+}
+.version-box-content {
+	display: block;
+	border: 1px solid #2f2f2f;
+	padding: 2px;
+	margin-bottom: 10px;
+	background: rgba(0,0,0,0.90) !important;
+}
+.version-box-title {
+	height: 25px;
+	background: rgba(18, 112, 177, 0.7) !important;
+	font: normal 17px/23px "Roboto", "Tahoma", Arial, Helvetica, sans-serif;
+	letter-spacing: -1px;
+	color: #fff;
+}
+.version-box-content-text {
+	padding: 5px 10px;
+	font-weight:bold;
+	color: royalblue;
+}
+
+/* == News Box == */
+.external-alerts {
+	width: 970px;
+	margin: 0px auto;
+	padding: 0px;
+	text-align: center;
+}
+.alert-fill {
+	width: auto;
+	text-align: center;
+}
+.alert-small {
+	float: right;
+	width: 213px;
+}
+.alert-box {
+	padding: 2px;
+	background: rgba(0,0,0,0.9) !important;
+	border: 1px solid rgba(0,0,0,0.9) !important;
+	margin-bottom: 10px;
+	display: none;
+}
+.alert-title {
+	position: relative;
+	height: 25px;
+	padding-left: 10px;
+	background: rgba(18, 112, 177, 0.8) !important;
+	font: normal 17px/23px "Tahoma",Arial,Helvetica,sans-serif;
+	letter-spacing: -1px;
+	color: #fff;
+	text-align: left;
+}
+.alert-title .icon-remove {
+	position: absolute;
+	top: 5px;
+	right: 10px;
+}
+.alert-arrow {
+	display: block;
+	width: 0;
+	height: 0;
+	border-bottom: 12px solid rgba(18, 112, 177, 0.8);
+	border-left: 12px solid transparent;
+	top: -8px;
+	position: relative;
+	transform: rotate(45deg);
+	content: "";
+}
+.alert-content {
+	padding: 10px;
+	padding-top: 0px;
+	margin-top: 2px;
+}
+.alert-text {
+	padding-left: 5px;
+	padding-right: 5px;
+	color: lightblue;
+}
+
+/* == Cycle Alerts == */
+#cycleAlerts {
+	width: calc(100% - 6px);
+	padding: 5px;
+	background: #111111 ;
+	border: 1px solid #212121 ;
+	margin-bottom: 10px;
+	text-align: center;
+}
+
+
+/* == Random Anime Banner == */
+.banner {
+	width: 734px !important;
+	background: #111111 !important;
+	border-color: #212121 !important;
+}
+
+.tooltip-img {
+	height: 165px;
+	width: 120px;
+	float: left;
+	padding-right: 10px;
+}
+
+.tooltip-info {
+	float: right;
+	width: 320px;
+}
+
+#day_of_week {
+	font-weight: bold;
+	text-align: center;
+	font-size: 12px;
+	padding-left: 0px !important;
+		text-indent: 0px !important;
+	color: royalblue;
+}
+#CurrentlyAiringTitle {
+	font-size: 13px;
+	font-weight: bold;
+	color: aqua;
+	text-align: center;
+}
+#seasonSelect {
+	background-color: rgba(22, 22, 22, 0.5);
+	border: 1px solid grey;
+	font-size: 13px;
+	vertical-align: middle;
+	color: white;
+}
+#seasonSelect option {
+	background: #111111;
+}
+.color_box {
+	height: 10px;
+	width: 10px;
+	border: 1px solid rgb(47,47,47);
+	display: inline-block;
+	vertical-align: text-bottom;
+}
+#nya_color_box {
+	background-color: rgb(255, 50, 50);
+}
+#airing_color_box {
+	background-color: #d5f406;
+}
+#completed_color_box {
+	background-color: green;
+}
+#WelcomeBox .nya {
+	color: rgb(255, 50, 50) !important
+}
+#WelcomeBox .airing {
+	color: #d5f406 !important;
+}
+#WelcomeBox .completed {
+	color: green !important;
+}
+#WelcomeBox .nya:hover, #WelcomeBox .airing:hover, #WelcomeBox .completed:hover {
+	color: #648f06 !important;
+}
+#WelcomeBox a {
+	color: #d5f406;
+}
+#WelcomeBox a:hover {
+	color: #648f06;
+}
+.list-container div {
+	padding-left: 16px;
+	text-indent: -16px;
+}
+.LCNotice {
+	text-align: center;
+	padding-left: 0px !important;
+	text-indent: 0px !important;
+}
+.efka-clear {
+	clear: both;
+	height: 10px;
+}
+.notice-tooltip {
+	margin-right: 10px;
+	z-index: 9999
+}
+@media screen and (max-width: 1280px) {
+	.notice-tooltip {
+		max-width: 450px;
+		border: 1px solid #666666;
+		padding: 7px;
+		border-radius: 6px;
+		background: rgb(17, 17, 17) !important;
+	}
+}
+@media screen and (min-width: 1281px) {
+	.notice-tooltip {
+		max-width: 1000px;
+		border: 1px solid #666666;
+		padding: 7px;
+		border-radius: 6px;
+		background: rgb(17, 17, 17) !important;
+	}
+}
+
+/* == Welcome and Pinned Box Styling == */
+.welcome-box, #PinnedBox {
+	text-align: left;
+	padding: 2px;
+	width: 213px;
+	margin-bottom: 10px;
+	border: 1px solid;
+}
+.welcome-box-title, #PinnedBoxTitle {
+	height: 25px;
+	padding-left: 10px;
+	font: normal 17px/23px "Tahoma", Arial, Helvetica,sans-serif;
+	letter-spacing: -1px;
+}
+.welcome-box-content, #PinnedBoxContent {
+	padding: 10px;
+	margin-top: 2px;
+}
+.welcome-box-text {
+	text-align: center;
+}
+#PinnedList {
+	margin-top: -5px;
+}
+
+/* == Edit Button for Pinned Box == */
+#editPinned {
+	float: right;
+	margin-right: 5px;
+	font-size: 12px;
+	cursor: pointer;
+}
+#editPinned:hover {
+	/* color: #648f06; */
+	color: rgb(175, 255, 0);
+}
+
+/* == Alt Pinned Box Styling == */
+.altPinnedBox {
+	width: 100% !important;
+	border: 1px solid;
+}
+.altPinnedList {
+	display: none;
+	padding-bottom: 10px;
+	width: 710px;
+	overflow-x: auto;
+}
+
+.altPinnedItem {
+	width: 130px;
+	height: auto;
+	text-align: center;
+	/* padding: 0px 7.5px; */
+	padding: 0px 3.5px;
+	float: left;
+	overflow:hidden;
+}
+.altPinnedImg {
+	border: 2px solid #313031;
+	width: 100%;
+	height: 171px;
+}
+.altPinnedImg:hover {
+	border: 1px solid #c62400;
+}
+
+.overlay {
+	transition: all 0.3s ease;
+	position: absolute;
+  width: 132px;
+  height: 173px;
+  padding: 1px;
+	background: none;
+}
+.overlay .glyphicon {
+	margin: 0 2px;
+}
+.overlay:hover {
+	background: rgba(0, 0, 0, 0.7);
+}
+.overlay > * {
+	opacity: 0;
+	visibility: hidden;
+	transition: all 0.3s ease;
+}
+.overlay:hover > * {
+	opacity: 1;
+	visibility: visible;
+}
+.overlay .glyphicon:hover:after {
+	font-family: 'Roboto';
+	content: attr(data-text);
+	font-size: 14px;
+	color: white;
+	position: absolute;
+	width: 130px;
+}
+.overlay .manageBookmark:hover:after {
+  top: 70px;
+  left: -68px;
+}
+.overlay .loading-pulse {
+	position: absolute;
+	margin: auto;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+
+.redditLinks {
+	position: absolute;
+	bottom: 2px;
+	width: 100%;
+}
+.redditLinks img {
+	height: 35px;
+	transition: all 0.3s;
+	filter: invert(100%);
+}
+.redditLinks img:hover {
+	filter: invert(80%);
+}
+.redditLinks img:hover:after {
+	content: 'Reddit Discussions';
+	font-family: 'Roboto';
+	position: absolute;
+	color: white;
+	font-size: 14px;
+	width: 130px;
+}
+
+.altPinnedRemove {
+	display:none;
+	margin-bottom: 10px;
+}
+.altPinnedRemove:hover {
+	filter: invert(100%);
+}
+
+/* Progress Bar Theme */
+.ui-progressbar {
+	height: 1em !important;
+	width: 500px;
+	margin: auto;
+}
+.ui-widget-content {
+	background: rgb(35, 35, 35) !important;
+}
+.ui-widget-header {
+	background: #f6a828 url("chrome-extension://__MSG_@@extension_id__/images/pbar-ani.gif") 50% 50% repeat-x !important;
+}
+.ui-progressbar-value {
+	transition: width 0.3s;
+}
+
+/* Sortable Placeholder */
+.ui-state-highlight {
+	padding-right: 137px;
+	background: rgba(19,19,19,0.50) !important;
+}
+
+.PinnedLatestEpisode, .PinnedLW {
+	color: skyblue !important;
+}
+.PinnedLatestEpisode:visited {
+	color: #888888 !important;
+}
+.PinnedLatestEpisode:hover, .PinnedLW:hover {
+	color: #648f06 !important;
+}
+
+/* Empty Pinned list Message */
+#emptyPinnedList {
+	display: none;
+}
+
+/* == Alt Latest Update == */
+#recent-updates {
+	padding: 10px;
+	margin-top: 2px;
+}
+.refresh-recents {
+	float: right;
+	position: relative;
+	top: 2px;
+	right: 5px;
+	cursor: pointer;
+}
+#status {
+	float: right;
+	position: relative;
+	right: 10px;
+	font-size: 13px;
+	letter-spacing:0px;
+	text-shadow: 1px 1px 0 #000,-1px -1px 0 #000,1px -1px 0 #000,-1px 1px 0 #000,0px 1px 0 #000,1px 0px 0 #000,0px -1px 0 #000,-1px 0px 0 #000;
+}
+.listing tr:nth-child(odd) td {
+	background: none repeat scroll 0 0 #161616;
+}
+
+/* == Footer == */
+/*#footer {
+	position: relative;
+	bottom: 0px;
+	left: 0px;
+	z-index: 5;
+}
+#footcontainer {
+	position: static;
+	bottom: 0px;
+}*/

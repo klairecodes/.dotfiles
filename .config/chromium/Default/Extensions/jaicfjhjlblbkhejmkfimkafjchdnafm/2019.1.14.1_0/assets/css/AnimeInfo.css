@@ -1,0 +1,84 @@
+.KEPad {
+	padding-right: 40px;
+}
+.KEImg { 
+	vertical-align: sub;
+	margin-right: 5px;
+	height: 16px;
+	border-radius: 2px 2px 2px 2px;
+}
+.KEHide {
+	display: none !important;
+}
+.KEDropdown {
+	background: rgba(22, 22, 22, 0.5) !important;
+    border: 1px solid grey;
+    font-size: 12px;
+	vertical-align: baseline;
+	color: white;
+	height: 22px;
+}
+.KEDropdown option {
+	background: #111111;
+}
+.KETextInput {
+	background: none;
+    border: none;
+    width: 25px;
+	color: white;
+	text-align: center;
+}
+
+#userDate {
+	display: block;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	text-align: center;
+}
+
+button {
+	cursor: pointer;
+}
+
+#episodesUserCurrentText::-webkit-inner-spin-button, #episodesUserCurrentText::-webkit-outer-spin-button {
+	display: none;
+}
+
+#episodesUserCurrentText:focus::-webkit-inner-spin-button, #episodesUserCurrentText:focus::-webkit-outer-spin-button {
+	display: initial;
+}
+
+#malNotice {
+	font-weight: bold;
+	cursor: pointer;
+	color: red;
+}
+
+#malNotice:after {
+  transition: all 0.3s ease;
+	content: 'This anime is not in the Essentials for KissAnime Database.';
+	position: absolute;
+	background: #272222;
+	padding: 5px;
+	border-radius: 3px;
+	margin-left: -175px;
+	margin-top: 0px;
+	color: white;
+	border: 1px solid #161616;
+	font-weight: normal;
+	box-shadow: 0px 0px 5px 0px #4c4c4c;
+	opacity: 0;
+	pointer-events: none;
+}
+
+#malNotice:hover:after {
+	margin-top: -35px;
+	opacity: 1;
+}
+
+.ui-selecting {
+	background: #2f2f2f;
+}
+.ui-selected {
+	background: #2f2f2f;
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html style="overflow:hidden;" lang="en">
+
+<head>
+	<title>Rakuten: Get Cash Back For Shopping</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link type="text/css" rel="stylesheet" href="./style.css">
+	<script src="../commons/bundle.js"></script>
+</head>
+
+<body width="380">
+	<header id="header">
+	</header>
+	<div id="content">
+		<nav id="buttons-box">
+			<div class="buttons-container">
+				<a class="tabBtn" id="btnMyDeals" panelId="myDeals">My Deals</a>
+				<a class="tabBtn" id="btnMyOrders" panelId="myOrders" style="display: none;">My Orders</a>
+				<a class="tabBtn" id="btnMyPromo" panelId="myPromo" style="display: none;">Promo</a>
+				<a class="tabBtn" id="btnTAF" panelId="tafPanel">Get $100</a>
+			</div>
+			<div class="marker" style="width: 120px;"></div>
+		</nav>
+		<main id="tabs">
+			<div class="autocomplete-backdrop"></div>
+			<div class="scrollContainer">
+				
+				<div id="myDeals" class="tab">
+					<div class="loader">
+						<div><i class="fa fa-spinner fa-spin"></i></div>
+					</div>
+				</div>
+
+				<div id="myOrders" class="tab" style="display: none;">
+					<div class="flex-box">
+						<div class="loader">
+							<div class="orders-loader">Looking for your Orders now...</div>
+							<div><i class="fa fa-spinner fa-spin"></i></div>
+						</div>
+					</div>
+				</div>
+
+				<div id="myPromo" class="tab" style="display: none;">
+					<h1 class="featureTitle" style="display: none;"></h1>
+					<div class="loader">
+						<div><i class="fa fa-spinner fa-spin"></i></div>
+					</div>
+				</div>
+
+				<div id="tafPanel" class="tab">
+					<div class="loader">
+						<div><i class="fa fa-spinner fa-spin"></i></div>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	</main>
+	<footer id="footer">
+		<div class="footer_button settings" rel="button">
+			<i class="fa fa-cog footer_button_icon"></i>
+			<span class="footer_button_label">Settings</span>
+		</div>
+		<div class="footer_button ccpa" style="display:none">
+			<span class="footer_button_label">Don’t Sell My Data</span>
+		</div>
+		<div class="footer_button help">
+			<i class="fa fa-question-circle footer_button_icon"></i>
+			<span class="footer_button_label">Help</span>
+		</div>
+	</footer>
+	<script src="./bundle.js"></script>
+</body>
+</html>

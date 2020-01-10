@@ -1,0 +1,1442 @@
+{
+   "about": {
+      "message": "Tietoja"
+   },
+   "activelayertoday": {
+      "message": "Tämän päivän napsautukset"
+   },
+   "addbutton": {
+      "message": "Lisää"
+   },
+   "advancedoptions": {
+      "message": "Lisäasetukset"
+   },
+   "analyticsoption": {
+      "message": "Analytiikka"
+   },
+   "areyouhappy": {
+      "message": "Oletko tyytyväinen Turn Off the Lights -laajennukseen?"
+   },
+   "autostopbannerred": {
+      "message": "Näytä punainen nauha"
+   },
+   "autostopbannertrans": {
+      "message": "Näytä läpinäkyvä nauha"
+   },
+   "autostopblocked": {
+      "message": "Estetty Turn Off the Lightsin™ toimesta - www.turnoffthelights.com"
+   },
+   "autostopclickme": {
+      "message": "Napsauta minua toistaaksesi tämän HTML5-videon"
+   },
+   "autostopdetails": {
+      "message": "LISÄTIEDOT"
+   },
+   "autostopenabled": {
+      "message": "AutoStop on käytössä!"
+   },
+   "basicsettings": {
+      "message": "Perusasiat"
+   },
+   "bottom": {
+      "message": "Alareuna"
+   },
+   "btnsharestats": {
+      "message": "Jaa tilastot"
+   },
+   "camstep1description": {
+      "message": "Ota kameraliike-ominaisuus käyttöön."
+   },
+   "camstep2description": {
+      "message": "Liikuta kättäsi (tai nyrkkiäsi) ylhäältä alas."
+   },
+   "camstep3description": {
+      "message": "Musta kerros liukuu automaattisesti alas."
+   },
+   "cardavgprevweektime": {
+      "message": "Edellinen viikko yhteensä (min)"
+   },
+   "cardtexsubscribe": {
+      "message": "Tilaa nyt!"
+   },
+   "cardtextfavdayweek": {
+      "message": "Suosikkiviikonpäivä"
+   },
+   "cardtextyestime": {
+      "message": "Eilinen yhteensä (min)"
+   },
+   "changelog": {
+      "message": "Muutosloki"
+   },
+   "charttitle30dayssaved": {
+      "message": "Energiansäästö 30 päivän ajalta"
+   },
+   "charttitleavgday": {
+      "message": "Keskimääräinen päiväohjelma (kun valot sammuvat säännnöllisesti)"
+   },
+   "charttitlelayeractive": {
+      "message": "Tumma taso ollut aktiivisena (#)"
+   },
+   "charttitlelblenergysaved": {
+      "message": "Energiansäästö yhteensä"
+   },
+   "charttitlelblenergytotal": {
+      "message": "Energiankäyttö yhteensä"
+   },
+   "charttitlelblwebsiteused": {
+      "message": "Käytetyt sivustot 30 päivän ajalta"
+   },
+   "charttitletotaltime": {
+      "message": "Tumma taso ollut aktiivisena yhteensä (min)"
+   },
+   "deletebutton": {
+      "message": "Poista"
+   },
+   "des1checkmotion": {
+      "message": "Varmista, että huoneesi ei ole pimeä ja valoa on riittävästi."
+   },
+   "des2checkmotion": {
+      "message": "Kamerasi ei saa suoraa auringonpaistetta."
+   },
+   "des3checkmotion": {
+      "message": "Käytät etukameraa."
+   },
+   "desaddvideobutton": {
+      "message": "Näytä Lisää-painike tälle YouTube-videolle."
+   },
+   "desalllightsoff": {
+      "message": "Lamppupainikkeen napsautus sammuttaa/sytyttää valot kaikissa välilehdissä"
+   },
+   "desambilight": {
+      "message": "Näytä tunnelmavalaistus parhaillaan toistettavassa videossa."
+   },
+   "desambilight4color": {
+      "message": "Neljä valinnaista väriä videon ympärillä"
+   },
+   "desambilightfixcolor": {
+      "message": "Vain yksi väri"
+   },
+   "desambilightrangeblurradius": {
+      "message": "Alemmat arvot terävöittävät varjoa, korkeammat arvot sumentavat niitä."
+   },
+   "desambilightrangespreadradius": {
+      "message": "Positiiviset arvot kasvattavat varjostuksen kokoa, negatiiviset pienentävät kokoa."
+   },
+   "desambilightvarcolor": {
+      "message": "Poimi väri videosta"
+   },
+   "desapause": {
+      "message": "tauko"
+   },
+   "desapitext": {
+      "message": "Wiki API sivustokehittäjälle"
+   },
+   "desaplay": {
+      "message": "toista"
+   },
+   "desastop": {
+      "message": "pysäytä"
+   },
+   "desatmosontotlmode": {
+      "message": "Näytä tunnelmavalaistusefekti ainoastaan TOtL-tilan ollessa käytössä"
+   },
+   "desatmosphereonly": {
+      "message": "Käytä tunnelmavalaistus-ominaisuutta vain seuraavilla videosivustoilla:"
+   },
+   "desatmossolidcolor": {
+      "message": "Valitse värihehkun väri"
+   },
+   "desatmosvivid": {
+      "message": "Elävät tunnelmatehosteet"
+   },
+   "desauroraplayer": {
+      "message": "Tunnelmavalaistussoitin on saatavissa myös tietokoneellesi."
+   },
+   "desautoplay": {
+      "message": "Automaattisesti himmentää taustan kun Toista-painiketta painetaan, ja päinvastoin"
+   },
+   "desautoplaydelay": {
+      "message": "Aika, jonka jälkeen tausta vaalennetaan videon loppumisen jälkeen"
+   },
+   "desautoplaydelayend": {
+      "message": "sekuntia"
+   },
+   "desautoplayonly": {
+      "message": "Himmennä vain seuraavat videosivustot:"
+   },
+   "desautostop": {
+      "message": "Lopeta videoiden toisto automaattisesti, kun avaan verkkosivun"
+   },
+   "desautostopfeatureblack": {
+      "message": "SALLII alla olevat sivut, mutta ESTÄÄ muiden sivujen toiston automaattisesti."
+   },
+   "desautostopfeaturewhite": {
+      "message": "ESTÄÄ alla olevat sivut, mutta SALLII muiden sivujen toiston automaattisesti."
+   },
+   "desautostoponly": {
+      "message": "Lopettaa automaattisen videotoiston vain seuraavilla sivuilla:"
+   },
+   "desbadgeanalytics": {
+      "message": "Näytä merkki, joka näyttää sivun himmennysten määrän"
+   },
+   "desbrowserextension": {
+      "message": "selainlaajennus"
+   },
+   "desbrowsersupport": {
+      "message": "Tämä selain ei tue vielä tätä ominaisuutta. Varmista, että tietokoneeseesi on asennettu selaimen uusin versio."
+   },
+   "desbrowsertheme": {
+      "message": "Selaimen teeman"
+   },
+   "descammotiononly": {
+      "message": "Aktivoi kameraliike vain seuraavilla sivustoilla:"
+   },
+   "descolorfixcolor": {
+      "message": "Valitse tumman tason väri"
+   },
+   "desconfirmpassword": {
+      "message": "Vahvista salasana"
+   },
+   "desconfirmtime": {
+      "message": "Vahvista aika"
+   },
+   "desconfirmtimesaver": {
+      "message": "Vahvista näytönsäästäjän aika"
+   },
+   "descontextmenus": {
+      "message": "Näytä sisältövalikko tarkentaaksesi kohteseen."
+   },
+   "description": {
+      "message": "Koko sivu on himmentyy tummaksi, joten voit katsella videoita kuin olisit elokuvissa. Toimii YouTubessa™ ja Beyondissa."
+   },
+   "desdarkbrowsertheme": {
+      "message": "Vaihda selaimen tummaan teemaan"
+   },
+   "desdynamicblocks": {
+      "message": "Palikat"
+   },
+   "desdynamiccloud": {
+      "message": "Animoidut pilvet"
+   },
+   "desdynamicdotscolor": {
+      "message": "Väripisteet"
+   },
+   "desdynamicfishtank": {
+      "message": "Akvaario"
+   },
+   "desdynamicraindrops": {
+      "message": "Sadepisarat"
+   },
+   "desdynamicsmoke": {
+      "message": "Savu"
+   },
+   "desdynamicspace": {
+      "message": "Avaruus"
+   },
+   "desdynamicstars": {
+      "message": "Tähdet"
+   },
+   "desdynamicstorm": {
+      "message": "Myrsky"
+   },
+   "desdynamictriangulation": {
+      "message": "Kolmiomittaus"
+   },
+   "deseastereggs": {
+      "message": "T-näppäimen painallus lisää teatteriverhon tummaan kerrokseen"
+   },
+   "desenterpassword": {
+      "message": "Kirjoita salasanasi alla olevaan kenttään:"
+   },
+   "deseyea": {
+      "message": "Himmennä tausta automaattisesti, kun verkkosivu avataan"
+   },
+   "deseyealist": {
+      "message": "Himmennä tausta automaattisesti, kun seuraava verkkosivu avataan:"
+   },
+   "deseyen": {
+      "message": "Normaali käyttö (valot sammuvat, kun napsautat lamppukuvaketta)"
+   },
+   "deseyetimesaver": {
+      "message": "Kun sivu on passiivinen (ei hiiren tai näppäimistön syötteitä) määritetyn ajan, se tummenee automaattisesti."
+   },
+   "desfadein": {
+      "message": "Näytä himmennys sisään -tehoste."
+   },
+   "desfadeout": {
+      "message": "Näytä häivytä ulos -tehoste."
+   },
+   "desflash": {
+      "message": "Näytä kaikki Flash-objektit."
+   },
+   "deshardflash": {
+      "message": "Näytä kaikki Flash-objektit ja ohita URL-suodatin. Tämä korjaa ongelmat joidenkin videosoittimien ollessa piilossa, mutta näyttää myös mainokset."
+   },
+   "deshead": {
+      "message": "Näytä YouTube-kanavapalkki tai nimi."
+   },
+   "deshovervideo": {
+      "message": "Pidä hiirtäsi videon päällä tietyn ajan, jonka jälkeen sivu himmenee automaattisesti"
+   },
+   "desinfobar": {
+      "message": "Näytä lisätiedot videosta."
+   },
+   "desintroduce": {
+      "message": "Kaikki ominaisuudet, joihin olet tottunut uudella ulkoasulla ja räätälöitynä juuri sinulle."
+   },
+   "deslampandnightmode": {
+      "message": "Aktivoi yötila-vaihtoehto napsauttamalla harmaata lamppupainiketta."
+   },
+   "deslikebar": {
+      "message": "Näytä tykkäyspalkki YouTube-videoiden alla."
+   },
+   "deslikebutton": {
+      "message": "Näytä Youtuben Tykkää- ja ei tykkää -painikkeet tälle videolle."
+   },
+   "desmobileapp": {
+      "message": "Turn Off the Lights on saatavilla myös mobiililaitteellesi."
+   },
+   "desmotion": {
+      "message": "Ota kameraliike käyttöön"
+   },
+   "desmotionChecklist": {
+      "message": "Tarkistuslista:"
+   },
+   "desmousespotlighta": {
+      "message": "Jos valot ovat poissa päältä, näytä kohdevalo hiiren kohdistimen ympärillä."
+   },
+   "desmousespotlightc": {
+      "message": "Jos valot ovat poissa päältä, voit valita alueen, johon kohde tarkennetaan."
+   },
+   "desmousespotlighto": {
+      "message": "Normaali käyttö (poistaa alla olevat hiiren asetukset)"
+   },
+   "desmousespotlights": {
+      "message": "Ota käyttöön näytön varjostin, joka on aina päällä ja jonka läpi voi napsauttaa"
+   },
+   "desmousespotlightt": {
+      "message": "Ota linkkien napsauttaminen käyttöön näytön ollessa tummennettuna"
+   },
+   "desmultiopacitynormal": {
+      "message": "Kaikilla sivustoilla sama läpinäkyvyys"
+   },
+   "desmultiopacitynot": {
+      "message": "Jollei sivustoa ole luettelossa, sille käytetään oletusläpinäkyvyttä."
+   },
+   "desmultiopacitysel": {
+      "message": "Tässä luettelossa oleville sivustoille on valittu läpinäkyvyys"
+   },
+   "desnightactivetime": {
+      "message": "Kytkin näkyy seuraavana aikavälinä:"
+   },
+   "desnightenabletheme": {
+      "message": "Kun avaat uuden sivun, se menee automaattisesti yötilaan."
+   },
+   "desnighthover": {
+      "message": "Näytä läpinäkyvä kytkin verkkosivulla."
+   },
+   "desnightmodegesture": {
+      "message": "Tummenna tai vaalenna nykyinen sivu painamalla sitä pitkään"
+   },
+   "desnightmodeswitchhide": {
+      "message": "Piilota yötila-kytkin automaattisesti valitsemiesi sekuntien jälkeen"
+   },
+   "desnightonly": {
+      "message": "Näytä Yötila vain seuraavillla sivustoilla:"
+   },
+   "desnightowl": {
+      "message": "Yksi napsautus muuttaa sivun yöteemaan napsautettavalla hyperlinkillä. Napsauta uudelleen palataksesi normaalinäkymään. Napsauta lamppukuvaketta uudellen poistaaksesi ominaisuuden käytöstä."
+   },
+   "desnighttheme": {
+      "message": "Näytä Yötila-kytkin nettisivun alla tehdäksesi sivun tummaksi tai valoisaksi."
+   },
+   "desnoflash": {
+      "message": "Älä käytä tätä ominaisuutta."
+   },
+   "despassword": {
+      "message": "Vaadi salasanaa ennen kuin valot pistetään takaisin päälle."
+   },
+   "despermissiontab": {
+      "message": "Poista välilehti-käyttöoikeus"
+   },
+   "desplaylist": {
+      "message": "Näyttää YouTube-soittolistan YouTube-sivustolla."
+   },
+   "desplayrate": {
+      "message": "Oletustoistonopeus"
+   },
+   "desproject": {
+      "message": "hankkeen"
+   },
+   "desreadera": {
+      "message": "Näytä aina tummuustasopalkki, kun valot sammuvat."
+   },
+   "desreadern": {
+      "message": "Älä näytä tummuustasopalkkia."
+   },
+   "desreflection": {
+      "message": "Näytä heijastustehoste kaikissa videoissa"
+   },
+   "desregularuser": {
+      "message": "Tämä on oletus ja perusasetus uusille käyttäjille, kun napsautat harmaata lamppupainiketta saat tämän tyylin sen hetkiselle nettisivulle."
+   },
+   "desrememberpage": {
+      "message": "Älä näytä muistutus-sivua"
+   },
+   "desremfacebook": {
+      "message": "Suosittele tätä Facebookissa"
+   },
+   "desremrate": {
+      "message": "Jos pidät Turn Off the Lights™:sta, älä epäröi arvostella sitä viidellä tähdellä. Tämä antaa meille rohkeutta ylläpitää ja parantaa tuotetta. Arvostelun kirjoittaminen on suositeltavaa, mutta ei pakollista. Jos sinulla ei ole aikaa kirjoittaa arvostelua, voit luokitella sen myös nimettömänä. Olisi tärkeää antaa sille ★★★★★. Kiitos!"
+   },
+   "desremyoutube": {
+      "message": "Tilaa YouTubessa"
+   },
+   "dessaver": {
+      "message": "Näytönsäästäjä:"
+   },
+   "desscreenprotection": {
+      "message": "Yksi napsautus himmentää sivun rauhoittavan oranssiin sävyyn ja vähentää silmien rasitusta kaikissa välilehdissä. Napsauta lamppukuvaketta uudellen poistaaksesi ominaisuuden käytöstä."
+   },
+   "dessharebutton": {
+      "message": "Näytä YouTuben jakopainikkeet tälle videolle."
+   },
+   "desshortcutlight": {
+      "message": "Ota pikanäppäimet käyttöön alta."
+   },
+   "desspeech": {
+      "message": "Ota puheentunnistus käyttöön"
+   },
+   "desspeech1command": {
+      "message": "sammuta valot"
+   },
+   "desspeech2command": {
+      "message": "valot päälle"
+   },
+   "desspeech3command": {
+      "message": "toista video"
+   },
+   "desspeech4command": {
+      "message": "keskeytä video"
+   },
+   "desspeech5command": {
+      "message": "Selaimen lamppu"
+   },
+   "desspeechdialect": {
+      "message": "Valitse puhealueesi:"
+   },
+   "desspeechonly": {
+      "message": "Aktivoi puheentunnistus vain seuraavilla sivustoilla:"
+   },
+   "desspeedtoolbar": {
+      "message": "Näytä toistotyökalupalkki nykyisessä videotoistimessa"
+   },
+   "desspotlightradius": {
+      "message": "Hakuvalon halkaisija:"
+   },
+   "dessuggestions": {
+      "message": "Näytä YouTube-sivuston ehdotukset."
+   },
+   "destime": {
+      "message": "Sammuttaa valot seuraavana aikavälinä:"
+   },
+   "destrymotion": {
+      "message": "Se on hienoa ja parasta kaikista on, että se toimii kaikkialla. Joka YouTubessa, uutissivustoilla, jne."
+   },
+   "desuntil": {
+      "message": "kunnes"
+   },
+   "desvideoheadline": {
+      "message": "Näytä ja käännä videon otsikon värit."
+   },
+   "desvideotool": {
+      "message": "Näytä näytön alareunassa työkalupalkki, josta voit mukauttaa nykyistä videosoitinta"
+   },
+   "desvideotoolcolor": {
+      "message": "Työkalurivin väri"
+   },
+   "desvideotoolonly": {
+      "message": "Aktivoi video-työkalupalkki vain seuraavilla sivustoilla:"
+   },
+   "desvideovolumalt": {
+      "message": "Vain, jos Alt-näppäin on painettuna"
+   },
+   "desvideovolume": {
+      "message": "Hallitse nykyisen videon äänenvoimakkuutta hiiren rullalla"
+   },
+   "desvideovolumecolor": {
+      "message": "Liukusäätimen väri"
+   },
+   "desvideovolumhold": {
+      "message": "Paina vasenta tai oikeaa hiiren painiketta ja siirrä hiirtäsi muuttaaksesi äänen tasoa"
+   },
+   "desvideozoom": {
+      "message": "Zoomaa videon sisältöä zoomauspainikkeella"
+   },
+   "desviewcount": {
+      "message": "Näytä tämän videon katselujen lukumäärä."
+   },
+   "desvisopacity": {
+      "message": "Äänen visualisoinnin taustan läpinäkyvyys"
+   },
+   "desvolumelabel": {
+      "message": "Näytä äänenvoimakkuuden otsikko"
+   },
+   "desvolumeposa": {
+      "message": "Näytä äänenvoimakkuuden säädin nykyisen videosoittimen keskellä"
+   },
+   "desvolumeposb": {
+      "message": "Näytä äänenvoimakkuuden arvo nykyisen videosoittimen vasemmassa yläkulmassa"
+   },
+   "desvolumeposc": {
+      "message": "Näytä äänenvoimakkuuden arvo nykyisen videosoittimen oikeassa yläkulmassa"
+   },
+   "desvolumesteps": {
+      "message": "Äänenvoimakkuuden nousun määrä (prosenteissa) jokaista hiiren rullan pykälää kohden"
+   },
+   "donatepromotext": {
+      "message": "Jos voisit antaa lahjoituksen, olisin siitä valtavan kiitollinen!"
+   },
+   "downloadtheapp": {
+      "message": "Lataa sovellus nyt"
+   },
+   "eastereggsquestion": {
+      "message": "Pidätkö oikeista elokuvateattereista?"
+   },
+   "ecoblowdrying": {
+      "message": "Hiusten kuivaus hiustenkuivaajalla käyttää 10 minuutissa noin"
+   },
+   "ecobrewsomecoffee": {
+      "message": "Keitä pannullinen kahvia"
+   },
+   "ecochargeiphone": {
+      "message": "Lataa iPhone"
+   },
+   "ecochargelaptop": {
+      "message": "Lataa kannettava tietokoneesi"
+   },
+   "ecochargeteslacar": {
+      "message": "Lataa Teslasi 32 km ajoa varten"
+   },
+   "ecochargeteslacarhundred": {
+      "message": "Lataa Teslasi akku täyteen"
+   },
+   "ecochargeteslathreetimes": {
+      "message": "Lataa Teslasi akku kolmesti täyteen"
+   },
+   "ecoeiffeltoweryear": {
+      "message": "Eiffel-tornin valaiseminen 1 vuoden ajan"
+   },
+   "ecoheatingtenshower": {
+      "message": "Riittää veden lämmittämiseksi 10 minuutin suihkua varten"
+   },
+   "ecokeepfridgeday": {
+      "message": "Pidä jääkaappi päällä päivän"
+   },
+   "ecokeeplightonforsix": {
+      "message": "Pidä valot päällä 6 tuntia"
+   },
+   "ecolayear": {
+      "message": "Los Angelesin tarvitsema sähköenergia 1 vuodessa"
+   },
+   "ecoloadlaundry": {
+      "message": "Kuivausrummun yksi käyttökerta"
+   },
+   "econothingthisyear": {
+      "message": "EI mitään tänä vuonna. Pitää valot poissa säästääkseen energiaa."
+   },
+   "ecoplanetearth": {
+      "message": "Oletko valmis pelastamaan maapallon"
+   },
+   "ecoplayingxbox": {
+      "message": "Pelaa tunti Xbox 360 -konsolia"
+   },
+   "ecopowerbaseballgame": {
+      "message": "1 jumbotronin käyttäminen baseball-pelissä"
+   },
+   "ecopowercamonth": {
+      "message": "Tarpeeksi energiaa 1 kuukaudeksi Kaliforniassa"
+   },
+   "ecopowereiffeltower": {
+      "message": "Eiffel-tornin valaiseminen 1 päivän ajan"
+   },
+   "ecopowereurostar": {
+      "message": "Eurostar-matka Brysselistä Lontooseen"
+   },
+   "ecopowereurostarparis": {
+      "message": "Eurostar-matka Pariisista Lontooseen"
+   },
+   "ecopowerhawaiimonth": {
+      "message": "Tarpeeksi energiaa 1 kuukaudeksi Hawaijilla"
+   },
+   "ecopowernwymonth": {
+      "message": "Tarpeeksi energiaa 1 kuukaudeksi New Yorkissa"
+   },
+   "ecorunningdishwasher": {
+      "message": "Astianpesukoneen eko-ohjelma käyttää noin"
+   },
+   "ecosfoyear": {
+      "message": "San Franciscon tarvitsema sähköenergia 1 vuodessa"
+   },
+   "ecothirtyminutes": {
+      "message": "30 minuuttia valaistusta säästetty"
+   },
+   "ecotoastermaking": {
+      "message": "Kahden leipäsiivun paahtaminen"
+   },
+   "ecotwentyfourghome": {
+      "message": "Google Home voi olla päällä 24 tuntia"
+   },
+   "ecovacuumingfor": {
+      "message": "Imuroi 15 minuuttia"
+   },
+   "ecowashingclothes": {
+      "message": "Pesukoneen kylmähuuhteluohjelma käyttää noin"
+   },
+   "ecowatchtvfortwo": {
+      "message": "Katso TV:tä 2 tuntia"
+   },
+   "ecowififoraday": {
+      "message": "Wi-Fi vie päivässä"
+   },
+   "enjoyshare": {
+      "message": "Nauti tästä laajennuksesta ja jaa se myös muiden  kanssa, joiden uskoisit pitävän siitä."
+   },
+   "eyedivoff": {
+      "message": "POIS"
+   },
+   "eyedivon": {
+      "message": "PÄÄLLÄ"
+   },
+   "flashembedobject": {
+      "message": "Tukee: \u003Cobject>, \u003Cembed>, \u003Capplet>, \u003Ciframe>."
+   },
+   "friday": {
+      "message": "Perjantai"
+   },
+   "friendlyremember": {
+      "message": "Ystävällinen muistutus..."
+   },
+   "functionactive": {
+      "message": "Toiminto aktivoituu, kun napsautat välilehteä tai kun päivität sivun. Toiminto kuitenkin pysähtyy automaattisesti 15 sekunnin kuluttua."
+   },
+   "guide": {
+      "message": "TOtL - Tervetuloa-opas"
+   },
+   "help": {
+      "message": "Apua"
+   },
+   "helpautoplay": {
+      "message": "Silmien suojaus on käytössä. Käyttääksesi alla olevia ominaisuuksia, poista Silmien suojaus -toiminto käytöstä."
+   },
+   "helpeyeprotection": {
+      "message": "Silmien suojauksen käyttöönotto poistaa automaattisesti automaattisen toiston käytöstä."
+   },
+   "hoveroptionapply": {
+      "message": "käytä"
+   },
+   "hoveroptiondyn5": {
+      "message": "lentäen"
+   },
+   "howworkmotion": {
+      "message": "Miten se toimii?"
+   },
+   "html5andyoutube": {
+      "message": "HTML5- & YouTube™ -video"
+   },
+   "installadblocker": {
+      "message": "Jos et halua nähdä mainoksia, käytä adblocker-laajennusta."
+   },
+   "lastchecked": {
+      "message": "Viimeisin versio tarkistettu"
+   },
+   "left": {
+      "message": "Vasen"
+   },
+   "lockentername": {
+      "message": "Syötä salasanasi"
+   },
+   "lockwrongpassword": {
+      "message": "Väärä salasana, yritä uudestaan."
+   },
+   "longdonatetext": {
+      "message": "Olisin todella kiitollinen, jos voisit antaa minulle lahjoituksen pitääksesi tämän selainlaajennuksen aktiivisena uusille käyttäjille. Olkoon lahjoituksesi sitten 1 € tai 100 €, on tukesi joka tapauksessa erittäin arvostettu!"
+   },
+   "monday": {
+      "message": "Maanantai"
+   },
+   "motionoptions": {
+      "message": "Kameraliike"
+   },
+   "name": {
+      "message": "Turn Off the Lights"
+   },
+   "nightoptions": {
+      "message": "Yötila"
+   },
+   "nightstep1description": {
+      "message": "Ota käyttöön yötila-toiminto"
+   },
+   "nightstep2description": {
+      "message": "Avaa mikä tahansa verkkosivu ja näet tämän yö-kytkimen"
+   },
+   "nightstep3description": {
+      "message": "Napsauta kytkintä nähdäksesi sivun tummassa teemassa"
+   },
+   "nmbottomleft": {
+      "message": "Vasen alareuna"
+   },
+   "nmbottomright": {
+      "message": "Oikea alareuna"
+   },
+   "nmcustom": {
+      "message": "Mukautettu (Napsauta, pidä ja siirrä kytkin haluamaasi kohtaan näytöllä)"
+   },
+   "nmtopleft": {
+      "message": "Vasen yläreuna"
+   },
+   "nmtopright": {
+      "message": "Oikea yläreuna"
+   },
+   "nothanks": {
+      "message": "Ei kiitos"
+   },
+   "omnidaymode": {
+      "message": "päivätila"
+   },
+   "omnihelp": {
+      "message": "ohjeet"
+   },
+   "omnilightoff": {
+      "message": "valot pois"
+   },
+   "omnilighton": {
+      "message": "valot päälle"
+   },
+   "omninightmode": {
+      "message": "yötila"
+   },
+   "optionecosaversaved": {
+      "message": "Sekunnit on tallennettu onnistuneesti!"
+   },
+   "optionpagetitle": {
+      "message": "Turn Off the Lights - Asetukset"
+   },
+   "optionpasswordsaved": {
+      "message": "Salasana on tallennettu onnistuneesti!"
+   },
+   "optionprofilesaved": {
+      "message": "Uusi lampputoiminto tallennettu onnistuneesti!"
+   },
+   "optiontimesaved": {
+      "message": "Aika on tallennettu onnistuneesti!"
+   },
+   "optionwrongimg": {
+      "message": "Virheellinen kuvatiedosto!"
+   },
+   "pageatitle": {
+      "message": "Turn Off the Lights"
+   },
+   "pagehelp": {
+      "message": "ohjeet"
+   },
+   "pagestillloading": {
+      "message": "Latautuuko sivu vielä?"
+   },
+   "pagetitle": {
+      "message": "Tummenna tämä sivu"
+   },
+   "permissionactivetab": {
+      "message": "Tämä himmentää vain tämän hetkisellä välilehdellä avoinna olevan verkkosivun."
+   },
+   "permissionallurl": {
+      "message": "Tämä ohjaa hehkulamppupainiketta kaikilla verkkosivustoilla, jotka sisältävät: http, https, tiedostoja ja ftp."
+   },
+   "permissioncontextmenu": {
+      "message": "Tämän avulla lisätään \"Tummenna tämä sivu\" -valikkokohta selaimen pikavalikkoon."
+   },
+   "permissionoption": {
+      "message": "Tämän ominaisuuden käyttämiseksi on annettava käyttöoikeuksia."
+   },
+   "permissionrequired": {
+      "message": "Nykyiset aktiiviset käyttöoikeudet"
+   },
+   "permissionstorage": {
+      "message": "Tämä tallentaa asetukset paikalliselle tietokoneelle ja synkronoi ne verkkoselaintiliisi."
+   },
+   "permissiontabs": {
+      "message": "Tätä tarvitaan seuraaville ominaisuuksille: näyttääksesi tervetuloa ja opassivun, tunnistamaan toistettavan HTML5-videon, ottamaan kuvakaappauksia HTML5-videosta ja avaamaan Asetukset-sivun."
+   },
+   "permissiontheme": {
+      "message": "Tämä on selaimen käyttöliittymän muuttamiseksi tummaan tai vaaleaan teemaan."
+   },
+   "productshare": {
+      "message": "Vempaimet"
+   },
+   "promotitle": {
+      "message": "Päivän vinkki"
+   },
+   "ratedes": {
+      "message": "Arvioi ja arvostele laajennus kaupassa. Tukeasi todella arvostetaan."
+   },
+   "rateitema": {
+      "message": "Luokittele 5 tähdellä"
+   },
+   "ratetitle": {
+      "message": "Kiitos, kun käytät Turn Off the Lightsia"
+   },
+   "recflash": {
+      "message": "Suositellut"
+   },
+   "rememberrate": {
+      "message": "Arvostele"
+   },
+   "reportbug": {
+      "message": "Ilmoita ongelmasta"
+   },
+   "reportlist": {
+      "message": "Viimeisin tunnettu ongelma"
+   },
+   "resetbrowserextension": {
+      "message": "Resetoi Sammuta valot -asetukset"
+   },
+   "resetlampanalytic": {
+      "message": "Nollaa Turn Off the Lightsin analytiikkatiedot"
+   },
+   "right": {
+      "message": "Oikea"
+   },
+   "saturday": {
+      "message": "Lauantai"
+   },
+   "scoregame": {
+      "message": "Mahtava ennätykseni Turn Off the Ligts -selainlaajennuksen PIILOTETUSSA  \"pääsiäismunassa\" (pelissä) on $product$. Kokeile itse!",
+      "placeholders": {
+         "product": {
+            "content": "$1",
+            "example": "123"
+         }
+      }
+   },
+   "searchplaceholder": {
+      "message": "Etsi"
+   },
+   "settings": {
+      "message": "Asetukset"
+   },
+   "shareanalyticenergy": {
+      "message": "Säästin $product$ kWh Turn Off the Lightsin ansiosta",
+      "placeholders": {
+         "product": {
+            "content": "$1",
+            "example": "123"
+         }
+      }
+   },
+   "shareanalyticlove": {
+      "message": "Pidän eniten $product$ -sivustosta Turn Off the Lightsn avulla",
+      "placeholders": {
+         "product": {
+            "content": "$1",
+            "example": "123"
+         }
+      }
+   },
+   "sharemenudonatetitle": {
+      "message": "Tue kehitystä"
+   },
+   "sharemenupostonfacebook": {
+      "message": "Viesti Facebook"
+   },
+   "sharemenupostongoogleplus": {
+      "message": "Lähetä Google+:aan"
+   },
+   "sharemenuratetitle": {
+      "message": "Arvostele tämä laajennus"
+   },
+   "sharemenusendatweet": {
+      "message": "Lähetä twiitti"
+   },
+   "sharemenusharetitle": {
+      "message": "Jaa tämä"
+   },
+   "sharemenutellafriend": {
+      "message": "Kerro kaverille"
+   },
+   "sharemenuwelcomeguidetitle": {
+      "message": "Tervetuloa-opas"
+   },
+   "sharetexta": {
+      "message": "Hanki tämä näppärä Turn Off the Lights -selainlaajennus"
+   },
+   "sharetextb": {
+      "message": "Tämä on käsittämätön. Kokeilin tätä Turn Off the Lights -selainlaajennusta "
+   },
+   "sharetextc": {
+      "message": "Paras ja hämmästyttävä Turn Off the Lights -selainlaajennus"
+   },
+   "sharetextd": {
+      "message": "Turn Off the Lights -laajennus on paras YouTube-työkalu. Lataa ja kokeile vaikka itse!"
+   },
+   "shortcutalllights": {
+      "message": "kytkeäksesi valot päälle/pois kaikkilla avoimilla välilehdillä"
+   },
+   "shortcutbright": {
+      "message": "kirkastaaksesi näyttöä (suurenna läpinäkyvyyttä)"
+   },
+   "shortcutdark": {
+      "message": "tummentaaksesi näyttöä (pienennä läpinäkyvyyttä)"
+   },
+   "shortcuteyeprotection": {
+      "message": "ottaaksesi Silmien suojaus -toiminnon käyttöön tai poistaaksesi sen käytöstä"
+   },
+   "shortcutopacity": {
+      "message": "palauttaaksesi hämäryysasetuksen (läpinäkyvyys)"
+   },
+   "shortcutsavingopacity": {
+      "message": "tallentaaksesi tämän läpinäkyvyysarvon"
+   },
+   "shortcuttotl": {
+      "message": "kytkeäksesi valot päälle/pois"
+   },
+   "showremember": {
+      "message": "Älä näytä tätä muistutussivua uudelleen, kun avaan asetukset"
+   },
+   "skipremember": {
+      "message": "Ohita tämä ja avaa nyt asetukset-sivu"
+   },
+   "speechheybrowser": {
+      "message": "Hei selain"
+   },
+   "speechokbrowser": {
+      "message": "OK selain"
+   },
+   "speechoption": {
+      "message": "Puheentunnistus"
+   },
+   "speechstep1description": {
+      "message": "Ota käyttöön puheentunnistustoiminto"
+   },
+   "speechstep2description": {
+      "message": "Kun otat käyttöön tämän vaihtoehdon, voit puhua selaimen hehkulampulle. Voit sanoa seuraavat komennot:"
+   },
+   "sunday": {
+      "message": "Sunnuntai"
+   },
+   "tellothers": {
+      "message": "Varmistaa, että mielipiteesi vaikuttaa"
+   },
+   "textfoot": {
+      "message": "Tämä ohjelmisto on lisensoitu CC-GNU GPL:n alaisuudessa. Jos haluat nähdä kopion tästä lisenssistä, käy osoitteessa"
+   },
+   "thursday": {
+      "message": "Torstai"
+   },
+   "titel360youtube": {
+      "message": "Näyttää koko 360 asteen YouTube-videon yhdessä kehyksessä."
+   },
+   "titeladdvideobutton": {
+      "message": "Lisää-painike"
+   },
+   "titelalllightsoff": {
+      "message": "Kaikki avoimet välilehdet"
+   },
+   "titelambilight": {
+      "message": "Tunnelmavalaistus"
+   },
+   "titelapideveloper": {
+      "message": "API-kehittäjä"
+   },
+   "titelautoplay": {
+      "message": "AutoToisto"
+   },
+   "titelautoplayblacklist": {
+      "message": "Musta lista"
+   },
+   "titelautoplaywhitelist": {
+      "message": "Valkoinen lista"
+   },
+   "titelautostop": {
+      "message": "AutoStop"
+   },
+   "titelautostopblacklist": {
+      "message": "Musta lista"
+   },
+   "titelautostopwhitelist": {
+      "message": "Valkoinen lista"
+   },
+   "titelautowidthyoutube": {
+      "message": "Aseta automaattisesti YouTube-soittimen koko suureksi."
+   },
+   "titelblock60fps": {
+      "message": "Estä 60 fps"
+   },
+   "titelblur": {
+      "message": "Sumenna loput"
+   },
+   "titelblurradius": {
+      "message": "Sumennuksen säde:"
+   },
+   "titelcamera": {
+      "message": "Kamera"
+   },
+   "titelcinemaontop": {
+      "message": "Elokuvateatteri-tila: valot pois -kerros näytetään vain ikkunan yläosassa"
+   },
+   "titelcolor": {
+      "message": "Väri"
+   },
+   "titelcolora": {
+      "message": "Väri A:"
+   },
+   "titelcolorb": {
+      "message": "Väri B:"
+   },
+   "titelcontextmenus": {
+      "message": "Asiayhteysvalikko"
+   },
+   "titeldeveloper": {
+      "message": "Kehittäjä"
+   },
+   "titeldoesntwork": {
+      "message": "Turn Off the Lights ei toimi tällä sivulla. Kokeile toista sivua."
+   },
+   "titeldownloadbutton": {
+      "message": "Lataa tämä päivitys!"
+   },
+   "titeldownloadthemeupgrade": {
+      "message": "Lisää selaimeesi tumma teema viimeistelläksesi ulkoasun. Teema näkyy selaimessa reunarajan ympärillä."
+   },
+   "titeldownloadupgrade": {
+      "message": "Päivitys lisää tuen valittuihin kuviin tarkentamiselle ja näyttää kuvagallerian sivustolla."
+   },
+   "titeldownloadupgradefinancetoolbar": {
+      "message": "Näet tässä reaaliaikaiset osakemarkkinatiedot."
+   },
+   "titeldownloadupgradepropermenubar": {
+      "message": "Lisää paluu mustaan -valikkopalkki Googlen verkkosivulle."
+   },
+   "titeldownloadupgradezoom": {
+      "message": "Tehdäksesi lukemisesta miellyttävämpää, zoomaa verkkosisältöä lähemmäksi tai kauemmas zoomauspainikkeella."
+   },
+   "titeldynamic": {
+      "message": "Dynaaminen tausta"
+   },
+   "titeleastereggs": {
+      "message": "Pääsiäismunat"
+   },
+   "titeleye": {
+      "message": "Silmien suojaus"
+   },
+   "titeleyeblacklist": {
+      "message": "Musta lista"
+   },
+   "titeleyewhitelist": {
+      "message": "Valkoinen lista"
+   },
+   "titelfadein": {
+      "message": "Häivytä sisään"
+   },
+   "titelfadeout": {
+      "message": "Häivytä ulos"
+   },
+   "titelflash": {
+      "message": "Flash-tunnistus"
+   },
+   "titelhead": {
+      "message": "Kanava"
+   },
+   "titelhovervideo": {
+      "message": "Videon leijuefekti"
+   },
+   "titelimage": {
+      "message": "Taustakuva"
+   },
+   "titelinfobar": {
+      "message": "Tietopalkki"
+   },
+   "titelintroduce": {
+      "message": "Esittelyssä uusi Turn Off the Lights!"
+   },
+   "titellamp": {
+      "message": "Hehkulamppu"
+   },
+   "titellampchoose": {
+      "message": "Valitse mieluinen lampun tyyli"
+   },
+   "titellampregular": {
+      "message": "Näytä lamppukuvake aina osoitekentässä"
+   },
+   "titellampvideo": {
+      "message": "Näytä lamppukuvake vain, kun videosoitin havaittu"
+   },
+   "titellessmore": {
+      "message": "Näytä vähemmän"
+   },
+   "titellikebar": {
+      "message": "Tykkäyspalkki"
+   },
+   "titellikebutton": {
+      "message": "Tykkäyspainikkeet"
+   },
+   "titellinear": {
+      "message": "Lineaarinen"
+   },
+   "titelmaxqualityyoutube": {
+      "message": "Aseta resoluutioksi automaattisesti:"
+   },
+   "titelmouse": {
+      "message": "Hiiri"
+   },
+   "titelnightmodebck": {
+      "message": "Taustan väri"
+   },
+   "titelnightmodeblacklist": {
+      "message": "Musta lista"
+   },
+   "titelnightmodedomain": {
+      "message": "Toimialue"
+   },
+   "titelnightmodehyperlink": {
+      "message": "Hyperlinkkiväri"
+   },
+   "titelnightmodepage": {
+      "message": "Sivu"
+   },
+   "titelnightmodeposition": {
+      "message": "Kytkimen sijainti"
+   },
+   "titelnightmodetxt": {
+      "message": "Tekstin väri"
+   },
+   "titelnightmodewhitelist": {
+      "message": "Valkoinen lista"
+   },
+   "titelnighttheme": {
+      "message": "Yötila"
+   },
+   "titeloff": {
+      "message": "Pois"
+   },
+   "titelon": {
+      "message": "Päällä"
+   },
+   "titelopacity": {
+      "message": "Läpinäkyvyys"
+   },
+   "titelpageaction": {
+      "message": "Piilota lamppukuvake osoitekentästä"
+   },
+   "titelpassword": {
+      "message": "Salasanasuojaus"
+   },
+   "titelpermission": {
+      "message": "Käyttöoikeudet"
+   },
+   "titelplaylist": {
+      "message": "Soittolista"
+   },
+   "titelpopupoptions": {
+      "message": "Asetukset"
+   },
+   "titelpopupratestars": {
+      "message": "Luokittele 5 tähdellä"
+   },
+   "titelpopupsupport": {
+      "message": "Tuki"
+   },
+   "titelpopupvideo": {
+      "message": "YouTube"
+   },
+   "titelpopupwelcomeguide": {
+      "message": "Tervetuloa-opas"
+   },
+   "titelqualityyoutube": {
+      "message": "Aseta YouTube-videoiden laatu automaattisesti."
+   },
+   "titelreader": {
+      "message": "Himmennystasopalkki"
+   },
+   "titelreflection": {
+      "message": "Heijastus"
+   },
+   "titelrememberpage": {
+      "message": "Muistutussivu"
+   },
+   "titelreset": {
+      "message": "Palauta asetukset"
+   },
+   "titelrightsreserved": {
+      "message": "Joitakin oikeuksia pidätetään."
+   },
+   "titelscreen": {
+      "message": "Näyttö"
+   },
+   "titelseeonline": {
+      "message": "Lisää esimerkkejä verkosta"
+   },
+   "titelsharebutton": {
+      "message": "Jakopainike"
+   },
+   "titelsharethis": {
+      "message": "Jaa tämä:"
+   },
+   "titelshortcutlight": {
+      "message": "Pikanäppäin"
+   },
+   "titelshowmore": {
+      "message": "Näytä lisää"
+   },
+   "titelspeech": {
+      "message": "Puhe"
+   },
+   "titelspreadradius": {
+      "message": "Leviämisen säde:"
+   },
+   "titelsuggestions": {
+      "message": "Ehdotukset"
+   },
+   "titelsupportatmos": {
+      "message": "Tukee ainoastaan HTML5 \u003Cvideo> -soittimia. Se käyttää myös laitteesi grafiikkapiiriä."
+   },
+   "titelsync": {
+      "message": "Synkronointi"
+   },
+   "titelsyncbrowser": {
+      "message": "Synkronoi laajennuksen asetukset toisen selaimesi kanssa."
+   },
+   "titelupgrade": {
+      "message": "Päivitä"
+   },
+   "titelvideoheadline": {
+      "message": "Videon otsikko"
+   },
+   "titelvideosample": {
+      "message": "Videonäyte"
+   },
+   "titelvideotool": {
+      "message": "Video-työkalupalkki"
+   },
+   "titelvideotoolblacklist": {
+      "message": "Musta lista"
+   },
+   "titelvideotoolbrightness": {
+      "message": "kirkkaus 50 %"
+   },
+   "titelvideotoolcontrast": {
+      "message": "kontrasti"
+   },
+   "titelvideotoolfilter": {
+      "message": "Suodatin"
+   },
+   "titelvideotoolfullwindow": {
+      "message": "Koko ikkuna"
+   },
+   "titelvideotoolgrayscale": {
+      "message": "harmaasävy"
+   },
+   "titelvideotoolhueroration": {
+      "message": "värisävyn kääntö 90°"
+   },
+   "titelvideotoolinvert": {
+      "message": "käännä"
+   },
+   "titelvideotoollike": {
+      "message": "Tykkää"
+   },
+   "titelvideotoolnormal": {
+      "message": "normaali"
+   },
+   "titelvideotoolrepeat": {
+      "message": "Uudelleentoisto"
+   },
+   "titelvideotoolsaturate": {
+      "message": "kyllästä"
+   },
+   "titelvideotoolscreenshot": {
+      "message": "Ota kuvakaappaus"
+   },
+   "titelvideotoolsepia": {
+      "message": "seepia"
+   },
+   "titelvideotoolsubscribe": {
+      "message": "Tilaa"
+   },
+   "titelvideotoolwhitelist": {
+      "message": "Valkoinen lista"
+   },
+   "titelviewcount": {
+      "message": "Näyttökerrat"
+   },
+   "titelvisblocks": {
+      "message": "Palikat"
+   },
+   "titelvischoose": {
+      "message": "Valitse äänen visualisointi"
+   },
+   "titelvisenable": {
+      "message": "Ota äänen visualisointi käyttöön/poista käytöstä"
+   },
+   "titelvisfrequency": {
+      "message": "Taajuus"
+   },
+   "titelvistunnel": {
+      "message": "Musiikkitunneli"
+   },
+   "titelvisualization": {
+      "message": "Äänen visualisointi"
+   },
+   "titelvolume": {
+      "message": "Videon Äänenvoimakkuus-liukusäädin"
+   },
+   "titelwebsite": {
+      "message": "Sivusto"
+   },
+   "titelwikiatmos": {
+      "message": "Tunnelmavalaistus-ominaisuuden wiki"
+   },
+   "titleanalytics": {
+      "message": "Analytiikka"
+   },
+   "titleavgdayschedule": {
+      "message": "Keskimääräinen päiväohjelma"
+   },
+   "titlecancel": {
+      "message": "Peruuta"
+   },
+   "titledarkmodeoff": {
+      "message": "Tumma tila POIS"
+   },
+   "titledarkmodeon": {
+      "message": "Tumma tila PÄÄLLÄ"
+   },
+   "titledonatebutton": {
+      "message": "Lahjoita"
+   },
+   "titlelanalyticprivacy": {
+      "message": "Turn Off the Lights -laajennus ottaa yksityisyytesi vakavissaan. Näkemäsi analytiikka on tallennettu sinun omalle koneellesi. Sivustojen käyttötietoja ei myydä eikä siirretä eteenpäin kolmansille osapuollille."
+   },
+   "titlelearnmore": {
+      "message": "Lue lisää"
+   },
+   "titlelprivacy": {
+      "message": "Tietosuojakäytäntö"
+   },
+   "titlelratenow": {
+      "message": "Arvostele nyt!"
+   },
+   "titlemultiopacity": {
+      "message": "Jokaisella sivustolla oma läpinäkyvyys"
+   },
+   "titlenightowl": {
+      "message": "Yökyöpeli"
+   },
+   "titleok": {
+      "message": "OK"
+   },
+   "titleorigin": {
+      "message": "Alkuperä"
+   },
+   "titleprofile": {
+      "message": "Profiili"
+   },
+   "titleprofilealwaysscreentab": {
+      "message": "Aina käytössä kaikille avoimille välilehdille"
+   },
+   "titleprofilenovideofocus": {
+      "message": "Videoon keskityminen pois käytöstä"
+   },
+   "titleprofilescreenclick": {
+      "message": "Ota linkkien napsauttaminen käyttöön näytön ollessa tummennettuna"
+   },
+   "titleprofilesubmit": {
+      "message": "Valitse tämä asetus"
+   },
+   "titleprofilevideofocus": {
+      "message": "Videoon keskityminen käytössä"
+   },
+   "titleratelater": {
+      "message": "Myöhemmin"
+   },
+   "titleregularuser": {
+      "message": "Videoiden rakastaja"
+   },
+   "titlescreenprotection": {
+      "message": "Silmien suojaus"
+   },
+   "titlesharestats": {
+      "message": "Jaa tilastosi"
+   },
+   "titlesiteengagement": {
+      "message": "Sivuston sitoutuminen"
+   },
+   "titletime": {
+      "message": "Aika (min)"
+   },
+   "titleuserprofile": {
+      "message": "Valitse alta, millaisia asetuksia haluat käyttää lamppupainikkeessa. Jokaisessa profiilissa on omat ominaisuutensa."
+   },
+   "titlevideoplayrate": {
+      "message": "Videon nopeus"
+   },
+   "top": {
+      "message": "Yläreuna"
+   },
+   "totalenergysaved": {
+      "message": "Sähköä säästetty yhteensä"
+   },
+   "translateme": {
+      "message": "Auta käännöstyössä"
+   },
+   "trymotion": {
+      "message": "Kokeile sitä itse!"
+   },
+   "tuesday": {
+      "message": "Tiistai"
+   },
+   "version": {
+      "message": "Versio"
+   },
+   "videotitle": {
+      "message": "Tarkenna tähän videoon"
+   },
+   "visualeffects": {
+      "message": "Visuaaliset tehosteet"
+   },
+   "vtoolalign": {
+      "message": "Painike, jolla voi keskittää videosoittimen selainikkunaan"
+   },
+   "vtoolfilter": {
+      "message": "Painike, jolla lisätään suodatin videosoittimeen"
+   },
+   "vtoolfullscreen": {
+      "message": "Painike, jolla videosoitin suurennetaan koko ikkunaan"
+   },
+   "vtoolreplay": {
+      "message": "Painike, jolla toistetaan videosoitin uudelleen"
+   },
+   "vtoolscreenshot": {
+      "message": "Painike, jolla voi ottaa kuvakaappauksia nykyisestä videosoittimesta"
+   },
+   "vtoolvisualization": {
+      "message": "Painike äänen visualisoinnin näyttämiseksi nykyisessä videosoittimessa"
+   },
+   "warning": {
+      "message": "Varoitus!"
+   },
+   "warningtextambilight": {
+      "message": "Kun verkkosivun tietoturvan vuoksi videon tietojen nouto ei onnistu, näytetään sen sijaan valittu väri."
+   },
+   "wednesday": {
+      "message": "Keskiviikko"
+   },
+   "wpermissionnotremoved": {
+      "message": "Käyttöoikeudet on jo poistettu"
+   },
+   "wpermissionremoved": {
+      "message": "Käyttöoikeudet poistettu."
+   },
+   "writeareview": {
+      "message": "Kirjoita arvostelu"
+   }
+}

@@ -1,0 +1,4 @@
+#divFloatLeft, #divFloatRight, #adsIfrme1, #divAds, #divAds2, .divCloseBut, .divCloseBut2 {display: none !important}
+a[href*="bebi.com"] {
+	display: none !important;
+}

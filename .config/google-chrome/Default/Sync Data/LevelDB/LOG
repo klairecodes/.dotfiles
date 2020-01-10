@@ -1,0 +1,6 @@
+2020/01/10-15:00:16.972 82cd Reusing MANIFEST /home/klaus/.config/google-chrome/Default/Sync Data/LevelDB/MANIFEST-000001
+2020/01/10-15:00:16.972 82cd Recovering log #347
+2020/01/10-15:00:16.973 82cd Reusing old log /home/klaus/.config/google-chrome/Default/Sync Data/LevelDB/000347.log 
+2020/01/10-15:00:23.830 84b0 Level-0 table #351: started
+2020/01/10-15:00:23.883 84b0 Level-0 table #351: 150860 bytes OK
+2020/01/10-15:00:23.887 84b0 Delete type=0 #347

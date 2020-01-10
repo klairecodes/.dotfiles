@@ -1,0 +1,104 @@
+#container {
+	width: 100% !important;
+}
+.bigBarContainer, .barContent {
+	background: none !important;
+	border: none !important;
+	display: none !important;
+}
+#videoContainer {
+	float: left;
+	width: 63%;
+	padding: 0px 10px 10px 10px;
+	border-right: 1px dotted grey;
+}
+#otherStuff {
+	float: right;
+	width: 35%;
+	text-align: center;
+}
+#importantStuff, #adsIfrme10 {
+	height: 0px;
+	text-align: center;
+}
+#adsIfrme10 {
+	width: 0px;
+}
+
+#centerDivVideo, #divContentVideo {
+	width: 100% !important;
+	height: 100% !important;
+	margin-top: 0px !important;
+}
+#my_video_1, #divContentVideo_wrapper, #divContentVideo embed, #divContentVideo iframe {
+	width: 100% !important;
+}
+#selectEpisodeContainer {
+	width: auto !important;
+}
+#selectEpisodeContainer div {
+	float: none !important;
+	display: inline-block;
+}
+#selectEpisodeContainer > div:nth-child(2) {
+	vertical-align: middle;
+}
+#selectEpisode {
+	width: 300px !important;
+}
+#playerSwitchLightsOffContainer {
+	width: 100% !important;
+	margin-top: 5px !important;
+}
+#playerSwitchLightsOffContainer div {
+	float: none !important;
+	width: auto !important;
+	display: inline-block;
+	text-align: center !important;
+}
+#playerSwitchLightsOffContainer div div {
+	padding-bottom: 5px;
+}
+#divDownload, #divFileName {
+	padding-top: 0px !important;
+}
+#divComments {
+	width: auto !important;
+	margin-top: 5px !important; 
+	margin-right: 20px !important;
+	overflow: scroll !important;
+	overflow-x: hidden !important;
+}
+#divComments > div {
+	width: 95% !important;
+	padding-left: 15px !important;
+}
+#indicator-south {
+	display: none !important;
+	visibility: hidden !important;
+}
+
+#footer {
+	display: none !important;
+}
+
+@media screen and (max-width: 1100px) {
+	#containerRoot {
+		overflow-x: hidden;
+	}
+	#videoContainer {
+		float: none;
+		width: 100% !important;
+		padding: 0px;
+	}
+	#otherStuff {
+		width: 100% !important;
+		text-align: center;
+		background: rgba(0,0,0,0.7);
+	}
+	#divComments {
+		margin-right: 0px !important;
+		height: auto !important;
+		overflow: auto !important;
+	}
+}

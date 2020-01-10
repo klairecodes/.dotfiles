@@ -1,0 +1,42 @@
+2020/01/08-17:57:35.872 3e2 Reusing MANIFEST /home/klaus/.config/google-chrome/Default/Sync Data/LevelDB/MANIFEST-000001
+2020/01/08-17:57:35.872 3e2 Recovering log #330
+2020/01/08-17:57:35.874 3e2 Reusing old log /home/klaus/.config/google-chrome/Default/Sync Data/LevelDB/000330.log 
+2020/01/08-18:06:03.918 897 Level-0 table #334: started
+2020/01/08-18:06:03.986 897 Level-0 table #334: 124087 bytes OK
+2020/01/08-18:06:03.989 897 Delete type=0 #330
+2020/01/08-18:48:04.684 897 Level-0 table #336: started
+2020/01/08-18:48:04.752 897 Level-0 table #336: 119819 bytes OK
+2020/01/08-18:48:04.755 897 Delete type=0 #333
+2020/01/08-18:48:04.755 897 Compacting 4@0 + 1@1 files
+2020/01/08-18:48:04.765 897 Generated table #337@0: 4119 keys, 403105 bytes
+2020/01/08-18:48:04.765 897 Compacted 4@0 + 1@1 files => 403105 bytes
+2020/01/08-18:48:04.766 897 compacted to: files[ 0 1 1 0 0 0 0 ]
+2020/01/08-18:48:04.766 897 Delete type=2 #327
+2020/01/08-18:48:04.766 897 Delete type=2 #336
+2020/01/08-18:48:04.766 897 Delete type=2 #331
+2020/01/08-18:48:04.766 897 Delete type=2 #329
+2020/01/08-18:48:04.766 897 Delete type=2 #334
+2020/01/08-19:08:03.973 897 Level-0 table #339: started
+2020/01/08-19:08:03.982 897 Level-0 table #339: 106159 bytes OK
+2020/01/08-19:08:03.984 897 Delete type=0 #335
+2020/01/08-22:42:13.101 897 Level-0 table #341: started
+2020/01/08-22:42:13.151 897 Level-0 table #341: 124054 bytes OK
+2020/01/08-22:42:13.153 897 Delete type=0 #338
+2020/01/09-18:06:58.587 897 Level-0 table #343: started
+2020/01/09-18:06:58.590 897 Level-0 table #343: 104638 bytes OK
+2020/01/09-18:06:58.592 897 Delete type=0 #340
+2020/01/10-03:00:03.934 897 Level-0 table #345: started
+2020/01/10-03:00:03.940 897 Level-0 table #345: 131265 bytes OK
+2020/01/10-03:00:03.941 897 Delete type=0 #342
+2020/01/10-03:00:03.942 897 Compacting 4@0 + 1@1 files
+2020/01/10-03:00:03.954 897 Generated table #346@0: 4191 keys, 422237 bytes
+2020/01/10-03:00:03.954 897 Compacted 4@0 + 1@1 files => 422237 bytes
+2020/01/10-03:00:03.955 897 compacted to: files[ 0 1 1 0 0 0 0 ]
+2020/01/10-03:00:03.955 897 Delete type=2 #337
+2020/01/10-03:00:03.955 897 Delete type=2 #341
+2020/01/10-03:00:03.955 897 Delete type=2 #345
+2020/01/10-03:00:03.955 897 Delete type=2 #339
+2020/01/10-03:00:03.955 897 Delete type=2 #343
+2020/01/10-03:49:47.757 897 Level-0 table #348: started
+2020/01/10-03:49:47.826 897 Level-0 table #348: 182916 bytes OK
+2020/01/10-03:49:47.830 897 Delete type=0 #344

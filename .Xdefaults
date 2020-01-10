@@ -1,1 +1,15 @@
-/home/klaus/.Xdefaults
+xterm*background: black
+xterm*foreground: white
+
+! start with TrueType fonts enabled
+XTerm.vt100.renderFont: true
+
+! XTerm.vt100.faceName: Terminus:size=14:antialias=true
+XTerm.vt100.faceName: DejaVu Sans Mono:size=14:antialias=true
+
+! xterm*font: *-fixed-*-*-*-24-*
+
+xterm*VT100.Translations: #override \
+    Ctrl <Key> minus: smaller-vt-font() \n\
+    Ctrl <Key> plus: larger-vt-font() \n\
+    Ctrl <Key> 0: set-vt-font(d)

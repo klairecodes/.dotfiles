@@ -1,0 +1,751 @@
+Desktop is 1920 x 1080 @ 60 Hz
+Initialize engine version: 2018.2.20f1 (cef3e6c0c622)
+GfxDevice: creating device client; threaded=1
+Renderer: Mesa DRI Intel(R) UHD Graphics 620 (Kabylake GT2) 
+Vendor:   Intel Open Source Technology Center
+Version:  4.6 (Core Profile) Mesa 19.3.1
+GLES:     0
+ GL_3DFX_texture_compression_FXT1 GL_AMD_conservative_depth GL_AMD_depth_clamp_separate GL_AMD_draw_buffers_blend GL_AMD_gpu_shader_int64 GL_AMD_multi_draw_indirect GL_AMD_query_buffer_object GL_AMD_seamless_cubemap_per_texture GL_AMD_shader_stencil_export GL_AMD_shader_trinary_minmax GL_AMD_texture_texture4 GL_AMD_vertex_shader_layer GL_AMD_vertex_shader_viewport_index GL_ANGLE_texture_compression_dxt3 GL_ANGLE_texture_compression_dxt5 GL_APPLE_object_purgeable GL_ARB_ES2_compatibility GL_ARB_ES3_1_compatibility GL_ARB_ES3_2_compatibility GL_ARB_ES3_compatibility GL_ARB_arrays_of_arrays GL_ARB_base_instance GL_ARB_blend_func_extended GL_ARB_buffer_storage GL_ARB_clear_buffer_object GL_ARB_clear_texture GL_ARB_clip_control GL_ARB_compressed_texture_pixel_storage GL_ARB_compute_shader GL_ARB_conditional_render_inverted GL_ARB_conservative_depth GL_ARB_copy_buffer GL_ARB_copy_image GL_ARB_cull_distance GL_ARB_debug_output GL_ARB_depth_buffer_float GL_ARB_depth_clamp GL_ARB_derivative_control GL_ARB_direct_stat
+e_access GL_ARB_draw_buffers GL_ARB_draw_buffers_blend GL_ARB_draw_elements_base_vertex GL_ARB_draw_indirect GL_ARB_draw_instanced GL_ARB_enhanced_layouts GL_ARB_explicit_attrib_location GL_ARB_explicit_uniform_location GL_ARB_fragment_coord_conventions GL_ARB_fragment_layer_viewport GL_ARB_fragment_shader GL_ARB_fragment_shader_interlock GL_ARB_framebuffer_no_attachments GL_ARB_framebuffer_object GL_ARB_framebuffer_sRGB GL_ARB_get_program_binary GL_ARB_get_texture_sub_image GL_ARB_gl_spirv GL_ARB_gpu_shader5 GL_ARB_gpu_shader_fp64 GL_ARB_gpu_shader_int64 GL_ARB_half_float_pixel GL_ARB_half_float_vertex GL_ARB_indirect_parameters GL_ARB_instanced_arrays GL_ARB_internalformat_query GL_ARB_internalformat_query2 GL_ARB_invalidate_subdata GL_ARB_map_buffer_alignment GL_ARB_map_buffer_range GL_ARB_multi_bind GL_ARB_multi_draw_indirect GL_ARB_occlusion_query2 GL_ARB_parallel_shader_compile GL_ARB_pipeline_statistics_query GL_ARB_pixel_buffer_object GL_ARB_point_sprite GL_ARB_polygon_offset_clamp GL_ARB_post_depth_
+coverage GL_ARB_program_interface_query GL_ARB_provoking_vertex GL_ARB_query_buffer_object GL_ARB_robust_buffer_access_behavior GL_ARB_robustness GL_ARB_sample_shading GL_ARB_sampler_objects GL_ARB_seamless_cube_map GL_ARB_seamless_cubemap_per_texture GL_ARB_separate_shader_objects GL_ARB_shader_atomic_counter_ops GL_ARB_shader_atomic_counters GL_ARB_shader_ballot GL_ARB_shader_bit_encoding GL_ARB_shader_clock GL_ARB_shader_draw_parameters GL_ARB_shader_group_vote GL_ARB_shader_image_load_store GL_ARB_shader_image_size GL_ARB_shader_objects GL_ARB_shader_precision GL_ARB_shader_stencil_export GL_ARB_shader_storage_buffer_object GL_ARB_shader_subroutine GL_ARB_shader_texture_image_samples GL_ARB_shader_texture_lod GL_ARB_shader_viewport_layer_array GL_ARB_shading_language_420pack GL_ARB_shading_language_packing GL_ARB_spirv_extensions GL_ARB_stencil_texturing GL_ARB_sync GL_ARB_tessellation_shader GL_ARB_texture_barrier GL_ARB_texture_buffer_object GL_ARB_texture_buffer_object_rgb32 GL_ARB_texture_buffer_rang
+e GL_ARB_texture_compression_bptc GL_ARB_texture_compression_rgtc GL_ARB_texture_cube_map_array GL_ARB_texture_filter_anisotropic GL_ARB_texture_float GL_ARB_texture_gather GL_ARB_texture_mirror_clamp_to_edge GL_ARB_texture_multisample GL_ARB_texture_non_power_of_two GL_ARB_texture_query_levels GL_ARB_texture_query_lod GL_ARB_texture_rectangle GL_ARB_texture_rg GL_ARB_texture_rgb10_a2ui GL_ARB_texture_stencil8 GL_ARB_texture_storage GL_ARB_texture_storage_multisample GL_ARB_texture_swizzle GL_ARB_texture_view GL_ARB_timer_query GL_ARB_transform_feedback2 GL_ARB_transform_feedback3 GL_ARB_transform_feedback_instanced GL_ARB_transform_feedback_overflow_query GL_ARB_uniform_buffer_object GL_ARB_vertex_array_bgra GL_ARB_vertex_array_object GL_ARB_vertex_attrib_64bit GL_ARB_vertex_attrib_binding GL_ARB_vertex_buffer_object GL_ARB_vertex_shader GL_ARB_vertex_type_10f_11f_11f_rev GL_ARB_vertex_type_2_10_10_10_rev GL_ARB_viewport_array GL_ATI_blend_equation_separate GL_ATI_texture_float GL_EXT_EGL_sync GL_EXT_abgr G
+L_EXT_blend_equation_separate GL_EXT_demote_to_helper_invocation GL_EXT_draw_buffers2 GL_EXT_draw_instanced GL_EXT_framebuffer_blit GL_EXT_framebuffer_multisample GL_EXT_framebuffer_multisample_blit_scaled GL_EXT_framebuffer_object GL_EXT_framebuffer_sRGB GL_EXT_packed_depth_stencil GL_EXT_packed_float GL_EXT_pixel_buffer_object GL_EXT_polygon_offset_clamp GL_EXT_provoking_vertex GL_EXT_shader_framebuffer_fetch GL_EXT_shader_framebuffer_fetch_non_coherent GL_EXT_shader_integer_mix GL_EXT_shader_samples_identical GL_EXT_texture_array GL_EXT_texture_compression_dxt1 GL_EXT_texture_compression_rgtc GL_EXT_texture_compression_s3tc GL_EXT_texture_filter_anisotropic GL_EXT_texture_integer GL_EXT_texture_sRGB GL_EXT_texture_sRGB_R8 GL_EXT_texture_sRGB_decode GL_EXT_texture_shadow_lod GL_EXT_texture_shared_exponent GL_EXT_texture_snorm GL_EXT_texture_swizzle GL_EXT_timer_query GL_EXT_transform_feedback GL_EXT_vertex_array_bgra GL_EXT_vertex_attrib_64bit GL_IBM_multimode_draw_arrays GL_INTEL_conservative_rasterizatio
+n GL_INTEL_performance_query GL_INTEL_shader_atomic_float_minmax GL_KHR_blend_equation_advanced GL_KHR_blend_equation_advanced_coherent GL_KHR_context_flush_control GL_KHR_debug GL_KHR_no_error GL_KHR_parallel_shader_compile GL_KHR_robust_buffer_access_behavior GL_KHR_robustness GL_KHR_texture_compression_astc_ldr GL_KHR_texture_compression_astc_sliced_3d GL_MESA_framebuffer_flip_y GL_MESA_pack_invert GL_MESA_shader_integer_functions GL_MESA_texture_signed_rgba GL_NV_compute_shader_derivatives GL_NV_conditional_render GL_NV_depth_clamp GL_NV_fragment_shader_interlock GL_NV_packed_depth_stencil GL_NV_texture_barrier GL_OES_EGL_image GL_S3_s3tc
+OPENGL LOG: Creating OpenGL 4.6 graphics device ; Context level  <OpenGL 4.5> ; Context handle 70036448
+Begin MonoManager ReloadAssembly
+- Completed reload, in  0.086 seconds
+Default vsync count 1
+requesting resize 1920 x 1080
+Using native desktop resolution 1920 x 1080
+requesting fullscreen 1920 x 1080 at 0 Hz
+Desktop is 1920 x 1080 @ 60 Hz
+UnloadTime: 1.251000 ms
+[20:01:28.502] [1] [INFO] KProfiler: Start
+[20:01:28.594] [1] [INFO] Applying resolution 1920x1080 @60hz (fullscreen: True)
+[20:01:28.594] [1] [INFO] Low Res Textures? Yes
+[20:01:28.594] [1] [INFO] release Build: RP-383949
+SYSTEM INFO:
+    Platform=LinuxPlayer
+    OSname=Linux 5.4 Arch rolling 64bit
+    OSversion=5.4.5.1
+    CPUmodel=PC
+    CPUdeviceType=Desktop
+    ProcBits=64
+    CPUcount=8
+    CPUtype=Intel(R) Core(TM) i5-8250U CPU @ 1.60GHz
+    SystemMemoryMegs=7721
+    GPUgraphicsDeviceID=22807
+    GPUname=Mesa DRI Intel(R) UHD Graphics 620 (Kabylake GT2) 
+    GPUgraphicsDeviceType=OpenGLCore
+    GPUgraphicsDeviceVendor=Intel Open Source Technology Center
+    GPUgraphicsDeviceVendorID=32902
+    GPUgraphicsDeviceVersion=OpenGL 4.6 (Core Profile) Mesa 19.3.1
+    GPUmemoryMegs=512
+    GPUgraphicsMultiThreaded=False
+    GPUgraphicsShaderLevel=50
+    GPUmaxTextureSize=16384
+    GPUnpotSupport=Full
+    GPUsupportedRenderTargetCount=8
+    GPUsupports2DArrayTextures=True
+    GPUsupports3DTextures=True
+    GPUsupportsComputeShaders=True
+    GPUsupportsImageEffects=True
+    GPUsupportsInstancing=True
+    GPUsupportsRenderToCubemap=True
+    GPUsupportsShadows=True
+    GPUsupportsSparseTextures=False
+    System Language=English
+[20:01:29.764] [1] [INFO] Initializing at 2019-12-22 20:01:29.763
+[20:01:29.764] [1] [INFO] Save path: /home/klaus/.config/unity3d/Klei/Oxygen Not Included
+[20:01:30.111] [1] [INFO] ModLoader.dll failed to load. Either it is not present or it encountered an error
+[20:01:30.149] [1] [INFO] Localization.Initialize!
+[20:01:30.153] [1] [INFO] Logged into Steam with ID:76561198144612272, NAME:Noireink
+[20:01:30.154] [1] [INFO] [Account] Requesting auth ticket from Steam
+[20:01:30.253] [2] [WARNING] 15:01:30 KleiAccount: Exception getting Request Stream:Error: NameResolutionFailure
+[20:01:30.263] [2] [WARNING] 15:01:30 KleiAccount: Exception (retrying in 16 seconds): Error: NameResolutionFailure
+  at System.Net.HttpWebRequest.EndGetRequestStream (IAsyncResult asyncResult) [0x00000] in <filename unknown>:0 
+  at System.Net.HttpWebRequest.GetRequestStream () [0x00000] in <filename unknown>:0 
+  at ThreadedHttps`1[T].Send (System.Byte[] byteArray, Boolean isForce) [0x00000] in <filename unknown>:0 
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+requesting resize 1920 x 1080
+Using native desktop resolution 1920 x 1080
+requesting fullscreen 1920 x 1080 at 60 Hz
+Desktop is 1920 x 1080 @ 60 Hz
+Failed setting thread niceness (priority) to 0 due to EACCES (errno 13) violation. Lowering niceness (raising priority) requires CAP_SYS_NICE or superuser.
+ 
+(Filename:  Line: 127)
+
+
+Unloading 844 unused Assets to reduce memory usage. Loaded Objects now: 40139.
+Total: 84.795000 ms (FindLiveObjects: 2.659000 ms CreateObjectMapping: 1.578000 ms MarkObjects: 79.280000 ms  DeleteObjects: 1.276000 ms)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 3.881000 ms
+
+Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 41934.
+Total: 86.442000 ms (FindLiveObjects: 3.070000 ms CreateObjectMapping: 1.189000 ms MarkObjects: 82.072000 ms  DeleteObjects: 0.110000 ms)
+
+[20:01:33.863] [1] [INFO] -- MAIN MENU -- 
+[20:01:33.959] [1] [INFO] Screen resolution updated, saving values to prefs: 1920x1080 @ 60, fullscreen: True
+[20:01:33.978] [1] [WARNING] Could not retrieve web motd from https://klei-motd.s3.amazonaws.com/oni/motd.json, falling back to local - err: Cannot resolve destination host
+[20:01:46.588] [2] [WARNING] 15:01:46 KleiAccount: Exception getting Request Stream:Error: NameResolutionFailure
+[20:01:46.588] [2] [WARNING] 15:01:46 KleiAccount: Exception (retrying in 32 seconds): Error: NameResolutionFailure
+  at System.Net.HttpWebRequest.EndGetRequestStream (IAsyncResult asyncResult) [0x00000] in <filename unknown>:0 
+  at System.Net.HttpWebRequest.GetRequestStream () [0x00000] in <filename unknown>:0 
+  at ThreadedHttps`1[T].Send (System.Byte[] byteArray, Boolean isForce) [0x00000] in <filename unknown>:0 
+[20:02:18.594] [2] [WARNING] 15:02:18 KleiAccount: Exception getting Request Stream:Error: NameResolutionFailure
+[20:02:18.595] [2] [WARNING] 15:02:18 KleiAccount: Exception (retrying in 64 seconds): Error: NameResolutionFailure
+  at System.Net.HttpWebRequest.EndGetRequestStream (IAsyncResult asyncResult) [0x00000] in <filename unknown>:0 
+  at System.Net.HttpWebRequest.GetRequestStream () [0x00000] in <filename unknown>:0 
+  at ThreadedHttps`1[T].Send (System.Byte[] byteArray, Boolean isForce) [0x00000] in <filename unknown>:0 
+[20:03:22.600] [2] [WARNING] 15:03:22 KleiAccount: Exception getting Request Stream:Error: NameResolutionFailure
+[20:03:22.601] [2] [WARNING] 15:03:22 KleiAccount: Max Retries (3) reached. Disabling KleiAccount...
+[20:03:22.805] [3] [WARNING] 15:03:22 KleiMetrics: Exception getting Request Stream:Error: NameResolutionFailure
+[20:03:22.806] [3] [WARNING] 15:03:22 KleiMetrics: Exception (retrying in 16 seconds): Error: NameResolutionFailure
+  at System.Net.HttpWebRequest.EndGetRequestStream (IAsyncResult asyncResult) [0x00000] in <filename unknown>:0 
+  at System.Net.HttpWebRequest.GetRequestStream () [0x00000] in <filename unknown>:0 
+  at ThreadedHttps`1[T].Send (System.Byte[] byteArray, Boolean isForce) [0x00000] in <filename unknown>:0 
+[20:03:38.810] [3] [WARNING] 15:03:38 KleiMetrics: Exception getting Request Stream:Error: NameResolutionFailure
+[20:03:38.810] [3] [WARNING] 15:03:38 KleiMetrics: Exception (retrying in 32 seconds): Error: NameResolutionFailure
+  at System.Net.HttpWebRequest.EndGetRequestStream (IAsyncResult asyncResult) [0x00000] in <filename unknown>:0 
+  at System.Net.HttpWebRequest.GetRequestStream () [0x00000] in <filename unknown>:0 
+  at ThreadedHttps`1[T].Send (System.Byte[] byteArray, Boolean isForce) [0x00000] in <filename unknown>:0 
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+
+Unloading 0 unused Assets to reduce memory usage. Loaded Objects now: 41947.
+Total: 120.416000 ms (FindLiveObjects: 7.076000 ms CreateObjectMapping: 7.003000 ms MarkObjects: 106.269000 ms  DeleteObjects: 0.066000 ms)
+
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 2.770000 ms
+
+Unloading 158 unused Assets to reduce memory usage. Loaded Objects now: 53489.
+Total: 126.618000 ms (FindLiveObjects: 4.002000 ms CreateObjectMapping: 3.110000 ms MarkObjects: 119.085000 ms  DeleteObjects: 0.419000 ms)
+
+[20:03:56.826] [1] [INFO] Loading save file: /home/klaus/.config/unity3d/Klei/Oxygen Not Included/save_files/Shack.sav
+ headerVersion:1, buildVersion:383949, headerSize:296, IsCompressed:True
+[20:03:56.826] [1] [INFO] GameInfo: numberOfCycles:30, numberOfDuplicants:8, baseName:Shack, isAutoSave:False, originalSaveName:/home/klaus/.config/unity3d/Klei/Oxygen Not Included/save_files/Shack.sav, saveVersion:7.15
+[20:03:57.334] [1] [INFO] World settings reload complete!
+[20:03:57.336] [1] [INFO] Generating a world without traits. Either this world has traits disabled or none were specified.
+[20:03:57.402] [1] [INFO] Set world to [worlds/SandstoneDefault] /home/klaus/.local/share/Steam/steamapps/common/OxygenNotIncluded/OxygenNotIncluded_Data/StreamingAssets/worldgen/
+[20:03:57.457] [1] [INFO] 151.2139 Level Loaded.... backend
+0:3(12): error: extension `GL_OVR_multiview2' unsupported in vertex shader
+
+Note: Creation of internal variant of shader 'GUI/Text Shader' failed.
+ShaderProgram is unsupported, but because jobified rendering is enabled the ShaderProgram can not be removed.
+ 
+(Filename:  Line: 438)
+
+0:3(12): error: extension `GL_OVR_multiview2' unsupported in vertex shader
+
+Note: Creation of internal variant of shader 'Hidden/InternalErrorShader' failed.
+ShaderProgram is unsupported, but because jobified rendering is enabled the ShaderProgram can not be removed.
+ 
+(Filename:  Line: 438)
+
+Shader warmup: 60 shaders 196 combinations 0.107s
+[20:03:59.606] [1] [INFO] Custom Settings: World=worlds/SandstoneDefault,WorldgenSeed=1004293310,ImmuneSystem=Default,CalorieBurn=Default,Morale=Default,Stress=Default,StressBreaks=Default,CarePackages=Enabled,SandboxMode=Disabled,
+[20:03:59.608] [1] [INFO] Loaded [/home/klaus/.config/unity3d/Klei/Oxygen Not Included/save_files/Shack.sav]
+[20:03:59.608] [1] [INFO] World Seeds [1004293310/1004293310/1004293310/1004293310]
+[20:03:59.677] [1] [INFO] -- GAME --
+Unloading 1 Unused Serialized files (Serialized files now loaded: 0)
+[20:04:02.691] [1] [INFO] Screen resolution updated, saving values to prefs: 1920x1080 @ 60, fullscreen: True
+
+Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 132699.
+Total: 441.416000 ms (FindLiveObjects: 10.374000 ms CreateObjectMapping: 9.050000 ms MarkObjects: 421.750000 ms  DeleteObjects: 0.241000 ms)
+
+[20:04:11.803] [3] [WARNING] 15:04:11 KleiMetrics: Exception getting Request Stream:Error: NameResolutionFailure
+[20:04:11.803] [3] [WARNING] 15:04:11 KleiMetrics: Exception (retrying in 64 seconds): Error: NameResolutionFailure
+  at System.Net.HttpWebRequest.EndGetRequestStream (IAsyncResult asyncResult) [0x00000] in <filename unknown>:0 
+  at System.Net.HttpWebRequest.GetRequestStream () [0x00000] in <filename unknown>:0 
+  at ThreadedHttps`1[T].Send (System.Byte[] byteArray, Boolean isForce) [0x00000] in <filename unknown>:0 
+[20:05:15.963] [3] [WARNING] 15:05:15 KleiMetrics: Exception getting Request Stream:Error: NameResolutionFailure
+[20:05:15.963] [3] [WARNING] 15:05:15 KleiMetrics: Max Retries (3) reached. Disabling KleiMetrics...
+[20:05:43.871] [1] [INFO] Worker is Nails (Worker)
+[20:06:03.528] [1] [INFO] Worker is Abe (Worker)
+[20:06:06.582] [1] [INFO] Worker is Rowan (Worker)
+[20:12:49.148] [1] [INFO] Average frame time: 0.04513806
+[20:12:49.223] [1] [INFO] Deleting old autosave: /home/klaus/.config/unity3d/Klei/Oxygen Not Included/save_files/auto_save/Shack Cycle 22.sav
+[20:12:49.754] [1] [INFO] Saved to [/home/klaus/.config/unity3d/Klei/Oxygen Not Included/save_files/auto_save/Shack Cycle 32.sav]
+[20:12:50.143] [1] [INFO] Saving screenshot to /home/klaus/.config/unity3d/Klei/Oxygen Not Included/save_files/auto_save/Shack Cycle 32.png
+[20:13:12.237] [1] [INFO] Worker is Turner (Worker)
+[20:13:20.045] [1] [INFO] Worker is Abe (Worker)
+[20:17:45.102] [1] [INFO] Saving screenshot to /home/klaus/.config/unity3d/Klei/Oxygen Not Included/RetiredColonies/Shack/Shack
+[20:21:26.229] [1] [INFO] Worker is Travaldo (Worker)
+[20:23:47.090] [1] [INFO] Average frame time: 0.04803434
+[20:23:47.116] [1] [INFO] Deleting old autosave: /home/klaus/.config/unity3d/Klei/Oxygen Not Included/save_files/auto_save/Shack Cycle 23.sav
+[20:23:47.604] [1] [INFO] Saved to [/home/klaus/.config/unity3d/Klei/Oxygen Not Included/save_files/auto_save/Shack Cycle 33.sav]
+[20:23:48.016] [1] [INFO] Saving screenshot to /home/klaus/.config/unity3d/Klei/Oxygen Not Included/save_files/auto_save/Shack Cycle 33.png
+[20:23:49.292] [1] [INFO] Worker is Turner (Worker)
+[20:23:53.653] [1] [INFO] Worker is Marie (Worker)
+[20:24:13.968] [1] [INFO] Worker is Marie (Worker)
+[20:25:00.108] [1] [INFO] Worker is Rowan (Worker)
+[20:25:35.552] [1] [INFO] Worker is Travaldo (Worker)
+[20:26:44.698] [1] [INFO] Worker is Marie (Worker)
+[20:31:03.841] [1] [INFO] Saving screenshot to /home/klaus/.config/unity3d/Klei/Oxygen Not Included/RetiredColonies/Shack/Shack
+[20:35:20.383] [1] [INFO] Average frame time: 0.04984554
+[20:35:20.407] [1] [INFO] Deleting old autosave: /home/klaus/.config/unity3d/Klei/Oxygen Not Included/save_files/auto_save/Shack Cycle 24.sav
+[20:35:20.768] [1] [INFO] Saved to [/home/klaus/.config/unity3d/Klei/Oxygen Not Included/save_files/auto_save/Shack Cycle 34.sav]
+[20:35:21.183] [1] [INFO] Saving screenshot to /home/klaus/.config/unity3d/Klei/Oxygen Not Included/save_files/auto_save/Shack Cycle 34.png
+[20:35:22.623] [1] [INFO] Worker is Hassan (Worker)
+[20:35:23.584] [1] [INFO] Worker is Travaldo (Worker)
+[20:36:51.885] [1] [INFO] Worker is Liam (Worker)
+[20:37:12.189] [1] [INFO] Saving screenshot to /home/klaus/.config/unity3d/Klei/Oxygen Not Included/RetiredColonies/Shack/Shack
+[20:42:15.859] [1] [INFO] Average frame time: 0.04886142
+[20:42:15.882] [1] [INFO] Deleting old autosave: /home/klaus/.config/unity3d/Klei/Oxygen Not Included/save_files/auto_save/Shack Cycle 25.sav
+[20:42:16.402] [1] [INFO] Saved to [/home/klaus/.config/unity3d/Klei/Oxygen Not Included/save_files/auto_save/Shack Cycle 35.sav]
+[20:42:16.846] [1] [INFO] Saving screenshot to /home/klaus/.config/unity3d/Klei/Oxygen Not Included/save_files/auto_save/Shack Cycle 35.png
+[20:42:21.804] [1] [INFO] Worker is Turner (Worker)
+[20:42:27.088] [1] [INFO] Worker is Marie (Worker)
+[20:43:40.828] [1] [INFO] Worker is Liam (Worker)
+[20:43:50.989] [1] [INFO] Worker is Turner (Worker)
+[20:47:15.040] [1] [INFO] Saving screenshot to /home/klaus/.config/unity3d/Klei/Oxygen Not Included/RetiredColonies/Shack/Shack
+[20:56:05.306] [1] [INFO] Average frame time: 0.04907671
+[20:56:05.334] [1] [INFO] Deleting old autosave: /home/klaus/.config/unity3d/Klei/Oxygen Not Included/save_files/auto_save/Shack Cycle 26.sav
+[20:56:05.879] [1] [INFO] Saved to [/home/klaus/.config/unity3d/Klei/Oxygen Not Included/save_files/auto_save/Shack Cycle 36.sav]
+[20:56:06.308] [1] [INFO] Saving screenshot to /home/klaus/.config/unity3d/Klei/Oxygen Not Included/save_files/auto_save/Shack Cycle 36.png
+[20:56:10.168] [1] [INFO] Worker is Turner (Worker)
+[20:56:12.305] [1] [INFO] Worker is Joshua (Worker)
+[20:56:23.796] [1] [INFO] Worker is Nails (Worker)
+[21:01:05.335] [1] [INFO] Saving screenshot to /home/klaus/.config/unity3d/Klei/Oxygen Not Included/RetiredColonies/Shack/Shack
+[21:01:05.361] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:05.361] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:05.361] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:05.361] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:05.361] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:05.361] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:05.361] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:05.361] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:05.388] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:05.388] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:05.388] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:05.388] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:05.388] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:05.388] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:05.388] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:05.388] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:05.423] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:05.423] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:05.423] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:05.423] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:05.461] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:05.461] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:05.461] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:05.461] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:05.491] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:05.491] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:05.491] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:05.491] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:05.519] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:05.519] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:05.519] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:05.519] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:05.553] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:05.553] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:05.553] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:05.553] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:05.592] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:05.592] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:05.592] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:05.592] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:05.633] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:05.633] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:05.633] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:05.633] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:05.667] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:05.667] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:05.667] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:05.667] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:05.710] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:05.711] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:05.711] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:05.711] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:05.748] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:05.748] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:05.748] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:05.748] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:05.786] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:05.786] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:05.786] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:05.786] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:05.835] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:05.835] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:05.835] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:05.835] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:05.869] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:05.869] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:05.869] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:05.869] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:05.913] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:05.913] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:05.913] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:05.913] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:06.042] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:06.042] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:06.042] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:06.042] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:06.075] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:06.075] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:06.075] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:06.075] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:06.106] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:06.106] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:06.106] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:06.106] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:06.142] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:06.142] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:06.142] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:06.142] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:06.181] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:06.181] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:06.181] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:06.181] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:06.216] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:06.216] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:06.216] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:06.216] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:06.247] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:06.247] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:06.247] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:06.247] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:06.275] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:06.275] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:06.275] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:06.275] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:06.315] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:06.315] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:06.315] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:06.315] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:06.389] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:06.389] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:06.389] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:06.389] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:06.443] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:06.443] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:06.443] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:06.443] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:06.483] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:06.483] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:06.483] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:06.483] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:06.519] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:06.520] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:06.520] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:06.520] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:06.557] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:06.557] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:06.557] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:06.557] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:06.594] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:06.594] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:06.594] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:06.594] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:06.633] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:06.633] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:06.633] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:06.633] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:06.663] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:06.663] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:06.663] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:06.663] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:06.692] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:06.693] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:06.693] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:06.693] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:06.739] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:06.739] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:06.740] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:06.740] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:06.740] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:06.740] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:06.740] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:06.740] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:06.775] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:06.775] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:06.775] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:06.775] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:06.775] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:06.775] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:06.775] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:06.775] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:06.813] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:06.814] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:06.814] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:06.814] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:06.814] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:06.814] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:06.814] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:06.814] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:06.848] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:06.848] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:06.848] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:06.848] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:06.848] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:06.848] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:06.848] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:06.848] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:06.899] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:06.900] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:06.900] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:06.900] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:06.900] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:06.900] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:06.900] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:06.900] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:06.936] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:06.936] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:06.936] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:06.936] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:06.936] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:06.936] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:06.936] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:06.936] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:06.972] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:06.972] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:06.972] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:06.972] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:06.972] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:06.972] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:06.972] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:06.972] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:07.023] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:07.023] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:07.023] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:07.024] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:07.024] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:07.024] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:07.024] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:07.024] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:07.055] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:07.055] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:07.055] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:07.055] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:07.055] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:07.055] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:07.055] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:07.055] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:07.095] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:07.095] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:07.095] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:07.095] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:07.095] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:07.095] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:07.095] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:07.095] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:07.131] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:07.131] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:07.131] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:07.131] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:07.131] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:07.131] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:07.131] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:07.131] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:07.174] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:07.174] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:07.174] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:07.174] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:07.174] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:07.174] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:07.174] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:07.174] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:07.216] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:07.216] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:07.216] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:07.216] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:07.216] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:07.216] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:07.216] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:07.216] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:07.250] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:07.251] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:07.251] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:07.251] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:07.251] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:07.251] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:07.251] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:07.251] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:07.298] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:07.298] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:07.298] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:07.298] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:07.298] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:07.298] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:07.298] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:07.298] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:07.334] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:07.334] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:07.334] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:07.334] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:07.334] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:07.334] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:07.334] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:07.334] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:07.392] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:07.392] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:07.392] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:07.392] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:07.392] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:07.392] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:07.392] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:07.392] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:07.511] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:07.511] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:07.511] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:07.511] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:07.511] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:07.511] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:07.511] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:07.511] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:07.537] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:07.537] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:07.537] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:07.537] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:07.537] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:07.537] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:07.537] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:07.537] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:07.575] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:07.575] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:07.575] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:07.575] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:07.575] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:07.575] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:07.575] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:07.575] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:07.617] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:07.617] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:07.617] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:07.617] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:07.617] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:07.617] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:07.617] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:07.617] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:07.656] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:07.656] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:07.656] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:07.656] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:07.656] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:07.656] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:07.656] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:07.656] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:07.689] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:07.689] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:07.689] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:07.689] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:07.689] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:07.689] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:07.689] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:07.689] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:07.721] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:07.721] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:07.721] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:07.721] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:07.721] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:07.721] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:07.721] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:07.721] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:07.748] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:07.748] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:07.748] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:07.748] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:07.748] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:07.748] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:07.748] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:07.748] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:07.791] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:07.792] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:07.792] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:07.792] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:07.792] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:07.792] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:07.792] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:07.792] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:07.830] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:07.830] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:07.830] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:07.830] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:07.830] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:07.830] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:07.830] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:07.830] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:07.868] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:07.868] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:07.868] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:07.868] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:07.868] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:07.868] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:07.868] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:07.868] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:07.903] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:07.903] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:07.903] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:07.903] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:07.903] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:07.903] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:07.903] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:07.903] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:07.946] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:07.946] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:07.946] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:07.946] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:07.946] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:07.946] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:07.946] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:07.946] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:07.984] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:07.984] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:07.984] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:07.984] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:07.984] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:07.984] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:07.984] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:07.984] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:08.030] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:08.030] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:08.030] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:08.030] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:08.030] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:08.030] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:08.030] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:08.030] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:08.064] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:08.064] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:08.064] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:08.064] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:08.064] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:08.064] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:08.064] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:08.064] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:08.113] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:08.113] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:08.113] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:08.113] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:08.113] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:08.113] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:08.113] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:08.113] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:08.148] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:08.148] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:08.148] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:08.148] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:08.148] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:08.148] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:08.148] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:08.148] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:08.187] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:08.187] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:08.187] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:08.187] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:08.187] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:08.187] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:08.187] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:01:08.187] [1] [WARNING] ViewMode HashedString has no StatusItemOverlay value
+[21:06:20.828] [1] [INFO] Average frame time: 0.04559413
+[21:06:20.845] [1] [INFO] Deleting old autosave: /home/klaus/.config/unity3d/Klei/Oxygen Not Included/save_files/auto_save/Shack Cycle 27.sav
+[21:06:21.387] [1] [INFO] Saved to [/home/klaus/.config/unity3d/Klei/Oxygen Not Included/save_files/auto_save/Shack Cycle 37.sav]
+[21:06:21.811] [1] [INFO] Saving screenshot to /home/klaus/.config/unity3d/Klei/Oxygen Not Included/save_files/auto_save/Shack Cycle 37.png
+[21:06:27.743] [1] [INFO] Worker is Hassan (Worker)
+[21:06:43.512] [1] [INFO] Worker is Joshua (Worker)
+[21:08:31.000] [1] [INFO] Worker is Nails (Worker)
+[21:09:00.138] [1] [INFO] Worker is Turner (Worker)
+[21:10:57.719] [1] [INFO] Worker is Nails (Worker)
+[21:11:20.034] [1] [INFO] Saving screenshot to /home/klaus/.config/unity3d/Klei/Oxygen Not Included/RetiredColonies/Shack/Shack
+[21:13:24.447] [1] [WARNING] Chore FarmFetch is requesting Dirt 5.722046E-06 to FarmTileComplete
+[21:16:36.679] [1] [INFO] Average frame time: 0.03932376
+[21:16:36.697] [1] [INFO] Deleting old autosave: /home/klaus/.config/unity3d/Klei/Oxygen Not Included/save_files/auto_save/Shack Cycle 28.sav
+[21:16:37.240] [1] [INFO] Saved to [/home/klaus/.config/unity3d/Klei/Oxygen Not Included/save_files/auto_save/Shack Cycle 38.sav]
+[21:16:37.676] [1] [INFO] Saving screenshot to /home/klaus/.config/unity3d/Klei/Oxygen Not Included/save_files/auto_save/Shack Cycle 38.png
+[21:16:43.488] [1] [INFO] Worker is Nails (Worker)
+[21:16:47.177] [1] [INFO] Worker is Abe (Worker)
+[21:21:48.933] [1] [INFO] Worker is Liam (Worker)
+[21:21:54.008] [1] [INFO] Worker is Catalina (Worker)
+[21:23:09.115] [1] [INFO] Saving screenshot to /home/klaus/.config/unity3d/Klei/Oxygen Not Included/RetiredColonies/Shack/Shack
+[21:24:41.468] [1] [INFO] Worker is Nails (Worker)
+[21:24:50.494] [1] [INFO] Worker is Abe (Worker)
+[21:27:40.326] [1] [INFO] Average frame time: 0.05481986
+[21:27:40.350] [1] [INFO] Deleting old autosave: /home/klaus/.config/unity3d/Klei/Oxygen Not Included/save_files/auto_save/Shack Cycle 29.sav
+[21:27:40.912] [1] [INFO] Saved to [/home/klaus/.config/unity3d/Klei/Oxygen Not Included/save_files/auto_save/Shack Cycle 39.sav]
+[21:27:41.416] [1] [INFO] Saving screenshot to /home/klaus/.config/unity3d/Klei/Oxygen Not Included/save_files/auto_save/Shack Cycle 39.png
+[21:27:43.628] [1] [INFO] Worker is Marie (Worker)
+[21:27:43.763] [1] [INFO] Worker is Catalina (Worker)
+[21:29:28.410] [1] [INFO] Worker is Marie (Worker)
+[21:29:53.045] [1] [INFO] Worker is Marie (Worker)
+[21:31:53.264] [1] [INFO] Worker is Abe (Worker)
+[21:31:57.444] [1] [INFO] SetAchievement CURED_DISEASE True
+[21:31:57.445] [1] [INFO] StoreStats True
+[21:32:07.508] [1] [WARNING] OnUserStatsStored k_EResultNoConnection
+[21:34:15.503] [1] [INFO] Worker is Nails (Worker)
+[21:36:27.180] [1] [INFO] Worker is Hassan (Worker)
+[21:36:34.033] [1] [INFO] Worker is Liam (Worker)
+[21:37:03.990] [1] [INFO] Saving screenshot to /home/klaus/.config/unity3d/Klei/Oxygen Not Included/RetiredColonies/Shack/Shack
+[21:38:25.949] [1] [INFO] Worker is Travaldo (Worker)
+[21:41:41.520] [1] [INFO] Average frame time: 0.05189889
+[21:41:41.552] [1] [INFO] Deleting old autosave: /home/klaus/.config/unity3d/Klei/Oxygen Not Included/save_files/auto_save/Shack Cycle 30.sav
+[21:41:42.117] [1] [INFO] Saved to [/home/klaus/.config/unity3d/Klei/Oxygen Not Included/save_files/auto_save/Shack Cycle 40.sav]
+[21:41:42.602] [1] [INFO] Saving screenshot to /home/klaus/.config/unity3d/Klei/Oxygen Not Included/save_files/auto_save/Shack Cycle 40.png
+[21:41:44.440] [1] [INFO] Worker is Travaldo (Worker)
+[21:41:45.737] [1] [INFO] Worker is Abe (Worker)
+[21:41:54.092] [1] [INFO] Worker is Nails (Worker)
+[21:56:01.442] [1] [INFO] Saving screenshot to /home/klaus/.config/unity3d/Klei/Oxygen Not Included/RetiredColonies/Shack/Shack
+[22:01:03.359] [1] [INFO] Average frame time: 0.05206529
+[22:01:03.385] [1] [INFO] Deleting old autosave: /home/klaus/.config/unity3d/Klei/Oxygen Not Included/save_files/auto_save/Shack Cycle 31.sav
+[22:01:03.957] [1] [INFO] Saved to [/home/klaus/.config/unity3d/Klei/Oxygen Not Included/save_files/auto_save/Shack Cycle 41.sav]
+[22:01:04.445] [1] [INFO] Saving screenshot to /home/klaus/.config/unity3d/Klei/Oxygen Not Included/save_files/auto_save/Shack Cycle 41.png
+[22:01:17.231] [1] [INFO] Worker is Liam (Worker)
+[22:01:22.049] [1] [INFO] Worker is Joshua (Worker)
+[22:03:30.843] [1] [INFO] Saving screenshot to /home/klaus/.config/unity3d/Klei/Oxygen Not Included/RetiredColonies/Shack/Shack
+[22:03:52.061] [1] [WARNING] Failed to Unsubscribe event handler: STATIC.Void <OnBuildingBrokenDelegate>m__0(UtilityNetworkLink, System.Object)
+Not subscribed to event
+[22:03:52.061] [1] [WARNING] Failed to Unsubscribe event handler: STATIC.Void <OnBuildingFullyRepairedDelegate>m__1(UtilityNetworkLink, System.Object)
+Not subscribed to event
+[22:03:52.061] [1] [WARNING] Failed to Unsubscribe event handler: STATIC.Void <OnBuildingBrokenDelegate>m__0(UtilityNetworkLink, System.Object)
+Not subscribed to event
+[22:03:52.061] [1] [WARNING] Failed to Unsubscribe event handler: STATIC.Void <OnBuildingFullyRepairedDelegate>m__1(UtilityNetworkLink, System.Object)
+Not subscribed to event
+[22:04:01.339] [1] [WARNING] Failed to Unsubscribe event handler: STATIC.Void <OnBuildingBrokenDelegate>m__0(UtilityNetworkLink, System.Object)
+Not subscribed to event
+[22:04:01.339] [1] [WARNING] Failed to Unsubscribe event handler: STATIC.Void <OnBuildingFullyRepairedDelegate>m__1(UtilityNetworkLink, System.Object)
+Not subscribed to event
+[22:04:01.339] [1] [WARNING] Failed to Unsubscribe event handler: STATIC.Void <OnBuildingBrokenDelegate>m__0(UtilityNetworkLink, System.Object)
+Not subscribed to event
+[22:04:01.339] [1] [WARNING] Failed to Unsubscribe event handler: STATIC.Void <OnBuildingFullyRepairedDelegate>m__1(UtilityNetworkLink, System.Object)
+Not subscribed to event
+[22:06:04.822] [1] [INFO] Average frame time: 0.05284365
+[22:06:04.848] [1] [INFO] Deleting old autosave: /home/klaus/.config/unity3d/Klei/Oxygen Not Included/save_files/auto_save/Shack Cycle 32.sav
+[22:06:05.484] [1] [INFO] Saved to [/home/klaus/.config/unity3d/Klei/Oxygen Not Included/save_files/auto_save/Shack Cycle 42.sav]
+[22:06:06.062] [1] [INFO] Saving screenshot to /home/klaus/.config/unity3d/Klei/Oxygen Not Included/save_files/auto_save/Shack Cycle 42.png
+[22:06:16.184] [1] [INFO] Worker is Rowan (Worker)
+[22:06:24.635] [1] [INFO] Worker is Marie (Worker)
+[22:10:13.918] [1] [INFO] Worker is Joshua (Worker)
+[22:10:18.265] [1] [INFO] Worker is Turner (Worker)
+[22:10:26.942] [1] [INFO] Saving screenshot to /home/klaus/.config/unity3d/Klei/Oxygen Not Included/RetiredColonies/Shack/Shack
+[22:16:19.211] [1] [INFO] Average frame time: 0.05461854
+[22:16:19.239] [1] [INFO] Deleting old autosave: /home/klaus/.config/unity3d/Klei/Oxygen Not Included/save_files/auto_save/Shack Cycle 33.sav
+[22:16:19.865] [1] [INFO] Saved to [/home/klaus/.config/unity3d/Klei/Oxygen Not Included/save_files/auto_save/Shack Cycle 43.sav]
+[22:16:20.392] [1] [INFO] Saving screenshot to /home/klaus/.config/unity3d/Klei/Oxygen Not Included/save_files/auto_save/Shack Cycle 43.png
+[22:16:45.357] [1] [INFO] Worker is Marie (Worker)
+[22:16:50.108] [1] [INFO] Worker is Catalina (Worker)
+[22:19:37.916] [1] [INFO] Worker is Joshua (Worker)
+[22:21:41.671] [1] [INFO] Worker is Turner (Worker)
+[22:22:45.364] [1] [INFO] Saving screenshot to /home/klaus/.config/unity3d/Klei/Oxygen Not Included/RetiredColonies/Shack/Shack
+[22:29:36.076] [1] [INFO] Average frame time: 0.05325111
+[22:29:36.108] [1] [INFO] Deleting old autosave: /home/klaus/.config/unity3d/Klei/Oxygen Not Included/save_files/auto_save/Shack Cycle 34.sav
+[22:29:36.769] [1] [INFO] Saved to [/home/klaus/.config/unity3d/Klei/Oxygen Not Included/save_files/auto_save/Shack Cycle 44.sav]
+[22:29:37.296] [1] [INFO] Saving screenshot to /home/klaus/.config/unity3d/Klei/Oxygen Not Included/save_files/auto_save/Shack Cycle 44.png
+[22:30:03.255] [1] [INFO] Worker is Travaldo (Worker)
+[22:30:14.164] [1] [INFO] Worker is Joshua (Worker)
+[22:33:52.755] [1] [INFO] Saving screenshot to /home/klaus/.config/unity3d/Klei/Oxygen Not Included/RetiredColonies/Shack/Shack
+[22:34:38.993] [1] [INFO] Worker is Liam (Worker)
+[22:34:40.437] [1] [INFO] Worker is Turner (Worker)
+[22:36:28.882] [1] [INFO] Average frame time: 0.05277459
+[22:36:28.908] [1] [INFO] Deleting old autosave: /home/klaus/.config/unity3d/Klei/Oxygen Not Included/save_files/auto_save/Shack Cycle 35.sav
+[22:36:29.589] [1] [INFO] Saved to [/home/klaus/.config/unity3d/Klei/Oxygen Not Included/save_files/auto_save/Shack Cycle 45.sav]
+[22:36:30.134] [1] [INFO] Saving screenshot to /home/klaus/.config/unity3d/Klei/Oxygen Not Included/save_files/auto_save/Shack Cycle 45.png
+[22:39:12.690] [1] [INFO] Worker is Rowan (Worker)
+[22:39:16.085] [1] [INFO] Worker is Catalina (Worker)
+[22:43:24.367] [1] [INFO] Saving screenshot to /home/klaus/.config/unity3d/Klei/Oxygen Not Included/RetiredColonies/Shack/Shack
+[22:44:12.802] [1] [INFO] Saved to [/home/klaus/.config/unity3d/Klei/Oxygen Not Included/save_files/Shack.sav]
+[22:44:13.344] [1] [INFO] Saving screenshot to /home/klaus/.config/unity3d/Klei/Oxygen Not Included/save_files/Shack.png
+Game.OnApplicationQuit()
+Setting up 2 worker threads for Enlighten.
+  Thread -> id: 7f143556d700 -> priority: 1 
+  Thread -> id: 7f1385baf700 -> priority: 1 

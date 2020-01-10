@@ -1,0 +1,1067 @@
+{
+   "about": {
+      "message": "ስለ"
+   },
+   "addbutton": {
+      "message": "አክል"
+   },
+   "advancedoptions": {
+      "message": "የላቁ አማራጮች"
+   },
+   "areyouhappy": {
+      "message": "መብራቶችን ማጥፋት ያስደስትዎታል?"
+   },
+   "basicsettings": {
+      "message": "መሠረታዊ"
+   },
+   "bottom": {
+      "message": "ከታች:"
+   },
+   "changelog": {
+      "message": "ቻውሎግ"
+   },
+   "deletebutton": {
+      "message": "ሰርዝ"
+   },
+   "des1checkmotion": {
+      "message": "ክፍልዎ ጨለማ እንዳልሆነ እና በቂ ብርሃን እንዳለው እርግጠኛ ይሁኑ."
+   },
+   "des2checkmotion": {
+      "message": "ካሜራዎ ቀጥተኛ የፀሐይ ብርሃን ማግኘት የለበትም."
+   },
+   "des3checkmotion": {
+      "message": "የፊት ካሜራ ይጠቀማሉ."
+   },
+   "desaddvideobutton": {
+      "message": "ከ አሴ የተጨማሪ አዘራር አሳይ ዩ ቱብ ቪድዮ"
+   },
+   "desalllightsoff": {
+      "message": "የመብራት አዝራሩን መጫን በሁሉም መብራቶች ላይ መብራቶቹን ማብራት / ማጥፋት ያደርገዋል"
+   },
+   "desambilight": {
+      "message": "የአሁኑ የመጫወት ቪዲዮን የከባቢ ብርሃን መከፈት ያሳዩ"
+   },
+   "desambilight4color": {
+      "message": "በቪዲዮው ዙሪያ አራት የተመረጡ ቀለሞች:"
+   },
+   "desambilightfixcolor": {
+      "message": "አንድ ቀለም ብቻ:"
+   },
+   "desambilightrangeblurradius": {
+      "message": "ዝቅተኛ ዋጋዎች ጥላውን ይቀንሳሉ, ከፍተኛ እሴቶች ደግሞ የበለጠ የደበዘዙ ያደርጋሉ."
+   },
+   "desambilightrangespreadradius": {
+      "message": "አዎንታዊ እሴቶች የስሜቱን መጠን ይጨምራሉ, አሉታዊ እሴቶች መጠኑን ይቀንሳሉ."
+   },
+   "desambilightvarcolor": {
+      "message": "ቀዩን ከቪዲዮ ማውጣት."
+   },
+   "desapause": {
+      "message": "ለአፍታ አቁም"
+   },
+   "desapitext": {
+      "message": "ውክ ኤፒአይ ለድር ጣቢያ ገንቢ"
+   },
+   "desaplay": {
+      "message": "ተጫወት"
+   },
+   "desastop": {
+      "message": "ተወ"
+   },
+   "desatmosontotlmode": {
+      "message": "የቲቶል ሁነታ በሚነቃበት ጊዜ ብቻ የአከባቢ መከፈት ተጽዕኖውን አሳይ"
+   },
+   "desatmosphereonly": {
+      "message": "የከባቢ አዯባ ብርሃን ባህሪን የሚከተሇውን የቪዲዮ ገዯብ ብቻ ይጠቀሙ:"
+   },
+   "desatmosvivid": {
+      "message": "አስፈሪ የአየር ሁኔታ ውጤቶች, ያስፈልገዋል"
+   },
+   "desauroraplayer": {
+      "message": "አከባቢው ብርሃን ሰጪ ማጫወቻ ለኮምፒዩተርዎ ሊገኝ ይችላል."
+   },
+   "desautoplay": {
+      "message": "የጨዋታ አዝራሩን ጠቅ ሲያደርጉ እና በተቃራኒ ሲጫኑ ጀርባውን በራስ-ሰር ያበቅላሉ"
+   },
+   "desautoplaydelay": {
+      "message": "ቪዲዮው ሲያበቃ እንደገና ዳራውን ያብሩ"
+   },
+   "desautoplaydelayend": {
+      "message": "ሰከንዶች"
+   },
+   "desautoplayonly": {
+      "message": "የሚከተሉትን የቪዲዮ (ዎች) ጣቢያ (ዎች) ብቻ አትንቅ:"
+   },
+   "desautostop": {
+      "message": "አንድ ድረ-ገጽ ስከፍተው ቪዲዮውን በራስ-ሰር ማጫወት አቁም"
+   },
+   "desautostoponly": {
+      "message": "ቪዲዮውን በራስሰር በሚከተለው (ሉት) ጣቢያ (ዎች) ማቆም ያቁሙት:"
+   },
+   "desbrowserextension": {
+      "message": "የአሳሽ ቅጥያ"
+   },
+   "desbrowsersupport": {
+      "message": "አሳሽዎ ይህን ባህሪ ገና አይደግፍም. በኮምፒዩተርህ ላይ የተጫነ የቅርብ ጊዜ የአሳሽ ስሪት እንዳለህ አረጋግጥ."
+   },
+   "desbrowsertheme": {
+      "message": "የአሳሽ ገጽታ"
+   },
+   "descammotiononly": {
+      "message": "የካሜራውን እንቅስቃሴን በሚከተለው (ሉት) ቦታ (ዎች) ብቻ ያግብሩ:"
+   },
+   "desconfirmpassword": {
+      "message": "የይለፍ ቃል አረጋግጥ"
+   },
+   "desconfirmtime": {
+      "message": "ሰዓት ያረጋግጡ"
+   },
+   "desconfirmtimesaver": {
+      "message": "የማያጥን ቆጣቢ ሰዓት አረጋግጥ"
+   },
+   "descontextmenus": {
+      "message": "አንድ ንጥል ለማተኮር የአውድ ምናሌውን አሳይ"
+   },
+   "description": {
+      "message": "ሙሉው ገጽ ወደ ጨለማ ይለወጣል, ስለዚህ በሲዲ ውስጥ እንደነበሩ ቪዲዮዎቹን መመልከት ይችላሉ. ለ ዩ ቱብ™ እና ከዛ ባሻገር ይሰራል."
+   },
+   "desdynamicblocks": {
+      "message": "እገዳዎች"
+   },
+   "desdynamiccloud": {
+      "message": "የእነማ ደመናዎች"
+   },
+   "desdynamicdotscolor": {
+      "message": "የቀለም ነጥቦች"
+   },
+   "desdynamicfishtank": {
+      "message": "የአሳ ማርቢያ ገንዳ"
+   },
+   "desdynamicraindrops": {
+      "message": "ዝናብ"
+   },
+   "desdynamicsmoke": {
+      "message": "ጭስ"
+   },
+   "desdynamicspace": {
+      "message": "ቦታ"
+   },
+   "desdynamicstars": {
+      "message": "Stars"
+   },
+   "desdynamicstorm": {
+      "message": "ማዕበል"
+   },
+   "desdynamictriangulation": {
+      "message": "ሦስትዮሽ"
+   },
+   "deseastereggs": {
+      "message": "የቲኪን ቁልፍ መጫን የቲያትር መጋረጃ ጨለማ ክፍልን ይጨምራል"
+   },
+   "desenterpassword": {
+      "message": "የይለፍ ቃልዎን ከዚህ በታች ባለው ሳጥን ውስጥ ያስገቡት:"
+   },
+   "deseyea": {
+      "message": "አንድ ድረ-ገጽ ሲከፈት ዳራውን በራስ-ሰር ያበድራል"
+   },
+   "deseyealist": {
+      "message": "ዳራውን በራስ-ሰር በጣቢያ (ዎች) ላይ አጨልም:"
+   },
+   "deseyen": {
+      "message": "መደበኛ አጠቃቀም (መብራቱ ላይ ጠቅ ሲያደርጉ ብርሃኖች ይወጣሉ)"
+   },
+   "deseyetimesaver": {
+      "message": "አንድ ገጽ ገባሪ ባይሆን (ከታች ምንም ዓይነት የመዳፊት ወይም የቁልፍ ሰሌዳ ግቤት) ከጠፋ, በራስ ሰር ይለቃል."
+   },
+   "desfadein": {
+      "message": "ቀስ በቀስ ውጤቱን አሳይ"
+   },
+   "desfadeout": {
+      "message": "ቀስ በቀስ ውጤትን ያሳዩ"
+   },
+   "desflash": {
+      "message": "ሁሉንም አሳይ ብልጭታ ነገሮች"
+   },
+   "deshardflash": {
+      "message": "የዩአርኤሉ ማጣሪያን መዝለል ሁሉንም የ ብልጭታ ነገሮች አሳይ. ይሄ በአንዳንድ የቪዲዮ ተጫዋቾች ላይ የተደበቁ ችግሮችን ያስተካክላል ነገር ግን ማስታወቂያዎችን ያሳያል."
+   },
+   "deshead": {
+      "message": "ይህን አሳይ ዩ ቱብ የሰርጥ አሞሌ ወይም ስም"
+   },
+   "deshovervideo": {
+      "message": "ለተወሰነ የተወሰነ የሰከንዶች ብዛት መዳፊትዎን በቪዲዮ ክፍሎች ላይ ያንዣብቡ, ከዚያ በኋላ ድረ-ገጽ በራስ-ሰር እየደበዘዘ ነው"
+   },
+   "desinfobar": {
+      "message": "ስለ ቪዲዮው መግለጫ መረጃ ያሳዩ"
+   },
+   "deslampandnightmode": {
+      "message": "ግራጫማ መብራት ላይ ጠቅ ሲያደርጉ የምሽት ሁነታየሚለውን አማራጭ ያግብሩ"
+   },
+   "deslikebar": {
+      "message": "ተመሳሳይ / ያልተወደደ አሞሌን በታች ስር አሳይ ዩ ቱብ ቪዲዮዎች"
+   },
+   "deslikebutton": {
+      "message": "የዩቲዩብን መውደዶች እና መውደድ አዝራሮች አሳይ ለቪዲዮው"
+   },
+   "desmobileapp": {
+      "message": "ለእርስዎ ተንቀሳቃሽ መሣሪያም መብራቶችን ያጥፉ."
+   },
+   "desmotion": {
+      "message": "የካሜራ እንቅስቃሴን አንቃ"
+   },
+   "desmotionChecklist": {
+      "message": "የማረጋገጫ ዝርዝር:"
+   },
+   "desmousespotlighta": {
+      "message": "መብራቶች ጠፍተዋል, በመዳፊት ጠቋሚ ዙሪያ የፍሬ ምልክት ያሳያል."
+   },
+   "desmousespotlightc": {
+      "message": "መብራቶቹ ሲበሩ በአንድ ንጥል ላይ ለማተኮር የአካባቢ ምርጫን ያንቁ"
+   },
+   "desmousespotlighto": {
+      "message": "መደበኛ አጠቃቀም (ከታች የመዳፊት ቅንብሮችን ያሰናክላል)"
+   },
+   "desmousespotlights": {
+      "message": "ከፍ ያለ ገጽታዎችን ለመምረጥም የመጠባበቂያ ጥላን አንቃ"
+   },
+   "desmousespotlightt": {
+      "message": "ማያ ገጹ ሲጨልም ተያያዥ ገጾችን መስቀል አንቃ"
+   },
+   "desnightactivetime": {
+      "message": "ማብሪያው በሚከተሉት ጊዜያት መካከል ይታያል:"
+   },
+   "desnightenabletheme": {
+      "message": "አዲስ ድረ-ገጽ ሲከፈት በራስ-ሰር ወደ የማታ ሞድ ይሂዱ"
+   },
+   "desnighthover": {
+      "message": "በድረ-ገጽ ላይ ግልጽ ሽግግር ያሳያል"
+   },
+   "desnightonly": {
+      "message": "የምሽት ሁነታን ብቻ የሚከተለው (ሉት) ጣቢያ (ዎች) ላይ ያግብሩ:"
+   },
+   "desnightowl": {
+      "message": "አንድ ጠቅ ማድረግ ገጹን በቀጥታ ጠቅ በማድረግ ወደ ጭብጥ ገጽታ እና ሊነበብ የሚችል ቀጥተኛ አገናኝ ይፈጥራል. ወደ መደበኛው እይታ ለመመለስ እንደገና ይጫኑ. ይህንን ባህሪ ለማሰናከል የጨረሩን አዝራሩን እንደገና ይጫኑ."
+   },
+   "desnighttheme": {
+      "message": "ገጹን ጨለማ ወይም ብርሃን ለማድረግ ከድር ድረ-ገጽ በታች ያለውን የማታ አዝራር አዝራር አሳይ"
+   },
+   "desnoflash": {
+      "message": "ይህን ባህሪ አይጠቀሙ"
+   },
+   "despassword": {
+      "message": "መብራቶቹን ከማብራትዎ በፊት ለመግባት የይለፍ ቃል ይጠይቁ."
+   },
+   "desplaylist": {
+      "message": "ይህን አሳይ ዩ ቱብ በላዩ ላይ ዩ ቱብ ድህረገፅ"
+   },
+   "desplayrate": {
+      "message": "ነባሪ የመልሶ ማጫወት ፍጥነት"
+   },
+   "desproject": {
+      "message": "ፕሮጀክት"
+   },
+   "desreadera": {
+      "message": "መብራቶቹ ሲወጡ ሁልጊዜ የዝምታ ደረጃ አሞሌን አሳይ"
+   },
+   "desreadern": {
+      "message": "የረብታ ደረጃ አሞሌን በጭራሽ አታሳይ"
+   },
+   "desreflection": {
+      "message": "በሁሉም ቪዲዮዎች ላይ የአንጸባራቂ ውጤት አሳይ"
+   },
+   "desregularuser": {
+      "message": "ይህ ነባሪ እና ለአዲስ ተጠቃሚዎች የተለመደ መደበኛ ቅንብር ነው. ግራጫ መብራት ቁልፍን ጠቅ ስታደርግ, ይህ አሠራር አሁን ባለው ድረ-ገጽ ላይ ይተገበራል."
+   },
+   "desrememberpage": {
+      "message": "የአስታዋሽ ገጽ አታሳይ"
+   },
+   "desremfacebook": {
+      "message": "ይሄ በፌስቡክ ላይ ምክር ይስጡ"
+   },
+   "desremyoutube": {
+      "message": "ለዩቲዩብ ይመዝገቡ"
+   },
+   "dessaver": {
+      "message": "የማያ ኃይል ቆጣቢ:"
+   },
+   "desscreenprotection": {
+      "message": "አንድ ጠቅ ማድረግ ገጹን ወደ አረንጓዴ ቀለም ያሸበረቀ ወፍራም ብርጭቆ ወደ ሁሉም የተከፈቱ ትሮች ለመቀነስ ነው. ይህንን ባህሪ ለማሰናከል የጨረሩን አዝራሩን እንደገና ይጫኑ."
+   },
+   "dessharebutton": {
+      "message": "የ ያጋሩ አዝራሩን አሳይ ዩ ቱብ ለቪዲዮው"
+   },
+   "desshortcutlight": {
+      "message": "የቁልፍ ሰሌዳ አቋራጮችን ከታች አንቃ"
+   },
+   "desspeech": {
+      "message": "ይህንን አማራጭ ሲያነቁ ከአሳሽ መብራት ጋር መነጋገር እና የሚከተሉትን ትዕዛዞች ማነጋገር ይችላሉ:"
+   },
+   "desspeech1command": {
+      "message": "turn off the lights"
+   },
+   "desspeech2command": {
+      "message": "መብራቶቹን ያብሩ"
+   },
+   "desspeech3command": {
+      "message": "ቪድዮ አጫውት"
+   },
+   "desspeech4command": {
+      "message": "ቪዲዮን ለአፍታ አቁም"
+   },
+   "desspeech5command": {
+      "message": "የአሳሽ መብራት"
+   },
+   "desspeechdialect": {
+      "message": "የንግግር ዘይቤዎን ይምረጡ:"
+   },
+   "desspeechonly": {
+      "message": "የንግግር ግንዛቤን በሚከተለው (ሉት) ቦታ (ዎች) ላይ ብቻ ያሳድጉ:"
+   },
+   "desspeedtoolbar": {
+      "message": "በአሁኑ የአጫዋች ማጫወቻ ውስጥ መልሶ የመጫወት አሞሌውን አሳይ"
+   },
+   "desspotlightradius": {
+      "message": "የብርሃን ትኩረት:"
+   },
+   "dessuggestions": {
+      "message": "የ የአስተያየት ጥቆማዎችን አሳይ ዩ ቱብ ድህረገፅ"
+   },
+   "destime": {
+      "message": "በሚከተሉት ሰዓቶች መካከል ብርሀኖች መካከል:"
+   },
+   "destrymotion": {
+      "message": "ያ በጣም ጥሩ ነው, ከሁሉም በላይ ደግሞ በሁሉም ቦታ የሚሰራ ነው. በዩ ቱብ, በዜና ድር ጣቢያ, ወዘተ."
+   },
+   "desuntil": {
+      "message": "እስከ"
+   },
+   "desvideoheadline": {
+      "message": "የቪዲዮ ርእስ ቀለሙን አሳይ እና አስተላልፍ"
+   },
+   "desvideotool": {
+      "message": "የአሁኑን የቪዲዮ ማጫወቻ ለማበጀትዎ በማያ ገጽዎ ውስጥ ያለውን የመሳሪያ አሞሌ ያሳዩ"
+   },
+   "desvideotoolcolor": {
+      "message": "የመሣሪያ አሞሌ ቀለም"
+   },
+   "desvideotoolonly": {
+      "message": "የቪዲዮ መሳሪያ አሞሌን በሚከተለው ጣቢያ (ዎች) ላይ ብቻ ያድርጉት:"
+   },
+   "desvideovolume": {
+      "message": "በመውጫ አሞሌ አማካኝነት የአሁኑን የቪዲዮ ማጫወቻ ድምጽ ይቆጣጠሩ"
+   },
+   "desvideovolumecolor": {
+      "message": "የስላይድ ቀለም"
+   },
+   "desvideozoom": {
+      "message": "የአጉላ አዝራሩን በመጠቀም በቪዲዮ ይዘት ላይ ያጉሉ ወይም ያጉሉ"
+   },
+   "desviewcount": {
+      "message": "ለቪዲዮው የተመልካች ብዛት አሳይ"
+   },
+   "desvisopacity": {
+      "message": "የድምፅ ምስል ዳራ የብርሃን ዋጋ"
+   },
+   "desvolumelabel": {
+      "message": "የይዘት መሰየሚያ አሳይ"
+   },
+   "desvolumesteps": {
+      "message": "ለእያንዳንዱ 360 እርከን ጥቅልል ​​ደረጃዎች ቁጥር"
+   },
+   "donatepromotext": {
+      "message": "ማንኛውንም መጠን መስጠት ከቻሉ በጣም ደስ ይለናል!"
+   },
+   "downloadtheapp": {
+      "message": "መተግበሪያውን አሁን ያውርዱ"
+   },
+   "eastereggsquestion": {
+      "message": "እውነተኛውን የፊልም ቤት ይወዱታል?"
+   },
+   "enjoyshare": {
+      "message": "በዚህ ቅጥያ ይደሰቱትና እንደሚወደዱ በሚያስቡላቸው ሰዎች ያጋሩ."
+   },
+   "eyedivoff": {
+      "message": "ጠፍቷል"
+   },
+   "eyedivon": {
+      "message": "በርቷል"
+   },
+   "flashembedobject": {
+      "message": "ድጋፎች \u003C\u003Cነገር>, \u003Cተካትቷል>, \u003Cመተግበሪያ አክል>, \u003Cየማይታዩ ፍሬም ፍሬሞች>."
+   },
+   "friendlyremember": {
+      "message": "ወዳጃዊ አስታዋሽ..."
+   },
+   "guide": {
+      "message": "ጠቅላላው የደስታ መመሪያ"
+   },
+   "help": {
+      "message": "Help"
+   },
+   "helpautoplay": {
+      "message": "'የአይን ጥበቃ' ነቅቷል. ከዚህ በታች ያለውን ባህሪ ለመጠቀም «የአይን ጥበቃ» አማራጭን ያሰናክሉ."
+   },
+   "helpeyeprotection": {
+      "message": "«የአይን መከላከያ» ን ማንቃት ራስ-ማጫወትን ባህሪ በራስ-ሰር ያሰናክለዋል."
+   },
+   "hoveroptionapply": {
+      "message": "ማመልከት"
+   },
+   "hoveroptiondyn5": {
+      "message": "በራሪ"
+   },
+   "howworkmotion": {
+      "message": "How does it work?"
+   },
+   "html5andyoutube": {
+      "message": "5 የግልጽ ጽሑፍ አሻሽል ቋንቋ & ዩ ቱብ ™ ቪድዮ"
+   },
+   "installadblocker": {
+      "message": "ማስታወቂያዎችን ማየት ካልፈለጉ, ይጠቀሙ አጭበርባሪ ቅጥያ."
+   },
+   "lastchecked": {
+      "message": "የቅርብ ጊዜ ስሪት በ.. ላይ"
+   },
+   "left": {
+      "message": "ግራ:"
+   },
+   "lockentername": {
+      "message": "እባክዎ የይለፍ ቃልዎን ያስገቡ"
+   },
+   "lockwrongpassword": {
+      "message": "የተሳሳተ የይለፍ ቃል, እባክዎ እንደገና ይሞክሩ."
+   },
+   "longdonatetext": {
+      "message": "ይህን የአሳሽ ቅጥያ ለሌላ አዲስ ተጠቃሚዎች ሕያው ለማድረግ እንድውል አድርገውኝ ቢሆን ደስ ይለኛል. $$ 1 ወይም $$ 100, የእርስዎ ድጋፍ በጣም የተደነቀ ነው!"
+   },
+   "motionoptions": {
+      "message": "የካሜራ እንቅስቃሴ"
+   },
+   "name": {
+      "message": "Turn Off the Lights"
+   },
+   "nightoptions": {
+      "message": "የምሽት ሁነታ"
+   },
+   "nmbottomleft": {
+      "message": "ከታች በስተ ግራ"
+   },
+   "nmbottomright": {
+      "message": "ከታች በስተቀኝ"
+   },
+   "nmcustom": {
+      "message": "ብጁ (ተፈላጊውን ጠቅ ያድርጉ, ይያዙ እና ወደ ሚፈልጉበት ማሳያ ቦታ ያንቀሳቅሱ)"
+   },
+   "nmtopleft": {
+      "message": "ከላይ ግራ"
+   },
+   "nmtopright": {
+      "message": "ከላይ በስተቀኝ"
+   },
+   "nothanks": {
+      "message": "አይ አመሰግናለሁ"
+   },
+   "optionecosaversaved": {
+      "message": "ሰከንዶች በተሳካ ሁኔታ ተቀምጠዋል!"
+   },
+   "optionpagetitle": {
+      "message": "መብራቶችን አጥፋ - አማራጮች"
+   },
+   "optionpasswordsaved": {
+      "message": "የይለፍ ቃል በተሳካ ሁኔታ ተቀምጧል!"
+   },
+   "optionprofilesaved": {
+      "message": "አዲስ የጨረር እርምጃ በተሳካ ሁኔታ ተቀምጧል!"
+   },
+   "optiontimesaved": {
+      "message": "ጊዜው በተሳካ ሁኔታ ተቀምጧል!"
+   },
+   "optionwrongimg": {
+      "message": "ልክ ያልሆነ የምስል ፋይል!"
+   },
+   "pageatitle": {
+      "message": "Turn Off the Lights"
+   },
+   "pagehelp": {
+      "message": "እገዛ"
+   },
+   "pagestillloading": {
+      "message": "ገጹ አሁንም በመጫን ላይ ነው?"
+   },
+   "pagetitle": {
+      "message": "ይህን ገጽ አጨልጠው"
+   },
+   "productshare": {
+      "message": "መግብሮች"
+   },
+   "promotitle": {
+      "message": "የቀኑ ምክር"
+   },
+   "ratedes": {
+      "message": "እና ስለዚህ በጣም ታላቅ ቅጥያ ይወቁ!"
+   },
+   "rateitema": {
+      "message": "ለ 5 ኮከቦች ደረጃ ስጥ"
+   },
+   "ratetitle": {
+      "message": "እባክዎ የእኔን ቅጥያ ደረጃ ይስጡ እና ይከልሱ"
+   },
+   "recflash": {
+      "message": "የሚመከር"
+   },
+   "rememberrate": {
+      "message": "ደረጃ ይስጡ"
+   },
+   "reportbug": {
+      "message": "አንድ ችግር ሪፖርት ያድርጉ"
+   },
+   "reportlist": {
+      "message": "ለመጨረሻ ጊዜ የሚታወቀው"
+   },
+   "resetbrowserextension": {
+      "message": "የብርሃን ቅንብሮችን ያብሩ"
+   },
+   "right": {
+      "message": "ቀኝ:"
+   },
+   "settings": {
+      "message": "ቅንብሮች"
+   },
+   "sharemenudonatetitle": {
+      "message": "Support Development"
+   },
+   "sharemenupostonfacebook": {
+      "message": "Post on Facebook"
+   },
+   "sharemenupostongoogleplus": {
+      "message": "Post on Google+"
+   },
+   "sharemenuratetitle": {
+      "message": "Rate this extension"
+   },
+   "sharemenusendatweet": {
+      "message": "Send a Tweet"
+   },
+   "sharemenusharetitle": {
+      "message": "Share this"
+   },
+   "sharemenutellafriend": {
+      "message": "Tell a Friend"
+   },
+   "sharemenuwelcomeguidetitle": {
+      "message": "Welcome Guide"
+   },
+   "sharetexta": {
+      "message": "ይህንን አሪፍ (ኩኪስ) (ማቀዝቀዣ) ያብሩ"
+   },
+   "sharetextb": {
+      "message": "እሺ, ይህ አስደናቂ ነው. ዛሬ ይህን የብርሃን ማሰሻዎችን ያጥፉ "
+   },
+   "sharetextc": {
+      "message": "ምርጥ እና አስገራሚ ጨረሮችን ያበሩ የአሳሽ ቅጥያ"
+   },
+   "sharetextd": {
+      "message": "የብርሃን ሽግግርን ያጠፋው በ ዩ ቱብ ላይ ጥቅም ላይ ሊውል የሚችል ምርጥ መሳሪያ ነው. አውርድና እራስህ ሞክር!"
+   },
+   "shortcutalllights": {
+      "message": "ለሁሉም ክፍት ትሮች አብራ / አጥፋ መብራቶቹን ለማብራት"
+   },
+   "shortcutbright": {
+      "message": "ማያ ገጹን ለማብራት (የአማራጭነት ጨምር)"
+   },
+   "shortcutdark": {
+      "message": "ማያ ገጹን ለማብራት (ብቅ-ባይነትን ይጨምራል)"
+   },
+   "shortcuteyeprotection": {
+      "message": "የዓይንን ጥበቃ ባህሪ ለማንቃት / ለማሰናከል"
+   },
+   "shortcutopacity": {
+      "message": "ወደ ድብቅ ጨለማ (ድነት) ቅንብር ለመመለስ"
+   },
+   "shortcutsavingopacity": {
+      "message": "ይህን ፍርፍ እሴት ለማስቀመጥ"
+   },
+   "shortcuttotl": {
+      "message": "መብራቶቹን ለማብራት / ማጥፊያውን ለማብራት"
+   },
+   "showremember": {
+      "message": "አማራጮቹን ስከፍት ይህን የማስታወሻ ገጽ እንደገና አታሳይ"
+   },
+   "skipremember": {
+      "message": "ይህንን ዝለል እና የአማራጮች ገጽን አሁን ይክፈቱ"
+   },
+   "speechoption": {
+      "message": "የንግግር ማወቂያ"
+   },
+   "step1description": {
+      "message": "የካሜራ እንቅስቃሴን ባህሪ ያንቁ"
+   },
+   "step2description": {
+      "message": "Move your hand (or fist) from the top to bottom."
+   },
+   "step3description": {
+      "message": "ጥቁር ንብርቱ በራስ-ሰር ወደላይ ይሸጋገራል."
+   },
+   "tellothers": {
+      "message": "የእርስዎ አስተያየት ይቆጠራል"
+   },
+   "textfoot": {
+      "message": "ይህ ሶፍትዌር በ CC-GNU GPL ስር ፈቃድ ነው. የዚህን ፍቃድ ቅጂ ለማየት, ለማየት"
+   },
+   "titel360youtube": {
+      "message": "በአንድ ክፈፍ ውስጥ ባለ 360 ዲግሪ የ ዩ ቱብ ቪዲዮን ያሳያል"
+   },
+   "titeladdvideobutton": {
+      "message": "አዝራር አክል"
+   },
+   "titelalllightsoff": {
+      "message": "ሁሉም ክፍት ትሮች"
+   },
+   "titelambilight": {
+      "message": "ከባቢ አየር ብርሃን"
+   },
+   "titelapideveloper": {
+      "message": "ኤ. ፒ. አይ ገንቢ"
+   },
+   "titelautoplay": {
+      "message": "በራስ - ተነሽ"
+   },
+   "titelautoplayblacklist": {
+      "message": "ጥቁር መዝገብ"
+   },
+   "titelautoplaywhitelist": {
+      "message": "የክብር ዝርዝር"
+   },
+   "titelautostop": {
+      "message": "ራስ-አቁም"
+   },
+   "titelautostopblacklist": {
+      "message": "ጥቁር መዝገብ"
+   },
+   "titelautostopwhitelist": {
+      "message": "የክብር ዝርዝር"
+   },
+   "titelautowidthyoutube": {
+      "message": "አውቶማቲካሊ አቀናጅ ዩ ቱብ ተጫዋቹ ወደ ትልቁ መጠን"
+   },
+   "titelblock60fps": {
+      "message": "60ረገጽ ይያዙ"
+   },
+   "titelblur": {
+      "message": "የቀረውን አደብዝዝ"
+   },
+   "titelblurradius": {
+      "message": "የብሩህነት ራዲየስ:"
+   },
+   "titelcamera": {
+      "message": "ካሜራ"
+   },
+   "titelcinemaontop": {
+      "message": "የፊልም ቲያትር ሁነታ የ \"መብራቶች\" ንብርብር በመስኮቱ አናት ላይ ብቻ ያሳየዋል"
+   },
+   "titelcolor": {
+      "message": "ቀለም"
+   },
+   "titelcolora": {
+      "message": "ቀለም ሀ:"
+   },
+   "titelcolorb": {
+      "message": "ቀለም ለ:"
+   },
+   "titelcontextmenus": {
+      "message": "የአውድ ምናሌ"
+   },
+   "titeldeveloper": {
+      "message": "ገንቢ"
+   },
+   "titeldoesntwork": {
+      "message": "መብራቶችን አጥፋ በዚህ ድረ-ገጽ ላይ አይሰራም. እባክዎ ሌላ ገጽ ይሞክሩ."
+   },
+   "titeldownloadbutton": {
+      "message": "ይህንን ማሻሻያ አውርድ!"
+   },
+   "titeldownloadthemeupgrade": {
+      "message": "እሱን ለማልበስ ወደ አንድ አሳሽ ጨለማ ገጽታ ያክሉ. ጭብጡ በአሳሹ ጠርዝ ዙሪያ ይታያል."
+   },
+   "titeldownloadupgrade": {
+      "message": "ማሻሻያ የተመረጡ ምስሎችን ለማተኮር ድጋፍ ያክላል, እናም በጣቢያው ላይ የምስሎች ማዕከለ-ስዕላት ያሳያሉ."
+   },
+   "titeldownloadupgradefinancetoolbar": {
+      "message": "ይሄ የእውነተኛ ጊዜ የአክሲዮን ገበያ መረጃን ያሳየዎታል."
+   },
+   "titeldownloadupgradepropermenubar": {
+      "message": "ጥቁር ማንውሩን በ ጉግል ድር ጣቢያ ላይ ይመልሳል."
+   },
+   "titeldownloadupgradezoom": {
+      "message": "ለትንሽ ንባብን ለማጉላት የአጉላ አዝራሩን በመጠቀም በድር ይዘት ውስጥ ለቃለ-መጠን በአንድ ላይ ወይንም ለቃ."
+   },
+   "titeldynamic": {
+      "message": "ተለዋዋጭ ዳራ"
+   },
+   "titeleastereggs": {
+      "message": "የትንሳኤ እንቁላል"
+   },
+   "titeleye": {
+      "message": "የአይን ጥበቃ"
+   },
+   "titeleyeblacklist": {
+      "message": "ጥቁር መዝገብ"
+   },
+   "titeleyewhitelist": {
+      "message": "የክብር ዝርዝር"
+   },
+   "titelfadein": {
+      "message": "አደብዝዝ"
+   },
+   "titelfadeout": {
+      "message": "ቀዝቅዝ"
+   },
+   "titelflash": {
+      "message": "ፍላሽ ማወቅ"
+   },
+   "titelhead": {
+      "message": "ሰርጥ"
+   },
+   "titelhovervideo": {
+      "message": "ቪዲዮ ማንሳትን"
+   },
+   "titelimage": {
+      "message": "ዳራ ምስል"
+   },
+   "titelinfobar": {
+      "message": "መረጃአሞባይል"
+   },
+   "titellamp": {
+      "message": "ቡል"
+   },
+   "titellampchoose": {
+      "message": "ተወዳጅ የዓምድዎን ቅጥ ይምረጡ"
+   },
+   "titellampregular": {
+      "message": "በኦምኒቦክስ ውስጥ ያለውን የዕልባቶ ምልክት ሁልጊዜ አሳይ"
+   },
+   "titellampvideo": {
+      "message": "የቪዲዮ ማጫወቻ ከተገኘ ብቻ የዓይን አዶን አሳይ"
+   },
+   "titellessmore": {
+      "message": "ያነሰ አሳይ"
+   },
+   "titellikebar": {
+      "message": "ልክ እንደ ባር"
+   },
+   "titellikebutton": {
+      "message": "እነኚህን እና ያልተደሰቱ አዝራሮች"
+   },
+   "titellinear": {
+      "message": "ሊኒየር"
+   },
+   "titelmaxqualityyoutube": {
+      "message": "በራስ-ሰር ለዚህ ጥራት አዘጋጅ:"
+   },
+   "titelmouse": {
+      "message": "መዳፊት"
+   },
+   "titelnightmodebck": {
+      "message": "የዳራ ቀለም"
+   },
+   "titelnightmodeblacklist": {
+      "message": "ጥቁር መዝገብ"
+   },
+   "titelnightmodehyperlink": {
+      "message": "መገናኛ"
+   },
+   "titelnightmodeposition": {
+      "message": "የመቀየሪያ አቀማመጥ"
+   },
+   "titelnightmodetxt": {
+      "message": "የጽሑፍ ቀለም"
+   },
+   "titelnightmodewhitelist": {
+      "message": "የክብር ዝርዝር"
+   },
+   "titelnighttheme": {
+      "message": "የምሽት ሁነታ"
+   },
+   "titeloff": {
+      "message": "ጠፍቷል"
+   },
+   "titelon": {
+      "message": "በርቷል"
+   },
+   "titelopacity": {
+      "message": "ብርሃን-አልባነት"
+   },
+   "titelpageaction": {
+      "message": "በኦምኒቦክስ ውስጥ የዓይን አዶን ደብቅ"
+   },
+   "titelpassword": {
+      "message": "የይለፍ ቃል ጥበቃ"
+   },
+   "titelplaylist": {
+      "message": "አጫዋች ዝርዝር"
+   },
+   "titelpopupoptions": {
+      "message": "Options"
+   },
+   "titelpopupratestars": {
+      "message": "ለ 5 ኮከቦች ደረጃ ስጥ"
+   },
+   "titelpopupsupport": {
+      "message": "ድጋፍ"
+   },
+   "titelpopupvideo": {
+      "message": "YouTube"
+   },
+   "titelpopupwelcomeguide": {
+      "message": "Welcome Guide"
+   },
+   "titelqualityyoutube": {
+      "message": "በራስ-ሰር የ ዩ ቱብ ቪዲዮዎች ጥራት ያቀናብሩ"
+   },
+   "titelreader": {
+      "message": "የእይታ ደረጃ አሞሌ"
+   },
+   "titelreflection": {
+      "message": "ልምምድ"
+   },
+   "titelrememberpage": {
+      "message": "የአስታዋሽ ገጽ"
+   },
+   "titelreset": {
+      "message": "ቅንብሮችን ዳግም ያስጀምሩ"
+   },
+   "titelrightsreserved": {
+      "message": "የተወሰኑ መብቶች የተጠበቁ ናቸው."
+   },
+   "titelscreen": {
+      "message": "ማያ"
+   },
+   "titelseeonline": {
+      "message": "ለተጨማሪ ምሳሌዎች መስመር ላይ ይመልከቱ"
+   },
+   "titelsharebutton": {
+      "message": "የማጋሪያ አዝራር"
+   },
+   "titelsharethis": {
+      "message": "ይህንን አጋራ:"
+   },
+   "titelshortcutlight": {
+      "message": "አቋራጭ ቁልፍ"
+   },
+   "titelshowmore": {
+      "message": "ተጨማሪ አሳይ"
+   },
+   "titelspeech": {
+      "message": "ንግግር"
+   },
+   "titelspreadradius": {
+      "message": "የተሰራ ራዲየስ:"
+   },
+   "titelsuggestions": {
+      "message": "ጥቆማዎች"
+   },
+   "titelsupportatmos": {
+      "message": "ኤች. ቲ. ኤም. ኤል 5 \u003Cቪዲዮ> እና የ ዩ ቱብ ኤች. ቲ. ኤም. ኤል 5 ማጫወቻ ይደግፋል. እንዲሁም ከግራፊክስ ካርድዎ ጂፒዩን ይጠቀማል."
+   },
+   "titelsync": {
+      "message": "አመሳስል"
+   },
+   "titelsyncbrowser": {
+      "message": "የቅጥያ ቅንብሮችዎን ከሌሎች አሳሽዎ ጋር ያመሳስሉት"
+   },
+   "titelupgrade": {
+      "message": "አልቅ"
+   },
+   "titelvideoheadline": {
+      "message": "የቪዲዮ ርዕስ"
+   },
+   "titelvideosample": {
+      "message": "የቪዲዮ ናሙና"
+   },
+   "titelvideotool": {
+      "message": "የቪዲዮ መሳሪያ አሞሌ"
+   },
+   "titelvideotoolblacklist": {
+      "message": "ጥቁር መዝገብ"
+   },
+   "titelvideotoolbrightness": {
+      "message": "ብሩህነት"
+   },
+   "titelvideotoolcontrast": {
+      "message": "ተቃርኖ"
+   },
+   "titelvideotoolfilter": {
+      "message": "ማጣሪያ"
+   },
+   "titelvideotoolfullwindow": {
+      "message": "ሙሉ መስኮት በርቷል"
+   },
+   "titelvideotoolgrayscale": {
+      "message": "ግራጫማ"
+   },
+   "titelvideotoolhueroration": {
+      "message": "ቀለም ማሽከርከር"
+   },
+   "titelvideotoolinvert": {
+      "message": "ወደዋናው"
+   },
+   "titelvideotoollike": {
+      "message": "ልክ"
+   },
+   "titelvideotoolnormal": {
+      "message": "የተለመደ"
+   },
+   "titelvideotoolrepeat": {
+      "message": "ድገም"
+   },
+   "titelvideotoolsaturate": {
+      "message": "የቀለም ሙሌት"
+   },
+   "titelvideotoolscreenshot": {
+      "message": "ቅጽበታዊ ገጽ እይታ ይውሰዱ"
+   },
+   "titelvideotoolsepia": {
+      "message": "ሴፒያ"
+   },
+   "titelvideotoolsubscribe": {
+      "message": "Subscribe"
+   },
+   "titelvideotoolwhitelist": {
+      "message": "የክብር ዝርዝር"
+   },
+   "titelviewcount": {
+      "message": "የእይታዎች ቁጥር"
+   },
+   "titelvisblocks": {
+      "message": "እገዳዎች"
+   },
+   "titelvischoose": {
+      "message": "የኦዲዮ ምስል መስጫ ምረጥ"
+   },
+   "titelvisenable": {
+      "message": "የድምጽ ምልከታዎችን አንቃ / አሰናክል"
+   },
+   "titelvisfrequency": {
+      "message": "ድግግሞሽ"
+   },
+   "titelvistunnel": {
+      "message": "የሙዚቃ ዋሻ"
+   },
+   "titelvisualization": {
+      "message": "የድምጽ ምስል ማስተዋወቅ"
+   },
+   "titelvolume": {
+      "message": "የቪዲዮ ክፈል ሰረዝ"
+   },
+   "titelwebsite": {
+      "message": "ድህረገፅ"
+   },
+   "titelwikiatmos": {
+      "message": "ስለ አቶሜምቢያ ብርሃን የመብራት ባህሪ"
+   },
+   "titledonatebutton": {
+      "message": "ይለግሱ"
+   },
+   "titlelearnmore": {
+      "message": "ተጨማሪ እወቅ"
+   },
+   "titlenightowl": {
+      "message": "የማታ ጉጉት"
+   },
+   "titleprofilealwaysscreentab": {
+      "message": "ለሁሉም የተከፈቱ ትሮች ሁልጊዜ ነቅቷል"
+   },
+   "titleprofilenovideofocus": {
+      "message": "የቪዲዮ ትኩረት ቦዝኗል"
+   },
+   "titleprofilescreenclick": {
+      "message": "ማያ ገጹ ሲጨልም ተያያዥ ገጾችን መስቀል አንቃ"
+   },
+   "titleprofilesubmit": {
+      "message": "እነዚህን ቅንብሮች ይምረጡ"
+   },
+   "titleprofilevideofocus": {
+      "message": "የቪዲዮ ትኩረት ነቅቷል"
+   },
+   "titleregularuser": {
+      "message": "ቪዲዮ ማንሳትን"
+   },
+   "titlescreenprotection": {
+      "message": "የአይን ጥበቃ"
+   },
+   "titleuserprofile": {
+      "message": "ከታች, ግራጫማ መብራት ላይ ጠቅ ሲያደርጉ መጠቀም የሚፈልጉትን ቅንብሮችን ይምረጡ. እያንዳንዱ መገለጫ የራሱ ባህሪያት አለው."
+   },
+   "titlevideoplayrate": {
+      "message": "የቪዲዮ ፍጥነት"
+   },
+   "top": {
+      "message": "ከላይ:"
+   },
+   "translateme": {
+      "message": "ተርጓሚ እገዛ"
+   },
+   "trymotion": {
+      "message": "ይሞክሩት!"
+   },
+   "upgradecontextitemma": {
+      "message": "በእጅዎ መብራት"
+   },
+   "upgradecontextitemmb": {
+      "message": "ድረ-ገጹን በበለጠ በትክክል ይቆጣጠሩ"
+   },
+   "upgradecontextitemta": {
+      "message": "የካሜራ እንቅስቃሴ"
+   },
+   "upgradecontextitemtb": {
+      "message": "የንግግር ማወቂያ"
+   },
+   "upgradecontextmessage": {
+      "message": "ይህ ቅጥያ ይበልጥ አስገራሚ ያደርገዋል"
+   },
+   "upgradecontexttitle": {
+      "message": "ለእርስዎ አንዳንድ አዲስ ባህሪዎች አክለናል"
+   },
+   "upgradefbshare": {
+      "message": "ያጋሩ ፌስቡክ"
+   },
+   "upgradetwshare": {
+      "message": "ትዊቶች"
+   },
+   "version": {
+      "message": "ስሪት"
+   },
+   "videotitle": {
+      "message": "ይህን ቪዲዮ ላይ አተኩር"
+   },
+   "visualeffects": {
+      "message": "የሚታይ ውጤቶች"
+   },
+   "vtoolalign": {
+      "message": "በአሳሽዎ መስኮት ውስጥ የቪዲዮ አጫዋቹን ወደ መሃል ለመጫን አዝራር"
+   },
+   "vtoolfilter": {
+      "message": "በአሁኑ የቪዲዮ አጫዋችን ውስጥ ማጣሪያ ለማከል አዝራር"
+   },
+   "vtoolfullscreen": {
+      "message": "የቪዲዮ ማጫወቻውን ወደ ሙሉ የመስኮት መጠን ለማዘጋጀት ቁልፍ"
+   },
+   "vtoolreplay": {
+      "message": "በአሁኑ የቪዲዮ አጫዋችን ውስጥ ማጣሪያ ለማከል አዝራር"
+   },
+   "vtoolscreenshot": {
+      "message": "በአሁኑ የቪዲዮ አጫዋችን ውስጥ ማጣሪያ ለማከል አዝራር"
+   },
+   "vtoolvisualization": {
+      "message": "ለአሁኑ የቪዲዮ ማጫወቻ የድምፅ ህትመት ለማሳየት የሚያስችል አዝራር"
+   },
+   "warning": {
+      "message": "ማስጠንቀቂያ!"
+   },
+   "warningtextambilight": {
+      "message": "በአንድ የድር ጣቢያ የደህንነት መመሪያ ምክንያት የቪዲዮ ውሂብ መቀበል ሳይችሉ ሲቀሩ, የተመረጠው ጠንካራ ጥቁር ይጠቀማል."
+   },
+   "writeareview": {
+      "message": "አንድ ግምገማ ጻፍ"
+   }
+}

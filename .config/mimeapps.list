@@ -1,0 +1,13 @@
+[Added Associations]
+text/x-systemd-unit=org.gnome.gedit.desktop;
+text/plain=org.gnome.gedit.desktop;
+text/x-python=org.gnome.gedit.desktop;vim.desktop;
+application/pdf=firefox.desktop;
+
+[Default Applications]
+x-scheme-handler/mailto=org.gnome.Evolution.desktop
+text/html=google-chrome.desktop
+x-scheme-handler/http=google-chrome.desktop
+x-scheme-handler/https=google-chrome.desktop
+x-scheme-handler/about=google-chrome.desktop
+x-scheme-handler/unknown=google-chrome.desktop

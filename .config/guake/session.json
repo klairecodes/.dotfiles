@@ -1,0 +1,20 @@
+{
+    "schema_version": 2,
+    "timestamp": 1574040438,
+    "workspace": {
+        "0": [
+            [
+                {
+                    "panes": [
+                        {
+                            "type": "term",
+                            "directory": "/home/klaus"
+                        }
+                    ],
+                    "label": "klaus@KT480:~",
+                    "custom_label_set": false
+                }
+            ]
+        ]
+    }
+}
