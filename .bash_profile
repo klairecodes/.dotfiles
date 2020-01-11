@@ -1,1 +1,0 @@
-/home/klaus/.bash_profile
