@@ -11,4 +11,5 @@ exec redshift &
 # Start i3 wm
 exec i3
 
-
+# Set layout of dual monitors
+/home/klaus/.screenlayout/desktopDualScreens.sh
