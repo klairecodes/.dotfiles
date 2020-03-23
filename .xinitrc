@@ -13,5 +13,6 @@ exec redshift &
 
 # Start i3 wm
 exec i3
+#exec gnome-session
 
 
