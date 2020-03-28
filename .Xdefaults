@@ -15,3 +15,24 @@ xterm*VT100.Translations: #override \
 
 ! disable scrollbar
 XTerm.vt100.scrollBar: false
+
+
+! URXVT Terminal Configuration
+URxvt.background: #000000
+URxvt.scrollBar: false
+URxvt.foreground: #FFFFFF
+URxvt.perl-ext-common: resize-font, matcher, clipboard
+URxvt.visualBell: true
+
+! cursor
+URxvt.cursorColor: white
+URxvt.cursorBlink: true
+
+! text
+URxvt.font: xft:FiraCode-Regular:size=14
+URxvt.letterSpace: -1
+
+! clipboard
+URxvt.clipboard.autocopy: true
+URxvt.keysym.M-c: perl:clipboard:copy
+URxvt.keysym.M-v: perl:clipboard:paste
