@@ -1,5 +1,6 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =8
+let g:netrw_dirhistcnt =9
+let g:netrw_dirhist_9='/tmp'
 let g:netrw_dirhist_8='/home/klaus/dotfiles/.config/i3'
 let g:netrw_dirhist_7='/home/klaus/PycharmProjects/CSCI-141/Recitations/recitation14'
 let g:netrw_dirhist_6='/home/klaus/Documents/ResumeDrafts'

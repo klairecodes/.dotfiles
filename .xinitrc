@@ -15,4 +15,7 @@ exec redshift &
 feh --bg-scale ~/Pictures/Wallpapers/arch_wallpaper_blk.png
 exec i3
 
+# Start pulseaudio tray applet
+exec pa-applet
+
 
