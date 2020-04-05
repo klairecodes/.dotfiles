@@ -5,6 +5,8 @@ xmodmap -e "keysym Caps_Lock = Escape" # set caps lock as escape
 # Start xbindkeys, adding keyboard shortcuts, vol/brightness control, etc
 xbindkeys
 
+setxkbdmap -option caps:escape
+
 # Start redshift
 exec redshift &
 

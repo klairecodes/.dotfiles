@@ -67,15 +67,18 @@
 
 # Increase volume
 "pactl set-sink-volume @DEFAULT_SINK@ +1000"
-   XF86AudioRaiseVolume
+    m:0x8 + c:112
+    Alt + Prior
 
 # Decrease volume
 "pactl set-sink-volume @DEFAULT_SINK@ -1000"
-   XF86AudioLowerVolume
+    m:0x8 + c:117
+    Alt + Next
 
 # Mute volume
 "pactl set-sink-mute @DEFAULT_SINK@ toggle"
-   XF86AudioMute
+    m:0x8 + c:127
+    Alt + Pause
 
 # Increase backlight
 "xbacklight -inc 5"

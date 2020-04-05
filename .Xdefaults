@@ -12,6 +12,8 @@ xterm*VT100.Translations: #override \
     Ctrl <Key> minus: smaller-vt-font() \n\
     Ctrl <Key> plus: larger-vt-font() \n\
     Ctrl <Key> 0: set-vt-font(d)
+    Ctrl Shift <Key>V:      insert.selection(CLIPBOARD) \n\
+    Ctrl Shift <Key>C:      copy-selection(CLIPBOARD)
 
 ! disable scrollbar
 XTerm.vt100.scrollBar: false
