@@ -9,13 +9,21 @@ xbindkeys
 xset r rate 300 60
 
 # Start redshift
-exec redshift &
-
-# Start i3 wm and set wallpaper
-feh --bg-scale ~/Pictures/Wallpapers/arch_wallpaper_blk.png
-exec i3
+redshift &
 
 # Start pulseaudio tray applet
-exec pa-applet
+pa-applet &
 
+# Set wallpaper
+feh --bg-scale ~/Pictures/Wallpapers/arch_wallpaper_blk.png
 
+# Manage resources for GTK and other GUI applications
+if [ -d /etc/X11/xinit/xinitrc.d ]; then
+  for f in /etc/X11/xinit/xinitrc.d/*; do
+    [ -x "$f" ] && . "$f"
+  done
+  unset f
+fi
+
+# Start i3 wm
+exec i3
