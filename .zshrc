@@ -104,7 +104,7 @@ export VISUAL='vim'
 
 # Custom commands
 alias ls='ls -a --color=auto'
-alias klock='i3lock -i ~/Pictures/Wallpapers/arch_wallpaper_blk_red.png'
+alias klock='i3lock -ti ~/Pictures/Wallpapers/arch_wallpaper_blk_red.png'
 alias please='sudo !!'
 alias bear='klock && systemctl hibernate && exit'
 alias lk='klock && exit'
