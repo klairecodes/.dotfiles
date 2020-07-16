@@ -14,6 +14,12 @@ redshift &
 # Start pulseaudio tray applet
 pa-applet &
 
+# Start blueman bluetooth applet
+blueman-applet &
+
+# Start screenshot utility
+flameshot &
+
 # Set wallpaper
 feh --bg-scale ~/Pictures/Wallpapers/arch_wallpaper_blk.png
 
