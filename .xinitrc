@@ -8,6 +8,9 @@ xbindkeys
 # Change keypress repeat delay and rate
 xset r rate 300 60
 
+# Start Dropbox
+dropbox &
+
 # Start redshift
 redshift &
 
