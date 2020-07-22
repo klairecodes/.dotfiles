@@ -11,6 +11,7 @@
 
 set $mod Mod4
 
+# Theme colors (Dracula)
 # class                 border  backgr. text    indicator child_border
 client.focused          #bd93f9 #bd93f9 #ffffff #50fa7b   #bd93f9
 client.focused_inactive #333333 #5f676a #ffffff #484e50   #5f676a
