@@ -196,6 +196,17 @@ bindsym $mod+r mode "resize"
 #         status_command i3status
 # }
 
+# Change the wallpaper to the last wallpaper command.
+exec_always --no-startup-id sh $HOME/.fehbg
+
+# Launch startup applications
+exec --no-startup-id xbindkeys # For keyboard shortcuts
+exec --no-startup-id pa-applet # Wireless
+exec --no-startup-id dropbox # File syncing
+exec --no-startup-id blueman-applet # Bluetooth
+exec --no-startup-id flameshot # Screenshot utility
+exec --no-startup-id redshift # Blue light filter
+
 # POLYBAR
 # Use polybar instead of i3bar
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
