@@ -108,4 +108,5 @@ alias klock='i3lock -ti ~/Pictures/Wallpapers/arch_wallpaper_blk_red.png'
 alias please='sudo !!'
 alias bear='klock && systemctl hibernate && exit'
 alias lk='klock && exit'
-
+alias off='shutdown now'
+alias restart='shutdown -r now'

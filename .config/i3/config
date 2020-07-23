@@ -51,7 +51,7 @@ bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOU
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec urxvt
+bindsym $mod+Return exec alacritty
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -196,5 +196,9 @@ bindsym $mod+r mode "resize"
 #         status_command i3status
 # }
 
+# POLYBAR
 # Use polybar instead of i3bar
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
+
+# Toggle showing the polybar
+bindsym $mod+z exec polybar-msg cmd toggle
