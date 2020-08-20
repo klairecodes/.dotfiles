@@ -117,7 +117,7 @@ bindsym $mod+a focus parent
 #bindsym $mod+d focus child
 
 # lock the screen
-bindsym $mod+Delete exec klock.sh
+bindsym $mod+Delete exec --no-startup-id klock.sh
 
 # Define names for default workspaces for which we configure key bindings later on.
 # We use variables to avoid repeating the names in multiple places.
@@ -212,4 +212,4 @@ exec --no-startup-id redshift # Blue light filter
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 
 # Toggle showing the polybar
-bindsym $mod+z exec polybar-msg cmd toggle
+bindsym $mod+z exec --no-startup-id polybar-msg cmd toggle
