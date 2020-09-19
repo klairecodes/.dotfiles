@@ -9,7 +9,7 @@ export ZSH="/home/klaus/.oh-my-zsh"
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 #ZSH_THEME="af-magic"
-ZSH_THEME="agnoster"
+ZSH_THEME="powerlevel10k/powerlevel10k"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -110,6 +110,15 @@ alias lk='klock && exit'
 alias off='shutdown now'
 alias restart='shutdown -r now'
 alias cf='setfont /usr/share/kbd/consolefonts/ter-124b.psf.gz' # Set Linux console font
+alias cdd='cd $HOME/Dropbox/Code/web-projects/ritlinks-parent/ritlinks'
+alias e='exit'
 
 # To hide "user@hostname" from agnoster theme
 prompt_context(){}
+
+# Python virtualenvwrapper configuration
+export WORKON_HOME=$HOME/.virtualenvs
+export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
+export VIRTUALENVWRAPPER_VIRTUALENV_ARGS=' -p /usr/bin/python3 '
+export PROJECT_HOME=$HOME/Devel
+source /usr/bin/virtualenvwrapper.sh
