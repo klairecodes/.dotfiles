@@ -13,7 +13,7 @@ set $mod Mod4
 
 # Theme colors (Dracula)
 # class                 border  backgr. text    indicator child_border
-client.focused          #bd93f9 #bd93f9 #ffffff #50fa7b   #bd93f9
+client.focused          #bd93f9 #bd93f9 #ffffff #bd93f9   #bd93f9
 client.focused_inactive #333333 #5f676a #ffffff #484e50   #5f676a
 client.unfocused        #333333 #222222 #888888 #292d2e   #222222
 client.urgent           #2f343a #ff5555 #ffffff #900000   #900000
@@ -54,7 +54,7 @@ bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOU
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec alacritty
+bindsym $mod+Return exec gnome-terminal
 
 # kill focused window
 bindsym $mod+Shift+q kill
