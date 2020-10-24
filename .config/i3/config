@@ -231,11 +231,12 @@ mode "$mode_system" {
 
 # Set different configuration or utility applications
 bindsym $mod+c mode "$mode_configure"
-set $mode_configure (m)onitors, (b)luetooth, (w)ireless
+set $mode_configure (m)onitors, (b)luetooth, (s)ound, (w)ireless
 mode "$mode_configure" {
     bindsym m exec --no-startup-id arandr, mode "default"
     bindsym b exec --no-startup-id blueman-manager, mode "default"
-    bindsym w exec --no-startup-id pavucontrol, mode "default"
+    bindsym s exec --no-startup-id pavucontrol, mode "default"
+    bindsym w exec --no-startup-id nm-connection-editor, mode "default"
 
     # exit mode
     bindsym Return mode "default"
@@ -306,3 +307,7 @@ for_window [title="Bluetooth Devices"] [floating] move position center
 for_window [title="Volume Control"] floating enable
 for_window [title="Volume Control"] [floating] resize set 640 480
 for_window [title="Volume Control"] [floating] move position center
+
+for_window [title="Network Connections"] floating enable
+for_window [title="Network Connections"] [floating] resize set 640 640 
+for_window [title="Network Connections"] [floating] move position center
