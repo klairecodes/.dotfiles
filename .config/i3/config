@@ -55,6 +55,7 @@ floating_modifier $mod
 
 # start a terminal
 bindsym $mod+Return exec gnome-terminal
+bindsym $mod+Shift+Return exec gnome-terminal && i3-msg resize 640 480 && i3-msg floating enable
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -68,6 +69,9 @@ bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
 
 # start a web browser
 bindsym $mod+x exec firefox
+
+# start arandr to edit multiple monitor setup
+bindsym $mod+g exec arandr
 
 # change focus
 bindsym $mod+h focus left
@@ -133,7 +137,7 @@ set $ws6 "6"
 set $ws7 "7"
 set $ws8 "8"
 set $ws9 "9"
-set $ws10 "10"
+# set $ws10 "10"
 
 # switch to workspace
 bindsym $mod+1 workspace number $ws1
@@ -145,7 +149,7 @@ bindsym $mod+6 workspace number $ws6
 bindsym $mod+7 workspace number $ws7
 bindsym $mod+8 workspace number $ws8
 bindsym $mod+9 workspace number $ws9
-bindsym $mod+0 workspace number $ws10
+# bindsym $mod+0 workspace number $ws10
 
 # move focused container to workspace
 bindsym $mod+Shift+1 move container to workspace number $ws1
@@ -157,7 +161,7 @@ bindsym $mod+Shift+6 move container to workspace number $ws6
 bindsym $mod+Shift+7 move container to workspace number $ws7
 bindsym $mod+Shift+8 move container to workspace number $ws8
 bindsym $mod+Shift+9 move container to workspace number $ws9
-bindsym $mod+Shift+0 move container to workspace number $ws10
+# bindsym $mod+Shift+0 move container to workspace number $ws10
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
@@ -202,6 +206,72 @@ bindsym $mod+r mode "resize"
 # Change the wallpaper to the last wallpaper command.
 exec_always --no-startup-id sh $HOME/.fehbg
 
+# Make the currently focues window a scratchpad
+bindsym $mod+Shift+minus move scratchpad
+
+# Show the first scratchpad window
+bindsym $mod+minus scratchpad show
+
+# Set shut down, restart, and locking features (borrowed from manjaro-i3)
+bindsym $mod+0 mode "$mode_system"
+set $mode_system (l)ock, (e)xit, switch_(u)ser, (s)uspend, (h)ibernate, (r)eboot, (Shift+s)hutdown
+mode "$mode_system" {
+    bindsym l exec --no-startup-id klock.sh, mode "default"
+    bindsym s exec --no-startup-id i3exit suspend, mode "default"
+    bindsym u exec --no-startup-id i3exit switch_user, mode "default"
+    bindsym e exec --no-startup-id i3exit logout, mode "default"
+    bindsym h exec --no-startup-id i3exit hibernate, mode "default"
+    bindsym r exec --no-startup-id i3exit reboot, mode "default"
+    bindsym Shift+s exec --no-startup-id i3exit shutdown, mode "default"
+
+    # exit system mode
+    bindsym Return mode "default"
+    bindsym Escape mode "default"
+}
+
+# Set different configuration or utility applications
+bindsym $mod+c mode "$mode_configure"
+set $mode_configure (m)onitors, (b)luetooth, (w)ireless
+mode "$mode_configure" {
+    bindsym m exec --no-startup-id arandr, mode "default"
+    bindsym b exec --no-startup-id blueman-manager, mode "default"
+    bindsym w exec --no-startup-id pavucontrol, mode "default"
+
+    # exit mode
+    bindsym Return mode "default"
+    bindsym Escape mode "default"
+}
+
+# Launch a variety of media programs
+bindsym $mod+y mode "$mode_media"
+set $mode_media (d)iscord, (s)lack, s(p)otify, (Shift+a)ll
+mode "$mode_media" {
+    bindsym d exec --no-startup-id discord, mode "default"
+    bindsym s exec --no-startup-id slack, mode "default"
+    bindsym p exec --no-startup-id spotify, mode "default"
+    bindsym Shift+A exec --no-startup-id discord & slack & spotify, mode "default"
+
+    # exit mode
+    bindsym Return mode "default"
+    bindsym Escape mode "default"
+}
+
+# Quick shortcuts to common monitor layouts
+bindsym $mod+p mode "$mode_monitor"
+set $mode_monitor (s)ingle, Second: (t)op, (l)eft, (r)ight, (b)ottom, Triple: tri(p)le
+mode "$mode_monitor" {
+    bindsym s exec --no-startup-id arandr-default.sh, mode "default"
+    bindsym t exec --no-startup-id arandr-top.sh, mode "default"
+    bindsym l exec --no-startup-id arandr-left.sh, mode "default"
+    bindsym r exec --no-startup-id arandr-right.sh, mode "default"
+    bindsym b exec --no-startup-id arandr-bottom.sh, "default"
+    bindsym p exec --no-startup-id arandr-default.sh, "default"
+
+    # exit mode
+    bindsym Return mode "default"
+    bindsym Escape mode "default"
+}
+
 # Launch startup applications
 exec --no-startup-id xbindkeys # For keyboard shortcuts
 exec --no-startup-id pa-applet # Wireless
@@ -216,3 +286,23 @@ exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 
 # Toggle showing the polybar
 bindsym $mod+z exec --no-startup-id polybar-msg cmd toggle
+
+# Floating window configuration
+for_window [window_role="pop-up"] floating enable
+for_window [window_role="bubble"] floating enable
+for_window [window_role="task_dialog"] floating enable
+for_window [window_role="Preferences"] floating enable
+for_window [window_type="dialog"] floating enable
+for_window [window_type="menu"] floating enable
+# Specific applications
+for_window [title="Screen Layout Editor"] floating enable
+for_window [title="Screen Layout Editor"] [floating] resize set 640 480
+for_window [title="Screen Layout Editor"] floating enable
+
+for_window [title="Bluetooth Devices"] floating enable
+for_window [title="Bluetooth Devices"] [floating] resize set 640 480
+for_window [title="Bluetooth Devices"] [floating] move position center
+
+for_window [title="Volume Control"] floating enable
+for_window [title="Volume Control"] [floating] resize set 640 480
+for_window [title="Volume Control"] [floating] move position center
