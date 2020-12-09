@@ -25,9 +25,9 @@ runtime! archlinux.vim
 :set shiftwidth=4
 :set expandtab
 
-packadd! dracula
-syntax enable
-colorscheme dracula
+" packadd! dracula
+" syntax enable
+" colorscheme dracula
 
 " vim-latex-live-preview
 let g:livepreview_previewer = 'evince'

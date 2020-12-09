@@ -119,6 +119,8 @@ alias restart='shutdown -r now'
 alias cf='setfont /usr/share/kbd/consolefonts/ter-124b.psf.gz' # Set Linux console font
 alias cdd='cd $HOME/Dropbox/Code/web-projects/ritlinks-parent/ritlinks'
 alias e='exit'
+alias keyrateg='xset r rate 660 25'
+alias keyrate='xset r rate 300 60'
 
 # To hide "user@hostname" from agnoster theme
 prompt_context(){}

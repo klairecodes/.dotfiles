@@ -3,3 +3,5 @@
 	name = Klaus Curde
 [credential]
 	helper = cache
+[core]
+	autocrlf = input
