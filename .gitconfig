@@ -1,5 +1,7 @@
 [user]
-	email = [kcurde@gmail.com]
-	name = [klaus]
+	email = kcurde@gmail.com
+	name = Klaus Curde
 [credential]
 	helper = cache
+[core]
+	autocrlf = input

@@ -13,7 +13,7 @@ set $mod Mod4
 
 # Theme colors (Dracula)
 # class                 border  backgr. text    indicator child_border
-client.focused          #bd93f9 #bd93f9 #ffffff #50fa7b   #bd93f9
+client.focused          #bd93f9 #bd93f9 #ffffff #bd93f9   #bd93f9
 client.focused_inactive #333333 #5f676a #ffffff #484e50   #5f676a
 client.unfocused        #333333 #222222 #888888 #292d2e   #222222
 client.urgent           #2f343a #ff5555 #ffffff #900000   #900000
@@ -24,6 +24,9 @@ client.background       #ffffff
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
 font pango:monospace 10
+
+# Disable title bars.
+default_border pixel
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
@@ -51,20 +54,25 @@ bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOU
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec alacritty
+bindsym $mod+Return exec gnome-terminal
+bindsym $mod+Shift+Return exec gnome-terminal && i3-msg floating enable && i3-msg resize 640 480 && i3-msg move scratchpad
 
 # kill focused window
 bindsym $mod+Shift+q kill
 
 # start dmenu (a program launcher)
 # bindsym $mod+d exec dmenu_run
+bindsym $mod+d exec --no-startup-id dmenu_run -nb '#282a36' -sf '#eeeeee' -sb '#bd93f9' -nf '#bbbbbb' -fn 'Inconsolata 14'
 # There also is the (new) i3-dmenu-desktop which only displays applications
 # shipping a .desktop file. It is a wrapper around dmenu, so you need that
 # installed.
-bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
+bindsym $mod+Shift+d exec --no-startup-id i3-dmenu-desktop
 
 # start a web browser
 bindsym $mod+x exec firefox
+
+# start Visual Studio Code
+bindsym $mod+slash exec code
 
 # change focus
 bindsym $mod+h focus left
@@ -117,7 +125,8 @@ bindsym $mod+a focus parent
 #bindsym $mod+d focus child
 
 # lock the screen
-bindsym $mod+Delete exec klock.sh
+bindsym $mod+9 exec --no-startup-id blurlock
+bindsym $mod+Shift+9 exec --no-startup-id klock.sh
 
 # Define names for default workspaces for which we configure key bindings later on.
 # We use variables to avoid repeating the names in multiple places.
@@ -129,8 +138,8 @@ set $ws5 "5"
 set $ws6 "6"
 set $ws7 "7"
 set $ws8 "8"
-set $ws9 "9"
-set $ws10 "10"
+# set $ws9 "9"
+# set $ws10 "10"
 
 # switch to workspace
 bindsym $mod+1 workspace number $ws1
@@ -141,8 +150,8 @@ bindsym $mod+5 workspace number $ws5
 bindsym $mod+6 workspace number $ws6
 bindsym $mod+7 workspace number $ws7
 bindsym $mod+8 workspace number $ws8
-bindsym $mod+9 workspace number $ws9
-bindsym $mod+0 workspace number $ws10
+# bindsym $mod+9 workspace number $ws9
+# bindsym $mod+0 workspace number $ws10
 
 # move focused container to workspace
 bindsym $mod+Shift+1 move container to workspace number $ws1
@@ -153,8 +162,8 @@ bindsym $mod+Shift+5 move container to workspace number $ws5
 bindsym $mod+Shift+6 move container to workspace number $ws6
 bindsym $mod+Shift+7 move container to workspace number $ws7
 bindsym $mod+Shift+8 move container to workspace number $ws8
-bindsym $mod+Shift+9 move container to workspace number $ws9
-bindsym $mod+Shift+0 move container to workspace number $ws10
+# bindsym $mod+Shift+9 move container to workspace number $ws9
+# bindsym $mod+Shift+0 move container to workspace number $ws10
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
@@ -196,9 +205,115 @@ bindsym $mod+r mode "resize"
 #         status_command i3status
 # }
 
+# Change the wallpaper to the last wallpaper command.
+exec_always --no-startup-id sh $HOME/.fehbg
+
+# Make the currently focues window a scratchpad
+bindsym $mod+Shift+Tab move scratchpad
+
+# Show the first scratchpad window
+bindsym $mod+Tab scratchpad show
+
+# Set shut down, restart, and locking features (borrowed from manjaro-i3)
+bindsym $mod+0 mode "$mode_system"
+set $mode_system (l)ock, (e)xit, switch_(u)ser, (s)uspend, (h)ibernate, (r)eboot, (Shift+s)hutdown
+mode "$mode_system" {
+    bindsym l exec --no-startup-id klock.sh, mode "default"
+    bindsym s exec --no-startup-id i3exit suspend, mode "default"
+    bindsym u exec --no-startup-id i3exit switch_user, mode "default"
+    bindsym e exec --no-startup-id i3exit logout, mode "default"
+    bindsym h exec --no-startup-id i3exit hibernate, mode "default"
+    bindsym r exec --no-startup-id i3exit reboot, mode "default"
+    bindsym Shift+s exec --no-startup-id i3exit shutdown, mode "default"
+
+    # exit system mode
+    bindsym Return mode "default"
+    bindsym Escape mode "default"
+}
+
+# Set different configuration or utility applications
+bindsym $mod+c mode "$mode_configure"
+set $mode_configure (m)onitors, (b)luetooth, (s)ound, (w)ireless
+mode "$mode_configure" {
+    bindsym m exec --no-startup-id arandr, mode "default"
+    bindsym b exec --no-startup-id blueman-manager, mode "default"
+    bindsym s exec --no-startup-id pavucontrol, mode "default"
+    bindsym w exec --no-startup-id nm-connection-editor, mode "default"
+
+    # exit mode
+    bindsym Return mode "default"
+    bindsym Escape mode "default"
+}
+
+# Launch a variety of media programs
+bindsym $mod+y mode "$mode_media"
+set $mode_media (d)iscord, (s)lack, s(p)otify, (Shift+a)ll
+mode "$mode_media" {
+    bindsym d exec --no-startup-id discord, mode "default"
+    bindsym s exec --no-startup-id slack, mode "default"
+    bindsym p exec --no-startup-id spotify, mode "default"
+    bindsym Shift+A exec --no-startup-id discord & slack & spotify, mode "default"
+
+    # exit mode
+    bindsym Return mode "default"
+    bindsym Escape mode "default"
+}
+
+# Quick shortcuts to common monitor layouts
+bindsym XF86Display mode "$mode_monitor"
+set $mode_monitor (s)ingle, Second: (t)op, (l)eft, (r)ight, (b)ottom, Triple: tri(p)le
+mode "$mode_monitor" {
+    bindsym s exec --no-startup-id arandr-default.sh, mode "default"
+    bindsym t exec --no-startup-id arandr-top.sh, mode "default"
+    bindsym l exec --no-startup-id arandr-left.sh, mode "default"
+    bindsym r exec --no-startup-id arandr-right.sh, mode "default"
+    bindsym b exec --no-startup-id arandr-bottom.sh, "default"
+    bindsym p exec --no-startup-id arandr-default.sh, "default"
+
+    # exit mode
+    bindsym Return mode "default"
+    bindsym Escape mode "default"
+}
+
+# Launch startup applications
+exec --no-startup-id xbindkeys # For keyboard shortcuts
+exec --no-startup-id pa-applet # Wireless
+exec --no-startup-id dropbox # File syncing
+exec --no-startup-id blueman-applet # Bluetooth
+exec --no-startup-id flameshot # Screenshot utility
+exec --no-startup-id redshift # Blue light filter
+exec --no-startup-id dunst # Notification daemon
+exec --no-startup-id parcellite # Clipboard Manager
+# exec --no-startup-id thunderbird # Mail client 
+
 # POLYBAR
 # Use polybar instead of i3bar
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 
 # Toggle showing the polybar
-bindsym $mod+z exec polybar-msg cmd toggle
+bindsym $mod+z exec --no-startup-id polybar-msg cmd toggle
+
+# Floating window configuration
+for_window [window_role="pop-up"] floating enable
+for_window [window_role="bubble"] floating enable
+for_window [window_role="task_dialog"] floating enable
+for_window [window_role="Preferences"] floating enable
+for_window [window_type="dialog"] floating enable
+for_window [window_type="menu"] floating enable
+
+# Specific applications
+for_window [title="Screen Layout Editor"] floating enable
+for_window [title="Screen Layout Editor"] [floating] resize set 640 480
+for_window [title="Screen Layout Editor"] floating enable
+
+for_window [title="Bluetooth Devices"] floating enable
+for_window [title="Bluetooth Devices"] [floating] resize set 640 480
+for_window [title="Bluetooth Devices"] [floating] move position center
+
+for_window [title="Volume Control"] floating enable
+for_window [title="Volume Control"] [floating] resize set 640 480
+for_window [title="Volume Control"] [floating] move position center
+
+for_window [title="Network Connections"] floating enable
+for_window [title="Network Connections"] [floating] resize set 640 640 
+for_window [title="Network Connections"] [floating] move position center

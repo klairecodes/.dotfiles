@@ -1,30 +1,9 @@
 # Changing Caps Lock to backspace
-xmodmap -e "clear lock" #disable caps lock switch
-xmodmap -e "keysym Caps_Lock = Escape" # set caps lock as escape
-
-# Start xbindkeys, adding keyboard shortcuts, vol/brightness control, etc
-xbindkeys
+xmodmap -e "clear lock" # Disable caps lock switch
+xmodmap -e "keysym Caps_Lock = Escape" # Set caps lock as escape
 
 # Change keypress repeat delay and rate
 xset r rate 300 60
-
-# Start Dropbox
-dropbox &
-
-# Start redshift
-redshift &
-
-# Start pulseaudio tray applet
-pa-applet &
-
-# Start blueman bluetooth applet
-blueman-applet &
-
-# Start screenshot utility
-flameshot &
-
-# Set wallpaper
-feh --bg-scale ~/Pictures/Wallpapers/arch_wallpaper_blk.png
 
 # Manage resources for GTK and other GUI applications
 if [ -d /etc/X11/xinit/xinitrc.d ]; then
@@ -33,6 +12,9 @@ if [ -d /etc/X11/xinit/xinitrc.d ]; then
   done
   unset f
 fi
+
+# Start fcron for cron jobs
+fcron
 
 # Start i3 wm
 exec i3
