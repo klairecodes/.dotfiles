@@ -36,6 +36,8 @@ height = 24
 ;offset-y = 1%
 radius = 6.0
 fixed-center = false
+dpi-x = 120
+dpi-y = 120
 
 background = ${colors.background}
 foreground = ${colors.foreground}
@@ -66,7 +68,7 @@ tray-padding = 2
 ;tray-background = #0063ff
 
 ;wm-restack = bspwm
-;wm-restack = i3
+wm-restack = i3
 
 ;override-redirect = true
 
