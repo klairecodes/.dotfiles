@@ -22,10 +22,6 @@ font pango:monospace 10
 # Disable title bars.
 default_border pixel
 
-# This font is widely installed, provides lots of unicode glyphs, right-to-left
-# text rendering and scalability on retina/hidpi displays (thanks to pango).
-# font pango:DejaVu Sans Mono 8
-
 # Setting session locker using xss-lock "locker". Triggered by ACPI and systemd.
 exec --no-startup-id xss-lock --transfer-sleep-lock -- blurlock --nofork
 
@@ -85,18 +81,18 @@ bindsym $mod+Shift+Up move up
 bindsym $mod+Shift+Right move right
 
 # split in horizontal orientation
-bindsym $mod+b split h
+bindsym $mod+b split h; exec notify-send -u low Orientation: "horizontal"
 
 # split in vertical orientation
-bindsym $mod+v split v
+bindsym $mod+v split v; exec notify-send -u low Orientation: "vertical"
 
 # enter fullscreen mode for the focused container
 bindsym $mod+f fullscreen toggle
 
 # change container layout (stacked, tabbed, toggle split)
-bindsym $mod+s layout stacking
-bindsym $mod+w layout tabbed
-bindsym $mod+e layout toggle split
+bindsym $mod+s layout stacking; exec notify-send -u low Layout: "stacking"
+bindsym $mod+w layout tabbed; exec notify-send -u low Layout: "tabbed"
+bindsym $mod+e layout toggle split; exec notify-send -u low Layout: "split"
 
 # toggle tiling / floating
 bindsym $mod+Shift+space floating toggle
@@ -192,7 +188,7 @@ bindsym $mod+r mode "resize"
 exec_always --no-startup-id sh $HOME/.fehbg
 
 # Make the currently focused window a scratchpad.
-bindsym $mod+Shift+Tab move scratchpad
+bindsym $mod+Shift+Tab move scratchpad; exec notify-send -u low "Moved window to scratchpad."
 
 # Show the first scratchpad window.
 bindsym $mod+Tab scratchpad show
@@ -248,12 +244,12 @@ mode "$mode_media" {
 bindsym XF86Display mode "$mode_monitor"
 set $mode_monitor (s)ingle, Second: (t)op, (l)eft, (r)ight, (b)ottom, Triple: tri(p)le
 mode "$mode_monitor" {
-    bindsym s exec --no-startup-id arandr-default.sh, mode "default"
-    bindsym t exec --no-startup-id arandr-top.sh, mode "default"
-    bindsym l exec --no-startup-id arandr-left.sh, mode "default"
-    bindsym r exec --no-startup-id arandr-right.sh, mode "default"
-    bindsym b exec --no-startup-id arandr-bottom.sh, "default"
-    bindsym p exec --no-startup-id arandr-default.sh, "default"
+    bindsym s exec --no-startup-id arandr-default.sh, mode "default"; exec notify-send -u low Monitor\ Layout: "single screen"
+    bindsym t exec --no-startup-id arandr-top.sh, mode "default"; exec notify-send -u low Monitor\ Layout: "second screen top"
+    bindsym l exec --no-startup-id arandr-left.sh, mode "default"; exec notify-send -u low Monitor\ Layout: "second screen left"
+    bindsym r exec --no-startup-id arandr-right.sh, mode "default"; exec notify-send -u low Monitor\ Layout: "second screen right"
+    bindsym b exec --no-startup-id arandr-bottom.sh, "default"; exec notify-send -u low Monitor Layout: "second screen bottom"
+    # bindsym p exec --no-startup-id arandr-default.sh, "default"; exec notify-send -u low Monitor\ Layout: "triple screen"
 
     # exit mode
     bindsym Return mode "default"
@@ -277,7 +273,7 @@ exec --no-startup-id xinput --set-prop "13" "libinput Accel Speed" +0.5
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 
 # Toggle showing the polybar
-bindsym $mod+z exec --no-startup-id polybar-msg cmd toggle
+bindsym $mod+z exec --no-startup-id polybar-msg cmd toggle; exec notify-send -u low Polybar\ toggled.
 
 # floating window configuration
 for_window [window_role="pop-up"] floating enable
