@@ -2,10 +2,25 @@
 #
 # Heavily modified by Klaus Curde.
 
-set $mod Mod4
 
+### Variables ##################################################################
+
+set $mod Mod4
+# Define names for default workspaces for which we configure key bindings later on.
+# Variables used to avoid repeating the names in multiple places.
+set $ws1 "1: misc"
+set $ws2 "2: code"
+set $ws3 "3: code"
+set $ws4 "4: code"
+set $ws5 "5: term"
+set $ws6 "6: social"
+set $ws7 "7: mail"
+set $ws8 "8: media"
 
 ### Behavior ###################################################################
+
+# Default layout for new workspaces.
+workspace_layout tabbed
 
 # increase trackpoint sensitivity
 exec --no-startup-id xinput --set-prop "13" "libinput Accel Speed" +0.5
@@ -14,7 +29,8 @@ exec --no-startup-id xinput --set-prop "13" "libinput Accel Speed" +0.5
 exec --no-startup-id xss-lock --transfer-sleep-lock -- blurlock --nofork
 
 # Start dmenu or i3-dmenu-desktop for desktop entry support
-bindsym $mod+d exec --no-startup-id dmenu_run -nb '#282a36' -sf '#eeeeee' -sb '#bd93f9' -nf '#bbbbbb' -fn 'Inconsolata 14'
+bindsym $mod+d exec --no-startup-id dmenu_run \
+-nb '#282a36' -sf '#eeeeee' -sb '#bd93f9' -nf '#bbbbbb' -fn 'Inconsolata 14'
 bindsym $mod+Shift+d exec --no-startup-id i3-dmenu-desktop
 
 # Use polybar instead of i3bar
@@ -23,11 +39,20 @@ exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 # toggle showing the polybar
 bindsym $mod+z exec --no-startup-id polybar-msg cmd toggle; exec notify-send -u low Polybar\ toggled.
 
+# Allows switching back to previous workspace easily.
+workspace_auto_back_and_forth yes
+
+# Urgent windows will be marked urgent, but will never steal focus.
+focus_on_window_activation urgent
+
+# Show Vim-like marks in window titles
+show_marks yes
+
 
 ### Applications ###############################################################
 
 # launch startup applications
-exec --no-startup-id xbindkeys # For keyboard shortcuts
+exec --no-startup-id xbindkeys # For keyboard mappings
 exec --no-startup-id pa-applet # Wireless
 exec --no-startup-id nm-applet # system tray for NetworkManager
 exec --no-startup-id dropbox # File syncing
@@ -47,6 +72,18 @@ bindsym $mod+x exec firefox
 # start Visual Studio Code
 bindsym $mod+slash exec code
 
+# Force some applications to certain workspaces and layouts.
+for_window [class="Spotify"] move to workspace $ws8
+for_window [class="Spotify"] layout tabbed
+
+for_window [title="Discord Updater|Discord"] move to workspace $ws6 
+for_window [title="Discord Updater|Discord"] layout tabbed
+
+assign [class="Slack"] $ws6
+for_window [class="Slack"] layout tabbed
+
+assign [class="Thunderbird"] $ws7
+
 
 ### Keybindings ################################################################
 
@@ -55,6 +92,7 @@ floating_modifier $mod
 
 # kill focused window
 bindsym $mod+Shift+q kill
+bindsym --whole-window $mod+button2 kill
 
 # change focus
 bindsym $mod+h focus left
@@ -64,10 +102,7 @@ bindsym $mod+l focus right
 
 # change focus with cursor keys
 bindsym $mod+Left focus left
-bindsym $mod+Down focus down
-bindsym $mod+Up focus up
-bindsym $mod+Right focus right
-
+bindsym $mod+Down focus down bindsym $mod+Up focus up bindsym $mod+Right focus right
 # move focused window
 bindsym $mod+Shift+h move left
 bindsym $mod+Shift+j move down
@@ -110,18 +145,17 @@ bindsym $mod+Shift+a focus child
 bindsym $mod+9 exec --no-startup-id blurlock
 bindsym $mod+Shift+9 exec --no-startup-id klock.sh
 
-# Define names for default workspaces for which we configure key bindings later on.
-# Variables used to avoid repeating the names in multiple places.
-set $ws1 "1"
-set $ws2 "2"
-set $ws3 "3"
-set $ws4 "4"
-set $ws5 "5"
-set $ws6 "6"
-set $ws7 "7"
-set $ws8 "8"
-# set $ws9 "9"
-# set $ws10 "10"
+# Vim-like marks for windows
+# read 1 character and mark the current window with this character
+bindsym $mod+m exec i3-input -F 'mark %s' -l 1 -P 'Mark: '
+# read 1 character and go to the window with the character
+bindsym $mod+g exec i3-input -F '[con_mark="%s"] focus' -l 1 -P 'Goto: '
+
+# Sticky a window to always be on-screen.
+bindsym $mod+o sticky toggle
+
+# rename a workspace
+bindsym $mod+Shift+o exec i3-input -F 'rename workspace to "%s"' -P 'New name: '
 
 # switch to workspace
 bindsym $mod+1 workspace number $ws1
@@ -154,7 +188,8 @@ bindsym $mod+Shift+c reload
 bindsym $mod+Shift+r restart
 
 # exit i3 (logs you out of your X session)
-bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
+bindsym $mod+Shift+e exec "i3-nagbar -t warning -m \
+'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
 
 # Make the currently focused window a scratchpad.
 bindsym $mod+Shift+Tab move scratchpad; exec notify-send -u low "Moved window to scratchpad."
@@ -164,10 +199,17 @@ bindsym $mod+Tab scratchpad show
 
 # Use pactl to adjust volume in PulseAudio.
 # set $refresh_i3status killall -SIGUSR1 i3status
-bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +10% && $refresh_i3status
-bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -10% && $refresh_i3status
-bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle && $refresh_i3status
-bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle && $refresh_i3status
+bindsym XF86AudioRaiseVolume exec --no-startup-id pactl \
+set-sink-volume @DEFAULT_SINK@ +2% # && $refresh_i3status
+
+bindsym XF86AudioLowerVolume exec --no-startup-id pactl \
+set-sink-volume @DEFAULT_SINK@ -2% # && $refresh_i3status
+
+bindsym XF86AudioMute exec --no-startup-id pactl \
+set-sink-mute @DEFAULT_SINK@ toggle # && $refresh_i3status
+
+bindsym XF86AudioMicMute exec --no-startup-id pactl \
+set-source-mute @DEFAULT_SOURCE@ toggle # && $refresh_i3status
 
 
 ### Modes ######################################################################
@@ -235,7 +277,7 @@ mode "$mode_media" {
     bindsym s exec --no-startup-id slack, mode "default"
     bindsym p exec --no-startup-id spotify, mode "default"
     bindsym t exec --no-startup-id thunderbird, mode "default"
-    bindsym Shift+A exec --no-startup-id discord & slack & spotify, mode "default"
+    bindsym Shift+A exec --no-startup-id discord & slack & spotify & thunderbird, mode "default"
 
     # exit mode
     bindsym Return mode "default"
@@ -305,3 +347,4 @@ for_window [title="Volume Control"] [floating] move position center
 for_window [title="Network Connections"] floating enable
 for_window [title="Network Connections"] [floating] resize set 640 640 
 for_window [title="Network Connections"] [floating] move position center
+
