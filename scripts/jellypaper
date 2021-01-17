@@ -1,0 +1,3 @@
+#!/bin/bash
+
+nohup feh --bg-fill --randomize $HOME/Pictures/Wallpapers/jellyfish/ &>/dev/null &

@@ -1,3 +1,5 @@
+# Set default screen layout
+$HOME/.screenlayout/default-layout.sh
 # Changing Caps Lock to backspace
 xmodmap -e "clear lock" # Disable caps lock switch
 xmodmap -e "keysym Caps_Lock = Escape" # Set caps lock as escape

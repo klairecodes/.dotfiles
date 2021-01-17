@@ -61,6 +61,7 @@ exec --no-startup-id flameshot # Screenshot utility
 exec --no-startup-id redshift # Blue light filter
 exec --no-startup-id dunst # Notification daemon
 exec --no-startup-id parcellite # Clipboard Manager
+exec --no-startup-id /usr/local/bin/jellypaper # Jellyfish wallpapers
 
 # start a terminal
 bindsym $mod+Return exec gnome-terminal
