@@ -1,0 +1,13 @@
+{
+    "workbench.colorTheme": "Dracula",
+    "telemetry.enableTelemetry": false,
+    "telemetry.enableCrashReporter": false,
+    "window.zoomLevel": 0,
+    "editor.fontFamily": "Fira Code, Menlo, Monaco, 'Courier New', monospace",
+    "editor.fontLigatures": false,
+    "keyboard.dispatch": "keyCode",
+    "latex-workshop.view.pdf.viewer": "tab",
+    "git.autofetch": true,
+    "editor.tabSize": 4,
+    "debug.onTaskErrors": "debugAnyway",
+}
