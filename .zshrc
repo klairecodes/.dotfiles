@@ -121,6 +121,7 @@ alias cdd='cd $HOME/Dropbox/Code/web-projects/ritlinks-parent/ritlinks'
 alias e='exit'
 alias keyrateg='xset r rate 660 25'
 alias keyrate='xset r rate 300 60'
+alias eee='(&>/dev/null play ~/Music/Eee.mp3 &)'
 
 # To hide "user@hostname" from agnoster theme
 prompt_context(){}

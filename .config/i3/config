@@ -72,6 +72,11 @@ bindsym $mod+x exec firefox
 # start Visual Studio Code
 bindsym $mod+slash exec code
 
+# start screenshot utility
+bindsym $mod+Print exec flameshot screen -c -p $HOME/Pictures/Screenshots # for full capture and copy to clipboard
+bindsym Print exec flameshot gui -p $HOME/Pictures/Screenshots # for gui
+bindsym Shift+Print exec flameshot gui -d 2000 -p $HOME/Pictures/Screenshots # for gui and x second delay
+
 # Force some applications to certain workspaces and layouts.
 for_window [class="Spotify"] move to workspace $ws8
 for_window [class="Spotify"] layout tabbed
@@ -152,7 +157,10 @@ bindsym $mod+m exec i3-input -F 'mark %s' -l 1 -P 'Mark: '
 bindsym $mod+g exec i3-input -F '[con_mark="%s"] focus' -l 1 -P 'Goto: '
 
 # Sticky a window to always be on-screen.
-bindsym $mod+o sticky toggle
+bindsym $mod+o sticky toggle; exec notify-send -u low Sticky\ toggled.
+
+# Target a window and make it transparent (BROKEN).
+bindsym $mod+t exec export DISPLAY=localhost:0 && transset-df
 
 # rename a workspace
 bindsym $mod+Shift+o exec i3-input -F 'rename workspace to "%s"' -P 'New name: '
@@ -306,7 +314,7 @@ mode "$mode_monitor" {
 # Theme colors (Dracula)
 # class                 border  backgr. text    indicator child_border
 client.focused          #bd93f9 #bd93f9 #ffffff #bd93f9   #bd93f9
-client.focused_inactive #333333 #5f676a #ffffff #484e50   #5f676a
+client.focused_inactive #bd93f9 #bd93f9 #ffffff #484e50   #bd93f9
 client.unfocused        #333333 #222222 #888888 #292d2e   #222222
 client.urgent           #2f343a #ff5555 #ffffff #900000   #900000
 client.placeholder      #000000 #0c0c0c #ffffff #000000   #0c0c0c
@@ -317,8 +325,11 @@ client.background       #ffffff
 # is used in the bar {} block below.
 font pango:monospace 10
 
-# Disable title bars.
-default_border pixel
+# Disable title bars and set border pixel size.
+default_border pixel 1
+
+# Hide borders when only one window visible.
+hide_edge_borders smart
 
 # Change the wallpaper to the last wallpaper command.
 exec_always --no-startup-id sh $HOME/.fehbg
@@ -347,4 +358,7 @@ for_window [title="Volume Control"] [floating] move position center
 for_window [title="Network Connections"] floating enable
 for_window [title="Network Connections"] [floating] resize set 640 640 
 for_window [title="Network Connections"] [floating] move position center
+
+for_window[class="flameshot"] floating enable
+for_window [title="flameshot"] [floating] resize set 640 480
 
