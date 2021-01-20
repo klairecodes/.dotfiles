@@ -52,16 +52,17 @@ show_marks yes
 ### Applications ###############################################################
 
 # launch startup applications
-exec --no-startup-id xbindkeys # For keyboard mappings
+exec --no-startup-id xbindkeys # for keyboard mappings
 exec --no-startup-id pa-applet # system tray for Pulseaudio
 exec --no-startup-id nm-applet # system tray for NetworkManager
-exec --no-startup-id dropbox # File syncing
-exec --no-startup-id blueman-applet # Bluetooth
-exec --no-startup-id flameshot # Screenshot utility
-exec --no-startup-id redshift # Blue light filter
-exec --no-startup-id dunst # Notification daemon
-exec --no-startup-id parcellite # Clipboard Manager
-exec --no-startup-id /usr/local/bin/jellypaper # Jellyfish wallpapers
+exec --no-startup-id dropbox # file syncing
+exec --no-startup-id blueman-applet # bluetooth
+exec --no-startup-id flameshot # screenshot utility
+exec --no-startup-id redshift # blue light filter
+exec --no-startup-id dunst # notification daemon
+exec --no-startup-id parcellite # clipboard Manager
+exec --no-startup-id /usr/local/bin/jellypaper # jellyfish wallpapers
+exec --no-startup-id powerkit # power, battery, and timeout settings
 
 # start a terminal
 bindsym $mod+Return exec gnome-terminal
