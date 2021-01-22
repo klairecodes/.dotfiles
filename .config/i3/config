@@ -22,6 +22,12 @@ set $ws8 "8: media"
 # Default layout for new workspaces.
 workspace_layout tabbed
 
+# Default outputs for workspaces
+workspace $ws1 output eDP1
+workspace $ws3 output eDP1
+workspace $ws5 output eDP1
+workspace $ws7 output eDP1
+
 # increase trackpoint sensitivity
 exec --no-startup-id xinput --set-prop "13" "libinput Accel Speed" +0.5
 
