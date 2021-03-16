@@ -109,7 +109,7 @@ export EDITOR='vim'
 export VISUAL='vim'
 
 # Custom commands
-alias ls='ls -a --color=auto'
+alias ls='ls -A --color=auto'
 alias klock='i3lock -ti ~/Pictures/Wallpapers/arch_wallpaper_blk_red.png'
 alias please='sudo !!'
 alias bear='klock && systemctl hibernate && exit'

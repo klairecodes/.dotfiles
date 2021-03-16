@@ -24,6 +24,10 @@ runtime! archlinux.vim
 :set tabstop=4
 :set shiftwidth=4
 :set expandtab
+:set softtabstop=4
+
+" Keybindings
+nnoremap <F4> :make!<cr>
 
 " packadd! dracula
 " syntax enable
