@@ -30,6 +30,7 @@ workspace $ws4 output DP-1
 workspace $ws5 output HDMI-1
 workspace $ws6 output DP-1
 workspace $ws7 output HDMI-1
+workspace $ws8 output DP-1
 
 # increase trackpoint sensitivity
 exec --no-startup-id xinput --set-prop "13" "libinput Accel Speed" +0.5
@@ -174,7 +175,7 @@ bindsym $mod+o sticky toggle; exec notify-send -u low Sticky\ toggled.
 bindsym $mod+t exec export DISPLAY=localhost:0 && transset-df
 
 # rename a workspace
-bindsym $mod+Shift+o exec i3-input -F 'rename workspace to "%s"' -P 'New name: '
+bindsym $mod+n exec i3-input -F 'rename workspace to "%s"' -P 'New name: '
 
 # switch to workspace
 bindsym $mod+1 workspace number $ws1
