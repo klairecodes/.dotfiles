@@ -29,9 +29,9 @@ runtime! archlinux.vim
 " Keybindings
 nnoremap <F4> :make!<cr>
 
-" packadd! dracula
-" syntax enable
-" colorscheme dracula
+packadd! dracula
+syntax enable
+colorscheme dracula
 
 " vim-latex-live-preview
 let g:livepreview_previewer = 'evince'
