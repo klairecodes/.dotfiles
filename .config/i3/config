@@ -9,12 +9,12 @@ set $mod Mod4
 # Define names for default workspaces for which we configure key bindings later on.
 # Variables used to avoid repeating the names in multiple places.
 set $ws1 "1: misc"
-set $ws2 "2: code"
-set $ws3 "3: code"
-set $ws4 "4: code"
-set $ws5 "5: term"
-set $ws6 "6: social"
-set $ws7 "7: mail"
+set $ws2 "2: social"
+set $ws3 "3"
+set $ws4 "4"
+set $ws5 "5"
+set $ws6 "6"
+set $ws7 "7"
 set $ws8 "8: media"
 
 ### Behavior ###################################################################
@@ -85,7 +85,7 @@ bindsym $mod+x exec firefox
 bindsym $mod+slash exec code
 
 # start screenshot utility
-bindsym $mod+Print exec flameshot screen -c -p $HOME/Pictures/Screenshots # for full capture and copy to clipboard
+bindsym $mod+Print exec flameshot screen -c  # for full capture and copy to clipboard
 bindsym Print exec flameshot gui -p $HOME/Pictures/Screenshots # for gui
 bindsym Shift+Print exec flameshot gui -d 2000 -p $HOME/Pictures/Screenshots # for gui and x second delay
 
@@ -93,13 +93,13 @@ bindsym Shift+Print exec flameshot gui -d 2000 -p $HOME/Pictures/Screenshots # f
 for_window [class="Spotify"] move to workspace $ws8
 for_window [class="Spotify"] layout tabbed
 
-for_window [title="Discord Updater|Discord"] move to workspace $ws6 
+for_window [title="Discord Updater|Discord"] move to workspace $ws2 
 for_window [title="Discord Updater|Discord"] layout tabbed
 
-assign [class="Slack"] $ws6
+assign [class="Slack"] $ws2
 for_window [class="Slack"] layout tabbed
 
-assign [class="Thunderbird"] $ws7
+assign [class="Thunderbird"] $ws2
 
 
 ### Keybindings ################################################################
@@ -374,3 +374,6 @@ for_window [title="Network Connections"] [floating] move position center
 for_window[class="flameshot"] floating enable
 for_window [title="flameshot"] [floating] resize set 640 480
 
+for_window [title="Pritunl"] floating enable
+for_window [title="Pritunl"] [floating] resize set 640 640 
+for_window [title="Pritunl"] [floating] move position center
