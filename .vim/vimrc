@@ -35,3 +35,6 @@ colorscheme dracula
 
 " vim-latex-live-preview
 let g:livepreview_previewer = 'evince'
+
+" lightline
+:set laststatus=2
