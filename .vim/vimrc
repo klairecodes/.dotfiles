@@ -29,9 +29,14 @@ runtime! archlinux.vim
 " Keybindings
 nnoremap <F4> :make!<cr>
 
+" Package settings
 packadd! dracula
 syntax enable
 colorscheme dracula
 
 " vim-latex-live-preview
 let g:livepreview_previewer = 'evince'
+
+" lightline
+" makes the lightline actually visible
+set laststatus=2
