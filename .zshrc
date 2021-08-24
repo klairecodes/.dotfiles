@@ -76,7 +76,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git vi-mode)
+plugins=(git vi-mode kubectx)
 source $ZSH/oh-my-zsh.sh
 # User configuration
 
@@ -127,14 +127,14 @@ alias eee='(&>/dev/null play ~/Music/Eee.mp3 &)'
 prompt_context(){}
 
 # Python virtualenvwrapper configuration
-export WORKON_HOME=$HOME/.virtualenvs
-export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
-export VIRTUALENVWRAPPER_VIRTUALENV_ARGS=' -p /usr/bin/python3 '
-export PROJECT_HOME=$HOME/Devel
-source /usr/bin/virtualenvwrapper.sh
+# export WORKON_HOME=$HOME/.virtualenvs
+# export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
+# export VIRTUALENVWRAPPER_VIRTUALENV_ARGS=' -p /usr/bin/python3 '
+# export PROJECT_HOME=$HOME/Devel
+# source /usr/bin/virtualenvwrapper.sh
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
-# dircolors
-eval `dircolors /home/klaus/.dir_colors/dircolors`
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

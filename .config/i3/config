@@ -337,7 +337,7 @@ font pango:monospace 10
 default_border pixel 1
 
 # Hide borders when only one window visible.
-hide_edge_borders smart
+hide_edge_borders none
 
 # Change the wallpaper to the last wallpaper command.
 exec_always --no-startup-id sh $HOME/.fehbg
