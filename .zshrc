@@ -104,9 +104,11 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-# From bashrc
+# Other ENV variables
 export EDITOR='vim'
 export VISUAL='vim'
+export PAGER=less
+export CDPATH=.:~:~/code
 
 # Custom commands
 alias ls='ls -A --color=auto'
@@ -136,5 +138,8 @@ prompt_context(){}
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
-
+# Fzf fuzzy find configuration
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+autoload -U +X bashcompinit && bashcompinit
+complete -o nospace -C /usr/bin/terraform terraform

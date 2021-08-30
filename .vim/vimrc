@@ -56,6 +56,9 @@ colorscheme nord
 " vim-latex-live-preview
 let g:livepreview_previewer = 'evince'
 
-" lightline
+" lightline FIXME deprecated?
 " makes the lightline actually visible
 set laststatus=2
+
+" airline
+let g:airline_powerline_fonts = 1

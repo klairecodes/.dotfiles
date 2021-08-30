@@ -31,6 +31,9 @@ workspace $ws7 output eDP1
 # increase trackpoint sensitivity
 exec --no-startup-id xinput --set-prop "13" "libinput Accel Speed" +0.5
 
+# change caps lock to left control
+exec --no-startup-id xmodmap ~/.xmodmap 
+
 # Setting session locker using xss-lock "locker". Triggered by ACPI and systemd.
 exec --no-startup-id xss-lock --transfer-sleep-lock -- blurlock --nofork
 
@@ -155,7 +158,8 @@ bindsym $mod+a focus parent
 bindsym $mod+Shift+a focus child
 
 # manually lock the screen
-bindsym $mod+9 exec --no-startup-id blurlock
+#bindsym $mod+9 exec --no-startup-id blurlock
+bindsym $mod+9 exec --no-startup-id i3lock -i /home/klaus/Pictures/pink-purple-jellyfish.png
 bindsym $mod+Shift+9 exec --no-startup-id klock.sh
 
 # Vim-like marks for windows

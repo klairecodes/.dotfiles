@@ -61,7 +61,7 @@ font-2 = siji:pixelsize=10;1
 
 modules-left = bspwm i3
 modules-center = mpd
-modules-right = filesystem xbacklight pulseaudio xkeyboard memory cpu wlan eth battery battery1 temperature date powermenu
+modules-right = filesystem xbacklight pulseaudio xkeyboard memory cpu wlan eth battery battery1 date powermenu
 
 tray-position = right
 tray-padding = 2
