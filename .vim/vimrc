@@ -24,9 +24,14 @@ set tabstop=4
 set shiftwidth=4
 set expandtab
 set softtabstop=4
+set number
+set mouse=a
 
 " Keybindings
 nnoremap <F4> :make!<cr>
+
+" Commands
+cmap w!! w !sudo tee > /dev/null % " write to file when forgot to sudo
 
 " Package settings
 " Automatically install vim-plug
@@ -42,9 +47,12 @@ call plug#begin('~/.vim/plugged')
 Plug 'arcticicestudio/nord-vim' " color theme
 Plug 'vim-airline/vim-airline' " statusline
 Plug 'valloric/youcompleteme' " autocompletion
-Plug 'tpope/vim-commentary' " easy commenting
+"Plug 'tpope/vim-commentary' " easy commenting
+Plug 'scrooloose/nerdcommenter' " easier commenting
+Plug 'scrooloose/nerdtree' " file explorer 
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } } " fuzzy finder
 Plug 'tpope/vim-fugitive' " integrated Git
+Plug 'airblade/vim-gitgutter' " git diff in sign column
 
 
 call plug#end()
@@ -55,10 +63,6 @@ colorscheme nord
 
 " vim-latex-live-preview
 let g:livepreview_previewer = 'evince'
-
-" lightline FIXME deprecated?
-" makes the lightline actually visible
-set laststatus=2
 
 " airline
 let g:airline_powerline_fonts = 1
