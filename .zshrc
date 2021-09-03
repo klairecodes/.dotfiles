@@ -76,7 +76,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git vi-mode kubectx)
+plugins=(git kubectx)
 source $ZSH/oh-my-zsh.sh
 # User configuration
 
@@ -139,7 +139,9 @@ prompt_context(){}
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 # Fzf fuzzy find configuration
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+# Ubuntu/Debian
+source /usr/share/doc/fzf/examples/key-bindings.zsh
+source /usr/share/doc/fzf/examples/completion.zsh
 
 autoload -U +X bashcompinit && bashcompinit
 complete -o nospace -C /usr/bin/terraform terraform
