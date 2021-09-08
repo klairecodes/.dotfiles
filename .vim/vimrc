@@ -17,37 +17,39 @@ endif
 " -----------------------------------------------------------------------------
 call plug#begin('~/.vim/plugged')
 
-Plug 'arcticicestudio/nord-vim' " color theme
-Plug 'vim-airline/vim-airline' " statusline
-Plug 'valloric/youcompleteme' " autocompletion
+Plug 'arcticicestudio/nord-vim' "color theme
+Plug 'vim-airline/vim-airline' "statusline
+Plug 'valloric/youcompleteme' "autocompletion
 Plug 'scrooloose/nerdcommenter' " easier commenting
-Plug 'scrooloose/nerdtree' " file explorer
+Plug 'scrooloose/nerdtree' "file explorer
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } } " fuzzy finder
-Plug 'tpope/vim-fugitive' " integrated Git
-Plug 'airblade/vim-gitgutter' " git diff in sign column
-Plug 'vim-scripts/DoxygenToolkit.vim' " rapid Doxygen commenting
+Plug 'tpope/vim-fugitive' "integrated Git
+Plug 'airblade/vim-gitgutter' "git diff in sign column
+Plug 'vim-scripts/DoxygenToolkit.vim' "rapid Doxygen commenting
 
 call plug#end()
 
 " Plugin specific Settings
 " -----------------------------------------------------------------------------
 " airline
-let g:airline_powerline_fonts = 1
+let g:airline_powerline_fonts = 1 "fixes airline font display
 
 " Appearance
 " -----------------------------------------------------------------------------
-syntax on
-set number
-set colorcolumn=80
-colorscheme nord
+syntax on "enables syntax highlighting
+set number "shows line numbers
+set colorcolumn=80 "draws a column for easy 80 char line limit
+colorscheme nord "colorscheme from plugin
 
 " Behavior
 " -----------------------------------------------------------------------------
 set tabstop=4
 set shiftwidth=4
-set expandtab
+set expandtab "use appropriate number of spaces to insert a tab
 set softtabstop=4
-set mouse=a
+set mouse=a "enable mouse in all modes
+set hlsearch " highlight all occurences of a search
+set smartcase "case insensitive search unless capitals present
 
 " User Keybindings
 " -----------------------------------------------------------------------------
