@@ -32,7 +32,8 @@ workspace $ws7 output eDP1
 exec --no-startup-id xinput --set-prop "13" "libinput Accel Speed" +0.5
 
 # Setting session locker using xss-lock "locker". Triggered by ACPI and systemd.
-exec --no-startup-id xss-lock --transfer-sleep-lock -- blurlock --nofork
+# exec --no-startup-id xss-lock --transfer-sleep-lock -- blurlock --nofork
+exec --no-startup-id xss-lock --transfer-sleep-lock -- betterlockscreen -l dim -t Buna\ Klaus. --nofork
 
 # Start dmenu or i3-dmenu-desktop for desktop entry support
 bindsym $mod+d exec --no-startup-id dmenu_run \
@@ -322,7 +323,7 @@ mode "$mode_monitor" {
 # Theme colors (Dracula)
 # class                 border  backgr. text    indicator child_border
 client.focused          #bd93f9 #bd93f9 #ffffff #bd93f9   #bd93f9
-client.focused_inactive #bd93f9 #bd93f9 #ffffff #484e50   #bd93f9
+client.focused_inactive #333333 #bd93f9 #ffffff #484e50   #333333
 client.unfocused        #333333 #222222 #888888 #292d2e   #222222
 client.urgent           #2f343a #ff5555 #ffffff #900000   #900000
 client.placeholder      #000000 #0c0c0c #ffffff #000000   #0c0c0c

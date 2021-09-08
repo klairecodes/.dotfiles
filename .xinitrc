@@ -1,9 +1,18 @@
+# Stops GTK applications from taking forever to open the first time
+#. /etc/X11/Xsession
+
 # Changing Caps Lock to backspace
 xmodmap -e "clear lock" # Disable caps lock switch
-xmodmap -e "keysym Caps_Lock = Escape" # Set caps lock as escape
+xmodmap -e "clear control"
+xmodmap -e "keycode 66 = Control_L"
+xmodmap -e "add control = Control_L Control_R"
+#xmodmap -e "keysym Caps_Lock = Control_L" # Set caps lock as L-Ctrl
 
 # Change keypress repeat delay and rate
 xset r rate 300 60
+
+# Disable Trackpad on ThinkPad T480
+xinput disable "Synaptics TM3276-022"
 
 # Manage resources for GTK and other GUI applications
 if [ -d /etc/X11/xinit/xinitrc.d ]; then

@@ -19,7 +19,6 @@ runtime! archlinux.vim
 
 :syntax on
 :set number
-:set relativenumber
 
 :set tabstop=4
 :set shiftwidth=4
@@ -40,3 +39,6 @@ let g:livepreview_previewer = 'evince'
 " lightline
 " makes the lightline actually visible
 set laststatus=2
+
+" Automatic indent for other file types
+filetype plugin indent on
