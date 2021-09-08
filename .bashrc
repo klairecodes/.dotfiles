@@ -19,3 +19,4 @@ alias lk='klock && exit'
 alias ssh-mc='ssh pi@129.21.131.146'
 
 PS1='[\u@\h \W]\$ '
+. "$HOME/.cargo/env"

@@ -5,3 +5,5 @@
 	helper = cache
 [core]
 	autocrlf = input
+[init]
+	defaultBranch = main
