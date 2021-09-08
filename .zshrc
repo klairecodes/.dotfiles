@@ -122,6 +122,8 @@ alias e='exit'
 alias keyrateg='xset r rate 660 25'
 alias keyrate='xset r rate 300 60'
 alias eee='(&>/dev/null play ~/Music/Eee.mp3 &)'
+alias gccc='gcc -std=c99 -Wall -Wextra -pedantic -ggdb' # CS243 default compilation flags
+alias digpub='dig +short myip.opendns.com @resolver1.opendns.com' # Quickly get public IP
 
 # To hide "user@hostname" from agnoster theme
 prompt_context(){}
@@ -138,3 +140,12 @@ source /usr/bin/virtualenvwrapper.sh
 
 # dircolors
 eval `dircolors /home/klaus/.dir_colors/dircolors`
+
+# fzf cli fuzzy finder
+source /usr/share/fzf/key-bindings.zsh
+source /usr/share/fzf/completion.zsh
+
+# Set CDPATH only for interactive shells.
+if test “${PS1+set}”; then
+    CDPATH=.:~:~/Dropbox:~/Dropbox/code/web-projects
+fi
