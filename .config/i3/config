@@ -190,7 +190,8 @@ bindsym $mod+Shift+a focus child
 
 # manually lock the screen
 #bindsym $mod+9 exec --no-startup-id blurlock
-bindsym $mod+9 exec --no-startup-id i3lock -i /home/klaus/Pictures/pink-purple-jellyfish.png
+#bindsym $mod+9 exec --no-startup-id i3lock -i /home/klaus/Pictures/pink-purple-jellyfish.png
+bindsym $mod+9 exec --no-startup-id $HOME/.config/i3/lock -i $HOME/Pictures/pink-purple-jellyfish.png
 bindsym $mod+Shift+9 exec --no-startup-id klock.sh
 
 # Vim-like marks for windows
