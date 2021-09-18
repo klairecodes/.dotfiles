@@ -138,3 +138,6 @@ source /usr/bin/virtualenvwrapper.sh
 
 # dircolors
 eval `dircolors /home/klaus/.dir_colors/dircolors`
+
+source /usr/share/fzf/key-bindings.zsh
+source /usr/share/fzf/completion.zsh
