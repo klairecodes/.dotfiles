@@ -8,14 +8,14 @@
 set $mod Mod4
 # Define names for default workspaces for which we configure key bindings later on.
 # Variables used to avoid repeating the names in multiple places.
-set $ws1 "1: misc"
-set $ws2 "2: social"
+set $ws1 "1"
+set $ws2 "2"
 set $ws3 "3"
 set $ws4 "4"
 set $ws5 "5"
 set $ws6 "6"
 set $ws7 "7"
-set $ws8 "8: media"
+set $ws8 "8: social"
 
 ### Behavior ###################################################################
 
@@ -30,7 +30,7 @@ workspace $ws4 output DP-1
 workspace $ws5 output HDMI-1
 workspace $ws6 output DP-1
 workspace $ws7 output HDMI-1
-workspace $ws8 output DP-1
+workspace $ws8 output DP-2
 
 # increase trackpoint sensitivity
 exec --no-startup-id xinput --set-prop "13" "libinput Accel Speed" +0.5
@@ -93,13 +93,13 @@ bindsym Shift+Print exec flameshot gui -d 2000 -p $HOME/Pictures/Screenshots # f
 for_window [class="Spotify"] move to workspace $ws8
 for_window [class="Spotify"] layout tabbed
 
-for_window [title="Discord Updater|Discord"] move to workspace $ws2 
+for_window [title="Discord Updater|Discord"] move to workspace $ws8 
 for_window [title="Discord Updater|Discord"] layout tabbed
 
-assign [class="Slack"] $ws2
+assign [class="Slack"] $ws8
 for_window [class="Slack"] layout tabbed
 
-assign [class="Thunderbird"] $ws2
+assign [class="Thunderbird"] $ws8
 
 
 ### Keybindings ################################################################
@@ -159,7 +159,8 @@ bindsym $mod+a focus parent
 bindsym $mod+Shift+a focus child
 
 # manually lock the screen
-bindsym $mod+9 exec --no-startup-id blurlock
+# bindsym $mod+9 exec --no-startup-id blurlock
+bindsym $mod+9 exec --no-startup-id i3lock -b -c 000000
 bindsym $mod+Shift+9 exec --no-startup-id klock.sh
 
 # Vim-like marks for windows
@@ -325,13 +326,22 @@ mode "$mode_monitor" {
 
 # Theme colors (Dracula)
 # class                 border  backgr. text    indicator child_border
-client.focused          #bd93f9 #bd93f9 #ffffff #bd93f9   #bd93f9
-client.focused_inactive #bd93f9 #bd93f9 #ffffff #484e50   #bd93f9
-client.unfocused        #333333 #222222 #888888 #292d2e   #222222
-client.urgent           #2f343a #ff5555 #ffffff #900000   #900000
-client.placeholder      #000000 #0c0c0c #ffffff #000000   #0c0c0c
+# client.focused          #bd93f9 #bd93f9 #ffffff #bd93f9   #bd93f9
+# client.focused_inactive #333333 #bd93f9 #ffffff #484e50   #333333
+# client.unfocused        #333333 #222222 #888888 #292d2e   #222222
+# client.urgent           #2f343a #ff5555 #ffffff #900000   #900000
+# client.placeholder      #000000 #0c0c0c #ffffff #000000   #0c0c0c
+# 
+# client.background       #ffffff
+client.focused          #81a1c1 #81a1c1 #ffffff #81a1c1
+client.unfocused        #2e3440 #2e3440 #888888 #2e3440
+client.focused_inactive #2e3440 #2e3440 #888888 #2e3440
+client.placeholder      #2e3440 #2e3440 #888888 #2e3440
+client.urgent           #900000 #900000 #ffffff #900000
 
-client.background       #ffffff
+client.background       #242424
+
+
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
@@ -341,7 +351,7 @@ font pango:monospace 10
 default_border pixel 1
 
 # Hide borders when only one window visible.
-hide_edge_borders smart
+hide_edge_borders none
 
 # Change the wallpaper to the last wallpaper command.
 exec_always --no-startup-id sh $HOME/.fehbg
