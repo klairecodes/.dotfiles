@@ -17,6 +17,32 @@ set $ws6 "6"
 set $ws7 "7"
 set $ws8 "8: media"
 
+# Theme colors (from Xresources, fallback Nord)
+exec xrdb ~/.Xresources
+set_from_resource $color0 i3wm.theme0 #2E3440
+set_from_resource $color1 i3wm.theme1 #3B4252
+set_from_resource $color2 i3wm.theme2 #434C5E
+set_from_resource $color3 i3wm.theme3 #4C566A
+set_from_resource $color4 i3wm.theme4 #D8DEE9
+set_from_resource $color5 i3wm.theme5 #E5E9F0
+set_from_resource $color6 i3wm.theme6 #ECEFF4
+set_from_resource $color7 i3wm.theme7 #8FBCBB
+set_from_resource $color8 i3wm.theme8 #88C0D0
+set_from_resource $color9 i3wm.theme9 #81A1C1
+set_from_resource $color10 i3wm.theme10 #5E81AC
+set_from_resource $color11 i3wm.theme11 #BF616A
+set_from_resource $color12 i3wm.theme12 #D08770
+set_from_resource $color13 i3wm.theme13 #EBCB8B
+set_from_resource $color14 i3wm.theme14 #A3BE8C
+set_from_resource $color15 i3wm.theme15 #B48EAD
+
+# Lock screen command
+set $lock_cmd betterlockscreen -l \
+~/Pictures/Wallpapers/jellyfish/pink-purple-jellyfish.jpg --display 0 --off 60 
+# Fallback lock screen command
+# i3config does not support variable manipulation (#FFFFFF -> FFFFFF)
+set $lock_fallback i3lock -c 5e81ac
+
 ### Behavior ###################################################################
 
 # Default layout for new workspaces.
@@ -35,12 +61,12 @@ exec --no-startup-id xinput --set-prop "13" "libinput Accel Speed" +0.5
 exec --no-startup-id xmodmap ~/.xmodmap 
 
 # Setting session locker using xss-lock "locker". Triggered by ACPI and systemd.
-# exec --no-startup-id xss-lock --transfer-sleep-lock -- blurlock --nofork
-exec --no-startup-id xss-lock --transfer-sleep-lock -- betterlockscreen -l dim -t Buna\ Klaus. --nofork
+exec --no-startup-id xss-lock --transfer-sleep-lock -- $lock_cmd
 
 # Start dmenu or i3-dmenu-desktop for desktop entry support
 bindsym $mod+d exec --no-startup-id dmenu_run \
 -nb '#282a36' -sf '#eeeeee' -sb '#bd93f9' -nf '#bbbbbb' -fn 'Inconsolata 14'
+
 bindsym $mod+Shift+d exec --no-startup-id i3-dmenu-desktop
 
 # Use polybar instead of i3bar
@@ -191,8 +217,8 @@ bindsym $mod+a focus parent
 bindsym $mod+Shift+a focus child
 
 # manually lock the screen
-bindsym $mod+9 exec --no-startup-id blurlock
-bindsym $mod+Shift+9 exec --no-startup-id klock.sh
+bindsym $mod+9 exec --no-startup-id $lock_cmd
+bindsym $mod+Shift+9 exec --no-startup-id $lock_fallback
 
 # Vim-like marks for windows
 # read 1 character and mark the current window with this character
@@ -293,7 +319,7 @@ mode "resize" {
 bindsym $mod+0 mode "$mode_system"
 set $mode_system (l)ock, (e)xit, switch_(u)ser, (s)uspend, (h)ibernate, (r)eboot, (Shift+s)hutdown
 mode "$mode_system" {
-    bindsym l exec --no-startup-id klock.sh, mode "default"
+    bindsym l exec --no-startup-id $lock_cmd, mode "default"
     bindsym s exec --no-startup-id i3exit suspend, mode "default"
     bindsym u exec --no-startup-id i3exit switch_user, mode "default"
     bindsym e exec --no-startup-id i3exit logout, mode "default"
@@ -355,24 +381,15 @@ mode "$mode_monitor" {
 
 ### Appearance #################################################################
 
-# Theme colors (Dracula)
+# Theme Colors
 # class                 border  backgr. text    indicator child_border
-# client.focused          #bd93f9 #bd93f9 #ffffff #bd93f9   #bd93f9
-# client.focused_inactive #333333 #bd93f9 #ffffff #484e50   #333333
-# client.unfocused        #333333 #222222 #888888 #292d2e   #222222
-# client.urgent           #2f343a #ff5555 #ffffff #900000   #900000
-# client.placeholder      #000000 #0c0c0c #ffffff #000000   #0c0c0c
-# 
-# client.background       #ffffff
+client.focused          $color9 $color9 $color6 $color9 $color9
+client.unfocused        $color0 $color0 $color4 $color0 $color0
+client.focused_inactive $color0 $color0 $color4 $color0 $color2
+client.placeholder      $color0 $color0 $color4 $color0 $color0
+client.urgent           $color11 $color11 $color6 $color11 $color11
 
-# Theme colors (Nord)
-client.focused          #81a1c1 #81a1c1 #ffffff #81a1c1
-client.unfocused        #2e3440 #2e3440 #888888 #2e3440
-client.focused_inactive #2e3440 #2e3440 #888888 #2e3440
-client.placeholder      #2e3440 #2e3440 #888888 #2e3440
-client.urgent           #900000 #900000 #ffffff #900000
-
-client.background       #242424
+client.background       $color0
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
