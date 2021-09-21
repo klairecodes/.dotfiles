@@ -1,1 +1,90 @@
+! Klaus Xresources
+
+! DPI scaling factor
 Xft.dpi: 120
+
+! Copyright (c) 2016-present Arctic Ice Studio <development@arcticicestudio.com>
+! Copyright (c) 2016-present Sven Greb <code@svengreb.de>
+
+! Project:    Nord XResources
+! Version:    0.1.0
+! Repository: https://github.com/arcticicestudio/nord-xresources
+! License:    MIT
+#define nord0 #2E3440
+#define nord1 #3B4252
+#define nord2 #434C5E
+#define nord3 #4C566A
+#define nord4 #D8DEE9
+#define nord5 #E5E9F0
+#define nord6 #ECEFF4
+#define nord7 #8FBCBB
+#define nord8 #88C0D0
+#define nord9 #81A1C1
+#define nord10 #5E81AC
+#define nord11 #BF616A
+#define nord12 #D08770
+#define nord13 #EBCB8B
+#define nord14 #A3BE8C
+#define nord15 #B48EAD
+
+! Dracula Xresources palette
+#define dracula0 #F8F8F2
+#define dracula1 #282A36
+#define dracula2 #000000
+#define dracula3 #4D4D4D
+#define dracula4 #FF5555
+#define dracula5 #FF6E67
+#define dracula6 #50FA7B
+#define dracula7 #5AF78E
+#define dracula8 #F1FA8C
+#define dracula9 #F4F99D
+#define dracula10 #BD93F9
+#define dracula11 #CAA9FA
+#define dracula12 #FF79C6
+#define dracula13 #FF92D0
+#define dracula14 #8BE9FD
+#define dracula15 #9AEDFE
+#define dracula16 #BFBFBF
+#define dracula17 #E6E6E6
+
+*.foreground:   nord4
+*.background:   nord0
+*.cursorColor:  nord4
+*fading: 35
+*fadeColor: nord3
+
+*.color0: nord1
+*.color1: nord11
+*.color2: nord14
+*.color3: nord13
+*.color4: nord9
+*.color5: nord15
+*.color6: nord8
+*.color7: nord5
+*.color8: nord3
+*.color9: nord11
+*.color10: nord14
+*.color11: nord13
+*.color12: nord9
+*.color13: nord15
+*.color14: nord7
+*.color15: nord6
+
+! colors to use for user-specified themes
+*.theme0: nord0
+*.theme1: nord1
+*.theme2: nord2
+*.theme3: nord3
+*.theme4: nord4
+*.theme5: nord5
+*.theme6: nord6
+*.theme7: nord7
+*.theme8: nord8
+*.theme9: nord9
+*.theme10: nord10
+*.theme11: nord11
+*.theme12: nord12
+*.theme13: nord13
+*.theme14: nord14
+*.theme15: nord15
+
