@@ -10,5 +10,9 @@
     "git.autofetch": true,
     "editor.tabSize": 4,
     "debug.onTaskErrors": "debugAnyway",
+<<<<<<< HEAD
     "python.venvPath": "~/.virtualenvs",
+=======
+    "editor.fontSize": 12,
+>>>>>>> origin/main
 }

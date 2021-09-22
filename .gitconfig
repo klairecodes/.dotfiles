@@ -5,3 +5,7 @@
 	helper = cache
 [core]
 	autocrlf = input
+[init]
+	defaultBranch = main
+[diff]
+	tool = vimdiff

@@ -17,21 +17,22 @@ endif
 " -----------------------------------------------------------------------------
 call plug#begin('~/.vim/plugged')
 
-Plug 'arcticicestudio/nord-vim' "color theme
-Plug 'vim-airline/vim-airline' "statusline
-Plug 'valloric/youcompleteme' "autocompletion
+Plug 'arcticicestudio/nord-vim' " color theme
+Plug 'vim-airline/vim-airline' " statusline
+Plug 'valloric/youcompleteme' " autocompletion
 Plug 'scrooloose/nerdcommenter' " easier commenting
-Plug 'scrooloose/nerdtree' "file explorer
+Plug 'scrooloose/nerdtree' " file explorer
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } } " fuzzy finder
-Plug 'tpope/vim-fugitive' "integrated Git
-Plug 'airblade/vim-gitgutter' "git diff in sign column
-Plug 'vim-scripts/DoxygenToolkit.vim' "rapid Doxygen commenting
+Plug 'tpope/vim-fugitive' " integrated Git
+Plug 'airblade/vim-gitgutter' " git diff in sign column
+Plug 'vim-scripts/DoxygenToolkit.vim' " rapid Doxygen commenting
 
 call plug#end()
 
 " Plugin specific Settings
 " -----------------------------------------------------------------------------
 " airline
+<<<<<<< HEAD
 let g:airline_powerline_fonts = 1 "fixes airline font display
 
 " Appearance
@@ -60,3 +61,29 @@ nnoremap <F4> :make!<cr>
 " write to file when forgot to sudo
 cmap w!! w !sudo tee > /dev/null % 
 
+" Appearance
+" -----------------------------------------------------------------------------
+syntax on
+set number
+set colorcolumn=80
+colorscheme nord
+
+" Behavior
+" -----------------------------------------------------------------------------
+set tabstop=4
+set shiftwidth=4
+set expandtab
+set softtabstop=4
+set mouse=a
+
+" User Keybindings
+" -----------------------------------------------------------------------------
+nnoremap <F4> :make!<cr>
+
+" User Commands
+" -----------------------------------------------------------------------------
+" write to file when forgot to sudo
+cmap w!! w !sudo tee > /dev/null %
+
+" Automatic indent for other file types
+filetype plugin indent on
