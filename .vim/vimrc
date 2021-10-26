@@ -13,6 +13,9 @@ if empty(glob(data_dir . '/autoload/plug.vim'))
   autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
 endif
 
+" Integrated GDB
+packadd termdebug
+
 " Vim-plug section
 " -----------------------------------------------------------------------------
 call plug#begin('~/.vim/plugged')
@@ -22,7 +25,8 @@ Plug 'vim-airline/vim-airline' "statusline
 Plug 'valloric/youcompleteme' "autocompletion
 Plug 'scrooloose/nerdcommenter' " easier commenting
 Plug 'scrooloose/nerdtree' "file explorer
-Plug 'junegunn/fzf', { 'do': { -> fzf#install() } } " fuzzy finder
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } } " fuzzy finder updater
+Plug 'junegunn/fzf.vim' " fuzzy finder
 Plug 'tpope/vim-fugitive' "integrated Git
 Plug 'airblade/vim-gitgutter' "git diff in sign column
 Plug 'vim-scripts/DoxygenToolkit.vim' "rapid Doxygen commenting
@@ -33,6 +37,8 @@ call plug#end()
 " -----------------------------------------------------------------------------
 " airline
 let g:airline_powerline_fonts = 1 "fixes airline font display
+" termdebug
+let g:termdebug_wide=1 "start with vertical gdb on the right
 
 " Appearance
 " -----------------------------------------------------------------------------
@@ -53,7 +59,18 @@ set smartcase "case insensitive search unless capitals present
 
 " User Keybindings
 " -----------------------------------------------------------------------------
-nnoremap <F4> :make!<cr>
+" use YCM to attempt to correct diagnostics on current line
+nnoremap <F2> :YcmCompleter FixIt<cr>
+" quickly run a shell
+nnoremap <F3> :sh<cr>
+" run make in current directory
+nnoremap <F9> :make!<cr>
+" run current file without extension in current directory
+nnoremap <F10> :!./%:t:r<cr>
+" TODO run current file without extension in current directory as root
+" nnoremap <F10> :!./%:t:r<cr>
+" clear highlighting from search
+nnoremap <C-_> :nohl<cr>
 
 " User Commands
 " -----------------------------------------------------------------------------
