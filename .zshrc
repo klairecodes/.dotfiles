@@ -73,6 +73,8 @@ complete -o nospace -C /usr/bin/terraform terraform
 
 # Aliases ---------------------------------------------------------------------
 alias ls='ls -A --color=auto'
+alias mkdir='mkdir -pv'
+alias cp='cp -v'
 alias klock='i3lock -ti ~/Pictures/Wallpapers/arch_wallpaper_blk_red.png'
 alias please='sudo !!'
 alias bear='klock && systemctl hibernate && exit'
