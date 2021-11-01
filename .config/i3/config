@@ -8,14 +8,14 @@
 set $mod Mod4
 # Define names for default workspaces for which we configure key bindings later on.
 # Variables used to avoid repeating the names in multiple places.
-set $ws1 "1: misc"
-set $ws2 "2: social"
-set $ws3 "3: code"
+set $ws1 "1"
+set $ws2 "2"
+set $ws3 "3"
 set $ws4 "4"
 set $ws5 "5"
 set $ws6 "6"
 set $ws7 "7"
-set $ws8 "8: media"
+set $ws8 "8"
 
 ### Behavior ###################################################################
 
@@ -32,7 +32,7 @@ workspace $ws7 output eDP1
 exec --no-startup-id xinput --set-prop "13" "libinput Accel Speed" +0.5
 
 # change caps lock to left control
-exec --no-startup-id xmodmap ~/.xmodmap 
+exec --no-startup-id xmodmap ~/.xmodmap
 
 # Setting session locker using xss-lock "locker". Triggered by ACPI and systemd.
 exec --no-startup-id xss-lock --transfer-sleep-lock -- blurlock --nofork
@@ -47,7 +47,7 @@ bindsym $mod+Shift+d exec --no-startup-id i3-dmenu-desktop
 set $base00 #101218
 set $base01 #1f222d
 set $base02 #252936
-set $base03 #5e81ac  
+set $base03 #5e81ac
 set $base04 #C0C5CE
 set $base05 #d1d4e0
 set $base06 #C9CCDB
@@ -66,9 +66,9 @@ bar {
             separator  #1f222d
             background #1f222d
             statusline #81a1c1
-              
+
             #                   border  background text
-            focused_workspace  $base01 $base01    #81a1c1 
+            focused_workspace  $base01 $base01    #81a1c1
             active_workspace   $base01 $base02    $base03
             inactive_workspace $base01 $base01    #4c566a
             urgent_workspace   $base01 $base01    $base08
@@ -115,15 +115,15 @@ bindsym $mod+x exec firefox
 bindsym $mod+slash exec code
 
 # start screenshot utility
-bindsym $mod+Print exec flameshot screen -c -p $HOME/Pictures/Screenshots # for full capture and copy to clipboard
-bindsym Print exec flameshot gui -p $HOME/Pictures/Screenshots # for gui
-bindsym Shift+Print exec flameshot gui -d 2000 -p $HOME/Pictures/Screenshots # for gui and x second delay
+bindsym $mod+Print exec flameshot screen -c -p $HOME/Pictures/screenshots # for full capture and copy to clipboard
+bindsym Print exec flameshot gui -p $HOME/Pictures/screenshots # for gui
+bindsym Shift+Print exec flameshot gui -d 2000 -p $HOME/Pictures/screenshots # for gui and x second delay
 
 # Force some applications to certain workspaces and layouts.
 for_window [class="Spotify"] move to workspace $ws8
 for_window [class="Spotify"] layout tabbed
 
-for_window [title="Discord Updater|Discord"] move to workspace $ws2 
+for_window [title="Discord Updater|Discord"] move to workspace $ws2
 for_window [title="Discord Updater|Discord"] layout tabbed
 
 assign [class="Slack"] $ws2
@@ -149,7 +149,9 @@ bindsym $mod+l focus right
 
 # change focus with cursor keys
 bindsym $mod+Left focus left
-bindsym $mod+Down focus down bindsym $mod+Up focus up bindsym $mod+Right focus right
+bindsym $mod+Down focus down
+bindsym $mod+Up focus up
+bindsym $mod+Right focus right
 # move focused window
 bindsym $mod+Shift+h move left
 bindsym $mod+Shift+j move down
@@ -362,7 +364,7 @@ mode "$mode_monitor" {
 # client.unfocused        #333333 #222222 #888888 #292d2e   #222222
 # client.urgent           #2f343a #ff5555 #ffffff #900000   #900000
 # client.placeholder      #000000 #0c0c0c #ffffff #000000   #0c0c0c
-# 
+#
 # client.background       #ffffff
 
 # Theme colors (Nord)
@@ -409,12 +411,12 @@ for_window [title="Volume Control"] [floating] resize set 640 480
 for_window [title="Volume Control"] [floating] move position center
 
 for_window [title="Network Connections"] floating enable
-for_window [title="Network Connections"] [floating] resize set 640 640 
+for_window [title="Network Connections"] [floating] resize set 640 640
 for_window [title="Network Connections"] [floating] move position center
 
 for_window[class="flameshot"] floating enable
 for_window [title="flameshot"] [floating] resize set 640 480
 
 for_window [title="Pritunl"] floating enable
-for_window [title="Pritunl"] [floating] resize set 640 640 
+for_window [title="Pritunl"] [floating] resize set 640 640
 for_window [title="Pritunl"] [floating] move position center
