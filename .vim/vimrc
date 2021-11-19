@@ -56,6 +56,8 @@ set softtabstop=4
 set mouse=a "enable mouse in all modes
 set hlsearch " highlight all occurences of a search
 set smartcase "case insensitive search unless capitals present
+set ttimeout "timeout on keycodes only (this and vvv fix delay exiting modes)
+set ttimeoutlen=100 " time in ms to wait for a key code or sequence to complete
 
 " User Keybindings
 " -----------------------------------------------------------------------------
