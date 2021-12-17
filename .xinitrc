@@ -1,6 +1,5 @@
 # Changing Caps Lock to backspace
-xmodmap -e "clear lock" # Disable caps lock switch
-xmodmap -e "keysym Caps_Lock = Escape" # Set caps lock as escape
+xmodmap /home/klaus/.xmodmap
 
 # Change keypress repeat delay and rate
 xset r rate 300 60
@@ -19,6 +18,9 @@ fi
 # Source .xprofile
 [ -f /etc/xprofile ] && . /etc/xprofile
 [ -f ~/.xprofile ] && . ~/.xprofile
+
+# Start ssh-agent
+eval $(ssh-agent)
 
 # Start fcron for cron jobs
 fcron
