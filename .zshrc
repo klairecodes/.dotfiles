@@ -21,6 +21,9 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Display red dots whilst waiting for completion.
 COMPLETION_WAITING_DOTS="true"
 
+# Don't add lines that begin with space to history
+setopt histignorespace
+
 # Which plugins would you like to load?
 # Standard plugins can be found in ~/.oh-my-zsh/plugins/*
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
@@ -73,10 +76,7 @@ complete -o nospace -C /usr/bin/terraform terraform
 
 # Aliases ---------------------------------------------------------------------
 alias ls='ls -A --color=auto'
-alias mkdir='mkdir -pv'
-alias cp='cp -v'
 alias klock='i3lock -ti ~/Pictures/Wallpapers/arch_wallpaper_blk_red.png'
-alias please='sudo !!'
 alias bear='klock && systemctl hibernate && exit'
 alias lk='klock && exit'
 alias off='shutdown now'
