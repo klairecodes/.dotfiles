@@ -8,14 +8,14 @@
 set $mod Mod4
 # Define names for default workspaces for which we configure key bindings later on.
 # Variables used to avoid repeating the names in multiple places.
-set $ws1 "1: misc"
-set $ws2 "2: social"
-set $ws3 "3: code"
+set $ws1 "1"
+set $ws2 "2"
+set $ws3 "3"
 set $ws4 "4"
 set $ws5 "5"
 set $ws6 "6"
 set $ws7 "7"
-set $ws8 "8: media"
+set $ws8 "8"
 
 # Theme colors (from Xresources, fallback Nord)
 exec xrdb ~/.Xresources
@@ -50,11 +50,11 @@ workspace_layout tabbed
 
 # Default outputs for workspaces
 workspace $ws1 output HDMI-1
-workspace $ws2 output DP-1
+workspace $ws2 output DP-2
 workspace $ws3 output HDMI-1
-workspace $ws4 output DP-1
+workspace $ws4 output DP-2
 workspace $ws5 output HDMI-1
-workspace $ws6 output DP-1
+workspace $ws6 output DP-2
 workspace $ws7 output HDMI-1
 workspace $ws8 output DP-2
 
@@ -126,6 +126,7 @@ show_marks yes
 ### Applications ###############################################################
 
 # launch startup applications
+exec --no-startup-id $HOME/.screenlayout/default-layout.sh
 exec --no-startup-id xbindkeys # for keyboard mappings
 exec --no-startup-id pa-applet # system tray for Pulseaudio
 exec --no-startup-id nm-applet # system tray for NetworkManager

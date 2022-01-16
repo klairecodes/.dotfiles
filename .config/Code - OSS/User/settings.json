@@ -1,5 +1,5 @@
 {
-    "workbench.colorTheme": "Dracula",
+    "workbench.colorTheme": "Nord",
     "telemetry.enableTelemetry": false,
     "telemetry.enableCrashReporter": false,
     "window.zoomLevel": 0,
@@ -10,9 +10,7 @@
     "git.autofetch": true,
     "editor.tabSize": 4,
     "debug.onTaskErrors": "debugAnyway",
-<<<<<<< HEAD
     "python.venvPath": "~/.virtualenvs",
-=======
-    "editor.fontSize": 12,
->>>>>>> origin/main
+    "editor.wordWrap": "on",
+    "workbench.sideBar.location": "right",
 }
