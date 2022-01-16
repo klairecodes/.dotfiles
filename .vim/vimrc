@@ -32,7 +32,6 @@ call plug#end()
 " Plugin specific Settings
 " -----------------------------------------------------------------------------
 " airline
-<<<<<<< HEAD
 let g:airline_powerline_fonts = 1 "fixes airline font display
 
 " Appearance
