@@ -95,18 +95,18 @@ set $base0F #fcc09e
 bar {
         font pango:Terminus 10
         position bottom 
+        tray_output primary
         colors {
-        background #2f343f
-        statusline #2f343f
-        separator #4b5262
+            background #2f343f
+            statusline #ffffff
+            separator #4b5262
 
-        # colour of border, background, and text
-        focused_workspace       #2f343f #88c0d0 #2f343f
-        active_workspace        #2f343f #2f343f #d8dee8
-        inactive_workspace      #2f343f #2f343f #d8dee8
-        urgent_workspacei       #2f343f #ebcb8b #2f343f
+            # color of border, background, and text
+            focused_workspace       #2f343f #88c0d0 #2f343f
+            active_workspace        #2f343f #2f343f #d8dee8
+            inactive_workspace      #2f343f #2f343f #d8dee8
+            urgent_workspace        #2f343f #ebcb8b #2f343f
         }
-        #status_command i3status
         status_command i3status
 }
 
@@ -436,7 +436,7 @@ for_window [title="Network Connections"] floating enable
 for_window [title="Network Connections"] [floating] resize set 640 640 
 for_window [title="Network Connections"] [floating] move position center
 
-for_window[class="flameshot"] floating enable
+for_window [class="flameshot"] floating enable
 for_window [title="flameshot"] [floating] resize set 640 480
 
 for_window [title="Pritunl"] floating enable
