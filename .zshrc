@@ -133,13 +133,13 @@ export WORKON_HOME=$HOME/.virtualenvs
 export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
 export VIRTUALENVWRAPPER_VIRTUALENV_ARGS=' -p /usr/bin/python3 '
 export PROJECT_HOME=$HOME/Devel
-source /usr/bin/virtualenvwrapper.sh
+#source /usr/bin/virtualenvwrapper.sh
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 # dircolors
-eval `dircolors /home/klaus/.dir_colors/dircolors`
+#eval `dircolors /home/klaus/.dir_colors/dircolors`
 
 # fzf cli fuzzy finder
 source /usr/share/fzf/key-bindings.zsh
