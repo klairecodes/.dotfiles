@@ -14,6 +14,9 @@ xset r rate 300 60
 # Disable Trackpad on ThinkPad T480
 xinput disable "Synaptics TM3276-022"
 
+# Set Thinkpad TrackPoint sensitivity
+xinput set-prop "TPPS/2 IBM TrackPoint" "libinput Accel Speed" 1.0
+
 # Manage resources for GTK and other GUI applications
 if [ -d /etc/X11/xinit/xinitrc.d ]; then
   for f in /etc/X11/xinit/xinitrc.d/*; do

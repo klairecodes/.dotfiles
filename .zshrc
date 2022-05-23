@@ -76,7 +76,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git vi-mode)
+plugins=(git)
 source $ZSH/oh-my-zsh.sh
 # User configuration
 
@@ -124,6 +124,22 @@ alias keyrate='xset r rate 300 60'
 alias eee='(&>/dev/null play ~/Music/Eee.mp3 &)'
 alias gccc='gcc -std=c99 -Wall -Wextra -pedantic -ggdb' # CS243 default compilation flags
 alias digpub='dig +short myip.opendns.com @resolver1.opendns.com' # Quickly get public IP
+alias bctl='bluetoothctl'
+alias butane='podman run --rm --interactive       \
+              --security-opt label=disable        \
+              --volume ${PWD}:/pwd --workdir /pwd \
+              quay.io/coreos/butane:release'
+alias coreos-installer='podman run --pull=always            \
+                        --rm --interactive                  \
+                        --security-opt label=disable        \
+                        --volume ${PWD}:/pwd --workdir /pwd \
+                        quay.io/coreos/coreos-installer:release'
+
+alias ignition-validate='podman run --rm --interactive       \
+                         --security-opt label=disable        \
+                         --volume ${PWD}:/pwd --workdir /pwd \
+                         quay.io/coreos/ignition-validate:release'
+
 
 # To hide "user@hostname" from agnoster theme
 prompt_context(){}

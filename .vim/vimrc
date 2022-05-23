@@ -26,6 +26,7 @@ Plug 'junegunn/fzf', { 'do': { -> fzf#install() } } " fuzzy finder
 Plug 'tpope/vim-fugitive' " integrated Git
 Plug 'airblade/vim-gitgutter' " git diff in sign column
 Plug 'vim-scripts/DoxygenToolkit.vim' " rapid Doxygen commenting
+Plug 'ap/vim-css-color' " view css hex colors in vim
 
 call plug#end()
 
