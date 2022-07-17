@@ -12,5 +12,4 @@
     "debug.onTaskErrors": "debugAnyway",
     "python.venvPath": "~/.virtualenvs",
     "editor.wordWrap": "on",
-    "workbench.sideBar.location": "right",
 }

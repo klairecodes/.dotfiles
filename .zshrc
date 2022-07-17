@@ -76,7 +76,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git vi-mode)
+plugins=(git docker kubectl rust tmux)
 source $ZSH/oh-my-zsh.sh
 # User configuration
 
@@ -135,6 +135,14 @@ export VIRTUALENVWRAPPER_VIRTUALENV_ARGS=' -p /usr/bin/python3 '
 export PROJECT_HOME=$HOME/Devel
 source /usr/bin/virtualenvwrapper.sh
 
+# Start ssh-agent automatically
+#if ! pgrep -u "$USER" ssh-agent > /dev/null; then
+    #ssh-agent -t 1h > "$XDG_RUNTIME_DIR/ssh-agent.env"
+#fi
+#if [[ ! "$SSH_AUTH_SOCK" ]]; then
+    #source "$XDG_RUNTIME_DIR/ssh-agent.env" >/dev/null
+#fi
+
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
@@ -147,5 +155,6 @@ source /usr/share/fzf/completion.zsh
 
 # Set CDPATH only for interactive shells.
 if test “${PS1+set}”; then
-    CDPATH=.:~:~/Dropbox:~/Dropbox/code/web-projects
+    CDPATH=.:~:~/Dropbox:~/Dropbox/code/web-projects:~/Dropbox/class/
 fi
+

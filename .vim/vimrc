@@ -19,6 +19,7 @@ call plug#begin('~/.vim/plugged')
 
 Plug 'arcticicestudio/nord-vim' " color theme
 Plug 'vim-airline/vim-airline' " statusline
+Plug 'vim-airline/vim-airline-themes' " statusline
 Plug 'valloric/youcompleteme' " autocompletion
 Plug 'scrooloose/nerdcommenter' " easier commenting
 Plug 'scrooloose/nerdtree' " file explorer
@@ -33,6 +34,12 @@ call plug#end()
 " -----------------------------------------------------------------------------
 " airline
 let g:airline_powerline_fonts = 1 "fixes airline font display
+let g:airline_theme = 'nord'
+" termdebug
+packadd termdebug
+let g:termdebug_wide=1 " starts termdebug in vertical layout
+" Automatic indent for other file types
+filetype plugin indent on
 
 " Appearance
 " -----------------------------------------------------------------------------
@@ -84,5 +91,3 @@ nnoremap <F4> :make!<cr>
 " write to file when forgot to sudo
 cmap w!! w !sudo tee > /dev/null %
 
-" Automatic indent for other file types
-filetype plugin indent on
