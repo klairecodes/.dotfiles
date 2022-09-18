@@ -1,3 +1,10 @@
+# Python virtualenvwrapper configuration
+export WORKON_HOME=$HOME/.virtualenvs
+export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
+export VIRTUALENVWRAPPER_VIRTUALENV_ARGS=' -p /usr/bin/python3 '
+export PROJECT_HOME=$HOME/Devel
+source /usr/bin/virtualenvwrapper.sh
+
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block; everything else may go below.
@@ -139,17 +146,11 @@ alias ignition-validate='podman run --rm --interactive       \
                          --security-opt label=disable        \
                          --volume ${PWD}:/pwd --workdir /pwd \
                          quay.io/coreos/ignition-validate:release'
+alias get_idf='. $HOME/esp/esp-idf/export.sh'
 
 
 # To hide "user@hostname" from agnoster theme
 prompt_context(){}
-
-# Python virtualenvwrapper configuration
-export WORKON_HOME=$HOME/.virtualenvs
-export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
-export VIRTUALENVWRAPPER_VIRTUALENV_ARGS=' -p /usr/bin/python3 '
-export PROJECT_HOME=$HOME/Devel
-source /usr/bin/virtualenvwrapper.sh
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
@@ -165,3 +166,12 @@ source /usr/share/fzf/completion.zsh
 if test “${PS1+set}”; then
     CDPATH=.:~:~/Dropbox:~/Dropbox/code/web-projects
 fi
+
+# Share ssh-agent across all shell sessions
+if ! pgrep -u "$USER" ssh-agent > /dev/null; then
+    ssh-agent -t 1h > "$XDG_RUNTIME_DIR/ssh-agent.env"
+fi
+if [[ ! -f "$SSH_AUTH_SOCK" ]]; then
+    source "$XDG_RUNTIME_DIR/ssh-agent.env" >/dev/null
+fi
+
