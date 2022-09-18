@@ -16,6 +16,18 @@ set $ws5 "5"
 set $ws6 "6"
 set $ws7 "7"
 set $ws8 "8"
+set $ws9 "9"
+set $ws10 "10"
+set $ws11 "11"
+set $ws12 "12"
+set $ws13 "13"
+set $ws14 "14"
+set $ws15 "15"
+set $ws16 "16"
+set $ws17 "17"
+set $ws18 "18"
+set $ws19 "19"
+set $ws20 "20"
 
 # Theme colors (from Xresources, fallback Nord)
 exec xrdb ~/.Xresources
@@ -223,14 +235,14 @@ bindsym $mod+a focus parent
 bindsym $mod+Shift+a focus child
 
 # manually lock the screen
-bindsym $mod+9 exec --no-startup-id $lock_cmd
-bindsym $mod+Shift+9 exec --no-startup-id $lock_fallback
+bindsym $mod+minus exec --no-startup-id $lock_cmd
+bindsym $mod+Shift+minus exec --no-startup-id $lock_fallback
 
 # Vim-like marks for windows
 # read 1 character and mark the current window with this character
 bindsym $mod+m exec i3-input -F 'mark %s' -l 1 -P 'Mark: '
 # read 1 character and go to the window with the character
-bindsym $mod+g exec i3-input -F '[con_mark="%s"] focus' -l 1 -P 'Goto: '
+bindsym $mod+z exec i3-input -F '[con_mark="%s"] focus' -l 1 -P 'Goto: '
 
 # Sticky a window to always be on-screen.
 bindsym $mod+o sticky toggle; exec notify-send -u low Sticky\ toggled.
@@ -250,8 +262,18 @@ bindsym $mod+5 workspace number $ws5
 bindsym $mod+6 workspace number $ws6
 bindsym $mod+7 workspace number $ws7
 bindsym $mod+8 workspace number $ws8
-# bindsym $mod+9 workspace number $ws9
-# bindsym $mod+0 workspace number $ws10
+bindsym $mod+9 workspace number $ws9
+bindsym $mod+0 workspace number $ws10
+bindsym $mod+Ctrl+1 workspace number $ws11
+bindsym $mod+Ctrl+2 workspace number $ws12
+bindsym $mod+Ctrl+3 workspace number $ws13
+bindsym $mod+Ctrl+4 workspace number $ws14
+bindsym $mod+Ctrl+5 workspace number $ws15
+bindsym $mod+Ctrl+6 workspace number $ws16
+bindsym $mod+Ctrl+7 workspace number $ws17
+bindsym $mod+Ctrl+8 workspace number $ws18
+bindsym $mod+Ctrl+9 workspace number $ws19
+bindsym $mod+Ctrl+0 workspace number $ws20
 
 # move focused container to workspace
 bindsym $mod+Shift+1 move container to workspace number $ws1
@@ -262,8 +284,18 @@ bindsym $mod+Shift+5 move container to workspace number $ws5
 bindsym $mod+Shift+6 move container to workspace number $ws6
 bindsym $mod+Shift+7 move container to workspace number $ws7
 bindsym $mod+Shift+8 move container to workspace number $ws8
-# bindsym $mod+Shift+9 move container to workspace number $ws9
-# bindsym $mod+Shift+0 move container to workspace number $ws10
+bindsym $mod+Shift+9 move container to workspace number $ws9
+bindsym $mod+Shift+0 move container to workspace number $ws10
+bindsym $mod+Ctrl+Shift+1 move container to workspace number $ws11
+bindsym $mod+Ctrl+Shift+2 move container to workspace number $ws12
+bindsym $mod+Ctrl+Shift+3 move container to workspace number $ws13
+bindsym $mod+Ctrl+Shift+4 move container to workspace number $ws14
+bindsym $mod+Ctrl+Shift+5 move container to workspace number $ws15
+bindsym $mod+Ctrl+Shift+6 move container to workspace number $ws16
+bindsym $mod+Ctrl+Shift+7 move container to workspace number $ws17
+bindsym $mod+Ctrl+Shift+8 move container to workspace number $ws18
+bindsym $mod+Ctrl+Shift+9 move container to workspace number $ws19
+bindsym $mod+Ctrl+Shift+0 move container to workspace number $ws20
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
@@ -296,7 +328,7 @@ bindsym XF86AudioMicMute exec --no-startup-id pactl \
 set-source-mute @DEFAULT_SOURCE@ toggle # && $refresh_i3status
 
 # Control dunst notifications
-bindsym $mod+z exec --no-startup-id dunstctl set-paused toggle; exec notify-send -u low "Notifications toggled."
+bindsym $mod+g exec --no-startup-id dunstctl set-paused toggle; exec notify-send -u low "Notifications toggled."
 
 
 ### Modes ######################################################################
@@ -325,7 +357,7 @@ mode "resize" {
 }
 
 # set shut down, restart, and locking features (borrowed from manjaro-i3)
-bindsym $mod+0 mode "$mode_system"
+bindsym $mod+equal mode "$mode_system"
 set $mode_system (l)ock, (e)xit, switch_(u)ser, (s)uspend, (h)ibernate, (r)eboot, (Shift+s)hutdown
 mode "$mode_system" {
     bindsym l exec --no-startup-id $lock_cmd, mode "default"
