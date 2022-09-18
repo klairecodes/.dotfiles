@@ -1,1 +1,2 @@
 xcompmgr -c -C -f -F -D2 -t5 -l5 -r4.2 -o.55 &
+QT_QPA_PLATFORMTHEME=gtk2
