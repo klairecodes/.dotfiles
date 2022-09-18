@@ -38,7 +38,7 @@ set_from_resource $color15 i3wm.theme15 #B48EAD
 
 # Lock screen command
 set $lock_cmd betterlockscreen -l \
-~/Pictures/Wallpapers/jellyfish/pink-purple-jellyfish.jpg --display 0 --off 60 
+~/Dropbox/pictures/wallpapers/tarantula.png --display 0 --off 60 
 # Fallback lock screen command
 # i3config does not support variable manipulation (#FFFFFF -> FFFFFF)
 set $lock_fallback i3lock -c 5e81ac
@@ -55,7 +55,8 @@ workspace $ws5 output eDP1
 workspace $ws7 output eDP1
 
 # increase trackpoint sensitivity
-exec --no-startup-id xinput --set-prop "13" "libinput Accel Speed" +0.5
+# check correct id with xinput --list
+exec --no-startup-id xinput --set-prop "11" "libinput Accel Speed" +1.0
 
 # change caps lock to left control
 exec --no-startup-id xmodmap ~/.xmodmap 
@@ -118,6 +119,9 @@ focus_on_window_activation urgent
 # Show Vim-like marks in window titles
 show_marks yes
 
+# Move workspaces to other monitors
+bindsym $mod+Ctrl+greater move workspace to output right
+bindsym $mod+Ctrl+less move workspace to output left
 
 ### Applications ###############################################################
 
@@ -125,7 +129,7 @@ show_marks yes
 exec --no-startup-id xbindkeys # for keyboard mappings
 exec --no-startup-id pa-applet # system tray for Pulseaudio
 exec --no-startup-id nm-applet # system tray for NetworkManager
-exec --no-startup-id dropbox # file syncing
+exec --no-startup-id DISPLAY= dropbox # file syncing
 exec --no-startup-id blueman-applet # bluetooth
 exec --no-startup-id flameshot # screenshot utility
 exec --no-startup-id redshift # blue light filter
