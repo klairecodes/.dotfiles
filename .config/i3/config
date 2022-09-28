@@ -411,8 +411,8 @@ mode "$mode_monitor" {
     bindsym t exec --no-startup-id arandr-top.sh, mode "default"; exec notify-send -u low Monitor\ Layout: "second screen top"
     bindsym l exec --no-startup-id arandr-left.sh, mode "default"; exec notify-send -u low Monitor\ Layout: "second screen left"
     bindsym r exec --no-startup-id arandr-right.sh, mode "default"; exec notify-send -u low Monitor\ Layout: "second screen right"
-    bindsym b exec --no-startup-id arandr-bottom.sh, "default"; exec notify-send -u low Monitor Layout: "second screen bottom"
-    # bindsym p exec --no-startup-id arandr-default.sh, "default"; exec notify-send -u low Monitor\ Layout: "triple screen"
+    bindsym b exec --no-startup-id arandr-bottom.sh, mode "default"; exec notify-send -u low Monitor Layout: "second screen bottom"
+    bindsym p exec --no-startup-id arandr-triple.sh, mode "default"; exec notify-send -u low Monitor\ Layout: "triple screen"
 
     # exit mode
     bindsym Return mode "default"

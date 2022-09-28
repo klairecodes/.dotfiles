@@ -11,9 +11,6 @@ xmodmap -e "add control = Control_L Control_R"
 # Change keypress repeat delay and rate
 xset r rate 300 60
 
-# Disable Trackpad on ThinkPad T480
-xinput disable "Synaptics TM3276-022"
-
 # Set Thinkpad TrackPoint sensitivity
 xinput set-prop "TPPS/2 IBM TrackPoint" "libinput Accel Speed" 1.0
 
