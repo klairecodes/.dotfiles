@@ -162,7 +162,7 @@ bindsym $mod+slash exec code
 
 # start screenshot utility
 bindsym $mod+Print exec flameshot screen -c -p $HOME/Pictures/Screenshots # for full capture and copy to clipboard
-bindsym Print exec flameshot gui -p $HOME/Pictures/Screenshots # for gui
+bindsym Print exec flameshot gui # for gui
 bindsym Shift+Print exec flameshot gui -d 2000 -p $HOME/Pictures/Screenshots # for gui and x second delay
 
 # Force some applications to certain workspaces and layouts.
