@@ -50,7 +50,7 @@ set_from_resource $color15 i3wm.theme15 #B48EAD
 
 # Lock screen command
 set $lock_cmd betterlockscreen -l \
-~/Dropbox/pictures/wallpapers/tarantula.png --display 0 --off 60 
+~/Dropbox/pictures/wallpapers/octopus-grabbing-wall.jpg --display 0 --off 60 
 # Fallback lock screen command
 # i3config does not support variable manipulation (#FFFFFF -> FFFFFF)
 set $lock_fallback i3lock -c 5e81ac
@@ -81,6 +81,8 @@ bindsym $mod+d exec --no-startup-id dmenu_run \
 -nb '#2e3440' -sf '#e5e9f0' -sb '#81a1c1' -nf '#d8dee9' -fn 'Inconsolata 14'
 
 bindsym $mod+Shift+d exec --no-startup-id i3-dmenu-desktop
+# Start rofi
+bindsym $mod+space exec rofi -show
 
 # Use polybar instead of i3bar
 #exec_always --no-startup-id $HOME/.config/polybar/launch.sh
@@ -223,10 +225,10 @@ bindsym $mod+w layout tabbed; exec notify-send -u low Layout: "tabbed"
 bindsym $mod+e layout toggle split; exec notify-send -u low Layout: "split"
 
 # toggle tiling / floating
-bindsym $mod+Shift+space floating toggle
+bindsym $mod+Shift+z floating toggle
 
 # change focus between tiling / floating windows
-bindsym $mod+space focus mode_toggle
+bindsym $mod+z focus mode_toggle
 
 # focus the parent container
 bindsym $mod+a focus parent
@@ -242,7 +244,7 @@ bindsym $mod+Shift+minus exec --no-startup-id $lock_fallback
 # read 1 character and mark the current window with this character
 bindsym $mod+m exec i3-input -F 'mark %s' -l 1 -P 'Mark: '
 # read 1 character and go to the window with the character
-bindsym $mod+z exec i3-input -F '[con_mark="%s"] focus' -l 1 -P 'Goto: '
+#bindsym $mod+z exec i3-input -F '[con_mark="%s"] focus' -l 1 -P 'Goto: '
 
 # Sticky a window to always be on-screen.
 bindsym $mod+o sticky toggle; exec notify-send -u low Sticky\ toggled.
