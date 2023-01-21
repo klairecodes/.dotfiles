@@ -144,24 +144,12 @@ alias ignition-validate='podman run --rm --interactive       \
 # To hide "user@hostname" from agnoster theme
 prompt_context(){}
 
-# Python virtualenvwrapper configuration
-export WORKON_HOME=$HOME/.virtualenvs
-export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
-export VIRTUALENVWRAPPER_VIRTUALENV_ARGS=' -p /usr/bin/python3 '
-export PROJECT_HOME=$HOME/Devel
-source /usr/bin/virtualenvwrapper.sh
-
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-
-# dircolors
-eval `dircolors /home/klaus/.dir_colors/dircolors`
-
-# fzf cli fuzzy finder
-source /usr/share/fzf/key-bindings.zsh
-source /usr/share/fzf/completion.zsh
 
 # Set CDPATH only for interactive shells.
 if test “${PS1+set}”; then
     CDPATH=.:~:~/Dropbox:~/Dropbox/code/web-projects
 fi
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

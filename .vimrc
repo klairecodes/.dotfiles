@@ -19,7 +19,6 @@ call plug#begin('~/.vim/plugged')
 
 Plug 'arcticicestudio/nord-vim' " color theme
 Plug 'vim-airline/vim-airline' " statusline
-Plug 'valloric/youcompleteme' " autocompletion
 Plug 'scrooloose/nerdcommenter' " easier commenting
 Plug 'scrooloose/nerdtree' " file explorer
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } } " fuzzy finder
@@ -40,7 +39,6 @@ let g:airline_powerline_fonts = 1
 syntax on
 set number
 set colorcolumn=80
-colorscheme nord
 
 " Behavior
 " -----------------------------------------------------------------------------

@@ -20,3 +20,5 @@ alias ssh-mc='ssh pi@129.21.131.146'
 
 PS1='[\u@\h \W]\$ '
 . "$HOME/.cargo/env"
+
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
