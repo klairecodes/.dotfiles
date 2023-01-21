@@ -1,0 +1,6 @@
+#!/bin/bash
+# https://wiki.archlinux.org/title/Touchpad_Synaptics
+
+# Disable Trackpad on ThinkPad T480
+xinput disable "Synaptics TM3276-022"
+
