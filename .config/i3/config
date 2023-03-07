@@ -329,6 +329,10 @@ set-sink-mute @DEFAULT_SINK@ toggle # && $refresh_i3status
 bindsym XF86AudioMicMute exec --no-startup-id pactl \
 set-source-mute @DEFAULT_SOURCE@ toggle # && $refresh_i3status
 
+# Brightness Control
+bindsym XF86MonBrightnessUp exec --no-startup-id xbacklight -inc 5
+bindsym XF86MonBrightnessDown exec --no-startup-id xbacklight -dec 5
+
 # Control dunst notifications
 bindsym $mod+g exec --no-startup-id dunstctl set-paused toggle; exec notify-send -u low "Notifications toggled."
 
