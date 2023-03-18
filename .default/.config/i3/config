@@ -84,6 +84,9 @@ bindsym $mod+Shift+d exec --no-startup-id i3-dmenu-desktop
 # Start rofi
 bindsym $mod+space exec rofi -show
 
+# Start lxsession for lxqt compatibility
+exec --no-startup-id lxsession
+
 # Use polybar instead of i3bar
 #exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 set $base00 #101218
