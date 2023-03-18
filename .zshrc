@@ -153,3 +153,4 @@ if test “${PS1+set}”; then
 fi
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme
