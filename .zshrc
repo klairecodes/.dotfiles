@@ -1,10 +1,3 @@
-# Python virtualenvwrapper configuration
-export WORKON_HOME=$HOME/.virtualenvs
-#export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
-#export VIRTUALENVWRAPPER_VIRTUALENV_ARGS=' -p /usr/bin/python3 '
-#export PROJECT_HOME=$HOME/Devel
-source /usr/bin/virtualenvwrapper.sh
-
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block; everything else may go below.
@@ -23,7 +16,8 @@ export ZSH="/home/klaus/.oh-my-zsh"
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 #ZSH_THEME="af-magic"
-ZSH_THEME="powerlevel10k/powerlevel10k"
+source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme
+ZSH_THEME=""
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -161,11 +155,4 @@ if test “${PS1+set}”; then
 fi
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme
-# Share ssh-agent across all shell sessions
-if ! pgrep -u "$USER" ssh-agent > /dev/null; then
-    ssh-agent -t 1h > "$XDG_RUNTIME_DIR/ssh-agent.env"
-fi
-if [[ ! -f "$SSH_AUTH_SOCK" ]]; then
-    source "$XDG_RUNTIME_DIR/ssh-agent.env" >/dev/null
-fi
+
