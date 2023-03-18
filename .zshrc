@@ -1,3 +1,10 @@
+# Python virtualenvwrapper configuration
+export WORKON_HOME=$HOME/.virtualenvs
+#export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
+#export VIRTUALENVWRAPPER_VIRTUALENV_ARGS=' -p /usr/bin/python3 '
+#export PROJECT_HOME=$HOME/Devel
+source /usr/bin/virtualenvwrapper.sh
+
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block; everything else may go below.
@@ -139,6 +146,7 @@ alias ignition-validate='podman run --rm --interactive       \
                          --security-opt label=disable        \
                          --volume ${PWD}:/pwd --workdir /pwd \
                          quay.io/coreos/ignition-validate:release'
+alias get_idf='. $HOME/esp/esp-idf/export.sh'
 
 
 # To hide "user@hostname" from agnoster theme
@@ -154,3 +162,10 @@ fi
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme
+# Share ssh-agent across all shell sessions
+if ! pgrep -u "$USER" ssh-agent > /dev/null; then
+    ssh-agent -t 1h > "$XDG_RUNTIME_DIR/ssh-agent.env"
+fi
+if [[ ! -f "$SSH_AUTH_SOCK" ]]; then
+    source "$XDG_RUNTIME_DIR/ssh-agent.env" >/dev/null
+fi

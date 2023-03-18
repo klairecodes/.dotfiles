@@ -34,6 +34,10 @@ call plug#end()
 " airline
 let g:airline_powerline_fonts = 1
 
+" nerdcommenter
+" Set a language to use its alternate delimiters by default
+let g:NERDAltDelims_asm = 1
+
 " Appearance
 " -----------------------------------------------------------------------------
 syntax on
@@ -47,6 +51,11 @@ set shiftwidth=4
 set expandtab
 set softtabstop=4
 set mouse=a
+"gets rid of delay when exiting visual mode
+set timeoutlen=1000 ttimeoutlen=0
+
+
+autocmd FileType asm setlocal tabstop=8 softtabstop=8 shiftwidth=8 noexpandtab
 
 " User Keybindings
 " -----------------------------------------------------------------------------
