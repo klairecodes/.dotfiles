@@ -485,3 +485,7 @@ for_window [title="flameshot"] [floating] resize set 640 480
 for_window [title="Pritunl"] floating enable
 for_window [title="Pritunl"] [floating] resize set 640 640 
 for_window [title="Pritunl"] [floating] move position center
+
+for_window [title="SpeedCrunch"] floating enable
+for_window [title="SpeedCrunch"] [floating] resize set 640 640 
+for_window [title="SpeedCrunch"] [floating] move position center
