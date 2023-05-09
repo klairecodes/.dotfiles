@@ -146,7 +146,7 @@ bindsym $mod+Ctrl+less move workspace to output left
 exec --no-startup-id xbindkeys # for keyboard mappings
 exec --no-startup-id pa-applet # system tray for Pulseaudio
 exec --no-startup-id nm-applet # system tray for NetworkManager
-exec --no-startup-id DISPLAY= dropbox # file syncing
+exec --no-startup-id dropbox # file syncing
 exec --no-startup-id blueman-applet # bluetooth
 exec --no-startup-id flameshot # screenshot utility
 exec --no-startup-id redshift # blue light filter
