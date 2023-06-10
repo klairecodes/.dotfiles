@@ -1,0 +1,6 @@
+#!/bin/bash
+# https://wiki.archlinux.org/title/Touchpad_Synaptics
+
+# Enable Trackpad on System76 Lemur Pro
+xinput enable "PNP0C50:00 04F3:311D Touchpad"
+

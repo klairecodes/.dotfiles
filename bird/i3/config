@@ -156,8 +156,8 @@ exec --no-startup-id /usr/local/bin/jellypaper # jellyfish wallpapers
 exec --no-startup-id powerkit # power, battery, and timeout settings
 
 # start a terminal
-bindsym $mod+Return exec alacritty
-bindsym $mod+Shift+Return exec alacritty && i3-msg floating enable && i3-msg resize 640 480 && i3-msg move scratchpad
+bindsym $mod+Return exec gnome-terminal
+bindsym $mod+Shift+Return exec gnome-terminal && i3-msg floating enable && i3-msg resize 640 480 && i3-msg move scratchpad
 
 # start a web browser
 bindsym $mod+x exec firefox
@@ -338,6 +338,9 @@ bindsym XF86MonBrightnessDown exec --no-startup-id xbacklight -dec 5
 
 # Control dunst notifications
 bindsym $mod+g exec --no-startup-id dunstctl set-paused toggle; exec notify-send -u low "Notifications toggled."
+
+# Disable Touchpad
+bindsym XF86TouchpadToggle exec --no-startup-id ~/.dotfiles/bird/.scripts/disable-touchpad
 
 
 ### Modes ######################################################################

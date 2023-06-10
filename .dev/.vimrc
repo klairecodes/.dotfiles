@@ -17,15 +17,36 @@ endif
 " -----------------------------------------------------------------------------
 call plug#begin('~/.vim/plugged')
 
-Plug 'arcticicestudio/nord-vim' " color theme
 Plug 'vim-airline/vim-airline' " statusline
+Plug 'vim-airline/vim-airline-themes' " statusline
 Plug 'scrooloose/nerdcommenter' " easier commenting
 Plug 'scrooloose/nerdtree' " file explorer
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } } " fuzzy finder
 Plug 'tpope/vim-fugitive' " integrated Git
 Plug 'airblade/vim-gitgutter' " git diff in sign column
-Plug 'vim-scripts/DoxygenToolkit.vim' " rapid Doxygen commenting
-Plug 'ap/vim-css-color' " view css hex colors in vim
+"Plug 'vim-scripts/DoxygenToolkit.vim' " rapid Doxygen commenting
+"Plug 'ap/vim-css-color' " view css hex colors in vim
+"Plug 'gcmt/taboo.vim' " rename tabs easily
+
+" Colorschemes
+Plug 'dracula/vim', {'as': 'dracula'}
+Plug 'arcticicestudio/nord-vim'
+Plug 'fneu/breezy'
+
+" React/Typescript
+" https://thoughtbot.com/blog/modern-typescript-and-react-development-in-vim
+Plug 'pangloss/vim-javascript'
+Plug 'HerringtonDarkholme/yats.vim' "tsx dependency for syntax highlighting (place BEFORE typescript-vim)
+Plug 'leafgarland/typescript-vim'
+Plug 'MaxMEllon/vim-jsx-pretty' "js syntax highlighting
+Plug 'yuezk/vim-js' "js dependency for syntax highlighting
+Plug 'styled-components/vim-styled-components', { 'branch': 'main'}
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+let g:coc_global_extensions = [
+  \ 'coc-tsserver'
+  \ ]
+Plug 'neoclide/coc-eslint'
+Plug 'neoclide/coc-prettier'
 
 call plug#end()
 
@@ -33,16 +54,54 @@ call plug#end()
 " -----------------------------------------------------------------------------
 " airline
 let g:airline_powerline_fonts = 1
+let g:airline_theme='dracula'
 
 " nerdcommenter
 " Set a language to use its alternate delimiters by default
 let g:NERDAltDelims_asm = 1
 
+" JavaScript/TypeScript buffers
+autocmd BufEnter *.{js,jsx,ts,tsx} :syntax sync fromstart
+autocmd BufLeave *.{js,jsx,ts,tsx} :syntax sync clear
+
+" neoclide/coc
+" use <tab> to trigger completion and navigate to the next complete item
+function! CheckBackspace() abort
+  let col = col('.') - 1
+  return !col || getline('.')[col - 1]  =~# '\s'
+endfunction
+
+" Having longer updatetime (default is 4000 ms = 4 s) leads to noticeable
+" delays and poor user experience.
+set updatetime=300
+
+" GoTo code navigation.
+nmap <silent> gd <Plug>(coc-definition)
+nmap <silent> gy <Plug>(coc-type-definition)
+nmap <silent> gi <Plug>(coc-implementation)
+nmap <silent> gr <Plug>(coc-references)
+
+" Use K to show documentation in preview window.
+nnoremap <silent> K :call <SID>show_documentation()<CR>
+
+" Use Tab to cycle between completion options
+inoremap <silent><expr> <Tab>
+      \ coc#pum#visible() ? coc#pum#next(1) :
+      \ CheckBackspace() ? "\<Tab>" :
+      \ coc#refresh()
+" Use Enter to confirm completion
+inoremap <expr> <cr> coc#pum#visible() ? coc#pum#confirm() : "\<CR>"
+
+" gitgutter
+" Sign column color matching
+highlight! link SignColumn LineNr
+let g:gitgutter_set_sign_backgrounds = 1
+
 " Appearance
 " -----------------------------------------------------------------------------
 syntax on
 set number
-set colorcolumn=80
+"set colorcolumn=80
 
 " Behavior
 " -----------------------------------------------------------------------------
@@ -53,6 +112,8 @@ set softtabstop=4
 set mouse=a
 "gets rid of delay when exiting visual mode
 set timeoutlen=1000 ttimeoutlen=0
+set ignorecase
+set smartcase
 
 
 autocmd FileType asm setlocal tabstop=8 softtabstop=8 shiftwidth=8 noexpandtab
@@ -66,5 +127,11 @@ nnoremap <F4> :make!<cr>
 " write to file when forgot to sudo
 cmap w!! w !sudo tee > /dev/null %
 
+" format file using Prettier
+command! -nargs=0 Prettier :CocCommand prettier.forceFormatDocument
+
 " Automatic indent for other file types
 filetype plugin indent on
+
+" Display current buffer number id
+command! -nargs=0 B :echo "bufnr:" bufnr('%')

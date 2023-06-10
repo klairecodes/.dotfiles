@@ -30,9 +30,11 @@ python-pip
 dosfstools
 docker
 docker-compose
+ripgrep-all
 
 terminus-font
 ttf-font-awesome
+noto-fonts
 grub
 efibootmgr
 os-prober
@@ -44,5 +46,3 @@ blueman
 bluez-utils
 network-manager-applet
 xcompmgr
-noto-fonts
-
