@@ -87,8 +87,6 @@ bindsym $mod+space exec rofi -show
 # Start lxsession for lxqt compatibility
 exec --no-startup-id lxsession
 
-# Use polybar instead of i3bar
-#exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 set $base00 #101218
 set $base01 #1f222d
 set $base02 #252936
@@ -120,12 +118,8 @@ bar {
         inactive_workspace      #2f343f #2f343f #d8dee8
         urgent_workspacei       #2f343f #ebcb8b #2f343f
         }
-        #status_command i3status
         status_command i3status
 }
-
-# toggle showing the polybar
-#bindsym $mod+z exec --no-startup-id polybar-msg cmd toggle; exec notify-send -u low Polybar\ toggled.
 
 # Allows switching back to previous workspace easily.
 workspace_auto_back_and_forth yes
@@ -432,14 +426,14 @@ mode "$mode_monitor" {
 ### Appearance #################################################################
 
 # Theme Colors
-# class                 border  backgr. text    indicator child_border
-client.focused          $color9 $color9 $color6 $color9 $color9
-client.unfocused        $color0 $color0 $color4 $color0 $color0
-client.focused_inactive $color0 $color0 $color4 $color0 $color2
-client.placeholder      $color0 $color0 $color4 $color0 $color0
-client.urgent           $color11 $color11 $color6 $color11 $color11
+# class                 border  bground text    indicator child_border
+client.focused          #3DAEE9 #2980B9 #FFFFFF #3DAEE9   #3DAEE9
+client.focused_inactive #333333 #31363B #FFFFFF #000000   #000000
+client.unfocused        #333333 #31363B #888888 #000000   #000000
+client.urgent           #2F343A #DA4453 #FFFFFF #DA4453   #DA4453
+client.placeholder      #000000 #0C0C0C #FFFFFF #000000   #0C0C0C
 
-client.background       $color0
+client.background       #EFF0F1
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
