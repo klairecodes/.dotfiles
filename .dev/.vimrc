@@ -91,6 +91,10 @@ inoremap <silent><expr> <Tab>
       \ coc#refresh()
 " Use Enter to confirm completion
 inoremap <expr> <cr> coc#pum#visible() ? coc#pum#confirm() : "\<CR>"
+"
+" format file using Prettier
+command! -nargs=0 Prettier :CocCommand prettier.forceFormatDocument
+
 
 " gitgutter
 " Sign column color matching
@@ -101,7 +105,8 @@ let g:gitgutter_set_sign_backgrounds = 1
 " -----------------------------------------------------------------------------
 syntax on
 set number
-"set colorcolumn=80
+autocmd FileType asm setlocal colorcolumn=80
+autocmd FileType c setlocal colorcolumn=80
 
 " Behavior
 " -----------------------------------------------------------------------------
@@ -115,20 +120,34 @@ set timeoutlen=1000 ttimeoutlen=0
 set ignorecase
 set smartcase
 
-
 autocmd FileType asm setlocal tabstop=8 softtabstop=8 shiftwidth=8 noexpandtab
 
 " User Keybindings
 " -----------------------------------------------------------------------------
 nnoremap <F4> :make!<cr>
 
+" Use ALT+{h,j,k,l} to navigate windows from any mode (terminal nvim only)
+:tnoremap <A-h> <C-\><C-N><C-w>h
+:tnoremap <A-j> <C-\><C-N><C-w>j
+:tnoremap <A-k> <C-\><C-N><C-w>k
+:tnoremap <A-l> <C-\><C-N><C-w>l
+:inoremap <A-h> <C-\><C-N><C-w>h
+:inoremap <A-j> <C-\><C-N><C-w>j
+:inoremap <A-k> <C-\><C-N><C-w>k
+:inoremap <A-l> <C-\><C-N><C-w>l
+:nnoremap <A-h> <C-w>h
+:nnoremap <A-j> <C-w>j
+:nnoremap <A-k> <C-w>k
+:nnoremap <A-l> <C-w>l
+
+if has("nvim")
+:tnoremap <Esc> <C-\><C-n>
+endif
+
 " User Commands
 " -----------------------------------------------------------------------------
 " write to file when forgot to sudo
 cmap w!! w !sudo tee > /dev/null %
-
-" format file using Prettier
-command! -nargs=0 Prettier :CocCommand prettier.forceFormatDocument
 
 " Automatic indent for other file types
 filetype plugin indent on
