@@ -407,7 +407,7 @@ mode "$mode_media" {
 }
 
 # quick shortcuts to common monitor layouts
-bindsym XF86Display mode "$mode_monitor"
+bindsym $mod+u mode "$mode_monitor"
 set $mode_monitor (s)ingle, Second: (t)op, (l)eft, (r)ight, (b)ottom, Triple: tri(p)le
 mode "$mode_monitor" {
     bindsym s exec --no-startup-id arandr-default.sh, mode "default"; exec notify-send -u low Monitor\ Layout: "single screen"

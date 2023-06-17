@@ -124,6 +124,7 @@ autocmd FileType asm setlocal tabstop=8 softtabstop=8 shiftwidth=8 noexpandtab
 
 " User Keybindings
 " -----------------------------------------------------------------------------
+:nmap <F1> <nop> " disable F1 help
 nnoremap <F4> :make!<cr>
 
 " Use ALT+{h,j,k,l} to navigate windows from any mode (terminal nvim only)
