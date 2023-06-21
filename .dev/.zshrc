@@ -107,6 +107,9 @@ source $ZSH/oh-my-zsh.sh
 export EDITOR='vim'
 export VISUAL='vim'
 
+# Show hidden files in autocomplete
+setopt globdots
+
 # Custom commands
 alias ls='ls -A --color=auto'
 alias klock='i3lock -ti ~/Pictures/Wallpapers/arch_wallpaper_blk_red.png'

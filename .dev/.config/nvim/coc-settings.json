@@ -1,3 +1,12 @@
 {
-  "tsserver.tsdk": "/home/klaus/.config/coc/extensions/node_modules/coc-tsserver/node_modules/typescript/lib"
+  "tsserver.tsdk": "/home/klaus/.config/coc/extensions/node_modules/coc-tsserver/node_modules/typescript/lib",
+  "coc.preferences.formatOnSaveFiletypes": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact"
+  ],
+  "tsserver.formatOnType": true,
+  "coc.preferences.formatOnType": true,
+  "prettier.disableSuccessMessage": true
 }

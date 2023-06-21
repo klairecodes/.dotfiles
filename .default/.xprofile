@@ -1,2 +1,8 @@
 xcompmgr -c -C -f -F -D2 -t5 -l5 -r4.2 -o.55 &
 export QT_QPA_PLATFORMTHEME=gtk2
+if [ "$XDG_CURRENT_DESKTOP" = "i3" ]; then
+    export QT_QPA_PLATFORMTHEME="qt5ct"
+    export QT_PLUGIN_PATH=$HOME/.kde4/lib/kde4/plugins/:/usr/lib/kde4/plugins/
+fi
+
+XDG_CURRENT_DESKTOP=KDE

@@ -104,22 +104,22 @@ set $base0D #97bbf7
 set $base0E #c0b7f9
 set $base0F #fcc09e
 
-bar {
-        font pango:Terminus 10
-        position bottom 
-        colors {
-        background #2f343f
-        statusline #ffffff
-        separator #4b5262
+#bar {
+        #font pango:Terminus 10
+        #position bottom 
+        #colors {
+        #background #2f343f
+        #statusline #ffffff
+        #separator #4b5262
 
-        # colour of border, background, and text
-        focused_workspace       #2f343f #88c0d0 #2f343f
-        active_workspace        #2f343f #2f343f #d8dee8
-        inactive_workspace      #2f343f #2f343f #d8dee8
-        urgent_workspacei       #2f343f #ebcb8b #2f343f
-        }
-        status_command i3status
-}
+        ## colour of border, background, and text
+        #focused_workspace       #2f343f #88c0d0 #2f343f
+        #active_workspace        #2f343f #2f343f #d8dee8
+        #inactive_workspace      #2f343f #2f343f #d8dee8
+        #urgent_workspacei       #2f343f #ebcb8b #2f343f
+        #}
+        #status_command i3status
+#}
 
 # Allows switching back to previous workspace easily.
 workspace_auto_back_and_forth yes
@@ -483,3 +483,22 @@ for_window [title="Pritunl"] [floating] move position center
 for_window [title="SpeedCrunch"] floating enable
 for_window [title="SpeedCrunch"] [floating] resize set 640 640 
 for_window [title="SpeedCrunch"] [floating] move position center
+
+# KDE Plasma
+exec --no-startup-id wmctrl -c Plasma
+exec_always --no-startup-id picom -bc
+exec_always --no-startup-id plasmashell
+for_window [title="Desktop @ QRect.*"] kill; floating enable; border none
+for_window [title="Desktop — Plasma"] kill; floating enable; border none
+for_window [title="Desktop — Plasma"] kill, floating enable, border none
+for_window [class="plasmashell"] floating enable
+for_window [class="Plasma"] floating enable, border none
+for_window [title="plasma-desktop"] floating enable, border none
+for_window [title="win7"] floating enable, border none
+for_window [class="krunner"] floating enable, border none
+for_window [class="Kmix"] floating enable, border none
+for_window [class="Klipper"] floating enable, border none
+for_window [class="Plasmoidviewer"] floating enable, border none
+for_window [class="(?i)*nextcloud*"] floating disable
+for_window [class="plasmashell" window_type="notification"] floating enable, border none, move right 700px, move down 450px
+no_focus [class="plasmashell" window_type="notification"] 
