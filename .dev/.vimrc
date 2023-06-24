@@ -22,6 +22,7 @@ Plug 'vim-airline/vim-airline-themes' " statusline
 Plug 'scrooloose/nerdcommenter' " easier commenting
 Plug 'scrooloose/nerdtree' " file explorer
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } } " fuzzy finder
+Plug 'junegunn/fzf.vim'
 Plug 'tpope/vim-fugitive' " integrated Git
 Plug 'airblade/vim-gitgutter' " git diff in sign column
 "Plug 'vim-scripts/DoxygenToolkit.vim' " rapid Doxygen commenting

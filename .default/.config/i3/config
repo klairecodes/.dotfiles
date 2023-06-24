@@ -489,7 +489,6 @@ exec --no-startup-id wmctrl -c Plasma
 exec_always --no-startup-id picom -bc
 exec_always --no-startup-id plasmashell
 for_window [title="Desktop @ QRect.*"] kill; floating enable; border none
-for_window [title="Desktop — Plasma"] kill; floating enable; border none
 for_window [title="Desktop — Plasma"] kill, floating enable, border none
 for_window [class="plasmashell"] floating enable
 for_window [class="Plasma"] floating enable, border none
