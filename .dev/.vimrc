@@ -120,6 +120,9 @@ syntax on
 set number
 autocmd FileType asm setlocal colorcolumn=80
 autocmd FileType c setlocal colorcolumn=80
+" Show tabs
+set listchars=tab:\|\ 
+set list
 
 " Behavior
 " -----------------------------------------------------------------------------
