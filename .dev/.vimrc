@@ -137,6 +137,7 @@ set ignorecase
 set smartcase
 
 autocmd FileType asm setlocal tabstop=8 softtabstop=8 shiftwidth=8 noexpandtab
+autocmd FileType proto3 setlocal tabstop=2 softtabstop=2 shiftwidth=2 noexpandtab
 
 " User Keybindings
 " -----------------------------------------------------------------------------

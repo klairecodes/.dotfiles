@@ -49,10 +49,8 @@ set_from_resource $color14 i3wm.theme14 #A3BE8C
 set_from_resource $color15 i3wm.theme15 #B48EAD
 
 # Lock screen command
-set $lock_cmd betterlockscreen -l \
-~/Dropbox/pictures/wallpapers/octopus-grabbing-wall.jpg --display 0 --off 60 
+set $lock_cmd loginctl lock-session
 # Fallback lock screen command
-# i3config does not support variable manipulation (#FFFFFF -> FFFFFF)
 set $lock_fallback i3lock -c 5e81ac
 
 ### Behavior ###################################################################
@@ -68,7 +66,7 @@ workspace $ws7 output eDP1
 
 # increase trackpoint sensitivity
 # check correct id with xinput --list
-exec --no-startup-id xinput --set-prop "11" "libinput Accel Speed" +1.0
+exec --no-startup-id xinput --set-prop "9" "libinput Accel Speed" +1.0
 
 # change caps lock to left control
 exec --no-startup-id xmodmap ~/.xmodmap 
@@ -79,13 +77,10 @@ exec --no-startup-id xss-lock --transfer-sleep-lock -- $lock_cmd
 # Start dmenu or i3-dmenu-desktop for desktop entry support
 bindsym $mod+d exec --no-startup-id dmenu_run \
 -nb '#2e3440' -sf '#e5e9f0' -sb '#81a1c1' -nf '#d8dee9' -fn 'Inconsolata 14'
-
 bindsym $mod+Shift+d exec --no-startup-id i3-dmenu-desktop
+
 # Start rofi
 bindsym $mod+space exec rofi -show
-
-# Start lxsession for lxqt compatibility
-exec --no-startup-id lxsession
 
 set $base00 #101218
 set $base01 #1f222d
@@ -137,17 +132,17 @@ bindsym $mod+Ctrl+less move workspace to output left
 ### Applications ###############################################################
 
 # launch startup applications
-exec --no-startup-id xbindkeys # for keyboard mappings
-exec --no-startup-id pa-applet # system tray for Pulseaudio
-exec --no-startup-id nm-applet # system tray for NetworkManager
-exec --no-startup-id dropbox # file syncing
-exec --no-startup-id blueman-applet # bluetooth
-exec --no-startup-id flameshot # screenshot utility
-exec --no-startup-id redshift # blue light filter
-exec --no-startup-id dunst # notification daemon
-exec --no-startup-id parcellite # clipboard Manager
-exec --no-startup-id /usr/local/bin/jellypaper # jellyfish wallpapers
-exec --no-startup-id powerkit # power, battery, and timeout settings
+#exec --no-startup-id xbindkeys # for keyboard mappings
+#exec --no-startup-id pa-applet # system tray for Pulseaudio
+#exec --no-startup-id nm-applet # system tray for NetworkManager
+#exec --no-startup-id dropbox # file syncing
+#exec --no-startup-id blueman-applet # bluetooth
+#exec --no-startup-id flameshot # screenshot utility
+#exec --no-startup-id redshift # blue light filter
+#exec --no-startup-id dunst # notification daemon
+#exec --no-startup-id parcellite # clipboard Manager
+#exec --no-startup-id /usr/local/bin/jellypaper # jellyfish wallpapers
+#exec --no-startup-id powerkit # power, battery, and timeout settings
 
 # start a terminal
 bindsym $mod+Return exec alacritty
@@ -163,19 +158,6 @@ bindsym $mod+slash exec code
 bindsym $mod+Print exec flameshot screen -c -p $HOME/Pictures/Screenshots # for full capture and copy to clipboard
 bindsym Print exec flameshot gui # for gui
 bindsym Shift+Print exec flameshot gui -d 2000 -p $HOME/Pictures/Screenshots # for gui and x second delay
-
-# Force some applications to certain workspaces and layouts.
-#for_window [class="Spotify"] move to workspace $ws8
-#for_window [class="Spotify"] layout tabbed
-
-#for_window [title="Discord Updater|Discord"] move to workspace $ws2 
-#for_window [title="Discord Updater|Discord"] layout tabbed
-
-#assign [class="Slack"] $ws2
-#for_window [class="Slack"] layout tabbed
-
-#assign [class="Thunderbird"] $ws2
-
 
 ### Keybindings ################################################################
 
@@ -485,19 +467,37 @@ for_window [title="SpeedCrunch"] [floating] resize set 640 640
 for_window [title="SpeedCrunch"] [floating] move position center
 
 # KDE Plasma
-exec --no-startup-id wmctrl -c Plasma
-exec_always --no-startup-id picom -bc
-exec_always --no-startup-id plasmashell
-for_window [title="Desktop @ QRect.*"] kill; floating enable; border none
-for_window [title="Desktop — Plasma"] kill, floating enable, border none
-for_window [class="plasmashell"] floating enable
-for_window [class="Plasma"] floating enable, border none
-for_window [title="plasma-desktop"] floating enable, border none
-for_window [title="win7"] floating enable, border none
-for_window [class="krunner"] floating enable, border none
-for_window [class="Kmix"] floating enable, border none
-for_window [class="Klipper"] floating enable, border none
-for_window [class="Plasmoidviewer"] floating enable, border none
-for_window [class="(?i)*nextcloud*"] floating disable
-for_window [class="plasmashell" window_type="notification"] floating enable, border none, move right 700px, move down 450px
-no_focus [class="plasmashell" window_type="notification"] 
+#exec --no-startup-id wmctrl -c Plasma
+#exec_always --no-startup-id picom -bc
+#exec_always --no-startup-id plasmashell
+#for_window [title="Desktop @ QRect.*"] kill; floating enable; border none
+#for_window [title="Desktop — Plasma"] kill, floating enable, border none
+#for_window [class="plasmashell"] floating enable
+#for_window [class="Plasma"] floating enable, border none
+#for_window [title="plasma-desktop"] floating enable, border none
+#for_window [title="win7"] floating enable, border none
+#for_window [class="krunner"] floating enable, border none
+#for_window [class="Kmix"] floating enable, border none
+#for_window [class="Klipper"] floating enable, border none
+#for_window [class="Plasmoidviewer"] floating enable, border none
+#for_window [class="(?i)*nextcloud*"] floating disable
+#for_window [class="plasmashell" window_type="notification"] floating enable, border none, move right 700px, move down 450px
+#no_focus [class="plasmashell" window_type="notification"] 
+
+# KDE Plasma
+#exec_always --no-startup-id plasmashell
+exec --no-startup-id /usr/lib/pam_kwallet_init
+#for_window [title="Desktop @ QRect.*"] kill; floating enable; border none
+#for_window [title="Desktop — Plasma"] kill, floating enable, border none
+#for_window [class="plasmashell"] floating enable
+#for_window [class="Plasma"] floating enable, border none
+#for_window [title="plasma-desktop"] floating enable, border none
+#for_window [title="win7"] floating enable, border none
+#for_window [class="krunner"] floating enable, border none
+#for_window [class="Kmix"] floating enable, border none
+#for_window [class="Klipper"] floating enable, border none
+#for_window [class="Plasmoidviewer"] floating enable, border none
+#for_window [class="(?i)*nextcloud*"] floating disable
+#for_window [class="plasmashell" window_type="notification"] floating enable, border none, move right 700px, move down 450px
+#no_focus [class="plasmashell" window_type="notification"] 
+

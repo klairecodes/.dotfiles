@@ -4,9 +4,11 @@
     "javascript",
     "javascriptreact",
     "typescript",
-    "typescriptreact"
+    "typescriptreact",
+    "rust"
   ],
   "tsserver.formatOnType": true,
   "coc.preferences.formatOnType": true,
-  "prettier.disableSuccessMessage": true
+  "prettier.disableSuccessMessage": true,
+  "rust-analyzer.cargo.buildScripts.enable": true
 }
