@@ -486,7 +486,7 @@ for_window [title="SpeedCrunch"] [floating] move position center
 
 # KDE Plasma
 #exec_always --no-startup-id plasmashell
-exec --no-startup-id /usr/lib/pam_kwallet_init
+#exec --no-startup-id /usr/lib/pam_kwallet_init
 #for_window [title="Desktop @ QRect.*"] kill; floating enable; border none
 #for_window [title="Desktop — Plasma"] kill, floating enable, border none
 #for_window [class="plasmashell"] floating enable
