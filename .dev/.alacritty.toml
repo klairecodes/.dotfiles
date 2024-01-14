@@ -1,0 +1,11 @@
+import = ["/home/klaus/.dotfiles/.dev/dracula.toml"]
+
+[font]
+size = 10.0
+
+[font.normal]
+family = "Terminus"
+style = "Regular"
+
+[mouse]
+hide_when_typing = true
