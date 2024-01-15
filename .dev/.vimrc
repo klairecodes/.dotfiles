@@ -26,8 +26,9 @@ Plug 'junegunn/fzf.vim'
 Plug 'tpope/vim-fugitive' " integrated Git
 Plug 'airblade/vim-gitgutter' " git diff in sign column
 "Plug 'vim-scripts/DoxygenToolkit.vim' " rapid Doxygen commenting
-"Plug 'ap/vim-css-color' " view css hex colors in vim
+Plug 'ap/vim-css-color' " view css hex colors in vim
 "Plug 'gcmt/taboo.vim' " rename tabs easily
+Plug 'mtth/scratch.vim' " quick scratch buffer
 
 " Colorschemes
 Plug 'dracula/vim', {'as': 'dracula'}
@@ -161,6 +162,14 @@ nnoremap <F4> :make!<cr>
 if has("nvim")
 :tnoremap <Esc> <C-\><C-n>
 endif
+
+" CoC bindings
+" Remap keys for applying code actions at the cursor position
+nmap <leader>ac  <Plug>(coc-codeaction-cursor)
+" Remap keys for apply code actions affect whole buffer
+nmap <leader>as  <Plug>(coc-codeaction-source)
+" Apply the most preferred quickfix action to fix diagnostic on the current line
+nmap <leader>qf  <Plug>(coc-fix-current)
 
 " User Commands
 " -----------------------------------------------------------------------------

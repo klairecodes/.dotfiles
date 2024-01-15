@@ -1,3 +1,3 @@
 #!/bin/bash
 
-pacman -S $(cat yourfilename | cut -d' ' -f1)
+pacman -S $(cat pacman-packages.txt | cut -d' ' -f1)
