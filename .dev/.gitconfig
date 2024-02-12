@@ -3,3 +3,5 @@
 	name = Klaire Curde
 [init]
 	defaultBranch = main
+[core]
+	excludesFile = /home/klaire/.gitignore

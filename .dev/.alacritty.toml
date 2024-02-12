@@ -1,7 +1,7 @@
-import = ["/home/klaus/.dotfiles/.dev/dracula.toml"]
+import = ["/home/klaire/.dotfiles/.dev/dracula.toml"]
 
 [font]
-size = 10.0
+size = 7.5
 
 [font.normal]
 family = "Terminus"
@@ -9,3 +9,19 @@ style = "Regular"
 
 [mouse]
 hide_when_typing = true
+
+[cursor.style]
+blinking = "Always"
+
+[cursor.vi_mode_style]
+blinking = "Always"
+
+[cursor]
+blink_interval = 80
+blink_timeout = 1
+
+[bell]
+animation             = "EaseOutExpo"
+duration              = 0
+color                 = "#C0C5CE"
+#command               = { program = "notify-send", args = ["alacritty", "bell",] }

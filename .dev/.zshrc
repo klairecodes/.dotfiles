@@ -9,7 +9,7 @@ fi
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/home/klaus/.oh-my-zsh"
+export ZSH="/home/klaire/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -160,3 +160,4 @@ fi
 
 # Keychain SSH & GPG key manager
 eval $(keychain --eval --quiet ~/.ssh/id_ed25519)
+eval $(keychain --eval --quiet ~/.ssh/id_ed25519_sk)

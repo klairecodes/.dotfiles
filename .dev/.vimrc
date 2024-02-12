@@ -29,6 +29,10 @@ Plug 'airblade/vim-gitgutter' " git diff in sign column
 Plug 'ap/vim-css-color' " view css hex colors in vim
 "Plug 'gcmt/taboo.vim' " rename tabs easily
 Plug 'mtth/scratch.vim' " quick scratch buffer
+Plug 'lervag/vimtex' " LaTeX live preview
+Plug 'michaelb/sniprun', {'do': 'sh install.sh'} " Run code and snippets
+Plug 'stevearc/overseer.nvim' " Run code, Task Runner
+Plug 'mbbill/undotree' " Undo tree and visualizer
 
 " Colorschemes
 Plug 'dracula/vim', {'as': 'dracula'}
@@ -97,6 +101,10 @@ function! s:show_documentation()
   endif
 endfunction
 
+" Use `[g` and `]g` to navigate diagnostics
+" Use `:CocDiagnostics` to get all diagnostics of current buffer in location list
+nmap <silent> [g <Plug>(coc-diagnostic-prev)
+nmap <silent> ]g <Plug>(coc-diagnostic-next)
 
 " Use Tab to cycle between completion options
 inoremap <silent><expr> <Tab>
@@ -114,6 +122,9 @@ command! -nargs=0 Prettier :CocCommand prettier.forceFormatDocument
 " Sign column color matching
 highlight! link SignColumn LineNr
 let g:gitgutter_set_sign_backgrounds = 1
+
+" VimTex
+let g:vimtex_view_general_viewer = 'okular'
 
 " Appearance
 " -----------------------------------------------------------------------------
@@ -136,14 +147,19 @@ set mouse=a
 set timeoutlen=1000 ttimeoutlen=0
 set ignorecase
 set smartcase
+" set linebreak " breaks lines by word rather than character
 
 autocmd FileType asm setlocal tabstop=8 softtabstop=8 shiftwidth=8 noexpandtab
 autocmd FileType proto3 setlocal tabstop=2 softtabstop=2 shiftwidth=2 noexpandtab
 
 " User Keybindings
 " -----------------------------------------------------------------------------
-:nmap <F1> <nop> " disable F1 help
-nnoremap <F4> :make!<cr>
+" disable F1 help
+:nmap <F1> <nop>
+:imap <F1> <C-o> <nop>
+
+" run makeprg
+nnoremap <F5> :make!<cr>
 
 " Use ALT+{h,j,k,l} to navigate windows from any mode (terminal nvim only)
 :tnoremap <C-h> <C-\><C-N><C-w>h
