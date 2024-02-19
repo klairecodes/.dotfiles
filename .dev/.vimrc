@@ -30,7 +30,7 @@ Plug 'ap/vim-css-color' " view css hex colors in vim
 "Plug 'gcmt/taboo.vim' " rename tabs easily
 Plug 'mtth/scratch.vim' " quick scratch buffer
 Plug 'lervag/vimtex' " LaTeX live preview
-Plug 'michaelb/sniprun', {'do': 'sh install.sh'} " Run code and snippets
+"Plug 'michaelb/sniprun', {'do': 'sh install.sh'} " Run code and snippets
 Plug 'stevearc/overseer.nvim' " Run code, Task Runner
 Plug 'mbbill/undotree' " Undo tree and visualizer
 
@@ -152,6 +152,14 @@ set smartcase
 autocmd FileType asm setlocal tabstop=8 softtabstop=8 shiftwidth=8 noexpandtab
 autocmd FileType proto3 setlocal tabstop=2 softtabstop=2 shiftwidth=2 noexpandtab
 
+" Persistent undofiles in a consistent directory
+if !isdirectory($HOME."/.vim/undo-dir")
+    call mkdir($HOME."/.vim/undo-dir", "", 0700)
+endif
+set undodir=~/.vim/undo-dir
+set undofile
+set undolevels=2000
+
 " User Keybindings
 " -----------------------------------------------------------------------------
 " disable F1 help
@@ -178,6 +186,9 @@ nnoremap <F5> :make!<cr>
 if has("nvim")
 :tnoremap <Esc> <C-\><C-n>
 endif
+
+" Copy selection to clipboard in visual mode
+xnoremap <leader>y "+y
 
 " CoC bindings
 " Remap keys for applying code actions at the cursor position

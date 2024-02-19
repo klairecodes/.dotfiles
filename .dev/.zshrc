@@ -142,6 +142,7 @@ alias ignition-validate='podman run --rm --interactive       \
                          --volume ${PWD}:/pwd --workdir /pwd \
                          quay.io/coreos/ignition-validate:release'
 alias get_idf='. $HOME/esp/esp-idf/export.sh'
+alias tms='tmux new-session -s'
 
 
 # To hide "user@hostname" from agnoster theme
@@ -161,3 +162,11 @@ fi
 # Keychain SSH & GPG key manager
 eval $(keychain --eval --quiet ~/.ssh/id_ed25519)
 eval $(keychain --eval --quiet ~/.ssh/id_ed25519_sk)
+
+# pnpm
+export PNPM_HOME="/home/klaire/.local/share/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end
