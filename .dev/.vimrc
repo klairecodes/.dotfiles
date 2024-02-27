@@ -151,6 +151,8 @@ set smartcase
 
 autocmd FileType asm setlocal tabstop=8 softtabstop=8 shiftwidth=8 noexpandtab
 autocmd FileType proto3 setlocal tabstop=2 softtabstop=2 shiftwidth=2 noexpandtab
+autocmd FileType tex setlocal tabstop=2 softtabstop=2 shiftwidth=2 noexpandtab
+autocmd FileType cls setlocal tabstop=2 softtabstop=2 shiftwidth=2 noexpandtab
 
 " Persistent undofiles in a consistent directory
 if !isdirectory($HOME."/.vim/undo-dir")
@@ -208,3 +210,11 @@ filetype plugin indent on
 
 " Display current buffer number id
 command! -nargs=0 B :echo "bufnr:" bufnr('%')
+
+" Okular markdown file preview
+if has('unix')
+  command! -complete=shellcmd -nargs=1 -bang Silent execute ':silent !' . (<bang>0 ? 'nohup ' . <q-args> . '</dev/null >/dev/null 2>&1 &' : <q-args>) | execute ':redraw!'
+elseif has('win32')
+  command! -complete=shellcmd -nargs=1 -bang Silent execute ':silent !start ' . (<bang>0 ? '/b ' : '') . <q-args> | execute ':redraw!'
+endif
+command! OK Silent! okular %:S
