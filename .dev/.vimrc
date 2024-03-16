@@ -1,4 +1,4 @@
-" Klaus' Vim Configuration File
+" Klaire's Vim Configuration File
 
 " This line should not be removed as it ensures that various options are
 " properly set to work with the Vim-related packages.
@@ -19,11 +19,13 @@ call plug#begin('~/.vim/plugged')
 
 Plug 'vim-airline/vim-airline' " statusline
 Plug 'vim-airline/vim-airline-themes' " statusline
+Plug 'edkolev/tmuxline.vim' " statusline integration with tmux
 Plug 'scrooloose/nerdcommenter' " easier commenting
 Plug 'scrooloose/nerdtree' " file explorer
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } } " fuzzy finder
 Plug 'junegunn/fzf.vim'
 Plug 'tpope/vim-fugitive' " integrated Git
+Plug 'tpope/vim-surround' " quick character surround modification
 Plug 'airblade/vim-gitgutter' " git diff in sign column
 "Plug 'vim-scripts/DoxygenToolkit.vim' " rapid Doxygen commenting
 Plug 'ap/vim-css-color' " view css hex colors in vim
@@ -33,11 +35,15 @@ Plug 'lervag/vimtex' " LaTeX live preview
 "Plug 'michaelb/sniprun', {'do': 'sh install.sh'} " Run code and snippets
 Plug 'stevearc/overseer.nvim' " Run code, Task Runner
 Plug 'mbbill/undotree' " Undo tree and visualizer
+Plug 'junegunn/goyo.vim' " Distraction-free writing
+Plug 'junegunn/limelight.vim' " Fancy content-aware dimming
 
 " Colorschemes
 Plug 'dracula/vim', {'as': 'dracula'}
 Plug 'arcticicestudio/nord-vim'
 Plug 'fneu/breezy'
+Plug 'jeffkreeftmeijer/vim-dim', {'as': 'dim'}
+Plug 'noahfrederick/vim-noctu', {'as': 'vim-noctu'}
 
 " React/Typescript
 " https://thoughtbot.com/blog/modern-typescript-and-react-development-in-vim
@@ -55,6 +61,9 @@ let g:coc_global_extensions = [
   \ ]
 Plug 'neoclide/coc-eslint'
 Plug 'neoclide/coc-prettier'
+
+" Kotlin
+Plug 'udalov/kotlin-vim'
 
 call plug#end()
 
@@ -126,6 +135,10 @@ let g:gitgutter_set_sign_backgrounds = 1
 " VimTex
 let g:vimtex_view_general_viewer = 'okular'
 
+" GoYo/Limelight
+"autocmd! User GoyoEnter Limelight
+"autocmd! User GoyoLeave Limelight!
+
 " Appearance
 " -----------------------------------------------------------------------------
 syntax on
@@ -135,6 +148,7 @@ autocmd FileType c setlocal colorcolumn=80
 " Show tabs
 set listchars=tab:\|\ 
 set list
+colorscheme noctu
 
 " Behavior
 " -----------------------------------------------------------------------------
@@ -150,9 +164,10 @@ set smartcase
 " set linebreak " breaks lines by word rather than character
 
 autocmd FileType asm setlocal tabstop=8 softtabstop=8 shiftwidth=8 noexpandtab
-autocmd FileType proto3 setlocal tabstop=2 softtabstop=2 shiftwidth=2 noexpandtab
-autocmd FileType tex setlocal tabstop=2 softtabstop=2 shiftwidth=2 noexpandtab
-autocmd FileType cls setlocal tabstop=2 softtabstop=2 shiftwidth=2 noexpandtab
+autocmd FileType proto3 setlocal tabstop=2 softtabstop=2 shiftwidth=2
+autocmd FileType proto setlocal tabstop=2 softtabstop=2 shiftwidth=2
+autocmd FileType tex setlocal tabstop=2 softtabstop=2 shiftwidth=2
+autocmd FileType cls setlocal tabstop=2 softtabstop=2 shiftwidth=2
 
 " Persistent undofiles in a consistent directory
 if !isdirectory($HOME."/.vim/undo-dir")

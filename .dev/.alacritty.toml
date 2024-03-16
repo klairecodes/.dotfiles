@@ -1,10 +1,12 @@
-import = ["/home/klaire/.dotfiles/.dev/dracula.toml"]
+import = ["/home/klaire/.config/alacritty/themes/themes/dracula.toml"]
+#import = ["/home/klaire/.config/alacritty/themes/themes/monokai_charcoal.toml"]
+#import = ["/home/klaire/.config/alacritty/themes/themes/inferno.toml"]
 
 [font]
-size = 7.5
+size = 12 
 
 [font.normal]
-family = "Terminus"
+family = "Terminess Nerd Font"
 style = "Regular"
 
 [mouse]

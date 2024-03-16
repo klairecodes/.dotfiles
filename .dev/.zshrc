@@ -146,7 +146,7 @@ alias tms='tmux new-session -s'
 
 
 # To hide "user@hostname" from agnoster theme
-prompt_context(){}
+#prompt_context(){}
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
