@@ -1,6 +1,6 @@
 import = ["~/.config/alacritty/themes/themes/dracula.toml"]
 #import = ["~/.config/alacritty/themes/themes/monokai_charcoal.toml"]
-#import = ["~/.config/alacritty/themes/themes/inferno.toml"]
+#import = ["~/.config/alacritty/themes/themes/github_dark_high_contrast.toml"]
 
 [font]
 size = 12 
@@ -8,6 +8,10 @@ size = 12
 [font.normal]
 family = "Terminess Nerd Font"
 style = "Regular"
+
+[font.italic]
+family = "Terminess Nerd Font"
+style = "Regular" # Italics disabled
 
 [mouse]
 hide_when_typing = true

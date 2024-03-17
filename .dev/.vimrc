@@ -44,6 +44,7 @@ Plug 'arcticicestudio/nord-vim'
 Plug 'fneu/breezy'
 Plug 'jeffkreeftmeijer/vim-dim', {'as': 'dim'}
 Plug 'noahfrederick/vim-noctu', {'as': 'vim-noctu'}
+Plug 'sstallion/vim-wtf', {'as': 'vim-wtf'}
 
 " React/Typescript
 " https://thoughtbot.com/blog/modern-typescript-and-react-development-in-vim
