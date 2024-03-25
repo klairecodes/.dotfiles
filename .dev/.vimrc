@@ -206,7 +206,13 @@ if has("nvim")
 endif
 
 " Copy selection to clipboard in visual mode
-xnoremap <leader>y "+y
+" Detect whether session is in X or Wayland (value present == Wayland)
+if !empty($WAYLAND_DISPLAY)
+    xnoremap <silent> <leader>y :w !wl-copy<CR><CR>
+else
+    xnoremap <silent> <leader>y "+y
+endif
+
 
 " CoC bindings
 " Remap keys for applying code actions at the cursor position
