@@ -72,7 +72,9 @@ call plug#end()
 " -----------------------------------------------------------------------------
 " airline
 let g:airline_powerline_fonts = 1
-let g:airline_theme='dracula'
+let g:airline_theme='transparent'
+let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#formatter = 'unique_tail_improved'
 
 " nerdcommenter
 " Set a language to use its alternate delimiters by default
@@ -147,7 +149,7 @@ set number
 autocmd FileType asm setlocal colorcolumn=80
 autocmd FileType c setlocal colorcolumn=80
 " Show tabs
-set listchars=tab:\|\ 
+set listchars=tab:\|\
 set list
 colorscheme noctu
 
