@@ -160,8 +160,8 @@ fi
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 # Keychain SSH & GPG key manager
-#eval $(keychain --eval --quiet ~/.ssh/id_ed25519)
-#eval $(keychain --eval --quiet ~/.ssh/id_ed25519_sk)
+eval $(keychain --eval --quiet ~/.ssh/id_ed25519)
+eval $(keychain --eval --quiet ~/.ssh/id_ed25519_sk)
 
 # pnpm
 export PNPM_HOME="/home/klaire/.local/share/pnpm"
