@@ -58,10 +58,14 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 let g:coc_global_extensions = [
   \ 'coc-tsserver',
   \ 'coc-prettier',
-  \ 'coc-eslint'
+  \ 'coc-eslint',
+  \ 'coc-texlab',
+  \ 'coc-ltex'
   \ ]
 Plug 'neoclide/coc-eslint'
 Plug 'neoclide/coc-prettier'
+Plug 'fannheyward/coc-texlab'
+Plug 'valentjn/vscode-ltex'
 
 " Kotlin
 Plug 'udalov/kotlin-vim'
@@ -128,7 +132,6 @@ inoremap <expr> <cr> coc#pum#visible() ? coc#pum#confirm() : "\<CR>"
 "
 " format file using Prettier
 command! -nargs=0 Prettier :CocCommand prettier.forceFormatDocument
-
 
 " gitgutter
 " Sign column color matching
