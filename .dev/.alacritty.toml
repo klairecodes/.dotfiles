@@ -1,9 +1,10 @@
-import = ["~/.config/alacritty/themes/themes/dracula.toml"]
+#import = ["~/.config/alacritty/themes/themes/dracula.toml"]
 #import = ["~/.config/alacritty/themes/themes/monokai_charcoal.toml"]
-#import = ["~/.config/alacritty/themes/themes/github_dark_high_contrast.toml"]
+import = ["~/.config/alacritty/themes/themes/github_dark_high_contrast.toml"]
+#import = ["~/.config/alacritty/themes/themes/catppuccin.toml"]
 
 [font]
-size = 12 
+size = 13.5
 
 [font.normal]
 family = "Terminess Nerd Font"
@@ -31,3 +32,7 @@ animation             = "EaseOutExpo"
 duration              = 0
 color                 = "#C0C5CE"
 #command               = { program = "notify-send", args = ["alacritty", "bell",] }
+
+[window.dimensions]
+columns = 140
+lines = 30 
