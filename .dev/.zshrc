@@ -103,15 +103,20 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-# From bashrc
+# Environment Variables
 export EDITOR='vim'
 export VISUAL='vim'
+# Custom pager for 'man' TODO: handle if nvim not present
+export MANPAGER='nvim +Man!'
+export VISUAL='nvim'
+export EDITOR='nvim'
+
 
 # Show hidden files in autocomplete
 setopt globdots
 
 # Custom commands
-alias ls='ls -A --color=auto'
+alias ls='ls -Ah --color=auto'
 alias klock='i3lock -ti ~/Pictures/Wallpapers/arch_wallpaper_blk_red.png'
 alias please='sudo !!'
 alias bear='klock && systemctl hibernate && exit'
@@ -143,6 +148,7 @@ alias ignition-validate='podman run --rm --interactive       \
                          quay.io/coreos/ignition-validate:release'
 alias get_idf='. $HOME/esp/esp-idf/export.sh'
 alias tms='tmux new-session -s'
+alias neorg='XDG_CONFIG_HOME=~/.config/nvim-neorg/ XDG_DATA_HOME=~/.config/nvim-neorg/ nvim'
 
 
 # To hide "user@hostname" from agnoster theme
