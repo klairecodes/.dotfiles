@@ -3,6 +3,15 @@
 " This line should not be removed as it ensures that various options are
 " properly set to work with the Vim-related packages.
 runtime! archlinux.vim
+set encoding=utf8
+set t_Co=256
+
+" True color support (allegedly)
+if has('nvim')
+  set t_8f=[38;2;%lu;%lu;%lum
+  set t_8b=[48;2;%lu;%lu;%lum
+  "set termguicolors
+endif
 
 " Plugin settings
 " -----------------------------------------------------------------------------
@@ -45,6 +54,7 @@ Plug 'fneu/breezy'
 Plug 'jeffkreeftmeijer/vim-dim', {'as': 'dim'}
 Plug 'noahfrederick/vim-noctu', {'as': 'vim-noctu'}
 Plug 'sstallion/vim-wtf', {'as': 'vim-wtf'}
+Plug 'catppuccin/vim', { 'as': 'catppuccin' }
 
 " React/Typescript
 " https://thoughtbot.com/blog/modern-typescript-and-react-development-in-vim
@@ -76,9 +86,11 @@ call plug#end()
 " -----------------------------------------------------------------------------
 " airline
 let g:airline_powerline_fonts = 1
-let g:airline_theme='transparent'
+let g:airline_theme='bubblegum'
+"let g:airline_theme='powerlineish'
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#formatter = 'unique_tail_improved'
+"let g:airline_statusline_ontop=1 " statusline on top
 
 " nerdcommenter
 " Set a language to use its alternate delimiters by default
@@ -106,14 +118,24 @@ nmap <silent> gi <Plug>(coc-implementation)
 nmap <silent> gr <Plug>(coc-references)
 
 " Use K to show documentation in preview window.
-nnoremap <silent> K :call <SID>show_documentation()<CR>
-function! s:show_documentation()
-  if (index(['vim','help'], &filetype) >= 0)
-    execute 'h '.expand('<cword>')
-  elseif (coc#rpc#ready())
+"nnoremap <silent> K :call <SID>show_documentation()<CR>
+"function! s:show_documentation()
+  "if (index(['vim','help'], &filetype) >= 0)
+    "execute 'h '.expand('<cword>')
+  "elseif (coc#rpc#ready())
+    "call CocActionAsync('doHover')
+  "else
+    "execute '!' . &keywordprg . " " . expand('<cword>')
+  "endif
+"endfunction
+
+" Use K to show documentation in preview window
+nnoremap <silent> K :call ShowDocumentation()<CR>
+function! ShowDocumentation()
+  if CocAction('hasProvider', 'hover')
     call CocActionAsync('doHover')
   else
-    execute '!' . &keywordprg . " " . expand('<cword>')
+    call feedkeys('K', 'in')
   endif
 endfunction
 
@@ -129,6 +151,17 @@ inoremap <silent><expr> <Tab>
       \ coc#refresh()
 " Use Enter to confirm completion
 inoremap <expr> <cr> coc#pum#visible() ? coc#pum#confirm() : "\<CR>"
+
+" Remap <C-f> and <C-b> to scroll float windows/popups
+if has('nvim-0.4.0') || has('patch-8.2.0750')
+  nnoremap <silent><nowait><expr> <C-f> coc#float#has_scroll() ? coc#float#scroll(1) : "\<C-f>"
+  nnoremap <silent><nowait><expr> <C-b> coc#float#has_scroll() ? coc#float#scroll(0) : "\<C-b>"
+  inoremap <silent><nowait><expr> <C-f> coc#float#has_scroll() ? "\<c-r>=coc#float#scroll(1)\<cr>" : "\<Right>"
+  inoremap <silent><nowait><expr> <C-b> coc#float#has_scroll() ? "\<c-r>=coc#float#scroll(0)\<cr>" : "\<Left>"
+  vnoremap <silent><nowait><expr> <C-f> coc#float#has_scroll() ? coc#float#scroll(1) : "\<C-f>"
+  vnoremap <silent><nowait><expr> <C-b> coc#float#has_scroll() ? coc#float#scroll(0) : "\<C-b>"
+endif
+
 "
 " format file using Prettier
 command! -nargs=0 Prettier :CocCommand prettier.forceFormatDocument
@@ -155,6 +188,9 @@ autocmd FileType c setlocal colorcolumn=80
 set listchars=tab:\|\
 set list
 colorscheme noctu
+" vertical split separator
+set fillchars+=vert:│
+hi VertSplit ctermbg=NONE guibg=NONE ctermfg=Green
 
 " Behavior
 " -----------------------------------------------------------------------------
@@ -183,11 +219,20 @@ set undodir=~/.vim/undo-dir
 set undofile
 set undolevels=2000
 
+" Silence Ruby & Perl provider health warnings
+if has("nvim")
+    let g:loaded_ruby_provider=0
+    let g:loaded_perl_provider=0
+endif
+
 " User Keybindings
 " -----------------------------------------------------------------------------
 " disable F1 help
 :nmap <F1> <nop>
 :imap <F1> <C-o> <nop>
+
+" source vimrc
+:nnoremap <F2> :source $MYVIMRC<cr>
 
 " run makeprg
 nnoremap <F5> :make!<cr>
@@ -218,7 +263,6 @@ else
     xnoremap <silent> <leader>y "+y
 endif
 
-
 " CoC bindings
 " Remap keys for applying code actions at the cursor position
 nmap <leader>ac  <Plug>(coc-codeaction-cursor)
@@ -226,6 +270,7 @@ nmap <leader>ac  <Plug>(coc-codeaction-cursor)
 nmap <leader>as  <Plug>(coc-codeaction-source)
 " Apply the most preferred quickfix action to fix diagnostic on the current line
 nmap <leader>qf  <Plug>(coc-fix-current)
+
 
 " User Commands
 " -----------------------------------------------------------------------------
