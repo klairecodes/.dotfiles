@@ -46,6 +46,7 @@ Plug 'stevearc/overseer.nvim' " Run code, Task Runner
 Plug 'mbbill/undotree' " Undo tree and visualizer
 Plug 'junegunn/goyo.vim' " Distraction-free writing
 Plug 'junegunn/limelight.vim' " Fancy content-aware dimming
+Plug 'psliwka/vim-dirtytalk', { 'do': ':DirtytalkUpdate' } " Extended spell file
 
 " Colorschemes
 Plug 'dracula/vim', {'as': 'dracula'}
@@ -204,12 +205,11 @@ set timeoutlen=1000 ttimeoutlen=0
 set ignorecase
 set smartcase
 " set linebreak " breaks lines by word rather than character
+set spelllang=en,programming
 
 autocmd FileType asm setlocal tabstop=8 softtabstop=8 shiftwidth=8 noexpandtab
-autocmd FileType proto3 setlocal tabstop=2 softtabstop=2 shiftwidth=2
-autocmd FileType proto setlocal tabstop=2 softtabstop=2 shiftwidth=2
-autocmd FileType tex setlocal tabstop=2 softtabstop=2 shiftwidth=2
-autocmd FileType cls setlocal tabstop=2 softtabstop=2 shiftwidth=2
+autocmd FileType proto3,proto setlocal tabstop=2 softtabstop=2 shiftwidth=2
+autocmd FileType tex,cls,latex,context setlocal tabstop=2 softtabstop=2 shiftwidth=2 noexpandtab spell
 
 " Persistent undofiles in a consistent directory
 if !isdirectory($HOME."/.vim/undo-dir")
