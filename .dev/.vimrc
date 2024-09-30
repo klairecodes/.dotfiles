@@ -31,6 +31,8 @@ Plug 'vim-airline/vim-airline-themes' " statusline
 Plug 'edkolev/tmuxline.vim' " statusline integration with tmux
 Plug 'scrooloose/nerdcommenter' " easier commenting
 Plug 'scrooloose/nerdtree' " file explorer
+"Plug 'nvim-tree/nvim-web-devicons' " optional for file explorer
+"Plug 'nvim-tree/nvim-tree.lua' " file explorer
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } } " fuzzy finder
 Plug 'junegunn/fzf.vim'
 Plug 'tpope/vim-fugitive' " integrated Git
