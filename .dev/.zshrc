@@ -149,6 +149,14 @@ alias ignition-validate='podman run --rm --interactive       \
 alias get_idf='. $HOME/esp/esp-idf/export.sh'
 alias tms='tmux new-session -s'
 alias neorg='XDG_CONFIG_HOME=~/.config/nvim-neorg/ XDG_DATA_HOME=~/.config/nvim-neorg/ nvim'
+alias ua-drop-caches='sudo paccache -rk3; yay -Sc --aur --noconfirm'
+alias ua-update-all='export TMPFILE="$(mktemp)"; \
+    sudo true; \
+    rate-mirrors --save=$TMPFILE arch --max-delay=21600 \
+      && sudo mv /etc/pacman.d/mirrorlist /etc/pacman.d/mirrorlist-backup \
+      && sudo mv $TMPFILE /etc/pacman.d/mirrorlist \
+      && ua-drop-caches \
+      && yay -Syyu --noconfirm'
 
 
 # To hide "user@hostname" from agnoster theme
