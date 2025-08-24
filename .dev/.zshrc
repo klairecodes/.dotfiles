@@ -174,7 +174,8 @@ fi
 source <(fzf --zsh)
 
 # Keychain SSH & GPG key manager
-eval $(keychain --eval --quiet --ignore-missing ~/.ssh/id_ed25519 ~/.ssh/id_ed25519_sk)
+eval $(keychain --eval --quiet ~/.ssh/id_ed25519 >& /dev/null)
+eval $(keychain --eval --quiet ~/.ssh/id_ed25519_sk >& /dev/null)
 
 # pnpm
 export PNPM_HOME="/home/klaire/.local/share/pnpm"
