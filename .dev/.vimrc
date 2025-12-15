@@ -1,4 +1,4 @@
-" Klaire's Vim Configuration File
+" Klaire's Neovim Configuration File
 
 " This line should not be removed as it ensures that various options are
 " properly set to work with the Vim-related packages.
@@ -26,82 +26,28 @@ endif
 " -----------------------------------------------------------------------------
 call plug#begin('~/.vim/plugged')
 
-Plug 'vim-airline/vim-airline' " statusline
-Plug 'vim-airline/vim-airline-themes' " statusline
-Plug 'edkolev/tmuxline.vim' " statusline integration with tmux
 Plug 'scrooloose/nerdcommenter' " easier commenting
 Plug 'scrooloose/nerdtree' " file explorer
-"Plug 'nvim-tree/nvim-web-devicons' " optional for file explorer
-"Plug 'nvim-tree/nvim-tree.lua' " file explorer
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } } " fuzzy finder
 Plug 'junegunn/fzf.vim'
 Plug 'tpope/vim-fugitive' " integrated Git
-Plug 'tpope/vim-surround' " quick character surround modification
 Plug 'airblade/vim-gitgutter' " git diff in sign column
-"Plug 'vim-scripts/DoxygenToolkit.vim' " rapid Doxygen commenting
 Plug 'ap/vim-css-color' " view css hex colors in vim
-"Plug 'gcmt/taboo.vim' " rename tabs easily
 Plug 'mtth/scratch.vim' " quick scratch buffer
-Plug 'lervag/vimtex' " LaTeX live preview
-"Plug 'michaelb/sniprun', {'do': 'sh install.sh'} " Run code and snippets
 Plug 'stevearc/overseer.nvim' " Run code, Task Runner
-Plug 'mbbill/undotree' " Undo tree and visualizer
-Plug 'junegunn/goyo.vim' " Distraction-free writing
-Plug 'junegunn/limelight.vim' " Fancy content-aware dimming
 Plug 'psliwka/vim-dirtytalk', { 'do': ':DirtytalkUpdate' } " Extended spell file
 
-" Colorschemes
-Plug 'dracula/vim', {'as': 'dracula'}
-Plug 'arcticicestudio/nord-vim'
-Plug 'fneu/breezy'
-Plug 'jeffkreeftmeijer/vim-dim', {'as': 'dim'}
+" Colorscheme
 Plug 'noahfrederick/vim-noctu', {'as': 'vim-noctu'}
-Plug 'sstallion/vim-wtf', {'as': 'vim-wtf'}
 Plug 'catppuccin/vim', { 'as': 'catppuccin' }
-
-" React/Typescript
-" https://thoughtbot.com/blog/modern-typescript-and-react-development-in-vim
-Plug 'pangloss/vim-javascript'
-Plug 'HerringtonDarkholme/yats.vim' "tsx dependency for syntax highlighting (place BEFORE typescript-vim)
-Plug 'leafgarland/typescript-vim'
-Plug 'MaxMEllon/vim-jsx-pretty' "js syntax highlighting
-Plug 'yuezk/vim-js' "js dependency for syntax highlighting
-Plug 'styled-components/vim-styled-components', { 'branch': 'main'}
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
-let g:coc_global_extensions = [
-  \ 'coc-tsserver',
-  \ 'coc-prettier',
-  \ 'coc-eslint',
-  \ 'coc-texlab',
-  \ 'coc-ltex'
-  \ ]
-Plug 'neoclide/coc-eslint'
-Plug 'neoclide/coc-prettier'
-Plug 'fannheyward/coc-texlab'
-Plug 'valentjn/vscode-ltex'
-
-" Kotlin
-Plug 'udalov/kotlin-vim'
 
 call plug#end()
 
 " Plugin specific Settings
 " -----------------------------------------------------------------------------
-" airline
-let g:airline_powerline_fonts = 1
-let g:airline_theme='bubblegum'
-"let g:airline_theme='powerlineish'
-let g:airline#extensions#tabline#enabled = 1
-let g:airline#extensions#tabline#formatter = 'unique_tail_improved'
-"let g:airline_statusline_ontop=1 " statusline on top
-
 " nerdcommenter
 " Set a language to use its alternate delimiters by default
 let g:NERDAltDelims_asm = 1
-
-" JavaScript/TypeScript buffers
-autocmd BufEnter *.{js,jsx,ts,tsx} :syntax sync fromstart
-autocmd BufLeave *.{js,jsx,ts,tsx} :syntax sync clear
 
 " neoclide/coc
 " use <tab> to trigger completion and navigate to the next complete item
@@ -115,59 +61,43 @@ endfunction
 set updatetime=300
 
 " GoTo code navigation.
-nmap <silent> gd <Plug>(coc-definition)
-nmap <silent> gy <Plug>(coc-type-definition)
-nmap <silent> gi <Plug>(coc-implementation)
-nmap <silent> gr <Plug>(coc-references)
+"nmap <silent> gd <Plug>(coc-definition)
+"nmap <silent> gy <Plug>(coc-type-definition)
+"nmap <silent> gi <Plug>(coc-implementation)
+"nmap <silent> gr <Plug>(coc-references)
 
-" Use K to show documentation in preview window.
-"nnoremap <silent> K :call <SID>show_documentation()<CR>
-"function! s:show_documentation()
-  "if (index(['vim','help'], &filetype) >= 0)
-    "execute 'h '.expand('<cword>')
-  "elseif (coc#rpc#ready())
+" Use K to show documentation in preview window
+"nnoremap <silent> K :call ShowDocumentation()<CR>
+"function! ShowDocumentation()
+  "if CocAction('hasProvider', 'hover')
     "call CocActionAsync('doHover')
   "else
-    "execute '!' . &keywordprg . " " . expand('<cword>')
+    "call feedkeys('K', 'in')
   "endif
 "endfunction
 
-" Use K to show documentation in preview window
-nnoremap <silent> K :call ShowDocumentation()<CR>
-function! ShowDocumentation()
-  if CocAction('hasProvider', 'hover')
-    call CocActionAsync('doHover')
-  else
-    call feedkeys('K', 'in')
-  endif
-endfunction
-
-" Use `[g` and `]g` to navigate diagnostics
-" Use `:CocDiagnostics` to get all diagnostics of current buffer in location list
-nmap <silent> [g <Plug>(coc-diagnostic-prev)
-nmap <silent> ]g <Plug>(coc-diagnostic-next)
+"" Use `[g` and `]g` to navigate diagnostics
+"" Use `:CocDiagnostics` to get all diagnostics of current buffer in location list
+"nmap <silent> [g <Plug>(coc-diagnostic-prev)
+"nmap <silent> ]g <Plug>(coc-diagnostic-next)
 
 " Use Tab to cycle between completion options
-inoremap <silent><expr> <Tab>
-      \ coc#pum#visible() ? coc#pum#next(1) :
-      \ CheckBackspace() ? "\<Tab>" :
-      \ coc#refresh()
-" Use Enter to confirm completion
-inoremap <expr> <cr> coc#pum#visible() ? coc#pum#confirm() : "\<CR>"
+"inoremap <silent><expr> <Tab>
+      "\ coc#pum#visible() ? coc#pum#next(1) :
+      "\ CheckBackspace() ? "\<Tab>" :
+      "\ coc#refresh()
+"" Use Enter to confirm completion
+"inoremap <expr> <cr> coc#pum#visible() ? coc#pum#confirm() : "\<CR>"
 
-" Remap <C-f> and <C-b> to scroll float windows/popups
-if has('nvim-0.4.0') || has('patch-8.2.0750')
-  nnoremap <silent><nowait><expr> <C-f> coc#float#has_scroll() ? coc#float#scroll(1) : "\<C-f>"
-  nnoremap <silent><nowait><expr> <C-b> coc#float#has_scroll() ? coc#float#scroll(0) : "\<C-b>"
-  inoremap <silent><nowait><expr> <C-f> coc#float#has_scroll() ? "\<c-r>=coc#float#scroll(1)\<cr>" : "\<Right>"
-  inoremap <silent><nowait><expr> <C-b> coc#float#has_scroll() ? "\<c-r>=coc#float#scroll(0)\<cr>" : "\<Left>"
-  vnoremap <silent><nowait><expr> <C-f> coc#float#has_scroll() ? coc#float#scroll(1) : "\<C-f>"
-  vnoremap <silent><nowait><expr> <C-b> coc#float#has_scroll() ? coc#float#scroll(0) : "\<C-b>"
-endif
-
-"
-" format file using Prettier
-command! -nargs=0 Prettier :CocCommand prettier.forceFormatDocument
+"" Remap <C-f> and <C-b> to scroll float windows/popups
+"if has('nvim-0.4.0') || has('patch-8.2.0750')
+  "nnoremap <silent><nowait><expr> <C-f> coc#float#has_scroll() ? coc#float#scroll(1) : "\<C-f>"
+  "nnoremap <silent><nowait><expr> <C-b> coc#float#has_scroll() ? coc#float#scroll(0) : "\<C-b>"
+  "inoremap <silent><nowait><expr> <C-f> coc#float#has_scroll() ? "\<c-r>=coc#float#scroll(1)\<cr>" : "\<Right>"
+  "inoremap <silent><nowait><expr> <C-b> coc#float#has_scroll() ? "\<c-r>=coc#float#scroll(0)\<cr>" : "\<Left>"
+  "vnoremap <silent><nowait><expr> <C-f> coc#float#has_scroll() ? coc#float#scroll(1) : "\<C-f>"
+  "vnoremap <silent><nowait><expr> <C-b> coc#float#has_scroll() ? coc#float#scroll(0) : "\<C-b>"
+"endif
 
 " gitgutter
 " Sign column color matching
@@ -177,14 +107,11 @@ let g:gitgutter_set_sign_backgrounds = 1
 " VimTex
 let g:vimtex_view_general_viewer = 'okular'
 
-" GoYo/Limelight
-"autocmd! User GoyoEnter Limelight
-"autocmd! User GoyoLeave Limelight!
-
 " Appearance
 " -----------------------------------------------------------------------------
 syntax on
 set number
+set relativenumber
 autocmd FileType asm setlocal colorcolumn=80
 autocmd FileType c setlocal colorcolumn=80
 " Show tabs
