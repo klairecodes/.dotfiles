@@ -31,11 +31,13 @@ Plug 'scrooloose/nerdtree' " file explorer
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } } " fuzzy finder
 Plug 'junegunn/fzf.vim'
 Plug 'tpope/vim-fugitive' " integrated Git
+Plug 'tpope/vim-surround' " quick character surround modification
 Plug 'airblade/vim-gitgutter' " git diff in sign column
 Plug 'ap/vim-css-color' " view css hex colors in vim
 Plug 'mtth/scratch.vim' " quick scratch buffer
 Plug 'stevearc/overseer.nvim' " Run code, Task Runner
 Plug 'psliwka/vim-dirtytalk', { 'do': ':DirtytalkUpdate' } " Extended spell file
+Plug 'yegappan/lsp'
 
 " Colorscheme
 Plug 'noahfrederick/vim-noctu', {'as': 'vim-noctu'}
@@ -59,6 +61,69 @@ endfunction
 " Having longer updatetime (default is 4000 ms = 4 s) leads to noticeable
 " delays and poor user experience.
 set updatetime=300
+
+" yegappan/lsp
+let lspOpts = #{autoHighlightDiags: v:true}
+autocmd User LspSetup call LspOptionsSet(lspOpts)
+
+let lspServers = [#{
+	\	  name: 'clang',
+	\	  filetype: ['c', 'cpp'],
+	\	  path: '/usr/bin/clangd',
+	\	  args: ['--background-index']
+	\ }]
+autocmd User LspSetup call LspAddServer(lspServers)
+
+let lspServers = [#{
+    \    name: 'golang',
+    \    filetype: ['go', 'gomod'],
+    \    path: '/home/klaire/go/bin/gopls',
+    \    args: ['serve'],
+    \    syncInit: v:true
+	\ }]
+autocmd User LspSetup call LspAddServer(lspServers)
+
+let lspServers = [#{
+    \    name: 'python',
+    \    filetype: ['py', 'gomod'],
+    \    path: '/home/klaire/.local/bin/ty',
+    \    syncInit: v:true
+	\ }]
+autocmd User LspSetup call LspAddServer(lspServers)
+
+" Clangd language server
+"call LspAddServer([#{
+	"\    name: 'clangd',
+	"\    filetype: ['c', 'cpp'],
+	"\    path: '/usr/bin/clangd',
+	"\    args: ['--background-index']
+	"\  }])
+
+" Javascript/Typescript language server
+"call LspAddServer([#{
+	"\    name: 'typescriptlang',
+	"\    filetype: ['javascript', 'typescript'],
+	"\    path: '/usr/local/bin/typescript-language-server',
+	"\    args: ['--stdio'],
+	"\  }])
+
+" Go language server
+"call LspAddServer([#{
+	"\    name: 'golang',
+	"\    filetype: ['go', 'gomod'],
+	"\    path: '/home/klaire/go/bin/gopls',
+	"\    args: ['serve'],
+	"\    syncInit: v:true
+	"\  }])
+
+" Rust language server
+"call LspAddServer([#{
+	"\    name: 'rustlang',
+	"\    filetype: ['rust'],
+	"\    path: '~/.cargo/bin/rust-analyzer',
+	"\    args: [],
+	"\    syncInit: v:true
+	"\  }])
 
 " GoTo code navigation.
 "nmap <silent> gd <Plug>(coc-definition)
@@ -115,8 +180,8 @@ set relativenumber
 autocmd FileType asm setlocal colorcolumn=80
 autocmd FileType c setlocal colorcolumn=80
 " Show tabs
-set listchars=tab:\|\
-set list
+" set listchars=tab:\|\
+set nolist
 colorscheme noctu
 " vertical split separator
 set fillchars+=vert:│
