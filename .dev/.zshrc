@@ -6,7 +6,7 @@
  fi
 
 # If you come from bash you might have to change your $PATH.
-export PATH=$HOME/bin:/usr/local/bin:$PATH:$HOME/go/bin:/home/klaire/src/kubernetes/third_party/etcd
+export PATH=$PATH:$HOME/bin:/usr/local/bin:$HOME/go/bin:/home/klaire/src/kubernetes/third_party/etcd:/usr/local/go/bin
 
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"

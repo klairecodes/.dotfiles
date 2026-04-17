@@ -77,7 +77,7 @@ autocmd User LspSetup call LspAddServer(lspServers)
 let lspServers = [#{
     \    name: 'golang',
     \    filetype: ['go', 'gomod'],
-    \    path: '/home/klaire/go/bin/gopls',
+    \    path: '~/go/bin/gopls',
     \    args: ['serve'],
     \    syncInit: v:true
 	\ }]
@@ -86,7 +86,7 @@ autocmd User LspSetup call LspAddServer(lspServers)
 let lspServers = [#{
     \    name: 'python',
     \    filetype: ['py', 'gomod'],
-    \    path: '/home/klaire/.local/bin/ty',
+    \    path: '~/.local/bin/ty',
     \    syncInit: v:true
 	\ }]
 autocmd User LspSetup call LspAddServer(lspServers)
