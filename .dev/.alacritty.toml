@@ -1,15 +1,7 @@
-#import = ["~/.config/alacritty/themes/themes/dracula.toml"]
-#import = ["~/.config/alacritty/themes/themes/monokai_charcoal.toml"]
-#import = ["~/.config/alacritty/themes/themes/github_dark_high_contrast.toml"]
-#import = ["~/.config/alacritty/themes/themes/github_light.toml"]
-import = ["~/.config/alacritty/themes/themes/catppuccin.toml"]
-#import = ["~/.config/alacritty/themes/themes/catppuccin_macchiato.toml"]
-
 [font]
-size = 13.5
+size = 12.5
 
 [font.normal]
-#family = "monospace"
 family = "Terminess Nerd Font"
 style = "Regular"
 
@@ -36,6 +28,19 @@ duration              = 0
 color                 = "#C0C5CE"
 #command               = { program = "notify-send", args = ["alacritty", "bell",] }
 
+[window]
+decorations = "None"
+#opacity = 0.95
+
 [window.dimensions]
 columns = 140
 lines = 30 
+
+[env]
+TERM = "xterm-256color"
+
+[general]
+#import = ["~/.config/alacritty/catppuccin-mocha.toml"]
+#import = ["~/.config/alacritty/xterm.toml"]
+#import = ["~/.config/alacritty/themes/alacritty-theme/themes/tomorrow_night_bright.toml"]
+import = ["~/.config/alacritty/themes/alacritty-theme/themes/pastel_dark.toml"]
