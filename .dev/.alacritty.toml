@@ -2,6 +2,7 @@
 #import = ["~/.config/alacritty/xterm.toml"]
 #import = ["~/.config/alacritty/themes/alacritty-theme/themes/tomorrow_night_bright.toml"]
 import = ["~/.config/alacritty/themes/themes/pastel_dark.toml"]
+#import = ["~/.config/alacritty/themes/themes/ashes_light.toml"]
 
 [font]
 size = 12
