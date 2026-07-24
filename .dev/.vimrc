@@ -176,7 +176,7 @@ let g:vimtex_view_general_viewer = 'okular'
 " -----------------------------------------------------------------------------
 syntax on
 set number
-set relativenumber
+"set relativenumber
 autocmd FileType asm setlocal colorcolumn=80
 autocmd FileType c setlocal colorcolumn=80
 " Show tabs
