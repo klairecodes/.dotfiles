@@ -1,9 +1,9 @@
-# .dotfiles
+# Klaire's dotfiles
 This is a repo of configuration files and scripts for the systems and utilities that I use.  
-Note that the vast majority of content here is specific to myself and my use cases, it is not intended to be a general solution for everyone. That being said, contributions and suggestions are greatly appreciated, especially for any automation scripts.
 
-## Layout
-- .default: a base directory containing a standard configuration for Arch Linux that is mostly functional by default.
-- .hardware: a collection scripts, configuration, drivers, etc that is used for hardware devices that do not change between different systems that they are plugged into.
-- .scripts: a collection of general useful scripts.
-- .archlinux: scripts and files used to provision a new Arch Linux installation.
+Note that the vast majority of content here is specific to myself and my use cases, it is not intended to be a general solution for everyone. For your own personal well-being, I recommend not subjecting yourself to the same torment.
+
+That said, contributions and suggestions are welcome. Mulțumesc.
+
+## Installation
+TODO: Migrate to [yadm](https://yadm.io/)
