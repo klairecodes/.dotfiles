@@ -74,6 +74,7 @@ let lspServers = [#{
 	\ }]
 autocmd User LspSetup call LspAddServer(lspServers)
 
+" Go language server
 let lspServers = [#{
     \    name: 'golang',
     \    filetype: ['go', 'gomod'],
@@ -83,13 +84,13 @@ let lspServers = [#{
 	\ }]
 autocmd User LspSetup call LspAddServer(lspServers)
 
-let lspServers = [#{
-    \    name: 'python',
-    \    filetype: ['py', 'gomod'],
-    \    path: '~/.local/bin/ty',
-    \    syncInit: v:true
-	\ }]
-autocmd User LspSetup call LspAddServer(lspServers)
+"let lspServers = [#{
+    "\    name: 'python',
+    "\    filetype: ['py', 'gomod'],
+    "\    path: '~/.local/bin/ty',
+    "\    syncInit: v:true
+	"\ }]
+"autocmd User LspSetup call LspAddServer(lspServers)
 
 " Clangd language server
 "call LspAddServer([#{
@@ -105,15 +106,6 @@ autocmd User LspSetup call LspAddServer(lspServers)
 	"\    filetype: ['javascript', 'typescript'],
 	"\    path: '/usr/local/bin/typescript-language-server',
 	"\    args: ['--stdio'],
-	"\  }])
-
-" Go language server
-"call LspAddServer([#{
-	"\    name: 'golang',
-	"\    filetype: ['go', 'gomod'],
-	"\    path: '/home/klaire/go/bin/gopls',
-	"\    args: ['serve'],
-	"\    syncInit: v:true
 	"\  }])
 
 " Rust language server

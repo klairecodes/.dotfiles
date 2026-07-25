@@ -5,7 +5,7 @@ import = ["~/.config/alacritty/themes/themes/pastel_dark.toml"]
 #import = ["~/.config/alacritty/themes/themes/xterm.toml"]
 
 [font]
-size = 12
+size = 12.2
 
 [font.normal]
 family = "Terminess Nerd Font"
