@@ -1,8 +1,6 @@
 # yaml-language-server: $schema=https://raw.githubusercontent.com/alex-courtis/way-displays/refs/heads/master/schema/cfg-1.1.0.yaml
 
-## Default cfg.yaml for way-displays.
-## Copy this to ~/.config/way-displays/cfg.yaml and edit it to your liking.
-
+## cfg.yaml for way-displays @pisica.
 ## See https://github.com/alex-courtis/way-displays/wiki/Configuration
 
 
@@ -36,7 +34,7 @@ ALIGN: TOP
 ## You are encouraged to explicitly define your order.
 ORDER:
   - 'Ancor Communications Inc ASUS PB258 H5LMTJ004177 (DVI-I-1)'
-  - '!^DP-1'
+  - 'eDP-1'
   - 'Dell Inc. DELL P3225QE 77VGC34 (DVI-I-2)'
 
 
@@ -54,9 +52,9 @@ AUTO_SCALE_MIN: 1.0
 ## Auto scale may be overridden for each display.
 SCALE:
   - NAME_DESC: 'Ancor Communications Inc ASUS PB258 H5LMTJ004177 (DVI-I-1)'
-    SCALE: 1.2
-  - NAME_DESC: '!^DP-1'
-    SCALE: 1.2
+    SCALE: 1.0
+  - NAME_DESC: 'eDP-1'
+    SCALE: 1.6
   - NAME_DESC: 'Dell Inc. DELL P3225QE 77VGC34 (DVI-I-2)'
     SCALE: 1.2
 
@@ -115,7 +113,6 @@ LOG_THRESHOLD: INFO
 ## In this example, HDMI-1 will always be disabled, and eDP-1 will be disabled
 ## only if both DP-1 and DP-2 are plugged.
 DISABLED:
-  - '!^DP-1'
   - NAME_DESC: 'eDP-1'
     IF:
       - PLUGGED:

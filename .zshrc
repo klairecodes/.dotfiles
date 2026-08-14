@@ -106,6 +106,7 @@ fi
 # Keychain SSH & GPG key manager
 # eval $(keychain --eval --quiet ~/.ssh/id_ed25519 >& /dev/null)
 # eval $(keychain --eval --quiet ~/.ssh/id_ed25519_sk >& /dev/null)
+eval $(keychain --eval --quiet --noask --nogui --inherit any-once id_ed25519 >& /dev/null)
 
 # pnpm
 export PNPM_HOME="/home/klaire/.local/share/pnpm"
@@ -113,7 +114,6 @@ case ":$PATH:" in
   *":$PNPM_HOME:"*) ;;
   *) export PATH="$PNPM_HOME:$PATH" ;;
 esac
-# pnpm end
 
 # ZVM Zsh Vi Mode plugin settings
 # The plugin will auto execute this zvm_after_init function, overwrite zvm binding
