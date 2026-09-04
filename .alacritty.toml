@@ -1,4 +1,3 @@
-[general]
 import = ["~/.config/alacritty/themes/themes/pastel_dark.toml"]
 #import = ["~/.config/alacritty/themes/themes/ashes_light.toml"]
 #import = ["~/.config/alacritty/themes/themes/catppuccin-mocha.toml"]
