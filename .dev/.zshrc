@@ -8,7 +8,7 @@
    source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
  fi
 
-export PATH=$PATH:$HOME/bin:/usr/local/bin:$HOME/go/bin:/home/klaire/src/kubernetes/third_party/etcd:/usr/local/go/bin
+export PATH=$PATH:$HOME/bin:/usr/local/bin:$HOME/go/bin:/home/klaire/src/kubernetes/third_party/etcd:/usr/local/go/bin:$HOME/.cargo/env:$HOME/.cargo/bin
 
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
@@ -39,7 +39,8 @@ fi
 # export ARCHFLAGS="-arch x86_64"
 
 # Environment Variables
-export EDITOR='vi -e'
+#export EDITOR='vi -e'
+export EDITOR='vim'
 export VISUAL='vim'
 #
 # export MANPATH="/usr/local/man:$MANPATH"
@@ -89,11 +90,14 @@ alias cs='xclip -selection clipboard'
 alias v='xclip -o'
 alias kubens='kubectl config set-context --current --namespace '
 alias kubectx='kubectl config use-context '
+alias kgpk='kubectl get pods --all-namespaces --field-selector metadata.namespace!=kube-system'
 alias lsk='ls -1'
 # NV
 alias gp='globalprotect connect --portal nvidia.gpcloudservice.com'
 alias pretty="grep -v I0421 | jq -r '[.level, .ts, .controller, .msg] | join(\" | \")'"
 alias prettyjson="grep -v I0421 | jq"
+alias watchs='watch -wcd -n 1 kubectl get pods --all-namespaces --field-selector metadata.namespace!=kube-system,metadata.namespace!=cert-manager,metadata.namespace!=local-path-storage'
+alias nvims='nvim -S Session.vim'
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh

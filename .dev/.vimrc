@@ -176,8 +176,8 @@ autocmd FileType c setlocal colorcolumn=80
 set nolist
 colorscheme noctu
 " vertical split separator
-set fillchars+=vert:│
-hi VertSplit ctermbg=NONE guibg=NONE ctermfg=Green
+"set fillchars+=vert:│
+"hi VertSplit ctermbg=NONE guibg=NONE ctermfg=Green
 
 " Behavior
 " -----------------------------------------------------------------------------
@@ -257,6 +257,16 @@ nmap <leader>as  <Plug>(coc-codeaction-source)
 " Apply the most preferred quickfix action to fix diagnostic on the current line
 nmap <leader>qf  <Plug>(coc-fix-current)
 
+" Highlight specific lines 
+" https://vimtricks.com/p/highlight-specific-lines/
+" define line highlight color
+highlight LineHighlight ctermbg=red ctermfg=black guibg=red
+" highlight the current line
+nnoremap <silent> <Leader>e :call matchadd('LineHighlight', '\%'.line('.').'l')<CR>
+" FIXME: remove current line highlight
+"nnoremap <silent> <Leader>E :call matchdelete('LineHighlight', '\%'.line('.').'l')<CR>
+" clear all the highlighted lines
+nnoremap <silent> <Leader>c :call clearmatches()<CR>
 
 " User Commands
 " -----------------------------------------------------------------------------
