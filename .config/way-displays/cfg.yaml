@@ -33,9 +33,9 @@ ALIGN: TOP
 ## The default ORDER is simply the order in which the displays are discovered. This is nondeterministic.
 ## You are encouraged to explicitly define your order.
 ORDER:
-  - 'Ancor Communications Inc ASUS PB258 H5LMTJ004177 (DVI-I-1)'
+  - 'Ancor Communications Inc ASUS PB258 H5LMTJ004177'
   - 'eDP-1'
-  - 'Dell Inc. DELL P3225QE 77VGC34 (DVI-I-2)'
+  - 'Dell Inc. DELL P3225QE 77VGC34'
 
 
 ## Enable scaling, overrides AUTO_SCALE and SCALE
@@ -51,11 +51,11 @@ AUTO_SCALE_MIN: 1.0
 
 ## Auto scale may be overridden for each display.
 SCALE:
-  - NAME_DESC: 'Ancor Communications Inc ASUS PB258 H5LMTJ004177 (DVI-I-1)'
+  - NAME_DESC: 'Ancor Communications Inc ASUS PB258 H5LMTJ004177'
     SCALE: 1.0
   - NAME_DESC: 'eDP-1'
     SCALE: 1.6
-  - NAME_DESC: 'Dell Inc. DELL P3225QE 77VGC34 (DVI-I-2)'
+  - NAME_DESC: 'Dell Inc. DELL P3225QE 77VGC34'
     SCALE: 1.2
 
 ## Override the preferred mode.
@@ -80,12 +80,12 @@ SCALE:
 ## Rotate or translate the display.
 ## 90, 180, 270, FLIPPED, FLIPPED-90, FLIPPED-180, FLIPPED-270
 TRANSFORM:
-  - NAME_DESC: 'Ancor Communications Inc ASUS PB258 H5LMTJ004177 (DVI-I-1)'
+  - NAME_DESC: 'Ancor Communications Inc ASUS PB258 H5LMTJ004177'
     TRANSFORM: 90
 
 ## VRR / adaptive sync is enabled by default. Disable it per display.
 # VRR_OFF:
-#   - DP-2
+#   - 
 #   - '!.*my monitor.*'
 
 
@@ -116,5 +116,5 @@ DISABLED:
   - NAME_DESC: 'eDP-1'
     IF:
       - PLUGGED:
-          - 'Ancor Communications Inc ASUS PB258 H5LMTJ004177 (DVI-I-1)'
+          - 'Ancor Communications Inc ASUS PB258 H5LMTJ004177'
           - 'Dell Inc. DELL P3225QE 77VGC34 (DVI-I-2)'
